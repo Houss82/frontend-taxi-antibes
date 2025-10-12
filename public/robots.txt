@@ -1,0 +1,18 @@
+# Robots.txt pour Taxi Antibes
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://www.taxi-antibes.fr/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
