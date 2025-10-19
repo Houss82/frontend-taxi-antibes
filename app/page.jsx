@@ -2,7 +2,6 @@ import { BookingSection } from "@/components/booking-section";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
 import { Navigation } from "@/components/navigation";
-import QuickBooking from "@/components/quick-booking";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
@@ -12,7 +11,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <QuickBooking />
+
       <ServicesSection />
       <BookingSection />
 
