@@ -39,7 +39,12 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-primary-foreground/80 font-light">
                 <Phone className="h-4 w-4" />
-                <span>+33 6 XX XX XX XX</span>
+                <a
+                  href="tel:+33623360501"
+                  className="hover:text-primary-foreground transition-colors"
+                >
+                  +33 6 23 36 05 01
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/80 font-light">
                 <Mail className="h-4 w-4" />
@@ -58,6 +63,15 @@ export function Footer() {
             © 2025 Taxi Antibes. Tous droits réservés.
           </p>
           <div className="flex gap-6 text-sm text-primary-foreground/60 font-light">
+            <a
+              href="https://maps.app.goo.gl/ZvawMHedMtxisBiQ7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary-foreground transition-colors flex items-center gap-1"
+            >
+              <MapPin className="h-4 w-4" />
+              Voir sur Google
+            </a>
             <a
               href="#"
               className="hover:text-primary-foreground transition-colors"

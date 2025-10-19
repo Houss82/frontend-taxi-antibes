@@ -34,11 +34,11 @@ export function ServicesSection() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
-            Nos <span className="font-semibold">services de taxi</span>
+            Nos <span className="font-semibold">services de taxi Antibes</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-            Transferts aéroport Nice, courses locales à Antibes et service
-            premium sur toute la Côte d'Azur
+            Transferts aéroport Nice, courses locales taxi Antibes à Antibes et
+            service premium taxi Antibes sur toute la Côte d'Azur
           </p>
         </div>
 
