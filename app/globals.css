@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Outfit:wght@100..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -138,5 +139,30 @@
   }
   .text-gold-600 {
     color: #d4af37;
+  }
+  /* Gold background utilities for buttons */
+  .bg-gold {
+    background-color: #d4af37;
+  }
+  .bg-gold-dark {
+    background-color: #b8941f;
+  }
+  .hover\:bg-gold-dark:hover {
+    background-color: #b8941f;
+  }
+  /* Force navy blue for black classes */
+  .bg-black {
+    background-color: #0b1b34 !important;
+  }
+  .text-black {
+    color: #0b1b34 !important;
+  }
+  .border-black {
+    border-color: #0b1b34 !important;
+  }
+
+  /* Police Outfit pour les h2 */
+  h2 {
+    font-family: "Outfit", sans-serif;
   }
 }

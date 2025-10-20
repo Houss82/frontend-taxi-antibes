@@ -305,7 +305,10 @@ export default function ReservationPage() {
 
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance">
+            <h1
+              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance"
+              style={{ fontFamily: "Marcellus, serif" }}
+            >
               <span className="font-semibold">Réservation Taxi Antibes</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 font-light font-serif max-w-3xl mx-auto leading-relaxed px-2">
@@ -347,7 +350,8 @@ export default function ReservationPage() {
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    className="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primaryDark transition-colors"
+                    variant="gold"
+                    className="px-8 py-3 rounded-lg font-semibold"
                   >
                     Nouvelle réservation
                   </button>
@@ -378,7 +382,7 @@ export default function ReservationPage() {
                             value={formData.nom}
                             onChange={handleChange}
                             placeholder="Votre nom complet"
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           />
                         </div>
@@ -397,7 +401,7 @@ export default function ReservationPage() {
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="votre@email.com"
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                           />
                         </div>
                       </div>
@@ -413,7 +417,7 @@ export default function ReservationPage() {
                               name="indicatifPays"
                               value={formData.indicatifPays}
                               onChange={handleChange}
-                              className="w-full pl-3 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none appearance-none"
+                              className="w-full pl-3 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none appearance-none"
                             >
                               {indicatifsPays.map((indicatif) => (
                                 <option
@@ -433,7 +437,7 @@ export default function ReservationPage() {
                               value={formData.telephone}
                               onChange={handleChange}
                               placeholder="06 XX XX XX XX"
-                              className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                              className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                               required
                             />
                           </div>
@@ -461,7 +465,7 @@ export default function ReservationPage() {
                             name="date"
                             value={formData.date}
                             onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           />
                         </div>
@@ -478,7 +482,7 @@ export default function ReservationPage() {
                             name="heure"
                             value={formData.heure}
                             onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           />
                         </div>
@@ -506,7 +510,7 @@ export default function ReservationPage() {
                             value={formData.adresseDepart}
                             onChange={handleChange}
                             placeholder="Adresse de départ"
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           />
                         </div>
@@ -524,7 +528,7 @@ export default function ReservationPage() {
                             value={formData.adresseArrivee}
                             onChange={handleChange}
                             placeholder="Adresse d'arrivée"
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           />
                         </div>
@@ -551,7 +555,7 @@ export default function ReservationPage() {
                             name="nombreBagages"
                             value={formData.nombreBagages}
                             onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           >
                             <option value="">Sélectionner</option>
@@ -576,7 +580,7 @@ export default function ReservationPage() {
                             name="nombrePassagers"
                             value={formData.nombrePassagers}
                             onChange={handleChange}
-                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                            className="w-full pl-12 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none"
                             required
                           >
                             <option value="">Sélectionner</option>
@@ -611,7 +615,7 @@ export default function ReservationPage() {
                         onChange={handleChange}
                         placeholder="Numéro de vol, bagages spéciaux, préférences..."
                         rows={4}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none resize-none"
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold-600 focus:border-transparent outline-none resize-none"
                       />
                     </div>
                   </div>
@@ -624,7 +628,7 @@ export default function ReservationPage() {
                       className={`px-12 py-4 rounded-lg font-bold text-lg transition-all duration-300 ${
                         isSubmitting
                           ? "bg-gray-400 cursor-not-allowed"
-                          : "bg-primary hover:bg-primaryDark hover:scale-105"
+                          : "bg-black hover:bg-gold-600 hover:scale-105"
                       } text-white shadow-lg`}
                     >
                       {isSubmitting

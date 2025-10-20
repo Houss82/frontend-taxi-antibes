@@ -99,19 +99,25 @@ export function BookingSection() {
         <div className="max-w-4xl mx-auto">
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="text-3xl font-semibold mb-2">24/7</div>
+              <div className="text-3xl font-semibold mb-2 text-gold-600">
+                24/7
+              </div>
               <div className="text-sm text-muted-foreground font-light">
                 Service disponible
               </div>
             </div>
             <div>
-              <div className="text-3xl font-semibold mb-2">15 min</div>
+              <div className="text-3xl font-semibold mb-2 text-gold-600">
+                15 min
+              </div>
               <div className="text-sm text-muted-foreground font-light">
                 Temps de réponse moyen
               </div>
             </div>
             <div>
-              <div className="text-3xl font-semibold mb-2">100%</div>
+              <div className="text-3xl font-semibold mb-2 text-gold-600">
+                100%
+              </div>
               <div className="text-sm text-muted-foreground font-light">
                 Clients satisfaits
               </div>

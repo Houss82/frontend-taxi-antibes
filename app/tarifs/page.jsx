@@ -280,10 +280,13 @@ export default function TarifsPage() {
       <section className="py-24  md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
-              Nos <span className="font-semibold">tarifs taxi Antibes</span>
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+              Nos{" "}
+              <span className="font-semibold text-gold-600">
+                tarifs taxi Antibes
+              </span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
               Des tarifs transparents et compétitifs taxi Antibes pour tous vos
               déplacements vers et depuis l'aéroport de Nice.
             </p>
@@ -293,7 +296,7 @@ export default function TarifsPage() {
             {tarifs.map((tarif, index) => (
               <Card
                 key={index}
-                className="p-8 hover:shadow-lg transition-all duration-300 border-border bg-card rounded-xl"
+                className="p-8 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl"
               >
                 <div className="text-center mb-6">
                   {tarif.image ? (
@@ -309,8 +312,10 @@ export default function TarifsPage() {
                       <tarif.icon className="h-8 w-8 text-primary-foreground" />
                     </div>
                   )}
-                  <h3 className="text-2xl font-semibold mb-2">{tarif.title}</h3>
-                  <p className="text-muted-foreground font-light">
+                  <h3 className="text-2xl font-semibold mb-2 text-white">
+                    {tarif.title}
+                  </h3>
+                  <p className="text-white/80 font-light">
                     {tarif.description}
                   </p>
                 </div>
@@ -331,12 +336,12 @@ export default function TarifsPage() {
                       </div>
                       <div className="text-right">
                         {dest.day && (
-                          <div className="font-semibold text-primary text-sm">
+                          <div className="font-semibold text-gold-600 text-sm">
                             Jour: {dest.day}
                           </div>
                         )}
                         {dest.night && (
-                          <div className="font-semibold text-primary text-sm">
+                          <div className="font-semibold text-gold-600 text-sm">
                             Nuit: {dest.night}
                           </div>
                         )}
@@ -353,7 +358,7 @@ export default function TarifsPage() {
                       className="flex justify-between items-center text-sm text-muted-foreground"
                     >
                       <span>{supp.name}</span>
-                      <span className="font-semibold text-primary">
+                      <span className="font-semibold text-gold-600">
                         {supp.price}
                       </span>
                     </div>
@@ -389,10 +394,13 @@ export default function TarifsPage() {
       <section className="py-24 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
-              Nos <span className="font-semibold">véhicules taxi Antibes</span>
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+              Nos{" "}
+              <span className="font-semibold text-gold-600">
+                véhicules taxi Antibes
+              </span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
               Une flotte variée taxi Antibes pour s'adapter à tous vos besoins
             </p>
           </div>
@@ -401,23 +409,25 @@ export default function TarifsPage() {
             {vehicules.map((vehicule, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-all duration-300 border-border bg-card rounded-xl text-center group"
+                className="p-6 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl text-center group"
               >
                 <div
                   className={`w-16 h-16 ${vehicule.color} rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}
                 >
                   <vehicule.icon className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{vehicule.name}</h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <h3 className="text-xl font-semibold mb-2 text-white">
+                  {vehicule.name}
+                </h3>
+                <p className="text-white/80 text-sm mb-4">
                   {vehicule.capacity}
                 </p>
-                <div className="text-lg font-semibold text-primary mb-4">
+                <div className="text-lg font-semibold text-gold-600 mb-4">
                   {vehicule.price}
                 </div>
                 <div className="space-y-2">
                   {vehicule.features.map((feature, idx) => (
-                    <div key={idx} className="text-sm text-muted-foreground">
+                    <div key={idx} className="text-sm text-white/80">
                       {feature}
                     </div>
                   ))}
@@ -433,23 +443,25 @@ export default function TarifsPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
-                <span className="font-semibold">Suppléments</span>
+              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+                <span className="font-semibold text-gold-600">Suppléments</span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-black/70 text-lg leading-relaxed">
                 Tarifs des services supplémentaires
               </p>
             </div>
 
-            <Card className="p-8 bg-card border-border rounded-xl">
+            <Card className="p-8 bg-black border-gold-600/30 rounded-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {suppléments.map((supplément, index) => (
                   <div
                     key={index}
                     className="flex justify-between items-center py-3 border-b border-border/50"
                   >
-                    <span className="font-medium">{supplément.service}</span>
-                    <span className="text-primary font-semibold">
+                    <span className="font-medium text-white">
+                      {supplément.service}
+                    </span>
+                    <span className="text-gold-600 font-semibold">
                       {supplément.price}
                     </span>
                   </div>
@@ -460,13 +472,15 @@ export default function TarifsPage() {
             <div className="mt-8 p-6 bg-muted/50 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
                 <Calculator className="h-6 w-6 text-primary" />
-                <h3 className="text-xl font-semibold">Devis Gratuit</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  Devis Gratuit
+                </h3>
               </div>
-              <p className="text-muted-foreground mb-4">
+              <p className="text-white/80 mb-4">
                 Pour un devis personnalisé ou des trajets spécifiques,
                 contactez-nous directement.
               </p>
-              <Button className="bg-primary text-primary-foreground hover:bg-secondary">
+              <Button variant="gold">
                 <Phone className="h-4 w-4 mr-2" />
                 Demander un devis
               </Button>
@@ -476,19 +490,21 @@ export default function TarifsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-primary text-primary-foreground">
+      <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
-            Réservez <span className="font-semibold">maintenant</span>
+            Réservez{" "}
+            <span className="font-semibold text-gold-600">maintenant</span>
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Contactez-nous pour une réservation ou un devis personnalisé
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
               size="lg"
-              className="bg-white text-black hover:bg-secondary hover:text-white text-base px-8 py-6 gap-2 rounded-xl"
+              variant="gold"
+              className="text-base px-8 py-6 gap-2 rounded-xl"
             >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -498,7 +514,7 @@ export default function TarifsPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
               Réserver en ligne
             </Button>

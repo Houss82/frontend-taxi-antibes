@@ -118,14 +118,19 @@ export default function ServicesPage() {
       backgroundImage="/services.webp"
     >
       {/* Services Principaux */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
+            <h2
+              className="text-4xl md:text-5xl font-light mb-4 text-balance text-black"
+              style={{ fontFamily: "Marcellus, serif" }}
+            >
               Nos{" "}
-              <span className="font-semibold">services de taxi Antibes</span>
+              <span className="font-semibold text-gold-600">
+                services de taxi Antibes
+              </span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
               Découvrez notre gamme complète de services de transport premium
               taxi Antibes à Antibes et sur toute la Côte d'Azur
             </p>
@@ -135,17 +140,17 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="p-8 hover:shadow-lg transition-all duration-300 border-border bg-card rounded-xl group"
+                className="p-8 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl group"
               >
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="h-8 w-8 text-primary-foreground" />
+                  <div className="w-16 h-16 bg-black/80 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gold-600">
+                    <service.icon className="h-8 w-8 text-gold-600" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-3">
+                    <h3 className="text-2xl font-semibold mb-3 text-white">
                       {service.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed mb-4 font-light">
+                    <p className="text-white/80 leading-relaxed mb-4 font-light">
                       {service.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
@@ -158,7 +163,7 @@ export default function ServicesPage() {
                         </span>
                       ))}
                     </div>
-                    <div className="text-lg font-semibold text-primary">
+                    <div className="text-lg font-semibold text-gold-600">
                       {service.price}
                     </div>
                   </div>
@@ -173,11 +178,11 @@ export default function ServicesPage() {
       <section className="py-24 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
               Pourquoi choisir{" "}
-              <span className="font-semibold">taxi Antibes</span>
+              <span className="font-semibold text-gold-600">taxi Antibes</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
               Des services supplémentaires taxi Antibes qui font la différence
             </p>
           </div>
@@ -186,13 +191,15 @@ export default function ServicesPage() {
             {additionalServices.map((service, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow border-border bg-card rounded-xl text-center"
+                className="p-6 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-xl text-center"
               >
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="h-6 w-6 text-primary-foreground" />
+                <div className="w-12 h-12 bg-black/80 rounded-lg flex items-center justify-center mx-auto mb-4 border border-gold-600">
+                  <service.icon className="h-6 w-6 text-gold-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                <p className="text-muted-foreground leading-relaxed font-light">
+                <h3 className="text-xl font-semibold mb-3 text-white">
+                  {service.title}
+                </h3>
+                <p className="text-white/80 leading-relaxed font-light">
                   {service.description}
                 </p>
               </Card>
@@ -202,12 +209,13 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-primary text-primary-foreground">
+      <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
-            Prêt à <span className="font-semibold">réserver</span> ?
+            Prêt à <span className="font-semibold text-gold-600">réserver</span>{" "}
+            ?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Contactez-nous dès maintenant pour une réservation ou un devis
             personnalisé
           </p>
@@ -215,7 +223,8 @@ export default function ServicesPage() {
             <Button
               asChild
               size="lg"
-              className="bg-white text-black hover:bg-secondary hover:text-white text-base px-8 py-6 gap-2 rounded-xl"
+              variant="gold"
+              className="text-base px-8 py-6 gap-2 rounded-xl"
             >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -226,7 +235,7 @@ export default function ServicesPage() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
               <a href="/tarifs">Voir les tarifs</a>
             </Button>

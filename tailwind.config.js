@@ -10,9 +10,10 @@ module.exports = {
     extend: {
       colors: {
         black: {
-          DEFAULT: "#0a0a0a",
-          light: "#1a1a1a",
-          lighter: "#2a2a2a",
+          // Remappé vers un bleu marine foncé pour l'identité visuelle
+          DEFAULT: "#0b1b34", // navy foncé
+          light: "#132a4a", // navy un peu plus clair
+          lighter: "#1b2e5c", // navy encore plus clair
         },
         silver: {
           DEFAULT: "#c0c0c0",
@@ -34,5 +35,3 @@ module.exports = {
   },
   plugins: [],
 };
-
-

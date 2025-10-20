@@ -11,21 +11,23 @@ export default function Home() {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-
       <ServicesSection />
       <BookingSection />
 
       {/* Section CTA supplémentaire */}
-      <section className="py-24 md:py-32 bg-primary text-primary-foreground">
+      <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
+          <h2
+            className="text-4xl md:text-5xl font-light mb-6 text-balance"
+            style={{ fontFamily: "Marcellus, serif" }}
+          >
             Besoin d'un{" "}
-            <span className="font-semibold">
+            <span className="font-semibold text-gold-600">
               devis taxi Antibes personnalisé
             </span>{" "}
             ?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Contactez taxi Antibes pour un devis gratuit et personnalisé selon
             vos besoins
           </p>
@@ -33,7 +35,8 @@ export default function Home() {
             <Button
               asChild
               size="lg"
-              className="bg-white text-black hover:bg-secondary hover:text-white text-base px-8 py-6 gap-2 rounded-xl"
+              variant="gold"
+              className="text-base px-8 py-6 gap-2 rounded-xl"
             >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -44,7 +47,7 @@ export default function Home() {
               asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
               <a href="/services" className="flex items-center gap-2">
                 Voir nos services

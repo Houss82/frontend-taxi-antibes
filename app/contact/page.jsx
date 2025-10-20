@@ -23,10 +23,9 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    details: ["+33 6 23 36 05 01"],
+    details: ["06 XX XX XX XX", "04 XX XX XX XX"],
     description: "Appelez-nous 24h/24 pour une réservation immédiate",
     action: "Appeler maintenant",
-    link: "tel:+33623360501",
   },
   {
     icon: Mail,
@@ -154,14 +153,16 @@ export default function ContactPage() {
       backgroundImage="/contact.jpg"
     >
       {/* Informations de Contact */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
               Nos{" "}
-              <span className="font-semibold">coordonnées taxi Antibes</span>
+              <span className="font-semibold text-gold-600">
+                coordonnées taxi Antibes
+              </span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
               Plusieurs façons de contacter taxi Antibes selon vos préférences
             </p>
           </div>
@@ -170,38 +171,27 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-all duration-300 border-border bg-card rounded-xl text-center group"
+                className="p-6 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl text-center group"
               >
-                <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <info.icon className="h-8 w-8 text-primary-foreground" />
+                <div className="w-16 h-16 bg-black/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-gold-600">
+                  <info.icon className="h-8 w-8 text-gold-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{info.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-white">
+                  {info.title}
+                </h3>
                 <div className="space-y-1 mb-4">
                   {info.details.map((detail, idx) => (
-                    <div key={idx} className="text-primary font-medium">
+                    <div key={idx} className="text-gold-600 font-medium">
                       {detail}
                     </div>
                   ))}
                 </div>
-                <p className="text-muted-foreground text-sm mb-4 font-light">
+                <p className="text-white/80 text-sm mb-4 font-light">
                   {info.description}
                 </p>
-                {info.link ? (
-                  <Button
-                    asChild
-                    size="sm"
-                    className="bg-primary text-primary-foreground hover:bg-secondary"
-                  >
-                    <a href={info.link}>{info.action}</a>
-                  </Button>
-                ) : (
-                  <Button
-                    size="sm"
-                    className="bg-primary text-primary-foreground hover:bg-secondary"
-                  >
-                    {info.action}
-                  </Button>
-                )}
+                <Button size="sm" variant="gold">
+                  {info.action}
+                </Button>
               </Card>
             ))}
           </div>
@@ -213,11 +203,13 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
+              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
                 Envoyez-nous un{" "}
-                <span className="font-semibold">message taxi Antibes</span>
+                <span className="font-semibold text-gold-600">
+                  message taxi Antibes
+                </span>
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-black/70 text-lg leading-relaxed">
                 Utilisez le formulaire ci-dessous pour toute question ou demande
                 taxi Antibes
               </p>
@@ -399,14 +391,16 @@ export default function ContactPage() {
       </section>
 
       {/* Témoignages */}
-      <section className="py-24 md:py-32 bg-background">
+      <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
               Ce que disent nos{" "}
-              <span className="font-semibold">clients taxi Antibes</span>
+              <span className="font-semibold text-gold-600">
+                clients taxi Antibes
+              </span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
               Découvrez les avis de nos clients satisfaits taxi Antibes
             </p>
           </div>
@@ -415,7 +409,7 @@ export default function ContactPage() {
             {temoignages.map((temoignage, index) => (
               <Card
                 key={index}
-                className="p-6 bg-card border-border rounded-xl"
+                className="p-6 bg-black border-gold-600/30 rounded-xl"
               >
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(temoignage.note)].map((_, i) => (
@@ -425,12 +419,14 @@ export default function ContactPage() {
                     />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4 font-light italic">
+                <p className="text-white/80 mb-4 font-light italic">
                   "{temoignage.commentaire}"
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="font-semibold">{temoignage.nom}</span>
-                  <span className="text-sm text-muted-foreground">
+                  <span className="font-semibold text-white">
+                    {temoignage.nom}
+                  </span>
+                  <span className="text-sm text-white/60">
                     {temoignage.date}
                   </span>
                 </div>
@@ -441,41 +437,31 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-primary text-primary-foreground">
+      <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
-            Prêt à <span className="font-semibold">réserver</span> ?
+            Prêt à <span className="font-semibold text-gold-600">réserver</span>{" "}
+            ?
           </h2>
-          <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Contactez-nous dès maintenant pour une réservation ou un devis
             personnalisé
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
-              asChild
               size="lg"
-              className="bg-white text-black hover:bg-secondary hover:text-white text-base px-8 py-6 gap-2 rounded-xl"
+              variant="gold"
+              className="text-base px-8 py-6 gap-2 rounded-xl"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
-                <Phone className="h-5 w-5" />
-                Appeler nous
-              </a>
+              <Phone className="h-5 w-5" />
+              Appeler maintenant
             </Button>
             <Button
-              asChild
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
-              <a
-                href="https://maps.app.goo.gl/ZvawMHedMtxisBiQ7"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2"
-              >
-                <MapPin className="h-5 w-5" />
-                Voir sur Google
-              </a>
+              Réserver en ligne
             </Button>
           </div>
         </div>

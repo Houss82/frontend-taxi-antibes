@@ -30,13 +30,19 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-background">
+    <section id="services" className="py-24 md:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif">
-            Nos <span className="font-semibold">services de taxi Antibes</span>
+          <h2
+            className="text-4xl md:text-5xl font-light mb-4 text-balance text-black"
+            style={{ fontFamily: "Marcellus, serif" }}
+          >
+            Nos{" "}
+            <span className="font-semibold text-gold-600">
+              services de taxi Antibes
+            </span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+          <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
             Transferts aéroport Nice, courses locales taxi Antibes à Antibes et
             service premium taxi Antibes sur toute la Côte d'Azur
           </p>
@@ -46,15 +52,17 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-8 hover:shadow-lg transition-shadow border-border bg-card rounded-xl"
+              className="p-8 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-xl"
             >
               <div className="mb-6">
-                <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                  <service.icon className="h-6 w-6 text-primary-foreground" />
+                <div className="w-12 h-12 bg-black/80 rounded-lg flex items-center justify-center border border-gold-600">
+                  <service.icon className="h-6 w-6 text-gold-600" />
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed font-light">
+              <h3 className="text-xl font-semibold mb-3 text-white">
+                {service.title}
+              </h3>
+              <p className="text-white/80 leading-relaxed font-light">
                 {service.description}
               </p>
             </Card>

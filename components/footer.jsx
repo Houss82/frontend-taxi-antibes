@@ -2,21 +2,21 @@ import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-primary text-primary-foreground py-16">
+    <footer id="contact" className="bg-black text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-light mb-4 tracking-wider font-serif">
-              TAXI <span className="font-semibold">ANTIBES</span>
+              TAXI <span className="font-semibold text-gold-600">ANTIBES</span>
             </h3>
-            <p className="text-primary-foreground/80 font-light leading-relaxed">
+            <p className="text-white/80 font-light leading-relaxed">
               Votre service de transport premium sur la Côte d'Azur
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-primary-foreground/80 font-light">
+            <h4 className="font-semibold mb-4 text-gold-600">Services</h4>
+            <ul className="space-y-2 text-white/80 font-light">
               <li>Transferts aéroport</li>
               <li>Courses locales</li>
               <li>Mise à disposition</li>
@@ -25,8 +25,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Zones desservies</h4>
-            <ul className="space-y-2 text-primary-foreground/80 font-light">
+            <h4 className="font-semibold mb-4 text-gold-600">
+              Zones desservies
+            </h4>
+            <ul className="space-y-2 text-white/80 font-light">
               <li>Antibes</li>
               <li>Nice</li>
               <li>Cannes</li>
@@ -35,59 +37,36 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4 text-gold-600">Contact</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-primary-foreground/80 font-light">
-                <Phone className="h-4 w-4" />
-                <a
-                  href="tel:+33623360501"
-                  className="hover:text-primary-foreground transition-colors"
-                >
-                  +33 6 23 36 05 01
-                </a>
+              <li className="flex items-center gap-2 text-white/80 font-light">
+                <Phone className="h-4 w-4 text-gold-600" />
+                <span>+33 6 XX XX XX XX</span>
               </li>
-              <li className="flex items-center gap-2 text-primary-foreground/80 font-light">
-                <Mail className="h-4 w-4" />
+              <li className="flex items-center gap-2 text-white/80 font-light">
+                <Mail className="h-4 w-4 text-gold-600" />
                 <span>contact@taxiantibes.fr</span>
               </li>
-              <li className="flex items-center gap-2 text-primary-foreground/80 font-light">
-                <MapPin className="h-4 w-4" />
+              <li className="flex items-center gap-2 text-white/80 font-light">
+                <MapPin className="h-4 w-4 text-gold-600" />
                 <span>Antibes, 06600</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-primary-foreground/60 text-sm font-light">
+        <div className="border-t border-gold-600/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-white/60 text-sm font-light">
             © 2025 Taxi Antibes. Tous droits réservés.
           </p>
-          <div className="flex gap-6 text-sm text-primary-foreground/60 font-light">
-            <a
-              href="https://maps.app.goo.gl/ZvawMHedMtxisBiQ7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-primary-foreground transition-colors flex items-center gap-1"
-            >
-              <MapPin className="h-4 w-4" />
-              Voir sur Google
-            </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground transition-colors"
-            >
+          <div className="flex gap-6 text-sm text-white/60 font-light">
+            <a href="#" className="hover:text-gold-600 transition-colors">
               Mentions légales
             </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground transition-colors"
-            >
+            <a href="#" className="hover:text-gold-600 transition-colors">
               Confidentialité
             </a>
-            <a
-              href="#"
-              className="hover:text-primary-foreground transition-colors"
-            >
+            <a href="#" className="hover:text-gold-600 transition-colors">
               CGV
             </a>
           </div>
