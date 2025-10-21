@@ -8,16 +8,10 @@ export function HeroSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center min-h-[70vh] md:min-h-[80vh]">
           {/* Colonne texte */}
           <div className="text-center md:text-left">
-            <h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance"
-              style={{ fontFamily: "Marcellus, serif" }}
-            >
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance">
               <span className="font-semibold text-gold-600">Taxi Antibes</span>
             </h1>
-            <h2
-              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 mb-3 sm:mb-5 font-light"
-              style={{ fontFamily: "Marcellus, serif" }}
-            >
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white/90 mb-3 sm:mb-5 font-light font-serif">
               Transferts aéroport Nice et taxi Antibes officiel sur la Côte
               d'Azur
             </h2>

@@ -390,7 +390,7 @@ export default function TarifsPage() {
         </div>
       </section>
 
-      {/* Types de Véhicules */}
+      {/* Types de Véhicules Glc/E */}
       <section className="py-24 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
