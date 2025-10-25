@@ -11,7 +11,15 @@ import {
   Phone,
   User,
 } from "lucide-react";
+import { Outfit } from "next/font/google";
 import { useState } from "react";
+
+// Import de la police Outfit
+const outfit = Outfit({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
@@ -306,8 +314,7 @@ export default function ReservationPage() {
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
             <h1
-              className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance"
-              style={{ fontFamily: "Marcellus, serif" }}
+              className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 tracking-tight text-balance font-bold ${outfit.className}`}
             >
               <span className="font-semibold">Réservation Taxi Antibes</span>
             </h1>
@@ -326,9 +333,9 @@ export default function ReservationPage() {
             <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl border border-gray-200 p-4 md:p-8">
               {isSubmitted ? (
                 <div className="text-center py-12">
-                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <div className="w-20 h-20 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg
-                      className="w-10 h-10 text-green-600"
+                      className="w-10 h-10 text-cyan-700"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -341,7 +348,7 @@ export default function ReservationPage() {
                       />
                     </svg>
                   </div>
-                  <h2 className="text-3xl font-bold text-green-600 mb-4">
+                  <h2 className="text-3xl font-bold text-cyan-700 mb-4">
                     Réservation confirmée !
                   </h2>
                   <p className="text-lg text-gray-600 mb-6">
@@ -350,8 +357,7 @@ export default function ReservationPage() {
                   </p>
                   <button
                     onClick={() => setIsSubmitted(false)}
-                    variant="gold"
-                    className="px-8 py-3 rounded-lg font-semibold"
+                    className="px-8 py-3 rounded-lg font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg"
                   >
                     Nouvelle réservation
                   </button>
@@ -362,8 +368,8 @@ export default function ReservationPage() {
                   className="space-y-6 md:space-y-8"
                 >
                   {/* Informations personnelles */}
-                  <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100/50 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-cyan-700 flex items-center">
                       <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       Informations personnelles
                     </h3>
@@ -447,8 +453,8 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Date et heure */}
-                  <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100/50 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-cyan-700 flex items-center">
                       <Calendar className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       Date et heure
                     </h3>
@@ -491,8 +497,8 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Adresses */}
-                  <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100/50 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-cyan-700 flex items-center">
                       <MapPin className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       Adresses
                     </h3>
@@ -537,8 +543,8 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Détails du voyage */}
-                  <div className="bg-gradient-to-r from-purple-50 to-violet-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary flex items-center">
+                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100/50 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-cyan-700 flex items-center">
                       <User className="w-5 h-5 md:w-6 md:h-6 mr-2 md:mr-3" />
                       Détails du voyage
                     </h3>
@@ -599,8 +605,8 @@ export default function ReservationPage() {
                   </div>
 
                   {/* Commentaires */}
-                  <div className="bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl md:rounded-2xl p-4 md:p-6">
-                    <h3 className="text-2xl font-bold mb-6 text-primary flex items-center">
+                  <div className="bg-gradient-to-r from-cyan-50 to-cyan-100/50 rounded-xl md:rounded-2xl p-4 md:p-6">
+                    <h3 className="text-2xl font-bold mb-6 text-cyan-700 flex items-center">
                       <MessageSquare className="w-6 h-6 mr-3" />
                       Commentaires
                     </h3>
@@ -625,10 +631,10 @@ export default function ReservationPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`px-12 py-4 rounded-lg font-bold text-lg transition-all duration-300 ${
+                      className={`px-12 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${
                         isSubmitting
                           ? "bg-gray-400 cursor-not-allowed"
-                          : "bg-black hover:bg-gold-600 hover:scale-105"
+                          : "bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 hover:scale-105"
                       } text-white shadow-lg`}
                     >
                       {isSubmitting

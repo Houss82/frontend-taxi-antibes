@@ -152,13 +152,13 @@
   }
   /* Force navy blue for black classes */
   .bg-black {
-    background-color: #0b1b34 !important;
+    background-color: #0e7490 !important;
   }
   .text-black {
-    color: #0b1b34 !important;
+    color: #0e7490 !important;
   }
   .border-black {
-    border-color: #0b1b34 !important;
+    border-color: #0e7490 !important;
   }
 
   /* Police Outfit pour les h2 */

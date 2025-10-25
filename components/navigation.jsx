@@ -21,34 +21,37 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className="text-xl font-light tracking-wider font-serif hover:text-gold-600 transition-colors text-black"
+            className="text-2xl font-bold tracking-wider font-serif transition-colors text-black"
           >
-            TAXI <span className="font-semibold text-gold-600">ANTIBES</span>
+            TAXI{" "}
+            <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              ANTIBES
+            </span>
           </a>
 
           {/* Menu desktop */}
           <div className="hidden md:flex items-center gap-8">
             <a
               href="/services"
-              className="text-sm font-light hover:text-gold-600 transition-colors text-black"
+              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               Services
             </a>
             <a
               href="/tarifs"
-              className="text-sm font-light hover:text-gold-600 transition-colors text-black"
+              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               Tarifs
             </a>
             <a
               href="/reservation"
-              className="text-sm font-light hover:text-gold-600 transition-colors text-black"
+              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               Réservation
             </a>
             <a
               href="/contact"
-              className="text-sm font-light hover:text-gold-600 transition-colors text-black"
+              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               Contact
             </a>
@@ -56,10 +59,13 @@ export function Navigation() {
 
           {/* Bouton Appeler desktop */}
           <div className="hidden md:block">
-            <Button asChild variant="gold" className="gap-2 rounded-xl">
+            <Button
+              asChild
+              className="gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300"
+            >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-4 w-10 text-white" />
-                <span className="hidden sm:inline text-white text-lg">
+                <span className="hidden sm:inline text-white text-xl">
                   Appeler
                 </span>
               </a>
@@ -68,7 +74,10 @@ export function Navigation() {
 
           {/* Menu burger mobile */}
           <div className="md:hidden flex items-center gap-4">
-            <Button asChild variant="gold" className="gap-2 rounded-xl">
+            <Button
+              asChild
+              className="gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300"
+            >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
               </a>
@@ -93,28 +102,28 @@ export function Navigation() {
             <div className="flex flex-col gap-4 pt-4">
               <a
                 href="/services"
-                className="text-sm font-light hover:text-gold-600 transition-colors py-2 text-black"
+                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
                 onClick={closeMenu}
               >
                 Services
               </a>
               <a
                 href="/tarifs"
-                className="text-sm font-light hover:text-gold-600 transition-colors py-2 text-black"
+                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
                 onClick={closeMenu}
               >
                 Tarifs
               </a>
               <a
                 href="/reservation"
-                className="text-sm font-light hover:text-gold-600 transition-colors py-2 text-black"
+                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
                 onClick={closeMenu}
               >
                 Réservation
               </a>
               <a
                 href="/contact"
-                className="text-sm font-light hover:text-gold-600 transition-colors py-2 text-black"
+                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
                 onClick={closeMenu}
               >
                 Contact

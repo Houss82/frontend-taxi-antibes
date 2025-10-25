@@ -30,15 +30,12 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-24 md:py-32 bg-white">
+    <section id="services" className="pt-8 pb-24 md:pt-12 md:pb-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2
-            className="text-4xl md:text-5xl font-light mb-4 text-balance text-black"
-            style={{ fontFamily: "Marcellus, serif" }}
-          >
+          <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance text-black">
             Nos{" "}
-            <span className="font-semibold text-gold-600">
+            <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
               services de taxi Antibes
             </span>
           </h2>
@@ -52,10 +49,10 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-8 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-xl"
+              className="p-8 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-3xl"
             >
               <div className="mb-6">
-                <div className="w-12 h-12 bg-black/80 rounded-lg flex items-center justify-center border border-gold-600">
+                <div className="w-12 h-12 bg-black/80 rounded-3xl flex items-center justify-center border border-gold-600">
                   <service.icon className="h-6 w-6 text-gold-600" />
                 </div>
               </div>

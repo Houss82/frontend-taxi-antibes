@@ -155,10 +155,3 @@ Votre frontend sera déployé et connecté à votre backend ! 🚀
 ---
 
 **Note :** Le fichier `.env.production` est déjà créé avec la bonne URL du backend.
-
-
-
-
-
-
-

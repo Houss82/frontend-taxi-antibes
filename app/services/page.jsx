@@ -121,16 +121,13 @@ export default function ServicesPage() {
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2
-              className="text-4xl md:text-5xl font-light mb-4 text-balance text-black"
-              style={{ fontFamily: "Marcellus, serif" }}
-            >
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700">
               Nos{" "}
-              <span className="font-semibold text-gold-600">
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 services de taxi Antibes
               </span>
             </h2>
-            <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-cyan-700 text-lg max-w-3xl mx-auto leading-relaxed">
               Découvrez notre gamme complète de services de transport premium
               taxi Antibes à Antibes et sur toute la Côte d'Azur
             </p>
@@ -140,30 +137,30 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="p-8 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl group"
+                className="p-8 hover:shadow-xl transition-all duration-300 border-cyan-100 bg-white rounded-3xl group"
               >
                 <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-black/80 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 border border-gold-600">
-                    <service.icon className="h-8 w-8 text-gold-600" />
+                  <div className="w-16 h-16 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-3 text-white">
+                    <h3 className="text-2xl font-semibold mb-3 text-cyan-700">
                       {service.title}
                     </h3>
-                    <p className="text-white/80 leading-relaxed mb-4 font-light">
+                    <p className="text-gray-700 leading-relaxed mb-4 font-light">
                       {service.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {service.features.map((feature, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full"
+                          className="px-3 py-1 bg-cyan-50 text-cyan-700 text-sm rounded-full border border-cyan-100"
                         >
                           {feature}
                         </span>
                       ))}
                     </div>
-                    <div className="text-lg font-semibold text-gold-600">
+                    <div className="text-lg font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                       {service.price}
                     </div>
                   </div>
@@ -178,11 +175,13 @@ export default function ServicesPage() {
       <section className="py-24 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700">
               Pourquoi choisir{" "}
-              <span className="font-semibold text-gold-600">taxi Antibes</span>
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                taxi Antibes
+              </span>
             </h2>
-            <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-cyan-700 text-lg max-w-2xl mx-auto leading-relaxed">
               Des services supplémentaires taxi Antibes qui font la différence
             </p>
           </div>
@@ -191,15 +190,15 @@ export default function ServicesPage() {
             {additionalServices.map((service, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-xl text-center"
+                className="p-6 hover:shadow-xl transition-shadow border-cyan-100 bg-white rounded-2xl text-center"
               >
-                <div className="w-12 h-12 bg-black/80 rounded-lg flex items-center justify-center mx-auto mb-4 border border-gold-600">
-                  <service.icon className="h-6 w-6 text-gold-600" />
+                <div className="w-12 h-12 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-lg flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <service.icon className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">
+                <h3 className="text-xl font-semibold mb-3 text-cyan-700">
                   {service.title}
                 </h3>
-                <p className="text-white/80 leading-relaxed font-light">
+                <p className="text-gray-700 leading-relaxed font-light">
                   {service.description}
                 </p>
               </Card>
@@ -211,8 +210,11 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
-            Prêt à <span className="font-semibold text-gold-600">réserver</span>{" "}
+          <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance">
+            Prêt à{" "}
+            <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              réserver
+            </span>{" "}
             ?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -223,8 +225,7 @@ export default function ServicesPage() {
             <Button
               asChild
               size="lg"
-              variant="gold"
-              className="text-base px-8 py-6 gap-2 rounded-xl"
+              className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300 text-base px-8 py-6 gap-2 rounded-xl"
             >
               <a href="tel:+33623360501" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
@@ -235,7 +236,7 @@ export default function ServicesPage() {
               asChild
               size="lg"
               variant="outline"
-              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-amber-400 text-white hover:bg-amber-400 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
               <a href="/tarifs">Voir les tarifs</a>
             </Button>

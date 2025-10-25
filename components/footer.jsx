@@ -7,7 +7,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
             <h3 className="text-2xl font-light mb-4 tracking-wider font-serif">
-              TAXI <span className="font-semibold text-gold-600">ANTIBES</span>
+              TAXI{" "}
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                ANTIBES
+              </span>
             </h3>
             <p className="text-white/80 font-light leading-relaxed">
               Votre service de transport premium sur la Côte d'Azur
@@ -15,7 +18,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-gold-600">Services</h4>
+            <h4 className="font-semibold mb-4 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              Services
+            </h4>
             <ul className="space-y-2 text-white/80 font-light">
               <li>Transferts aéroport</li>
               <li>Courses locales</li>
@@ -25,7 +30,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-gold-600">
+            <h4 className="font-semibold mb-4 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
               Zones desservies
             </h4>
             <ul className="space-y-2 text-white/80 font-light">
@@ -37,18 +42,20 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-gold-600">Contact</h4>
+            <h4 className="font-semibold mb-4 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              Contact
+            </h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/80 font-light">
-                <Phone className="h-4 w-4 text-gold-600" />
+                <Phone className="h-4 w-4 text-orange-300" />
                 <span>+33 6 XX XX XX XX</span>
               </li>
               <li className="flex items-center gap-2 text-white/80 font-light">
-                <Mail className="h-4 w-4 text-gold-600" />
+                <Mail className="h-4 w-4 text-orange-300" />
                 <span>contact@taxiantibes.fr</span>
               </li>
               <li className="flex items-center gap-2 text-white/80 font-light">
-                <MapPin className="h-4 w-4 text-gold-600" />
+                <MapPin className="h-4 w-4 text-orange-300" />
                 <span>Antibes, 06600</span>
               </li>
             </ul>

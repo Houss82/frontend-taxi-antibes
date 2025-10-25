@@ -156,13 +156,13 @@ export default function ContactPage() {
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
               Nos{" "}
-              <span className="font-semibold text-gold-600">
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 coordonnées taxi Antibes
               </span>
             </h2>
-            <p className="text-black/70 text-lg max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
               Plusieurs façons de contacter taxi Antibes selon vos préférences
             </p>
           </div>
@@ -171,25 +171,31 @@ export default function ContactPage() {
             {contactInfo.map((info, index) => (
               <Card
                 key={index}
-                className="p-6 hover:shadow-lg transition-all duration-300 border-gold-600/30 bg-black rounded-xl text-center group"
+                className="p-6 hover:shadow-xl transition-all duration-300 border-cyan-100 bg-white rounded-2xl text-center group"
               >
-                <div className="w-16 h-16 bg-black/80 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 border border-gold-600">
-                  <info.icon className="h-8 w-8 text-gold-600" />
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <info.icon className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-white">
+                <h3 className="text-xl font-semibold mb-3 text-cyan-700">
                   {info.title}
                 </h3>
                 <div className="space-y-1 mb-4">
                   {info.details.map((detail, idx) => (
-                    <div key={idx} className="text-gold-600 font-medium">
+                    <div
+                      key={idx}
+                      className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent font-medium"
+                    >
                       {detail}
                     </div>
                   ))}
                 </div>
-                <p className="text-white/80 text-sm mb-4 font-light">
+                <p className="text-gray-600 text-sm mb-4 font-light">
                   {info.description}
                 </p>
-                <Button size="sm" variant="gold">
+                <Button
+                  size="sm"
+                  className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg"
+                >
                   {info.action}
                 </Button>
               </Card>
@@ -203,13 +209,13 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
                 Envoyez-nous un{" "}
-                <span className="font-semibold text-gold-600">
+                <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                   message taxi Antibes
                 </span>
               </h2>
-              <p className="text-black/70 text-lg leading-relaxed">
+              <p className="text-gray-700 text-lg leading-relaxed">
                 Utilisez le formulaire ci-dessous pour toute question ou demande
                 taxi Antibes
               </p>
@@ -217,7 +223,7 @@ export default function ContactPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Formulaire */}
-              <Card className="p-8 bg-card border-border rounded-xl">
+              <Card className="p-8 bg-white border-cyan-100 rounded-2xl shadow-xl">
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
@@ -307,7 +313,7 @@ export default function ContactPage() {
                     type="submit"
                     size="lg"
                     disabled={loading}
-                    className="w-full bg-primary text-primary-foreground hover:bg-secondary text-base py-6 rounded-xl gap-2"
+                    className="w-full bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg text-base py-6 rounded-xl gap-2"
                   >
                     {loading ? (
                       <>
@@ -327,9 +333,9 @@ export default function ContactPage() {
               {/* Informations supplémentaires */}
               <div className="space-y-6">
                 {/* Horaires */}
-                <Card className="p-6 bg-card border-border rounded-xl">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <Clock className="h-5 w-5 text-primary" />
+                <Card className="p-6 bg-white border-cyan-100 rounded-2xl shadow-xl">
+                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-cyan-700">
+                    <Clock className="h-5 w-5 text-cyan-600" />
                     Horaires d'ouverture
                   </h3>
                   <div className="space-y-2">
@@ -338,49 +344,51 @@ export default function ContactPage() {
                         key={index}
                         className="flex justify-between items-center py-1"
                       >
-                        <span className="font-medium">{horaire.jour}</span>
-                        <span className="text-primary">{horaire.heures}</span>
+                        <span className="font-medium text-gray-700">
+                          {horaire.jour}
+                        </span>
+                        <span className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent font-semibold">
+                          {horaire.heures}
+                        </span>
                       </div>
                     ))}
                   </div>
                 </Card>
 
                 {/* Statistiques */}
-                <Card className="p-6 bg-card border-border rounded-xl">
-                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
-                    <Award className="h-5 w-5 text-primary" />
+                <Card className="p-6 bg-white border-cyan-100 rounded-2xl shadow-xl">
+                  <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-cyan-700">
+                    <Award className="h-5 w-5 text-cyan-600" />
                     Nos chiffres
                   </h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">
+                      <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                         24/7
                       </div>
-                      <div className="text-sm text-muted-foreground">
-                        Disponibilité
-                      </div>
+                      <div className="text-sm text-gray-600">Disponibilité</div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">
+                      <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                         15min
                       </div>
-                      <div className="text-sm text-muted-foreground">
+                      <div className="text-sm text-gray-600">
                         Temps de réponse
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">
+                      <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                         100%
                       </div>
-                      <div className="text-sm text-muted-foreground">
+                      <div className="text-sm text-gray-600">
                         Clients satisfaits
                       </div>
                     </div>
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary">5★</div>
-                      <div className="text-sm text-muted-foreground">
-                        Note moyenne
+                      <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                        5★
                       </div>
+                      <div className="text-sm text-gray-600">Note moyenne</div>
                     </div>
                   </div>
                 </Card>
@@ -394,13 +402,13 @@ export default function ContactPage() {
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-black">
+            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
               Ce que disent nos{" "}
-              <span className="font-semibold text-gold-600">
+              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 clients taxi Antibes
               </span>
             </h2>
-            <p className="text-black/70 text-lg max-w-2xl mx-auto leading-relaxed">
+            <p className="text-gray-700 text-lg max-w-2xl mx-auto leading-relaxed">
               Découvrez les avis de nos clients satisfaits taxi Antibes
             </p>
           </div>
@@ -409,7 +417,7 @@ export default function ContactPage() {
             {temoignages.map((temoignage, index) => (
               <Card
                 key={index}
-                className="p-6 bg-black border-gold-600/30 rounded-xl"
+                className="p-6 bg-white border-cyan-100 rounded-2xl shadow-xl"
               >
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(temoignage.note)].map((_, i) => (
@@ -419,14 +427,14 @@ export default function ContactPage() {
                     />
                   ))}
                 </div>
-                <p className="text-white/80 mb-4 font-light italic">
+                <p className="text-gray-700 mb-4 font-light italic">
                   "{temoignage.commentaire}"
                 </p>
                 <div className="flex justify-between items-center">
-                  <span className="font-semibold text-white">
+                  <span className="font-semibold text-cyan-700">
                     {temoignage.nom}
                   </span>
-                  <span className="text-sm text-white/60">
+                  <span className="text-sm text-gray-500">
                     {temoignage.date}
                   </span>
                 </div>
@@ -440,7 +448,10 @@ export default function ContactPage() {
       <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
-            Prêt à <span className="font-semibold text-gold-600">réserver</span>{" "}
+            Prêt à{" "}
+            <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              réserver
+            </span>{" "}
             ?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
@@ -450,8 +461,7 @@ export default function ContactPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              variant="gold"
-              className="text-base px-8 py-6 gap-2 rounded-xl"
+              className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg text-base px-8 py-6 gap-2 rounded-xl"
             >
               <Phone className="h-5 w-5" />
               Appeler maintenant
@@ -459,7 +469,7 @@ export default function ContactPage() {
             <Button
               size="lg"
               variant="outline"
-              className="border border-gold-600 text-white hover:bg-gold-600 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
+              className="border border-amber-400 text-white hover:bg-amber-400 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
               Réserver en ligne
             </Button>
