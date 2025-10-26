@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
     description:
       "Service de taxi premium à Antibes pour l'aéroport de Nice et toute la Côte d'Azur",
     url: "https://taxi-antibes.fr",
-    telephone: "+33623360501",
+    telephone: "+33749777621",
     email: "contact@taxi-antibes.fr",
     address: {
       "@type": "PostalAddress",

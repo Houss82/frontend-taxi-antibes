@@ -5,7 +5,7 @@ import { Navigation } from "@/components/navigation";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
-import { Oleo_Script, Poppins } from "next/font/google";
+import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
 
 // Import de la police Oleo Script
@@ -20,6 +20,13 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
   style: ["normal", "italic"],
+  display: "swap",
+});
+
+// Import de la police Outfit
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -38,7 +45,7 @@ export default function Home() {
             {/* Colonne texte SSR - visible dans la source HTML */}
             <div className="text-center md:text-left space-y-6">
               {/* Badge moderne */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-600/20 to-cyan-500/20 backdrop-blur-sm rounded-full border border-gold-600/30">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-600/20 to-cyan-500/20 backdrop-blur-sm rounded-full border border-gold-600/30 mt-2 sm:mt-8">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-gold-500"></span>
@@ -49,7 +56,7 @@ export default function Home() {
               </div>
 
               {/* ✅ H1 unique - SEO principal avec effet gradient moderne */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight text-balance leading-tight">
+              <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight text-balance leading-tight">
                 <span
                   className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
                 >
@@ -71,7 +78,7 @@ export default function Home() {
               {/* ✅ Texte descriptif SEO - pas de display:none avec icônes */}
               <p className="text-base sm:text-lg text-cyan-700 mb-8 sm:mb-10 max-w-2xl md:max-w-none mx-auto md:mx-0 font-light leading-relaxed bg-white p-6 rounded-2xl border border-cyan-100 shadow-lg">
                 Service de{" "}
-                <strong className="text-gold-600">
+                <strong className="text-orange-400">
                   taxi officiel à Antibes
                 </strong>
                 . Transferts aéroport Nice, courses locales, Juan-les-Pins,
@@ -89,9 +96,12 @@ export default function Home() {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-gold-500 to-gold-600 hover:bg-cyan-500 text-white font-semibold text-base px-8 py-6 gap-2 rounded-xl shadow-lg shadow-white/40 hover:shadow-lg hover:shadow-cyan-500/60 transition-all duration-300 hover:scale-105"
+                  className="bg-gradient-to-r from-gold-500 to-gold-600 hover:bg-cyan-500 text-white font-semibold text-base px-8 py-6 gap-2 rounded-xl border-amber-600 border-2 transition-all duration-300 hover:scale-105"
                 >
-                  <a href="/reservation" className="flex items-center gap-2">
+                  <a
+                    href="/reservation"
+                    className="flex items-center gap-2 text-orange-400 "
+                  >
                     Réserver maintenant
                     <ArrowRight className="h-5 w-5" />
                   </a>
@@ -256,7 +266,7 @@ export default function Home() {
 
       {/* ✅ Section contenu SEO riche - mots-clés stratégiques */}
       <section className="py-20 md:py-28 bg-gradient-to-b from-white via-gray-50 to-white">
-        <div className="container mx-auto px-6 max-w-7xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           {/* Titre principal de la section */}
           <div className="text-center mb-16">
             <h3
@@ -270,9 +280,9 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 mb-12">
             {/* Colonne 1 - Service de qualité */}
-            <div className="bg-white p-10 rounded-3xl shadow-xl border border-cyan-100">
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-cyan-100">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
                   🚖
@@ -297,7 +307,7 @@ export default function Home() {
                 est disponible 24 heures sur 24, 7 jours sur 7.
               </p>
 
-              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-6 rounded-2xl border-2 border-cyan-200">
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-4 sm:p-6 rounded-2xl border-2 border-cyan-200">
                 <h5 className="font-bold text-xl text-cyan-700 mb-4 flex items-center gap-2">
                   <span className="text-2xl">✓</span> Nos Garanties
                 </h5>
@@ -341,7 +351,7 @@ export default function Home() {
             </div>
 
             {/* Colonne 2 - Transferts aéroport */}
-            <div className="bg-white p-10 rounded-3xl shadow-xl border border-gold-100">
+            <div className="bg-white p-6 md:p-8 rounded-3xl shadow-xl border border-gold-100">
               <div className="flex items-center gap-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
                   ✈️
@@ -362,11 +372,11 @@ export default function Home() {
                 temps réel, accueil personnalisé et aide aux bagages inclus.
               </p>
 
-              <div className="bg-gradient-to-br from-gold-50 to-orange-50 p-6 rounded-2xl border-2 border-gold-200 mb-6">
+              <div className="bg-gradient-to-br from-gold-50 to-orange-50 p-4 md:p-6 rounded-2xl border-2 border-gold-200 mb-6">
                 <h5 className="font-bold text-xl bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent mb-4 flex items-center gap-2">
                   <span className="text-2xl">📍</span> Destinations Populaires
                 </h5>
-                <div className="grid grid-cols-2 gap-4 text-base text-gray-700">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base text-gray-700">
                   <div>
                     <p className="font-bold text-cyan-600 mb-2 text-lg">
                       De/Vers Antibes :
@@ -414,13 +424,13 @@ export default function Home() {
           </div>
 
           {/* Section FAQ avec cards améliorées */}
-          <div className="bg-gradient-to-br from-white to-gray-50 p-10 rounded-3xl shadow-2xl border border-gray-200">
+          <div className="bg-gradient-to-br from-white to-gray-50 p-6 md:p-8 rounded-3xl shadow-2xl border border-gray-200">
             <h4
               className={`text-3xl md:text-4xl font-bold text-center mb-10 text-cyan-700 ${poppins.className}`}
             >
               Questions Fréquentes
             </h4>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow">
                 <div className="text-4xl mb-4">🕐</div>
                 <h5 className="font-bold text-xl text-cyan-700 mb-3">
@@ -473,8 +483,7 @@ export default function Home() {
       <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
           <h2
-            className="text-4xl md:text-5xl font-light mb-6 text-balance"
-            style={{ fontFamily: "Marcellus, serif" }}
+            className={`text-4xl md:text-5xl font-light mb-6 text-balance ${outfit.className}`}
           >
             Besoin d'un{" "}
             <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
@@ -492,7 +501,7 @@ export default function Home() {
               size="lg"
               className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300 text-base px-8 py-6 gap-2 rounded-xl"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
+              <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Appeler nous
               </a>

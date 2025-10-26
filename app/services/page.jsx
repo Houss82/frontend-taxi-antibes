@@ -227,7 +227,7 @@ export default function ServicesPage() {
               size="lg"
               className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300 text-base px-8 py-6 gap-2 rounded-xl"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
+              <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Appeler nous
               </a>

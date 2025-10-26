@@ -14,7 +14,14 @@ import {
   Send,
   Star,
 } from "lucide-react";
+import { Outfit } from "next/font/google";
 import { useState } from "react";
+
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
@@ -23,7 +30,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Téléphone",
-    details: ["06 XX XX XX XX", "04 XX XX XX XX"],
+    details: ["07 49 77 76 21"],
     description: "Appelez-nous 24h/24 pour une réservation immédiate",
     action: "Appeler maintenant",
   },
@@ -156,7 +163,9 @@ export default function ContactPage() {
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
+            <h2
+              className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+            >
               Nos{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 coordonnées taxi Antibes
@@ -209,7 +218,9 @@ export default function ContactPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
+              <h2
+                className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+              >
                 Envoyez-nous un{" "}
                 <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                   message taxi Antibes
@@ -402,7 +413,9 @@ export default function ContactPage() {
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
+            <h2
+              className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+            >
               Ce que disent nos{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 clients taxi Antibes
@@ -447,7 +460,9 @@ export default function ContactPage() {
       {/* CTA Section */}
       <section className="py-24 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
+          <h2
+            className={`text-4xl md:text-5xl font-light mb-6 text-balance ${outfit.className}`}
+          >
             Prêt à{" "}
             <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
               réserver
@@ -460,11 +475,14 @@ export default function ContactPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
+              asChild
               size="lg"
               className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg text-base px-8 py-6 gap-2 rounded-xl"
             >
-              <Phone className="h-5 w-5" />
-              Appeler maintenant
+              <a href="tel:+33749777621" className="flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                Appeler maintenant
+              </a>
             </Button>
             <Button
               size="lg"

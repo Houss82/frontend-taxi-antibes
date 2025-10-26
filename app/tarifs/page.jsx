@@ -407,7 +407,9 @@ export default function TarifsPage() {
       <section className="py-24 md:py-32 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
+            <h2
+              className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+            >
               Nos{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 véhicules taxi Antibes
@@ -454,7 +456,9 @@ export default function TarifsPage() {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance font-serif text-cyan-700">
+              <h2
+                className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+              >
                 <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                   Suppléments
                 </span>
@@ -503,9 +507,11 @@ export default function TarifsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 md:py-32 bg-black text-white">
+      <section className="py-16 md:py-32 bg-black text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance font-serif">
+          <h2
+            className={`text-4xl md:text-5xl font-light mb-6 text-balance ${outfit.className}`}
+          >
             Réservez{" "}
             <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
               maintenant
@@ -520,7 +526,7 @@ export default function TarifsPage() {
               size="lg"
               className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg text-base px-8 py-6 gap-2 rounded-xl"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
+              <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 Appeler nous
               </a>

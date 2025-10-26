@@ -1,4 +1,11 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { Outfit } from "next/font/google";
+
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export function Footer() {
   return (
@@ -6,7 +13,9 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-light mb-4 tracking-wider font-serif">
+            <h3
+              className={`text-2xl font-light mb-4 tracking-wider ${outfit.className}`}
+            >
               TAXI{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 ANTIBES
@@ -48,7 +57,12 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-white/80 font-light">
                 <Phone className="h-4 w-4 text-orange-300" />
-                <span>+33 6 XX XX XX XX</span>
+                <a
+                  href="tel:+33749777621"
+                  className="hover:text-white transition-colors"
+                >
+                  +33 7 49 77 76 21
+                </a>
               </li>
               <li className="flex items-center gap-2 text-white/80 font-light">
                 <Mail className="h-4 w-4 text-orange-300" />

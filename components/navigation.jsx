@@ -2,7 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, X } from "lucide-react";
+import { Outfit } from "next/font/google";
 import { useState } from "react";
+
+const outfit = Outfit({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +28,7 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className="text-2xl font-bold tracking-wider font-serif transition-colors text-black"
+            className={`text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
           >
             TAXI{" "}
             <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
@@ -63,7 +70,7 @@ export function Navigation() {
               asChild
               className="gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
+              <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-4 w-10 text-white" />
                 <span className="hidden sm:inline text-white text-xl">
                   Appeler
@@ -78,7 +85,7 @@ export function Navigation() {
               asChild
               className="gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg transition-all duration-300"
             >
-              <a href="tel:+33623360501" className="flex items-center gap-2">
+              <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-4 w-4" />
               </a>
             </Button>
