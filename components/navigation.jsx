@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, X } from "lucide-react";
 import { Outfit } from "next/font/google";
+import Image from "next/image";
 import { useState } from "react";
 
 const outfit = Outfit({
@@ -28,11 +29,21 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className={`text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
+            className={`flex items-center gap-3 text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
           >
-            TAXI{" "}
-            <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-              ANTIBES
+            <Image
+              src="/logo.png"
+              alt="Taxi Antibes Logo"
+              width={80}
+              height={80}
+              className="object-contain -my-4 -mx-2"
+              priority
+            />
+            <span>
+              TAXI{" "}
+              <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                ANTIBES
+              </span>
             </span>
           </a>
 
@@ -49,6 +60,12 @@ export function Navigation() {
               className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
             >
               Tarifs
+            </a>
+            <a
+              href="/blog"
+              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+            >
+              Blog
             </a>
             <a
               href="/reservation"
@@ -120,6 +137,13 @@ export function Navigation() {
                 onClick={closeMenu}
               >
                 Tarifs
+              </a>
+              <a
+                href="/blog"
+                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
+                onClick={closeMenu}
+              >
+                Blog
               </a>
               <a
                 href="/reservation"

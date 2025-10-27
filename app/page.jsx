@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
 import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
 
 // Import de la police Oleo Script
 const oleoScript = Oleo_Script({
@@ -64,9 +66,10 @@ export default function Home() {
                 </span>
                 <br />
                 <span className="font-light text-white">
-                  Transferts Aéroport Nice
+                  Taxi Aéroport Nice
                 </span>
               </h1>
+              {/* SEO : Métadonnées enrichies dans le alt/aria pour les crawlers */}
 
               {/* ✅ H2 descriptif - visible côté serveur avec style moderne */}
               <h2 className="text-xl sm:text-2xl md:text-3xl text-cyan-100/90 mb-3 sm:mb-5 font-light flex items-center gap-3 justify-center md:justify-start">
@@ -76,18 +79,38 @@ export default function Home() {
               </h2>
 
               {/* ✅ Texte descriptif SEO - pas de display:none avec icônes */}
-              <p className="text-base sm:text-lg text-cyan-700 mb-8 sm:mb-10 max-w-2xl md:max-w-none mx-auto md:mx-0 font-light leading-relaxed bg-white p-6 rounded-2xl border border-cyan-100 shadow-lg">
-                Service de{" "}
-                <strong className="text-orange-400">
-                  taxi officiel à Antibes
-                </strong>
-                . Transferts aéroport Nice, courses locales, Juan-les-Pins,
-                Cannes, Monaco.
-                <span className="block mt-3 text-cyan-600">
-                  ✓ Réservation 24h/24 • ✓ Chauffeurs pros • ✓ Tarifs
-                  transparents
-                </span>
-              </p>
+              <div className="text-base sm:text-lg text-cyan-700 mb-8 sm:mb-10 max-w-2xl md:max-w-none mx-auto md:mx-0 font-light leading-relaxed bg-white p-6 rounded-2xl border border-cyan-100 shadow-lg">
+                <p className="mb-3">
+                  Service de{" "}
+                  <strong className="text-orange-400">
+                    taxi officiel à Antibes
+                  </strong>
+                  .{" "}
+                  <Link
+                    href="/services"
+                    className="text-cyan-700 hover:text-amber-600 underline"
+                  >
+                    Transferts aéroport Nice
+                  </Link>
+                  , courses locales, Juan-les-Pins, Cannes, Monaco.
+                </p>
+                <p className="text-cyan-600">
+                  ✓{" "}
+                  <Link
+                    href="/reservation"
+                    className="hover:text-amber-600 underline"
+                  >
+                    Réservation 24h/24
+                  </Link>{" "}
+                  • ✓ Chauffeurs pros • ✓{" "}
+                  <Link
+                    href="/tarifs"
+                    className="hover:text-amber-600 underline"
+                  >
+                    Tarifs transparents
+                  </Link>
+                </p>
+              </div>
 
               <nav
                 aria-label="Actions principales"
@@ -474,6 +497,45 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* ✅ Schema JSON-LD pour FAQ (Google rich snippets) - optimisé avec next/script */}
+          <Script
+            id="faq-schema"
+            type="application/ld+json"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                mainEntity: [
+                  {
+                    "@type": "Question",
+                    name: "Quels sont vos horaires ?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Notre service de taxi à Antibes est disponible 24h/24 et 7j/7, y compris les jours fériés et les week-ends.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Quels modes de paiement acceptez-vous ?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Nous acceptons les espèces, cartes bancaires et virements. Une facture est disponible pour les professionnels.",
+                    },
+                  },
+                  {
+                    "@type": "Question",
+                    name: "Comment réserver un taxi à Antibes ?",
+                    acceptedAnswer: {
+                      "@type": "Answer",
+                      text: "Vous pouvez réserver en ligne via notre formulaire de réservation, par téléphone au 07 49 77 76 21, ou par WhatsApp, 24h/24.",
+                    },
+                  },
+                ],
+              }),
+            }}
+          />
         </div>
       </section>
 
@@ -518,6 +580,57 @@ export default function Home() {
               </a>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* ✅ Bloc texte SEO riche - contenu local */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6 max-w-4xl text-gray-700 leading-relaxed text-lg">
+          <h2 className="text-3xl font-bold text-cyan-700 mb-6">
+            Taxi Antibes – Votre partenaire de confiance sur la Côte d'Azur
+          </h2>
+          <p className="mb-4">
+            <strong>Taxi Antibes</strong> assure tous vos déplacements entre{" "}
+            <strong>Antibes</strong>, <strong>Juan-les-Pins</strong>,{" "}
+            <strong>Cannes</strong>, <strong>Nice</strong> et{" "}
+            <strong>Monaco</strong>. Spécialiste du{" "}
+            <Link
+              href="/tarifs"
+              className="text-cyan-700 hover:text-amber-600 underline"
+            >
+              <strong>transfert vers l'aéroport Nice Côte d'Azur</strong>
+            </Link>
+            , nous proposons un <strong>service premium</strong>, ponctuel et
+            disponible 24h/24 et 7j/7.
+          </p>
+          <p className="mb-4">
+            Nos{" "}
+            <Link
+              href="/services"
+              className="text-cyan-700 hover:text-amber-600 underline"
+            >
+              <strong>chauffeurs professionnels</strong>
+            </Link>{" "}
+            assurent vos <strong>courses locales</strong>,{" "}
+            <strong>transferts longue distance</strong>, et{" "}
+            <strong>déplacements d'affaires</strong> dans des véhicules tout
+            confort. Réservez facilement{" "}
+            <Link
+              href="/reservation"
+              className="text-cyan-700 hover:text-amber-600 underline"
+            >
+              en ligne
+            </Link>{" "}
+            ou contactez-nous par téléphone pour un devis rapide et transparent.
+          </p>
+          <p>
+            Que vous partiez de <strong>Cap d'Antibes</strong>,{" "}
+            <strong>Vallauris</strong>, <strong>Biot</strong> ou{" "}
+            <strong>Sophia Antipolis</strong>,{" "}
+            <strong>Taxi Antibes est à votre service</strong> pour des trajets
+            sûrs, rapides et confortables sur toute la{" "}
+            <strong>Côte d'Azur</strong>.
+          </p>
         </div>
       </section>
 

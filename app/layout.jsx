@@ -28,16 +28,30 @@ export async function generateMetadata() {
     "Service de taxi officiel à Antibes. Transferts aéroport Nice, courses locales, Juan-les-Pins, Cannes, Monaco. Réservation 24h/24 - Chauffeurs professionnels - Tarifs transparents.";
 
   return {
+    metadataBase: new URL(siteUrl),
     title,
     description,
     keywords:
       "taxi antibes, transferts aéroport nice, taxi pour l'aéroport de nice depuis antibes, taxi antibes aéroport, vtc antibes nice, chauffeur privé antibes, taxi juan-les-pins, taxi côte d'azur",
     alternates: {
       canonical: siteUrl,
+      languages: {
+        fr: siteUrl,
+      },
     },
     robots: {
       index: true,
       follow: true,
+    },
+    icons: {
+      icon: [
+        { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+        { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/favicon-192x192.png", sizes: "192x192", type: "image/png" },
+        { url: "/favicon-512x512.png", sizes: "512x512", type: "image/png" },
+      ],
+      shortcut: "/favicon.ico",
+      apple: "/apple-touch-icon.png",
     },
     openGraph: {
       type: "website",
@@ -127,9 +141,12 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${outfit.className} ${playfair.variable} ${GeistSans.variable} ${GeistMono.variable} antialiased`}
+        suppressHydrationWarning
+        itemScope
+        itemType="https://schema.org/TaxiService"
       >
         {/* ✅ Le contenu SSR arrive ICI - pas enveloppé dans un composant client */}
-        {children}
+        <main>{children}</main>
 
         {/* ✅ IMPORTANT: Les providers/scripts clients sont À CÔTÉ, pas autour de {children} */}
         {/* @ts-expect-error Server/Client boundary ok */}
