@@ -29,14 +29,14 @@ export function Navigation() {
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className={`flex items-center gap-3 text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
+            className={`flex items-center gap-2 md:gap-3 text-base md:text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
           >
             <Image
               src="/logo.png"
               alt="Taxi Antibes Logo"
               width={80}
               height={80}
-              className="object-contain -my-4 -mx-2"
+              className="object-contain w-12 h-12 md:w-20 md:h-20 -my-4 -mx-2 md:-my-4 md:-mx-2"
               priority
             />
             <span>
