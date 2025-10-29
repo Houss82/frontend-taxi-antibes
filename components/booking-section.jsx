@@ -5,6 +5,7 @@ import QuickBooking from "./quick-booking";
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
+const FORMSPREE_URL = "https://formspree.io/f/mdkpzwka";
 
 export function BookingSection() {
   const [formData, setFormData] = useState({
@@ -51,17 +52,69 @@ export function BookingSection() {
         commentaires: formData.commentaires,
       };
 
-      const response = await fetch(`${API_URL}/users/reservation`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(reservationData),
-      });
+      // Préparer les données pour Formspree (email)
+      const formspreeData = {
+        _subject: `Nouvelle réservation - ${formData.nom}`,
+        nom: formData.nom,
+        telephone: formData.telephone,
+        email: formData.email || "Non renseigné",
+        adresseDepart: formData.depart,
+        adresseArrivee: formData.destination,
+        date: date,
+        heure: heure,
+        nombrePassagers: formData.passagers,
+        nombreBagages: "0",
+        commentaires: formData.commentaires || "Aucun commentaire",
+      };
 
-      const data = await response.json();
+      // Envoyer aux deux services en parallèle
+      const [formspreeResponse, mongoResponse] = await Promise.allSettled([
+        // Envoi à Formspree (email)
+        fetch(FORMSPREE_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formspreeData),
+        }),
+        // Envoi à MongoDB (backend) - CODE EXISTANT CONSERVÉ
+        fetch(`${API_URL}/users/reservation`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(reservationData),
+        }),
+      ]);
 
-      if (data.result) {
+      // Traiter la réponse MongoDB (code existant conservé)
+      let mongoData = null;
+      if (mongoResponse.status === "fulfilled") {
+        try {
+          mongoData = await mongoResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing MongoDB:", e);
+        }
+      } else {
+        console.error("Erreur MongoDB:", mongoResponse.reason);
+      }
+
+      // Traiter la réponse Formspree
+      let formspreeResult = null;
+      if (formspreeResponse.status === "fulfilled") {
+        try {
+          formspreeResult = await formspreeResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing Formspree:", e);
+        }
+      }
+
+      console.log("Réponse MongoDB:", mongoData);
+      console.log("Réponse Formspree:", formspreeResult);
+
+      // La validation reste sur MongoDB uniquement (code existant conservé)
+      if (mongoData?.result) {
         setMessage({
           type: "success",
           text: "Réservation envoyée avec succès ! Nous vous contacterons rapidement.",

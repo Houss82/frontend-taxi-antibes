@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
+const FORMSPREE_URL = "https://formspree.io/f/mdkpzwka";
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
 
@@ -44,7 +45,28 @@ export default function QuickBooking() {
     setIsSubmitted(false);
 
     try {
-      const reservationData = {
+      const vehiculeType =
+        formData.typeVehicule === "glc"
+          ? "Mercedes GLC/Classe E"
+          : "Van Premium";
+
+      const formspreeData = {
+        _subject: `Réservation rapide - ${formData.nom}`,
+        nom: formData.nom,
+        telephone: `+33 ${formData.telephone}`,
+        email: formData.email || "Non renseigné",
+        adresseDepart: formData.adresseDepart,
+        adresseArrivee: formData.adresseArrivee,
+        date: formData.date,
+        heure: formData.heure,
+        nombrePassagers: formData.nombrePassagers,
+        nombreBagages: formData.nombreBagages,
+        typeVehicule: vehiculeType,
+        commentaires: `Réservation rapide - Véhicule: ${vehiculeType}`,
+      };
+
+      // Préparer les données pour MongoDB (backend)
+      const mongoData = {
         nom: formData.nom,
         indicatifPays: "+33",
         telephone: formData.telephone,
@@ -55,25 +77,59 @@ export default function QuickBooking() {
         heure: formData.heure,
         nombrePassagers: formData.nombrePassagers,
         nombreBagages: formData.nombreBagages,
-        commentaires: `Réservation rapide - Véhicule: ${
-          formData.typeVehicule === "glc" ? "Mercedes GLC" : "Van Premium"
-        }`,
+        commentaires: `Réservation rapide - Véhicule: ${vehiculeType}`,
       };
 
-      console.log("Envoi des données:", reservationData);
+      console.log("Envoi des données:", { formspreeData, mongoData });
 
-      const response = await fetch(`${API_URL}/users/reservation`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(reservationData),
-      });
+      // Envoyer aux deux services en parallèle
+      const [formspreeResponse, mongoResponse] = await Promise.allSettled([
+        // Envoi à Formspree (email)
+        fetch(FORMSPREE_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formspreeData),
+        }),
+        // Envoi à MongoDB (backend)
+        fetch(`${API_URL}/users/reservation`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(mongoData),
+        }),
+      ]);
 
-      const data = await response.json();
-      console.log("Réponse du serveur:", data);
+      // Traiter la réponse MongoDB (code existant conservé)
+      let mongoResult = null;
+      if (mongoResponse.status === "fulfilled") {
+        try {
+          mongoResult = await mongoResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing MongoDB:", e);
+        }
+      } else {
+        console.error("Erreur MongoDB:", mongoResponse.reason);
+      }
 
-      if (data.result) {
+      // Traiter la réponse Formspree
+      let formspreeResult = null;
+      if (formspreeResponse.status === "fulfilled") {
+        try {
+          formspreeResult = await formspreeResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing Formspree:", e);
+        }
+      }
+
+      console.log("Réponse Formspree:", formspreeResult);
+      console.log("Réponse MongoDB:", mongoResult);
+
+      // La validation reste sur MongoDB uniquement (code existant conservé)
+      if (mongoResult?.result) {
         setIsSubmitted(true);
         setFormData({
           nom: "",
@@ -89,7 +145,9 @@ export default function QuickBooking() {
         });
       } else {
         const errorMessage =
-          data.error || "Erreur lors de l'envoi de la réservation";
+          mongoResult?.error ||
+          mongoResponse.reason?.message ||
+          "Erreur lors de l'envoi de la réservation";
         alert(`Erreur: ${errorMessage}`);
       }
     } catch (error) {

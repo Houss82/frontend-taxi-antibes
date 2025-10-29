@@ -23,6 +23,7 @@ const outfit = Outfit({
 
 const API_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
+const FORMSPREE_URL = "https://formspree.io/f/mdkpzwka";
 
 export default function ReservationPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -63,18 +64,69 @@ export default function ReservationPage() {
     try {
       console.log("Envoi des données:", formData);
 
-      const response = await fetch(`${API_URL}/users/reservation`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      // Préparer les données pour Formspree (email)
+      const formspreeData = {
+        _subject: `Nouvelle réservation taxi - ${formData.nom}`,
+        nom: formData.nom,
+        telephone: `${formData.indicatifPays} ${formData.telephone}`,
+        email: formData.email || "Non renseigné",
+        date: formData.date,
+        heure: formData.heure,
+        adresseDepart: formData.adresseDepart,
+        adresseArrivee: formData.adresseArrivee,
+        nombreBagages: formData.nombreBagages,
+        nombrePassagers: formData.nombrePassagers,
+        commentaires: formData.commentaires || "Aucun commentaire",
+      };
 
-      const data = await response.json();
-      console.log("Réponse du serveur:", data);
+      // Envoyer aux deux services en parallèle
+      const [formspreeResponse, mongoResponse] = await Promise.allSettled([
+        // Envoi à Formspree (email)
+        fetch(FORMSPREE_URL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(formspreeData),
+        }),
+        // Envoi à MongoDB (backend) - CODE EXISTANT CONSERVÉ
+        fetch(`${API_URL}/users/reservation`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }),
+      ]);
 
-      if (data.result) {
+      // Traiter la réponse MongoDB (code existant conservé)
+      let mongoData = null;
+      if (mongoResponse.status === "fulfilled") {
+        try {
+          mongoData = await mongoResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing MongoDB:", e);
+        }
+      } else {
+        console.error("Erreur MongoDB:", mongoResponse.reason);
+      }
+
+      // Traiter la réponse Formspree
+      let formspreeResult = null;
+      if (formspreeResponse.status === "fulfilled") {
+        try {
+          formspreeResult = await formspreeResponse.value.json();
+        } catch (e) {
+          console.error("Erreur parsing Formspree:", e);
+        }
+      }
+
+      console.log("Réponse du serveur MongoDB:", mongoData);
+      console.log("Réponse Formspree:", formspreeResult);
+
+      // La validation reste sur MongoDB uniquement (code existant conservé)
+      if (mongoData?.result) {
         setIsSubmitted(true);
         setFormData({
           nom: "",
@@ -91,7 +143,9 @@ export default function ReservationPage() {
         });
       } else {
         const errorMessage =
-          data.error || "Erreur lors de l'envoi de la réservation";
+          mongoData?.error ||
+          mongoResponse.reason?.message ||
+          "Erreur lors de l'envoi de la réservation";
         alert(`Erreur: ${errorMessage}`);
       }
     } catch (error) {
