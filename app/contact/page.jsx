@@ -23,8 +23,7 @@ const outfit = Outfit({
   display: "swap",
 });
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL || "https://backend-taxi-antibes.vercel.app";
+const FORMSPREE_URL = "https://formspree.io/f/mdkpzwka";
 
 const contactInfo = [
   {
@@ -115,17 +114,31 @@ export default function ContactPage() {
     setMessage({ type: "", text: "" });
 
     try {
-      const response = await fetch(`${API_URL}/users/contact`, {
+      // Préparer les données pour Formspree
+      const formspreeData = {
+        _subject: `Message de contact - ${formData.sujet || "Sans sujet"}`,
+        _replyto: formData.email,
+        nom: formData.nom,
+        email: formData.email,
+        telephone: formData.telephone || "Non renseigné",
+        sujet: formData.sujet,
+        message: formData.message,
+      };
+
+      console.log("Envoi du message de contact:", formspreeData);
+
+      const response = await fetch(FORMSPREE_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formspreeData),
       });
 
       const data = await response.json();
 
-      if (data.result) {
+      if (response.ok && (data.ok || data.success || data.next)) {
         setMessage({
           type: "success",
           text: "Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
@@ -144,6 +157,7 @@ export default function ContactPage() {
         });
       }
     } catch (error) {
+      console.error("Erreur:", error);
       setMessage({
         type: "error",
         text: "Erreur de connexion. Veuillez vérifier votre connexion internet ou nous appeler.",
