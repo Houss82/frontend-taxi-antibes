@@ -4,7 +4,15 @@ import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone } from "lucide-react";
+import {
+  ArrowRight,
+  Car,
+  Clock,
+  CreditCard,
+  Phone,
+  Plane,
+  Smartphone,
+} from "lucide-react";
 import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
@@ -212,8 +220,8 @@ export default function Home() {
 
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center text-white text-3xl shadow-lg">
-                    ✈️
+                  <div className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                    <Plane className="h-7 w-7 text-white" />
                   </div>
                   <h4 className="font-bold text-2xl text-cyan-700">
                     Transferts Aéroport
@@ -251,29 +259,29 @@ export default function Home() {
 
               <div className="relative z-10">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center text-white text-3xl shadow-lg">
-                    🚕
+                  <div className="w-14 h-14 bg-gradient-to-br from-gold-500 to-gold-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                    <Car className="h-7 w-7 text-cyan-700" />
                   </div>
-                  <h4 className="font-bold text-2xl text-gold-700">
+                  <h4 className="font-bold text-2xl text-cyan-700">
                     Courses Côte d'Azur
                   </h4>
                 </div>
 
                 <ul className="space-y-3 text-gray-700 text-lg">
                   <li className="flex items-start gap-3 group-hover:translate-x-1 transition-transform">
-                    <span className="text-gold-500 font-bold mt-0.5 text-xl">
+                    <span className="text-cyan-500 font-bold mt-0.5 text-xl">
                       ✓
                     </span>
                     <span>Antibes ⇄ Cannes, Monaco, Nice</span>
                   </li>
                   <li className="flex items-start gap-3 group-hover:translate-x-1 transition-transform">
-                    <span className="text-gold-500 font-bold mt-0.5 text-xl">
+                    <span className="text-cyan-500 font-bold mt-0.5 text-xl">
                       ✓
                     </span>
                     <span>Déplacements professionnels et événements</span>
                   </li>
                   <li className="flex items-start gap-3 group-hover:translate-x-1 transition-transform">
-                    <span className="text-gold-500 font-bold mt-0.5 text-xl">
+                    <span className="text-cyan-500 font-bold mt-0.5 text-xl">
                       ✓
                     </span>
                     <span>Excursions touristiques sur mesure</span>
@@ -455,8 +463,12 @@ export default function Home() {
             </h4>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">🕐</div>
-                <h5 className="font-bold text-xl text-cyan-700 mb-3">
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                    <Clock className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h5 className="font-bold text-xl text-cyan-700 mb-3 text-center">
                   Quels sont vos horaires ?
                 </h5>
                 <p className="text-base text-gray-600 leading-relaxed">
@@ -466,8 +478,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">💳</div>
-                <h5 className="font-bold text-xl text-cyan-700 mb-3">
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                    <CreditCard className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h5 className="font-bold text-xl text-cyan-700 mb-3 text-center">
                   Quels modes de paiement ?
                 </h5>
                 <p className="text-base text-gray-600 leading-relaxed">
@@ -479,8 +495,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-2xl shadow-lg border border-cyan-100 hover:shadow-xl transition-shadow">
-                <div className="text-4xl mb-4">📱</div>
-                <h5 className="font-bold text-xl text-cyan-700 mb-3">
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white shadow-lg">
+                    <Smartphone className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h5 className="font-bold text-xl text-cyan-700 mb-3 text-center">
                   Comment réserver ?
                 </h5>
                 <p className="text-base text-gray-600 leading-relaxed">

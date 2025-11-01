@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import { Outfit } from "next/font/google";
 
 const outfit = Outfit({
@@ -71,6 +71,18 @@ export function Footer() {
               <li className="flex items-center gap-2 text-white/80 font-light">
                 <MapPin className="h-4 w-4 text-orange-300" />
                 <span>Antibes, 06600</span>
+              </li>
+              <li className="flex items-center gap-2 text-white/80 font-light">
+                <ExternalLink className="h-4 w-4 text-orange-300" />
+                <a
+                  href="https://maps.app.goo.gl/gAA4M31jtVcsY3Km9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors underline"
+                  title="Voir notre fiche Google My Business"
+                >
+                  Notre fiche Google
+                </a>
               </li>
             </ul>
           </div>

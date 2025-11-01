@@ -120,7 +120,7 @@ export default function RootLayout({ children }) {
     serviceType: "Transport de personnes",
     priceRange: "€€",
     openingHours: "Mo-Su 00:00-23:59",
-    sameAs: ["https://maps.app.goo.gl/ZvawMHedMtxisBiQ7"],
+    sameAs: ["https://maps.app.goo.gl/gAA4M31jtVcsY3Km9"],
     potentialAction: {
       "@type": "ReserveAction",
       target: {

@@ -23,7 +23,7 @@ export function PageLayout({ children, title, subtitle, backgroundImage }) {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center">
+        <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center mt-10">
           <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 sm:mb-6 tracking-tight text-balance">
             <span className="font-semibold">{title}</span>
           </h1>

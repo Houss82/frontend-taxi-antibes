@@ -8,6 +8,7 @@ import {
   Award,
   CheckCircle,
   Clock,
+  ExternalLink,
   Mail,
   MapPin,
   Phone,
@@ -46,6 +47,7 @@ const contactInfo = [
     details: ["Antibes, 06600", "Côte d'Azur, France"],
     description: "Basés à Antibes, nous desservons toute la région",
     action: "Voir sur la carte",
+    link: "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
   },
   {
     icon: Clock,
@@ -217,9 +219,22 @@ export default function ContactPage() {
                 </p>
                 <Button
                   size="sm"
+                  asChild
                   className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg"
                 >
-                  {info.action}
+                  {info.link ? (
+                    <a
+                      href={info.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      {info.action}
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  ) : (
+                    <span>{info.action}</span>
+                  )}
                 </Button>
               </Card>
             ))}

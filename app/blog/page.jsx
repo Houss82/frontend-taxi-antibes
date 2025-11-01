@@ -1,7 +1,6 @@
 "use client";
 
-import { Footer } from "@/components/footer";
-import { Navigation } from "@/components/navigation";
+import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Phone } from "lucide-react";
 import Image from "next/image";
@@ -57,22 +56,13 @@ export default function BlogPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Navigation />
-
+    <PageLayout
+      title="Blog & Actualités"
+      subtitle="Conseils et actualités sur le transport sur la Côte d'Azur"
+      backgroundImage="/blog-image.jpg"
+    >
       {loading ? (
-        <div className="min-h-screen bg-gray-50 mt-16">
-          {/* Hero Section Skeleton */}
-          <section className="relative h-[40vh] overflow-hidden bg-gray-200">
-            <div className="absolute inset-0 bg-gradient-to-r from-gray-300/90 to-gray-400/90"></div>
-            <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-              <div className="text-white max-w-4xl">
-                <div className="h-16 bg-gray-300 rounded mb-4 animate-pulse"></div>
-                <div className="h-8 bg-gray-300 rounded animate-pulse"></div>
-              </div>
-            </div>
-          </section>
-
+        <>
           {/* Articles Skeleton */}
           <section className="py-16">
             <div className="max-w-7xl mx-auto px-4">
@@ -96,32 +86,9 @@ export default function BlogPage() {
               </div>
             </div>
           </section>
-        </div>
+        </>
       ) : (
         <>
-          {/* Hero Section */}
-          <section className="relative h-[40vh] overflow-hidden">
-            <Image
-              src="/bg-image.png"
-              alt="Blog Taxi Antibes"
-              fill
-              className="object-cover"
-              priority={true}
-              quality={100}
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-700/30 to-cyan-900/90"></div>
-            <div className="container mx-auto px-4 h-full flex items-center relative z-10">
-              <div className="text-white max-w-4xl">
-                <h1 className="text-5xl md:text-6xl font-bold mb-4">
-                  Blog & Actualités
-                </h1>
-                <p className="text-xl md:text-2xl">
-                  Conseils et actualités sur le transport sur la Côte d'Azur
-                </p>
-              </div>
-            </div>
-          </section>
-
           {/* Filtres par catégorie */}
           <section className="py-8 bg-white border-b">
             <div className="max-w-7xl mx-auto px-4">
@@ -263,10 +230,8 @@ export default function BlogPage() {
               </div>
             </div>
           </section>
-
-          <Footer />
         </>
       )}
-    </div>
+    </PageLayout>
   );
 }
