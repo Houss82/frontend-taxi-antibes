@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Phone, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
@@ -116,7 +117,7 @@ export default function BlogPostPage() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-cyan-700 mb-6">
+          <h1 className="article-title">
             {post.title}
           </h1>
 
@@ -157,6 +158,45 @@ export default function BlogPostPage() {
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
+
+          {/* Article Schema JSON-LD */}
+          {post && (
+            <Script
+              id="article-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BlogPosting",
+                  headline: post.title,
+                  image: `https://www.taxi-antibes.fr${post.image}`,
+                  datePublished: post.date,
+                  dateModified: post.date,
+                  author: {
+                    "@type": "Organization",
+                    name: post.author || "Taxi Antibes",
+                  },
+                  publisher: {
+                    "@type": "Organization",
+                    name: "Taxi Antibes",
+                    logo: {
+                      "@type": "ImageObject",
+                      url: "https://www.taxi-antibes.fr/logo.png",
+                    },
+                  },
+                  description: post.excerpt,
+                  articleSection: post.category,
+                  keywords: Array.isArray(post.keywords)
+                    ? post.keywords.join(", ")
+                    : post.keywords || "",
+                  mainEntityOfPage: {
+                    "@type": "WebPage",
+                    "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
+                  },
+                }),
+              }}
+            />
+          )}
 
           {/* Mots-clés */}
           {post.keywords && post.keywords.length > 0 && (
