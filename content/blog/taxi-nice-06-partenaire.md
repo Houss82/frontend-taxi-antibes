@@ -1,6 +1,6 @@
 ---
 title: "Taxi Nice 06 : Votre partenaire de confiance pour les transferts aéroport et transports sur la Côte d'Azur"
-date: "2025-01-20"
+date: "2025-11-01"
 excerpt: "Découvrez Taxi Nice 06, spécialiste des transferts aéroport de Nice, transport médical, courses locales et transferts vers Cannes, Monaco et toute la Côte d'Azur."
 image: "/taxi-nice-glc.jpeg"
 category: "Partenaires"

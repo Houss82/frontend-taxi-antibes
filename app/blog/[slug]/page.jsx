@@ -1,125 +1,60 @@
-"use client";
-
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import { ShareButton } from "@/components/share-button";
 import { Button } from "@/components/ui/button";
+import { getAllPostSlugs, getAllPosts, getPostBySlug } from "@/lib/blog";
 import { Calendar, Clock, Phone, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import { useParams } from "next/navigation";
-import { useEffect, useState } from "react";
+import { notFound } from "next/navigation";
 
-export default function BlogPostPage() {
-  const params = useParams();
-  const [post, setPost] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [relatedPosts, setRelatedPosts] = useState([]);
+export async function generateStaticParams() {
+  const slugs = getAllPostSlugs();
+  return slugs.map(({ slug }) => ({ slug }));
+}
 
-  useEffect(() => {
-    if (params.slug) {
-      // Récupérer l'article
-      fetch(`/api/blog/${params.slug}`)
-        .then((res) => res.json())
-        .then((data) => {
-          setPost(data.post);
-          setLoading(false);
-        })
-        .catch((error) => {
-          console.error("Erreur:", error);
-          setLoading(false);
-        });
+export const revalidate = 3600;
 
-      // Récupérer les articles similaires
-      fetch("/api/blog")
-        .then((res) => res.json())
-        .then((data) => {
-          const filtered = (data.posts || [])
-            .filter((p) => p.slug !== params.slug)
-            .slice(0, 3);
-          setRelatedPosts(filtered);
-        });
-    }
-  }, [params.slug]);
+function formatDate(dateString) {
+  const date = new Date(dateString);
+  return date.toLocaleDateString("fr-FR", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+}
 
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString("fr-FR", {
-      day: "numeric",
-      month: "long",
-      year: "numeric",
-    });
-  };
-
-  const handleShare = () => {
-    if (navigator.share) {
-      navigator
-        .share({
-          title: post?.title,
-          text: post?.excerpt,
-          url: window.location.href,
-        })
-        .catch((error) => console.log("Erreur de partage:", error));
-    } else {
-      // Copier le lien
-      navigator.clipboard.writeText(window.location.href);
-      alert("Lien copié dans le presse-papier !");
-    }
-  };
-
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50">
-        <Navigation />
-        <div className="container mx-auto px-4 py-20 text-center mt-16">
-          <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-cyan-700"></div>
-          <p className="mt-4 text-gray-600">Chargement de l'article...</p>
-        </div>
-        <Footer />
-      </div>
-    );
-  }
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = await getPostBySlug(slug);
 
   if (!post) {
-    return (
-      <div className="min-h-screen bg-gray-50">
-        <Navigation />
-        <div className="container mx-auto px-4 py-20 text-center ">
-          <h1 className="text-4xl font-bold text-cyan-700 mb-4">
-            Article non trouvé
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            L'article que vous recherchez n'existe pas ou a été supprimé.
-          </p>
-          <Link
-            href="/blog"
-            className="px-6 py-3 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 text-white rounded-lg font-semibold hover:shadow-lg transition-colors"
-          >
-            Retour au blog
-          </Link>
-        </div>
-        <Footer />
-      </div>
-    );
+    notFound();
   }
+
+  const allPosts = getAllPosts();
+  const relatedPosts = allPosts
+    .filter((relatedPost) => relatedPost.slug !== slug)
+    .slice(0, 3);
+
+  const imageUrl = post.image.startsWith("http")
+    ? post.image
+    : `https://www.taxi-antibes.fr${post.image}`;
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
 
-      {/* Article */}
       <article className="py-16 mt-10 md:mt-10">
         <div className="max-w-4xl mx-auto px-4">
-          {/* En-tête */}
           <div className="mb-6">
             <span className="px-4 py-2 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 text-white rounded-full text-sm font-semibold">
               {post.category}
             </span>
           </div>
 
-          <h1 className="article-title">
-            {post.title}
-          </h1>
+          <h1 className="article-title">{post.title}</h1>
 
           <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
             <div className="flex items-center gap-2">
@@ -133,72 +68,65 @@ export default function BlogPostPage() {
               <Clock className="w-5 h-5" />
               <span>5 min de lecture</span>
             </div>
-            <button
-              onClick={handleShare}
+            <ShareButton
+              title={post.title}
+              excerpt={post.excerpt}
               className="flex items-center gap-2 text-cyan-700 hover:text-amber-600 transition-colors"
-            >
-              <span>Partager</span>
-            </button>
+            />
           </div>
 
-          {/* Image principale */}
           <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
             <Image
               src={post.image}
               alt={post.title}
               fill
               className="object-cover"
-              priority={true}
+              priority
               quality={100}
             />
           </div>
 
-          {/* Contenu */}
           <div
             className="prose prose-lg max-w-none"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
 
-          {/* Article Schema JSON-LD */}
-          {post && (
-            <Script
-              id="article-schema"
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "BlogPosting",
-                  headline: post.title,
-                  image: `https://www.taxi-antibes.fr${post.image}`,
-                  datePublished: post.date,
-                  dateModified: post.date,
-                  author: {
-                    "@type": "Organization",
-                    name: post.author || "Taxi Antibes",
+          <Script
+            id="article-schema"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: post.title,
+                image: imageUrl,
+                datePublished: post.date,
+                dateModified: post.date,
+                author: {
+                  "@type": "Organization",
+                  name: post.author || "Taxi Antibes",
+                },
+                publisher: {
+                  "@type": "Organization",
+                  name: "Taxi Antibes",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://www.taxi-antibes.fr/logo.png",
                   },
-                  publisher: {
-                    "@type": "Organization",
-                    name: "Taxi Antibes",
-                    logo: {
-                      "@type": "ImageObject",
-                      url: "https://www.taxi-antibes.fr/logo.png",
-                    },
-                  },
-                  description: post.excerpt,
-                  articleSection: post.category,
-                  keywords: Array.isArray(post.keywords)
-                    ? post.keywords.join(", ")
-                    : post.keywords || "",
-                  mainEntityOfPage: {
-                    "@type": "WebPage",
-                    "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
-                  },
-                }),
-              }}
-            />
-          )}
+                },
+                description: post.excerpt,
+                articleSection: post.category,
+                keywords: Array.isArray(post.keywords)
+                  ? post.keywords.join(", ")
+                  : post.keywords || "",
+                mainEntityOfPage: {
+                  "@type": "WebPage",
+                  "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
+                },
+              }),
+            }}
+          />
 
-          {/* Mots-clés */}
           {post.keywords && post.keywords.length > 0 && (
             <div className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex items-center gap-2 flex-wrap">
@@ -215,7 +143,6 @@ export default function BlogPostPage() {
             </div>
           )}
 
-          {/* CTA */}
           <div className="mt-12 p-8 bg-gradient-to-r from-cyan-700 to-cyan-900 rounded-2xl text-white text-center">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Besoin d'un{" "}
@@ -249,7 +176,6 @@ export default function BlogPostPage() {
         </div>
       </article>
 
-      {/* Articles similaires */}
       {relatedPosts.length > 0 && (
         <section className="py-16 bg-white">
           <div className="max-w-7xl mx-auto px-4">

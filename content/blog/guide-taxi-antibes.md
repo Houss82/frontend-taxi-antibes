@@ -1,6 +1,6 @@
 ---
 title: "Guide complet des services de taxi à Antibes"
-date: "2025-01-15"
+date: "2025-10-28"
 excerpt: "Découvrez tous nos services de transport premium à Antibes : transferts aéroport, courses locales, transport VIP et plus encore."
 image: "/premium copie.jpeg"
 category: "Services"
