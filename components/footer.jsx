@@ -84,6 +84,18 @@ export function Footer() {
                   Notre fiche Google
                 </a>
               </li>
+              <li className="flex items-center gap-2 text-white/80 font-light">
+                <ExternalLink className="h-4 w-4 text-orange-300" />
+                <a
+                  href="https://hoodspot.fr/taxi/taxi-antibes-81901839100022/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors underline"
+                  title="Taxi Antibes"
+                >
+                  Taxi Antibes sur Hoodspot
+                </a>
+              </li>
             </ul>
           </div>
         </div>
