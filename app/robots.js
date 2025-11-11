@@ -4,16 +4,7 @@ export default function robots() {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
-        crawlDelay: 10,
-      },
-      {
-        userAgent: "Googlebot",
-        allow: "/",
-      },
-      {
-        userAgent: "Bingbot",
-        allow: "/",
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://www.taxi-antibes.fr/sitemap.xml",
