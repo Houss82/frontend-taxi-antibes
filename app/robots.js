@@ -8,6 +8,5 @@ export default function robots() {
       },
     ],
     sitemap: "https://www.taxi-antibes.fr/sitemap.xml",
-    host: "https://www.taxi-antibes.fr",
   };
 }
