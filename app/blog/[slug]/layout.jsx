@@ -16,14 +16,9 @@ export async function generateMetadata({ params }) {
   const imageUrl = post.image.startsWith("http")
     ? post.image
     : `${baseUrl}${post.image}`;
-  const keywordsStr = Array.isArray(post.keywords)
-    ? post.keywords.join(", ")
-    : post.keywords || "";
-
   return {
     title: `${post.title} | Taxi Antibes`,
     description: post.excerpt || `Découvrez ${post.title.toLowerCase()}.`,
-    keywords: keywordsStr,
     authors: [{ name: post.author }],
     openGraph: {
       title: post.title,

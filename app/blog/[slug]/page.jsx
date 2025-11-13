@@ -42,6 +42,67 @@ export default async function BlogPostPage({ params }) {
     ? post.image
     : `https://www.taxi-antibes.fr${post.image}`;
 
+  const faqItems = [
+    {
+      question: "Le trajet est-il direct ?",
+      answer:
+        "Oui, nous vous déposons directement à l’entrée du village de Saint-Paul-de-Vence sans changement ni marche supplémentaire.",
+    },
+    {
+      question: "Pouvez-vous organiser une excursion d’une demi-journée ?",
+      answer:
+        "Oui, nous pouvons rester sur place et vous reconduire à l’heure souhaitée ou organiser un circuit vers d’autres villages perchés.",
+    },
+    {
+      question: "Proposez-vous des sièges enfants ?",
+      answer:
+        "Oui, nous fournissons gratuitement des sièges adaptés sur simple demande lors de la réservation.",
+    },
+  ];
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    image: imageUrl,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author || "Taxi Antibes",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Taxi Antibes",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.taxi-antibes.fr/logo.png",
+      },
+    },
+    description: post.excerpt,
+    articleSection: post.category,
+    keywords: Array.isArray(post.keywords)
+      ? post.keywords.join(", ")
+      : post.keywords || "",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
+    },
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -81,13 +142,14 @@ export default async function BlogPostPage({ params }) {
               alt={post.title}
               fill
               className="object-cover"
+              style={{ objectPosition: post.imagePosition }}
               priority
               quality={100}
             />
           </div>
 
           <div
-            className="prose prose-lg max-w-none"
+            className="prose prose-xl max-w-none text-gray-700 leading-relaxed prose-headings:text-cyan-700 prose-p:text-gray-700 prose-li:text-gray-700 prose-strong:text-cyan-800 prose-a:text-cyan-600 hover:prose-a:text-amber-500"
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
 
@@ -95,35 +157,7 @@ export default async function BlogPostPage({ params }) {
             id="article-schema"
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "BlogPosting",
-                headline: post.title,
-                image: imageUrl,
-                datePublished: post.date,
-                dateModified: post.date,
-                author: {
-                  "@type": "Organization",
-                  name: post.author || "Taxi Antibes",
-                },
-                publisher: {
-                  "@type": "Organization",
-                  name: "Taxi Antibes",
-                  logo: {
-                    "@type": "ImageObject",
-                    url: "https://www.taxi-antibes.fr/logo.png",
-                  },
-                },
-                description: post.excerpt,
-                articleSection: post.category,
-                keywords: Array.isArray(post.keywords)
-                  ? post.keywords.join(", ")
-                  : post.keywords || "",
-                mainEntityOfPage: {
-                  "@type": "WebPage",
-                  "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
-                },
-              }),
+              __html: JSON.stringify([articleSchema, faqSchema]),
             }}
           />
 

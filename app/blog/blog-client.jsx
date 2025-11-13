@@ -103,6 +103,7 @@ export function BlogPageClient({ posts: initialPosts = [] }) {
                         alt={post.title}
                         fill
                         className="object-cover hover:scale-110 transition-transform duration-500"
+                        style={{ objectPosition: post.imagePosition }}
                       />
                       <div className="absolute top-4 left-4">
                         <span className="px-4 py-2 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 text-white rounded-full text-sm font-semibold">
