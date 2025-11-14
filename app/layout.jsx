@@ -133,6 +133,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
+        {/* ✅ Google Ads (gtag.js) - Suivi des conversions */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-17731163340"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-17731163340');
+            `,
+          }}
+        />
         {/* ✅ JSON-LD inclus dans le HTML initial (SSR) */}
         <script
           type="application/ld+json"
