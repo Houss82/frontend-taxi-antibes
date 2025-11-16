@@ -426,7 +426,7 @@ export default function ContactPage() {
                     </div>
                     <div className="text-center">
                       <div className="text-2xl font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                        5★
+                        4,9/5
                       </div>
                       <div className="text-sm text-gray-600">Note moyenne</div>
                     </div>

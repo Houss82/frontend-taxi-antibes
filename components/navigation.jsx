@@ -1,10 +1,22 @@
 "use client";
 
+import { sectorData, sectorSlugs } from "@/app/secteurs/[slug]/data";
 import { Button } from "@/components/ui/button";
-import { Menu, Phone, X } from "lucide-react";
+import {
+  Briefcase,
+  Building2,
+  ChevronDown,
+  MapPin,
+  Menu,
+  Navigation as NavigationIcon,
+  Phone,
+  Plane,
+  Waves,
+  X,
+} from "lucide-react";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700"],
@@ -12,8 +24,53 @@ const outfit = Outfit({
   display: "swap",
 });
 
+// Mapping des icônes et couleurs pour chaque secteur
+const sectorIcons = {
+  monaco: { icon: MapPin, color: "text-amber-600", bgColor: "bg-amber-50" },
+  cannes: { icon: Waves, color: "text-orange-500", bgColor: "bg-orange-50" },
+  nice: { icon: Building2, color: "text-gold-600", bgColor: "bg-gold-50" },
+  "juan-les-pins": {
+    icon: Waves,
+    color: "text-amber-500",
+    bgColor: "bg-amber-50",
+  },
+  "sophia-antipolis": {
+    icon: Briefcase,
+    color: "text-gold-600",
+    bgColor: "bg-gold-50",
+  },
+  "aeroport-nice": {
+    icon: Plane,
+    color: "text-orange-600",
+    bgColor: "bg-orange-50",
+  },
+};
+
+// Génération dynamique des secteurs depuis data.js
+// Si un secteur est supprimé de data.js, il disparaîtra automatiquement de la navbar
+const mainSectors = sectorSlugs
+  .filter((slug) => sectorData[slug]) // S'assurer que le secteur existe dans sectorData
+  .map((slug) => {
+    const sector = sectorData[slug];
+    const iconConfig = sectorIcons[slug] || {
+      icon: MapPin,
+      color: "text-gray-600",
+      bgColor: "bg-gray-50",
+    };
+    return {
+      slug,
+      name: sector.cityName,
+      icon: iconConfig.icon,
+      color: iconConfig.color,
+      bgColor: iconConfig.bgColor,
+    };
+  });
+
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSectorsOpen, setIsSectorsOpen] = useState(false);
+  const [isSectorsMobileOpen, setIsSectorsMobileOpen] = useState(false);
+  const sectorsMenuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -21,7 +78,32 @@ export function Navigation() {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    setIsSectorsMobileOpen(false);
   };
+
+  const toggleSectorsMenu = () => {
+    setIsSectorsOpen(!isSectorsOpen);
+  };
+
+  // Fermer le menu secteurs quand on clique en dehors
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        sectorsMenuRef.current &&
+        !sectorsMenuRef.current.contains(event.target)
+      ) {
+        setIsSectorsOpen(false);
+      }
+    };
+
+    if (isSectorsOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSectorsOpen]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/20">
@@ -55,6 +137,74 @@ export function Navigation() {
             >
               Services
             </a>
+            {/* Menu déroulant Nos secteurs */}
+            <div className="relative" ref={sectorsMenuRef}>
+              <button
+                onClick={toggleSectorsMenu}
+                className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1"
+              >
+                Nos secteurs
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-300 ${
+                    isSectorsOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isSectorsOpen && (
+                <div
+                  className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border-2 border-amber-200 py-3 z-50 transition-all duration-200 ease-in-out"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom right, #ffffff, #fef3c7, #fef9e7)",
+                  }}
+                >
+                  {/* Header avec gradient */}
+                  <div className="px-4 pb-2 mb-2 border-b border-amber-200/50">
+                    <a
+                      href="/secteurs"
+                      className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-800 hover:text-gold-600 rounded-lg hover:bg-gradient-to-r hover:from-amber-50 hover:to-gold-50 transition-all duration-200 group"
+                      onClick={() => setIsSectorsOpen(false)}
+                    >
+                      <NavigationIcon className="h-4 w-4 text-gold-600 group-hover:scale-110 transition-transform" />
+                      <span>Tous les secteurs</span>
+                    </a>
+                  </div>
+                  {/* Liste des secteurs avec icônes */}
+                  <div className="space-y-1 px-2">
+                    {mainSectors.map((sector) => {
+                      const Icon = sector.icon;
+                      // Déterminer les classes hover selon le secteur
+                      const hoverClasses =
+                        sector.bgColor === "bg-amber-50"
+                          ? "hover:bg-gradient-to-r hover:from-amber-100 hover:to-amber-200"
+                          : sector.bgColor === "bg-orange-50"
+                          ? "hover:bg-gradient-to-r hover:from-orange-100 hover:to-orange-200"
+                          : "hover:bg-gradient-to-r hover:from-gold-100 hover:to-gold-200";
+                      return (
+                        <a
+                          key={sector.slug}
+                          href={`/secteurs/${sector.slug}`}
+                          className={`flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg transition-all duration-200 group hover:shadow-md hover:scale-[1.02] ${sector.bgColor} ${hoverClasses}`}
+                          onClick={() => setIsSectorsOpen(false)}
+                        >
+                          <div
+                            className={`p-1.5 rounded-lg ${sector.bgColor} group-hover:bg-white transition-colors`}
+                          >
+                            <Icon
+                              className={`h-4 w-4 ${sector.color} group-hover:scale-110 transition-transform`}
+                            />
+                          </div>
+                          <span className="flex-1 group-hover:font-semibold transition-all">
+                            {sector.name}
+                          </span>
+                          <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-gold-600 -rotate-90 transition-all" />
+                        </a>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
             <a
               href="/tarifs"
               className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
@@ -131,6 +281,48 @@ export function Navigation() {
               >
                 Services
               </a>
+              {/* Menu déroulant mobile Nos secteurs */}
+              <div>
+                <button
+                  onClick={() => setIsSectorsMobileOpen(!isSectorsMobileOpen)}
+                  className="w-full flex items-center justify-between text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
+                >
+                  <span>Nos secteurs</span>
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-300 ${
+                      isSectorsMobileOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isSectorsMobileOpen && (
+                  <div className="ml-4 mt-2 space-y-2 border-l-2 border-amber-300 pl-4 bg-gradient-to-r from-amber-50/50 to-gold-50/50 rounded-r-lg py-2 pr-2">
+                    <a
+                      href="/secteurs"
+                      className="flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-gold-600 transition-colors py-2 px-2 rounded-lg hover:bg-white"
+                      onClick={closeMenu}
+                    >
+                      <NavigationIcon className="h-4 w-4 text-gold-600" />
+                      <span>Tous les secteurs</span>
+                    </a>
+                    {mainSectors.map((sector) => {
+                      const Icon = sector.icon;
+                      return (
+                        <a
+                          key={sector.slug}
+                          href={`/secteurs/${sector.slug}`}
+                          className={`flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-gold-600 transition-all py-2 px-2 rounded-lg hover:bg-white ${sector.bgColor}`}
+                          onClick={closeMenu}
+                        >
+                          <div className={`p-1.5 rounded-lg ${sector.bgColor}`}>
+                            <Icon className={`h-4 w-4 ${sector.color}`} />
+                          </div>
+                          <span>{sector.name}</span>
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
               <a
                 href="/tarifs"
                 className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
