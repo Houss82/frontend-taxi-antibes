@@ -40,7 +40,7 @@ Avec **Taxi Antibes**, vous profitez d'un **trajet direct**, d'un **chauffeur lo
 
 **Èze** est un village médiéval perché classé parmi les **Plus Beaux Villages de France**. Situé entre Nice et Monaco, il domine la Méditerranée depuis son nid d'aigle à 429 mètres d'altitude. Le village, avec ses ruelles pavées, ses maisons en pierre et son **Jardin Exotique** exceptionnel, attire chaque année des centaines de milliers de visiteurs du monde entier.
 
-![Vue panoramique d'Èze Village](/eze-village-medieval.webp)
+![Vue panoramique d'Èze Village](/eze-vu-de-haut.webp)
 _Èze Village, perché à 429 mètres d'altitude, offre une vue exceptionnelle sur la Méditerranée et Monaco_
 
 👉 <a href="https://www.eze-tourisme.com" target="_blank" rel="noopener noreferrer">Site officiel d'Èze Tourisme</a>
