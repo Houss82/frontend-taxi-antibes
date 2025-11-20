@@ -81,7 +81,7 @@ const blogCategories = [
       iconColor: "text-rose-600",
       hover: "hover:bg-rose-100",
     },
-    articleCategories: ["Santé", "Mobilité", "VSL"],
+    articleCategories: ["Santé", "Mobilité", "VSL", "Santé, Mobilité & Bien-être"],
   },
   {
     id: "guides",
