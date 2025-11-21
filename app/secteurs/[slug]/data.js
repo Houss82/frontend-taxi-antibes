@@ -40,7 +40,7 @@ export const sectorData = {
     map: {
       description:
         "Visualisez notre zone d'intervention principale autour de Monaco.",
-      info: "Depuis Antibes, nous desservons Monaco en 30 minutes environ. Nous proposons également des trajets combinés Antibes-Monaco-Nice ou Antibes-Monaco-Cannes selon vos besoins.",
+      info: "Depuis Antibes, nous desservons Monaco en 40 minutes environ. Nous proposons également des trajets combinés Antibes-Monaco-Nice ou Antibes-Monaco-Cannes selon vos besoins.",
       embedUrl:
         "https://maps.google.com/maps?q=Monaco&t=&z=13&ie=UTF8&iwloc=&output=embed",
     },
@@ -604,6 +604,193 @@ export const sectorData = {
       url: "https://www.taxi-antibes.fr/secteurs/nice",
       latitude: "43.710173",
       longitude: "7.261953",
+    },
+  },
+  "juan-les-pins": {
+    slug: "juan-les-pins",
+    cityName: "Juan-les-Pins",
+    hero: {
+      title: "Taxi à Juan-les-Pins – Service Premium 24/7",
+      highlight: "Juan-les-Pins & Cap d'Antibes",
+      subtitle:
+        "Transferts locaux, plages, festivals et déplacements professionnels",
+      image: "/confort-maximum.jpeg",
+      imageAlt: "Taxi à Juan-les-Pins",
+    },
+    introduction: [
+      "Juan-les-Pins fait partie intégrante de notre zone d'intervention quotidienne. Situé à seulement 3 kilomètres d'Antibes, nous desservons cette station balnéaire emblématique pour tous vos besoins : transferts aéroport, courses locales, événements estivaux et déplacements professionnels.",
+      "Notre proximité avec Juan-les-Pins nous permet d'intervenir en moins de 10 minutes depuis notre base à Antibes. Nous connaissons parfaitement les quartiers résidentiels, les hôtels de la Pinède, les plages privées et les accès aux villas de prestige.",
+    ],
+    secondaryIntro: [
+      "Pendant le Festival de Jazz de Juan-les-Pins (juillet), nous proposons des services spéciaux : navettes vers les salles de concert, coordination avec les horaires de spectacle, et stationnement réservé près de la Pinède Gould. Nos clients antibois bénéficient de tarifs préférentiels pour les abonnements festival.",
+      "Pour les résidents de Juan-les-Pins, nous proposons un service de courses locales avec tarifs préférentiels. Nous connaissons les commerces, les restaurants et les services de la station, ce qui nous permet de vous conseiller sur les meilleurs horaires pour vos déplacements.",
+    ],
+    servicesTitle: "Services taxi à Juan-les-Pins",
+    services: [
+      "Transferts Aéroport Nice ↔ Juan-les-Pins",
+      "Courses locales Juan-les-Pins",
+      "Navettes plages et festivals",
+      "Transport médical conventionné",
+      "Mise à disposition soirées & événements",
+      "Excursions personnalisées",
+    ],
+    coverageDescription: "Nous desservons Juan-les-Pins et ses alentours :",
+    coverageAreas: [
+      "✓ Centre-ville Juan-les-Pins",
+      "✓ Plages et front de mer",
+      "✓ Pinède Gould",
+      "✓ Cap d'Antibes",
+      "✓ Golfe Juan & Vallauris",
+      "✓ Antibes & Port Vauban",
+    ],
+    map: {
+      description: "Notre zone d'intervention autour de Juan-les-Pins.",
+      info: "Depuis Juan-les-Pins, nous proposons des trajets vers Antibes (10 min), Cannes (20 min), Nice (25 min) et Monaco (40 min). Nous organisons également des circuits combinés incluant plusieurs destinations de la Côte d'Azur.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Juan-les-Pins&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Service résidents Juan-les-Pins",
+        description:
+          "Pour les habitants de Juan-les-Pins, nous proposons des tarifs préférentiels et une connaissance approfondie des besoins locaux (courses, rendez-vous médicaux, sorties).",
+      },
+      {
+        title: "Expertise Festival de Jazz",
+        description:
+          "Nous connaissons parfaitement les calendriers et horaires du Festival de Jazz. Nos clients bénéficient de conseils sur les meilleurs moments pour éviter les embouteillages et les files d'attente.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Ponctualité",
+        description:
+          "Prise en charge rapide à la plage, au port ou à domicile.",
+      },
+      {
+        title: "✓ Confort véhicules",
+        description:
+          "Berlines et vans climatisés adaptés aux familles et groupes.",
+      },
+      {
+        title: "✓ Transport conventionné",
+        description:
+          "Prise en charge des trajets médicaux avec tiers payant CPAM.",
+      },
+      {
+        title: "✓ Support 24/7",
+        description:
+          "Équipe disponible de jour comme de nuit pour vos urgences.",
+      },
+    ],
+    hospitalsTitle: "Établissements de santé desservis depuis Juan-les-Pins",
+    hospitals: [
+      {
+        name: "Centre Hospitalier d'Antibes Juan-les-Pins",
+        city: "Antibes",
+        description: "Hôpital public principal de la région.",
+        speciality: "Urgences, maternité, chirurgie",
+        website: "https://www.ch-antibes.fr/",
+        phone: "04 92 91 50 50",
+      },
+    ],
+    establishmentsTitle:
+      "Lieux incontournables accessibles en taxi depuis Juan-les-Pins",
+    establishments: [
+      {
+        name: "Plages de Juan-les-Pins",
+        city: "Juan-les-Pins",
+        speciality: "Plages et front de mer",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Pinède Gould",
+        city: "Juan-les-Pins",
+        speciality: "Parc et espace vert",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 & 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+    ],
+    faq: [
+      {
+        question: "Peut-on réserver un taxi conventionné pour Juan-les-Pins ?",
+        answer:
+          "Oui, nous sommes conventionnés CPAM. Fournissez votre prescription médicale, carte vitale et mutuelle pour bénéficier du tiers payant.",
+      },
+      {
+        question:
+          "Quel est le tarif pour l'aéroport de Nice depuis Juan-les-Pins ?",
+        answer:
+          "Le forfait débute à 70€ selon l'adresse de prise en charge et l'heure. Devis personnalisé sur simple demande.",
+      },
+    ],
+    resource: {
+      description:
+        "Organisez facilement vos trajets sur Juan-les-Pins avec notre guide complet.",
+      links: [
+        {
+          label: "Guide Taxi Antibes",
+          url: "https://www.taxi-antibes.fr/blog",
+        },
+      ],
+    },
+    homepageLink: {
+      before:
+        "Vous programmez des trajets réguliers entre Juan-les-Pins et Antibes ? ",
+      linkText: "Taxi Antibes",
+      after:
+        " vous accompagne depuis notre base antiboise avec des transferts fréquents et un suivi personnalisé.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Transports locaux",
+        description:
+          "Déplacements dans Juan-les-Pins, Antibes et les communes environnantes.",
+      },
+      {
+        title: "Service événements",
+        description: "Navettes pour festivals, mariages et événements privés.",
+      },
+    ],
+    pricing: [
+      "Juan-les-Pins ↔ Nice aéroport dès 70€",
+      "Juan-les-Pins ↔ Monaco à partir de 120€",
+      "Juan-les-Pins ↔ Cannes dès 45€",
+      "Forfait VSL conventionné selon barème CPAM",
+    ],
+    commitments: [
+      {
+        title: "Disponibilité locale",
+        description: "Chauffeurs basés à Antibes pour une réaction rapide.",
+      },
+      {
+        title: "Relation de confiance",
+        description:
+          "Clients réguliers, entreprises et particuliers suivis toute l'année.",
+      },
+      {
+        title: "Sécurité & confort",
+        description: "Véhicules entretenus quotidiennement, conduite souple.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Juan-les-Pins - Taxi Antibes",
+      image: "https://www.taxi-antibes.fr/confort-maximum.jpeg",
+      telephone: "+33749777621",
+      locality: "Juan-les-Pins",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/juan-les-pins",
+      latitude: "43.570000",
+      longitude: "7.110000",
     },
   },
 };
