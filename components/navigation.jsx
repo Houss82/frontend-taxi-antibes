@@ -171,8 +171,8 @@ export function Navigation() {
                 >
                   {/* Header avec gradient */}
                   <div className="px-4 pb-2 mb-2 border-b border-cyan-200/50">
-                    <a
-                      href="/services"
+            <a
+              href="/services"
                       className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-800 hover:text-cyan-600 rounded-lg hover:bg-gradient-to-r hover:from-cyan-50 hover:to-blue-50 transition-all duration-200 group"
                       onClick={() => setIsServicesOpen(false)}
                     >
@@ -366,8 +366,8 @@ export function Navigation() {
                 </button>
                 {isServicesMobileOpen && (
                   <div className="ml-4 mt-2 space-y-2 border-l-2 border-cyan-300 pl-4 bg-gradient-to-r from-cyan-50/50 to-blue-50/50 rounded-r-lg py-2 pr-2">
-                    <a
-                      href="/services"
+              <a
+                href="/services"
                       className="flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-cyan-600 transition-colors py-2 px-2 rounded-lg hover:bg-white"
                       onClick={closeMenu}
                     >
@@ -387,13 +387,13 @@ export function Navigation() {
                     <a
                       href="/services/taxi-conventionne"
                       className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-cyan-600 transition-all py-2 px-2 rounded-lg hover:bg-white bg-rose-50"
-                      onClick={closeMenu}
-                    >
+                onClick={closeMenu}
+              >
                       <div className="p-1.5 rounded-lg bg-rose-50">
                         <Heart className="h-4 w-4 text-rose-600" />
                       </div>
                       <span>Taxi Conventionné CPAM</span>
-                    </a>
+              </a>
                   </div>
                 )}
               </div>

@@ -1,5 +1,5 @@
 ---
-title: "Taxi Conventionné Antibes agréé CPAM "
+title: "Taxi Conventionné Antibes agréé CPAM  "
 date: "2025-11-20"
 excerpt: "Taxi conventionné Antibes : trajet médical vers Nice, Lacassagne, Lenval, Archet, Pasteur 2. Prise en charge CPAM, accompagnement personnalisé et service premium."
 image: "/taxi-conventionne-nice-pasteur.jpeg"
