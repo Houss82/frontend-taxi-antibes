@@ -6,6 +6,7 @@ import {
   Briefcase,
   Building2,
   ChevronDown,
+  Heart,
   MapPin,
   Menu,
   Navigation as NavigationIcon,
@@ -70,7 +71,10 @@ export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isSectorsMobileOpen, setIsSectorsMobileOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isServicesMobileOpen, setIsServicesMobileOpen] = useState(false);
   const sectorsMenuRef = useRef(null);
+  const servicesMenuRef = useRef(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -79,13 +83,20 @@ export function Navigation() {
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsSectorsMobileOpen(false);
+    setIsServicesMobileOpen(false);
   };
 
   const toggleSectorsMenu = () => {
     setIsSectorsOpen(!isSectorsOpen);
+    setIsServicesOpen(false);
   };
 
-  // Fermer le menu secteurs quand on clique en dehors
+  const toggleServicesMenu = () => {
+    setIsServicesOpen(!isServicesOpen);
+    setIsSectorsOpen(false);
+  };
+
+  // Fermer les menus quand on clique en dehors
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -94,16 +105,22 @@ export function Navigation() {
       ) {
         setIsSectorsOpen(false);
       }
+      if (
+        servicesMenuRef.current &&
+        !servicesMenuRef.current.contains(event.target)
+      ) {
+        setIsServicesOpen(false);
+      }
     };
 
-    if (isSectorsOpen) {
+    if (isSectorsOpen || isServicesOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isSectorsOpen]);
+  }, [isSectorsOpen, isServicesOpen]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/20">
@@ -131,12 +148,70 @@ export function Navigation() {
 
           {/* Menu desktop */}
           <div className="hidden md:flex items-center gap-8">
-            <a
-              href="/services"
-              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
-            >
-              Services
-            </a>
+            {/* Menu déroulant Services */}
+            <div className="relative" ref={servicesMenuRef}>
+              <button
+                onClick={toggleServicesMenu}
+                className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1"
+              >
+                Services
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-300 ${
+                    isServicesOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              {isServicesOpen && (
+                <div
+                  className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border-2 border-cyan-200 py-3 z-50 transition-all duration-200 ease-in-out"
+                  style={{
+                    background:
+                      "linear-gradient(to bottom right, #ffffff, #cfe2e8, #e0f2fe)",
+                  }}
+                >
+                  {/* Header avec gradient */}
+                  <div className="px-4 pb-2 mb-2 border-b border-cyan-200/50">
+                    <a
+                      href="/services"
+                      className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-800 hover:text-cyan-600 rounded-lg hover:bg-gradient-to-r hover:from-cyan-50 hover:to-blue-50 transition-all duration-200 group"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      <Briefcase className="h-4 w-4 text-cyan-600 group-hover:scale-110 transition-transform" />
+                      <span>Tous les services</span>
+                    </a>
+                  </div>
+                  {/* Liste des services */}
+                  <div className="space-y-1 px-2">
+                    <a
+                      href="/services/taxi-aeroport-nice"
+                      className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg transition-all duration-200 group hover:shadow-md hover:scale-[1.02] bg-blue-50 hover:bg-gradient-to-r hover:from-blue-100 hover:to-blue-200"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      <div className="p-1.5 rounded-lg bg-blue-50 group-hover:bg-white transition-colors">
+                        <Plane className="h-4 w-4 text-blue-600 group-hover:scale-110 transition-transform" />
+                      </div>
+                      <span className="flex-1 group-hover:font-semibold transition-all">
+                        Taxi Aéroport Nice
+                      </span>
+                      <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
+                    </a>
+                    <a
+                      href="/services/taxi-conventionne"
+                      className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg transition-all duration-200 group hover:shadow-md hover:scale-[1.02] bg-rose-50 hover:bg-gradient-to-r hover:from-rose-100 hover:to-rose-200"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      <div className="p-1.5 rounded-lg bg-rose-50 group-hover:bg-white transition-colors">
+                        <Heart className="h-4 w-4 text-rose-600 group-hover:scale-110 transition-transform" />
+                      </div>
+                      <span className="flex-1 group-hover:font-semibold transition-all">
+                        Taxi Conventionné CPAM
+                      </span>
+                      <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
             {/* Menu déroulant Nos secteurs */}
             <div className="relative" ref={sectorsMenuRef}>
               <button
@@ -274,13 +349,54 @@ export function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-black/20">
             <div className="flex flex-col gap-4 pt-4">
-              <a
-                href="/services"
-                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                onClick={closeMenu}
-              >
-                Services
-              </a>
+              {/* Menu déroulant mobile Services */}
+              <div>
+                <button
+                  onClick={() =>
+                    setIsServicesMobileOpen(!isServicesMobileOpen)
+                  }
+                  className="w-full flex items-center justify-between text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
+                >
+                  <span>Services</span>
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform duration-300 ${
+                      isServicesMobileOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                {isServicesMobileOpen && (
+                  <div className="ml-4 mt-2 space-y-2 border-l-2 border-cyan-300 pl-4 bg-gradient-to-r from-cyan-50/50 to-blue-50/50 rounded-r-lg py-2 pr-2">
+                    <a
+                      href="/services"
+                      className="flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-cyan-600 transition-colors py-2 px-2 rounded-lg hover:bg-white"
+                      onClick={closeMenu}
+                    >
+                      <Briefcase className="h-4 w-4 text-cyan-600" />
+                      <span>Tous les services</span>
+                    </a>
+                    <a
+                      href="/services/taxi-aeroport-nice"
+                      className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-cyan-600 transition-all py-2 px-2 rounded-lg hover:bg-white bg-blue-50"
+                      onClick={closeMenu}
+                    >
+                      <div className="p-1.5 rounded-lg bg-blue-50">
+                        <Plane className="h-4 w-4 text-blue-600" />
+                      </div>
+                      <span>Taxi Aéroport Nice</span>
+                    </a>
+                    <a
+                      href="/services/taxi-conventionne"
+                      className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-cyan-600 transition-all py-2 px-2 rounded-lg hover:bg-white bg-rose-50"
+                      onClick={closeMenu}
+                    >
+                      <div className="p-1.5 rounded-lg bg-rose-50">
+                        <Heart className="h-4 w-4 text-rose-600" />
+                      </div>
+                      <span>Taxi Conventionné CPAM</span>
+                    </a>
+                  </div>
+                )}
+              </div>
               {/* Menu déroulant mobile Nos secteurs */}
               <div>
                 <button

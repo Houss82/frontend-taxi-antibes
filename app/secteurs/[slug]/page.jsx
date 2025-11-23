@@ -163,12 +163,12 @@ export default async function SecteurPage({ params }) {
                 <span>Guide Local Antibes</span>
               </div>
 
-              <h1 className="text-4xl lg:text-6xl font-black text-gray-900 mb-6 leading-tight">
+              <h1 className="text-4xl lg:text-6xl font-black text-gray-900 mb-4 leading-tight">
                 {data.hero.title}
-                <span className="block bg-gradient-to-r from-cyan-600 via-amber-500 to-orange-500 bg-clip-text text-transparent mt-2">
-                  {data.hero.highlight}
-                </span>
               </h1>
+              <h2 className="text-3xl lg:text-5xl font-black bg-gradient-to-r from-cyan-600 via-amber-500 to-orange-500 bg-clip-text text-transparent mb-6 leading-tight">
+                {data.hero.highlight}
+              </h2>
               <h2 className="text-2xl lg:text-3xl text-cyan-700 font-bold mb-6">
                 {data.hero.subtitle}
               </h2>

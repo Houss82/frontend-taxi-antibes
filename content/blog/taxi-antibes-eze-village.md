@@ -7,21 +7,9 @@ imagePosition: "center 70%"
 category: "Voyage & Tourisme"
 author: "Taxi Antibes"
 language: "fr"
-keywords:
-  [
-    "taxi antibes eze",
-    "excursion antibes eze",
-    "taxi pour eze village",
-    "visite eze depuis antibes",
-    "chauffeur privé antibes eze",
-    "excursion côte d'azur taxi",
-    "eze village médiéval",
-    "jardin exotique eze",
-    "taxi eze monaco",
-  ]
 ---
 
-# 🚖 Taxi Antibes → Èze : votre excursion vers le village perché le plus spectaculaire de la Côte d'Azur
+## 🚖 Taxi Antibes vers Èze : votre excursion vers le village perché le plus spectaculaire de la Côte d'Azur
 
 Situé entre mer et ciel, **Èze Village** est l'un des joyaux de la Côte d'Azur. Perché à **429 mètres d'altitude**, ce village médiéval suspendu offre une vue incomparable sur la Méditerranée et sur la Principauté de Monaco. C'est l'une des **excursions touristiques les plus demandées** depuis Antibes.
 

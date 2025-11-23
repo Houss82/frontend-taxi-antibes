@@ -9,7 +9,7 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
-# 📰 Réglementation VTC 2025 : quel impact pour les taxis ?
+## 📰 Réglementation VTC 2025 : quel impact pour les taxis ?
 
 La réforme **VTC 2025** redéfinit les règles du transport de personnes en France.  
 À Antibes, elle sécurise la profession de taxi officiel tout en imposant de nouvelles exigences aux chauffeurs VTC. Voici ce qu’il faut retenir pour adapter votre activité ou choisir le bon prestataire.

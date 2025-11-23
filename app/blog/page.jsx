@@ -7,9 +7,10 @@ const LANGUAGE_FILTER = "fr";
 
 export const revalidate = 60;
 
-export default function BlogPage({ searchParams }) {
+export default async function BlogPage({ searchParams }) {
   const posts = getAllPosts().filter((post) => post.language === LANGUAGE_FILTER);
-  const selectedCategoryId = searchParams?.category || null;
+  const resolvedSearchParams = await searchParams;
+  const selectedCategoryId = resolvedSearchParams?.category || null;
 
   return (
     <PageLayout

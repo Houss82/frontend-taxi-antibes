@@ -3,7 +3,7 @@ export const sectorData = {
     slug: "monaco",
     cityName: "Monaco",
     hero: {
-      title: "Taxi Antibes vers Monaco – Transferts Premium",
+      title: "Taxi Antibes vers Monaco ",
       highlight: "Monaco & Riviera",
       subtitle: "Transferts aéroport, port Hercule et hôtels 5 étoiles 24/7",
       image: "/Monaco.ville.jpg",
@@ -203,7 +203,7 @@ export const sectorData = {
     slug: "cannes",
     cityName: "Cannes",
     hero: {
-      title: "Taxi Antibes vers Cannes – Transferts Premium",
+      title: "Taxi Antibes vers Cannes ",
       highlight: "Cannes & Croisette",
       subtitle: "Transferts aéroport, hôtels 5★ et Palais des Festivals",
       image: "/taxi-antibes-Cannes.jpg",
@@ -402,7 +402,7 @@ export const sectorData = {
     slug: "nice",
     cityName: "Nice",
     hero: {
-      title: "Taxi Antibes vers Nice – Transferts Premium",
+      title: "Taxi Antibes vers Nice ",
       highlight: "Nice & Alentours",
       subtitle:
         "Transferts aéroport, gare, centre-ville et établissements de santé",

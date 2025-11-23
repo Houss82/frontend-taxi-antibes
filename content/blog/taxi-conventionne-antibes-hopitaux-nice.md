@@ -1,5 +1,5 @@
 ---
-title: "Taxi Conventionné Antibes → Hôpitaux de Nice : Transport Médical Sécurisé & Prise en Charge CPAM"
+title: "Taxi Conventionné Antibes agréé CPAM "
 date: "2025-11-20"
 excerpt: "Taxi conventionné Antibes : trajet médical vers Nice, Lacassagne, Lenval, Archet, Pasteur 2. Prise en charge CPAM, accompagnement personnalisé et service premium."
 image: "/taxi-conventionne-nice-pasteur.jpeg"
@@ -9,7 +9,7 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
-# 🚖 Taxi Conventionné Antibes → Hôpitaux de Nice : votre solution santé fiable et confortable
+## 🚖 Taxi Conventionné Antibes → Hôpitaux de Nice : Transport Médical Sécurisé & Prise en Charge CPAM
 
 Pour de nombreux patients d'Antibes, se rendre régulièrement aux **hôpitaux de Nice**, que ce soit pour une consultation, une dialyse, une chimiothérapie ou une radiothérapie, peut devenir fatigant et stressant.
 

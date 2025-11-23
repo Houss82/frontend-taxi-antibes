@@ -9,7 +9,7 @@ author: "Rédaction Antibes"
 language: "fr"
 ---
 
-# 🌴 Les plus belles promenades à faire à Antibes : le guide lifestyle complet 2025
+## 🌴 Les plus belles promenades à faire à Antibes : le guide lifestyle complet 2025
 
 Antibes est un véritable paradis pour les promeneurs.
 
