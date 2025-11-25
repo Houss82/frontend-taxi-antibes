@@ -42,16 +42,51 @@ export default async function BlogPostPage({ params }) {
     ? post.image
     : `https://www.taxi-antibes.fr${post.image}`;
 
-  const faqItems = [
+  // Extraire les questions FAQ du contenu HTML
+  const extractFAQFromContent = (htmlContent) => {
+    const faqItems = [];
+    if (!htmlContent) return faqItems;
+
+    // Utiliser une regex pour extraire les questions et réponses des balises <details>
+    // Pattern: <details>...<summary>question (peut contenir <span>)</summary>...<div>answer</div>...</details>
+    const detailsRegex = /<details[^>]*>[\s\S]*?<summary[^>]*>([^<]*(?:<[^>]+>[^<]*<\/[^>]+>[^<]*)*)<\/summary>[\s\S]*?<div[^>]*>([\s\S]*?)<\/div>[\s\S]*?<\/details>/gi;
+    let match;
+
+    while ((match = detailsRegex.exec(htmlContent)) !== null) {
+      // Nettoyer la question (supprimer les balises HTML comme <span>)
+      let question = match[1]
+        .replace(/<[^>]+>/g, '') // Supprimer les balises HTML
+        .replace(/\s+/g, ' ') // Remplacer les espaces multiples par un seul
+        .trim();
+
+      // Nettoyer la réponse HTML pour obtenir le texte brut
+      let answer = match[2]
+        .replace(/<a[^>]*href="([^"]*)"[^>]*>([^<]*)<\/a>/gi, '$2 ($1)') // Convertir les liens en texte avec URL
+        .replace(/<[^>]+>/g, ' ') // Supprimer les autres balises HTML
+        .replace(/\s+/g, ' ') // Remplacer les espaces multiples par un seul
+        .trim();
+
+      if (question && answer) {
+        faqItems.push({ question, answer });
+      }
+    }
+
+    return faqItems;
+  };
+
+  const faqItems = extractFAQFromContent(post.contentHtml);
+
+  // Si aucune FAQ n'est trouvée dans le contenu, utiliser des questions par défaut
+  const defaultFaqItems = [
     {
       question: "Le trajet est-il direct ?",
       answer:
-        "Oui, nous vous déposons directement à l’entrée du village de Saint-Paul-de-Vence sans changement ni marche supplémentaire.",
+        "Oui, nous vous déposons directement à destination sans changement ni marche supplémentaire.",
     },
     {
-      question: "Pouvez-vous organiser une excursion d’une demi-journée ?",
+      question: "Pouvez-vous organiser une excursion d'une demi-journée ?",
       answer:
-        "Oui, nous pouvons rester sur place et vous reconduire à l’heure souhaitée ou organiser un circuit vers d’autres villages perchés.",
+        "Oui, nous pouvons rester sur place et vous reconduire à l'heure souhaitée ou organiser un circuit personnalisé.",
     },
     {
       question: "Proposez-vous des sièges enfants ?",
@@ -59,6 +94,8 @@ export default async function BlogPostPage({ params }) {
         "Oui, nous fournissons gratuitement des sièges adaptés sur simple demande lors de la réservation.",
     },
   ];
+
+  const finalFaqItems = faqItems.length > 0 ? faqItems : defaultFaqItems;
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -90,18 +127,21 @@ export default async function BlogPostPage({ params }) {
     },
   };
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqItems.map((item) => ({
-      "@type": "Question",
-      name: item.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.answer,
-      },
-    })),
-  };
+  const faqSchema =
+    finalFaqItems.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: finalFaqItems.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -157,7 +197,9 @@ export default async function BlogPostPage({ params }) {
             id="article-schema"
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify([articleSchema, faqSchema]),
+              __html: JSON.stringify(
+                faqSchema ? [articleSchema, faqSchema] : [articleSchema]
+              ),
             }}
           />
 
