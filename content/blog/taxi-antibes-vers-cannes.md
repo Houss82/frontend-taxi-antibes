@@ -424,7 +424,7 @@ _Tarifs indicatifs, devis personnalisé sur demande. Tarifs majorés pendant le 
 
 👉 <a href="/">Accueil Taxi Antibes</a>
 
-👉 <a href="/secteurs/cannes">Taxi Antibes vers Cannes - Page secteur complète</a>
+👉 <a href="/secteurs/cannes">📍 Page secteur Cannes : services, établissements et informations locales</a>
 
 👉 <a href="/services">Nos services premium</a>
 

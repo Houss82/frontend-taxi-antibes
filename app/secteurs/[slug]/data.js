@@ -340,7 +340,8 @@ export const sectorData = {
         "Préparez votre venue à Cannes avec nos conseils transferts et nos articles dédiés aux trajets Antibes ↔ Cannes.",
       links: [
         {
-          label: "Guide complet : Taxi Antibes vers Cannes",
+          label:
+            "📖 Guide complet : Taxi Antibes vers Cannes (article détaillé)",
           url: "/blog/taxi-antibes-vers-cannes",
         },
         {
