@@ -130,16 +130,16 @@ export default async function BlogPostPage({ params }) {
   const faqSchema =
     finalFaqItems.length > 0
       ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
           mainEntity: finalFaqItems.map((item) => ({
-            "@type": "Question",
-            name: item.question,
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: item.answer,
-            },
-          })),
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
         }
       : null;
 

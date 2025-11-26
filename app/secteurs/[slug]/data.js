@@ -340,8 +340,12 @@ export const sectorData = {
         "Préparez votre venue à Cannes avec nos conseils transferts et nos articles dédiés aux trajets Antibes ↔ Cannes.",
       links: [
         {
-          label: "Guide transport Cannes",
-          url: "https://www.taxi-antibes.fr/blog",
+          label: "Guide complet : Taxi Antibes vers Cannes",
+          url: "/blog/taxi-antibes-vers-cannes",
+        },
+        {
+          label: "Tous nos articles de blog",
+          url: "/blog",
         },
       ],
     },
@@ -791,6 +795,203 @@ export const sectorData = {
       url: "https://www.taxi-antibes.fr/secteurs/juan-les-pins",
       latitude: "43.570000",
       longitude: "7.110000",
+    },
+  },
+  frejus: {
+    slug: "frejus",
+    cityName: "Fréjus",
+    hero: {
+      title: "Taxi Antibes vers Fréjus ",
+      highlight: "Fréjus & Patrimoine Romain",
+      subtitle:
+        "Transferts port, plages et Centre Hospitalier Intercommunal 24/7",
+      image: "/fréjus-port.jpg",
+      imageAlt: "Taxi premium à Fréjus",
+    },
+    introduction: [
+      "Depuis notre base à Antibes, nous desservons régulièrement Fréjus pour tous vos besoins de transport. Située à environ 50 kilomètres d'Antibes, Fréjus est une ville chargée d'histoire avec son patrimoine romain exceptionnel (amphithéâtre, aqueduc, port antique) et ses plages de sable fin.",
+      "Nos chauffeurs connaissent parfaitement les itinéraires optimaux vers Fréjus, en empruntant l'autoroute A8 ou les routes côtières selon vos préférences. Nous desservons notamment le centre historique, Fréjus-Plage, le port de plaisance et le Centre Hospitalier Intercommunal Fréjus-Saint-Raphaël.",
+    ],
+    secondaryIntro: [
+      "Fréjus est une destination appréciée des résidents antibois pour ses plages familiales, son patrimoine historique et ses événements culturels. Nous proposons des services adaptés pour les visites touristiques (amphithéâtre romain, cathédrale), les sorties plage et les rendez-vous médicaux à l'hôpital intercommunal.",
+      "Pour les familles antiboises se rendant à Fréjus-Plage en été, nous organisons des transferts avec équipements de plage et sièges enfants. Nous connaissons les meilleurs moments pour éviter les embouteillages estivaux sur la route côtière.",
+    ],
+    servicesTitle: "Nos prestations Taxi Fréjus",
+    services: [
+      "Transferts Aéroport Nice ↔ Fréjus / Saint-Raphaël",
+      "Visites patrimoine romain (amphithéâtre, aqueduc, port antique)",
+      "Déplacements vers Fréjus-Plage et plages de sable fin",
+      "Transport médical vers CHI Fréjus-Saint-Raphaël",
+      "Transferts port de plaisance et marina",
+      "Excursions vers Saint-Raphaël et l'Estérel",
+    ],
+    coverageDescription: "Zones principales couvertes par nos chauffeurs :",
+    coverageAreas: [
+      "✓ Centre historique & cathédrale",
+      "✓ Fréjus-Plage & plages de sable fin",
+      "✓ Port de plaisance & marina",
+      "✓ Amphithéâtre romain & quartier historique",
+      "✓ Centre Hospitalier Intercommunal",
+      "✓ Saint-Raphaël & Estérel",
+    ],
+    map: {
+      description:
+        "Carte interactive de notre activité sur Fréjus et ses alentours.",
+      info: "Depuis Antibes, nous rejoignons Fréjus en 45-55 minutes selon l'itinéraire choisi. Nous proposons également des trajets combinés incluant plusieurs destinations : Antibes-Fréjus-Saint-Raphaël ou Antibes-Fréjus-Aéroport Nice.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Fréjus&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Expertise patrimoine & tourisme",
+        description:
+          "Nous connaissons parfaitement les sites historiques de Fréjus (amphithéâtre romain, aqueduc, cathédrale) et les meilleurs moments pour les visiter. Nos clients antibois bénéficient de conseils sur les horaires d'ouverture et les événements culturels locaux.",
+      },
+      {
+        title: "Service plages familiales",
+        description:
+          "Pour les familles antiboises se rendant à Fréjus-Plage, nous proposons des véhicules spacieux avec équipements de plage et sièges enfants. Nous connaissons les meilleures plages familiales et les parkings les plus pratiques.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Connaissance patrimoine fréjusien",
+        description:
+          "Nos chauffeurs connaissent parfaitement le patrimoine romain de Fréjus et peuvent vous conseiller sur les visites à ne pas manquer. Nous proposons des circuits combinés incluant les sites historiques et les plages.",
+      },
+      {
+        title: "✓ Service transport médical",
+        description:
+          "Nous desservons régulièrement le Centre Hospitalier Intercommunal Fréjus-Saint-Raphaël. Nos clients antibois bénéficient d'une connaissance des horaires de consultation et des meilleurs itinéraires pour éviter le trafic.",
+      },
+      {
+        title: "✓ Expertise route côtière",
+        description:
+          "Nous maîtrisons les itinéraires vers Fréjus par l'autoroute A8 ou les routes côtières. En été, nous connaissons les meilleurs moments pour éviter les embouteillages et vous proposons des alternatives panoramiques.",
+      },
+      {
+        title: "✓ Transferts plages & port",
+        description:
+          "Pour vos sorties à Fréjus-Plage ou au port de plaisance, nous proposons des véhicules adaptés avec espace pour équipements de plage. Nous connaissons les meilleures plages familiales et les restaurants recommandés.",
+      },
+    ],
+    hospitalsTitle: "Établissements desservis depuis Fréjus",
+    hospitals: [
+      {
+        name: "Centre Hospitalier Intercommunal Fréjus-Saint-Raphaël",
+        city: "Fréjus",
+        description:
+          "Établissement de santé principal de la région avec urgences et spécialités médicales.",
+        speciality: "Urgences, maternité, chirurgie, cardiologie",
+        website: "https://www.ch-frejus-saint-raphael.fr/",
+        phone: "04 94 40 21 21",
+      },
+    ],
+    establishmentsTitle:
+      "Lieux emblématiques accessibles rapidement en taxi depuis Fréjus",
+    establishments: [
+      {
+        name: "Amphithéâtre romain de Fréjus",
+        city: "Fréjus",
+        speciality: "Patrimoine historique romain",
+        website: "https://www.frejus.fr/",
+        phone: "04 94 51 83 83",
+      },
+      {
+        name: "Port de plaisance de Fréjus",
+        city: "Fréjus",
+        speciality: "Marina et port de plaisance",
+        website: "https://www.frejus.fr/",
+        phone: "04 94 51 83 83",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 & 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+    ],
+    faq: [
+      {
+        question: "Combien de temps faut-il pour aller d'Antibes à Fréjus ?",
+        answer:
+          "Le trajet depuis Antibes prend environ 45 à 55 minutes selon l'itinéraire choisi (autoroute A8 ou route côtière). En été, le trafic peut être dense sur la route côtière, nous adaptons donc l'itinéraire selon les conditions.",
+      },
+      {
+        question:
+          "Proposez-vous des circuits touristiques incluant le patrimoine romain de Fréjus ?",
+        answer:
+          "Oui, nous proposons des circuits combinés incluant les sites historiques de Fréjus (amphithéâtre, aqueduc, cathédrale) et les plages. Nous pouvons également combiner Fréjus avec Saint-Raphaël ou l'Estérel dans la même journée.",
+      },
+      {
+        question:
+          "Desservez-vous le Centre Hospitalier Intercommunal Fréjus-Saint-Raphaël ?",
+        answer:
+          "Oui, nous desservons régulièrement le CHI Fréjus-Saint-Raphaël pour les rendez-vous médicaux. Nous connaissons les meilleurs itinéraires et les horaires de consultation pour optimiser vos trajets.",
+      },
+    ],
+    resource: {
+      description:
+        "Préparez votre venue à Fréjus avec nos conseils transferts et nos articles dédiés aux trajets Antibes ↔ Fréjus.",
+      links: [
+        {
+          label: "Tous nos articles de blog",
+          url: "/blog",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "Pour vos départs ou retours depuis Antibes, contactez ",
+      linkText: "Taxi Antibes",
+      after:
+        " : notre équipe basée à Antibes planifie vos transferts Antibes ↔ Fréjus avec la même exigence que les trajets intra-Fréjus.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Patrimoine & culture",
+        description:
+          "Circuits touristiques incluant l'amphithéâtre romain, l'aqueduc et la cathédrale de Fréjus.",
+      },
+      {
+        title: "Plages & détente",
+        description:
+          "Transferts vers Fréjus-Plage et les plages de sable fin avec véhicules adaptés aux familles.",
+      },
+    ],
+    pricing: [
+      "Antibes ↔ Fréjus à partir de 80€",
+      "Fréjus ↔ Saint-Raphaël dès 25€",
+      "Mise à disposition 80€/heure (minimum 2h)",
+      "Devis personnalisé pour groupes et circuits touristiques",
+    ],
+    commitments: [
+      {
+        title: "Connaissance route Antibes-Fréjus",
+        description:
+          "Nous maîtrisons parfaitement les itinéraires vers Fréjus par l'autoroute A8 ou les routes côtières. En été, nous connaissons les meilleurs moments pour éviter les embouteillages et proposons des alternatives panoramiques.",
+      },
+      {
+        title: "Service transport médical",
+        description:
+          "Nous desservons régulièrement le Centre Hospitalier Intercommunal Fréjus-Saint-Raphaël. Nos clients antibois bénéficient d'une connaissance des horaires de consultation et des meilleurs itinéraires.",
+      },
+      {
+        title: "Expertise patrimoine local",
+        description:
+          "Nos chauffeurs connaissent parfaitement le patrimoine romain de Fréjus et peuvent vous conseiller sur les visites à ne pas manquer. Nous proposons des circuits combinés incluant les sites historiques et les plages.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Fréjus - Taxi Antibes",
+      image: "https://www.taxi-antibes.fr/services.webp",
+      telephone: "+33749777621",
+      locality: "Fréjus",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/frejus",
+      latitude: "43.433314",
+      longitude: "6.724863",
     },
   },
 };

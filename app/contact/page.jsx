@@ -37,9 +37,10 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["contact@taxi-antibes.fr", "reservation@taxi-antibes.fr"],
+    details: ["contact@taxi-antibes.fr", "taxiantibes2025@gmail.com"],
     description: "Envoyez-nous un email pour toute demande",
     action: "Envoyer un email",
+    link: "mailto:contact@taxi-antibes.fr?subject=Demande%20de%20contact%20-%20Taxi%20Antibes",
   },
   {
     icon: MapPin,
@@ -225,12 +226,27 @@ export default function ContactPage() {
                   {info.link ? (
                     <a
                       href={info.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      {...(info.link.startsWith("http") && {
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                      })}
                       className="flex items-center gap-2"
                     >
                       {info.action}
-                      <ExternalLink className="h-4 w-4" />
+                      {info.link.startsWith("http") && (
+                        <ExternalLink className="h-4 w-4" />
+                      )}
+                    </a>
+                  ) : info.title === "Téléphone" ? (
+                    <a
+                      href={`tel:${info.details[0].replace(/\s/g, "")}`}
+                      className="flex items-center gap-2"
+                    >
+                      {info.action}
+                    </a>
+                  ) : info.title === "Horaires" ? (
+                    <a href="/reservation" className="flex items-center gap-2">
+                      {info.action}
                     </a>
                   ) : (
                     <span>{info.action}</span>

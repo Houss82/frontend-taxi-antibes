@@ -46,6 +46,13 @@ const sectors = [
       "Transferts aéroport Nice Côte d'Azur : Terminal 1 & 2, suivi de vol et accueil personnalisé.",
     image: "/van-aéro copie.jpeg",
   },
+  {
+    slug: "frejus",
+    name: "Fréjus",
+    description:
+      "Taxi Antibes vers Fréjus : patrimoine romain, plages, port de plaisance et Centre Hospitalier Intercommunal.",
+    image: "/taxi-antibes-Cannes.jpg",
+  },
 ];
 
 export default function SecteursPage() {
@@ -79,13 +86,13 @@ export default function SecteursPage() {
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Nos secteurs desservis
                 <span className="block bg-gradient-to-r from-cyan-600 via-amber-500 to-orange-500 bg-clip-text text-transparent">
-                  Monaco, Cannes, Nice, Juan-les-Pins & plus
+                  Monaco, Cannes, Nice, Fréjus, Juan-les-Pins & plus
                 </span>
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Monaco, Cannes, Nice, Juan-les-Pins, Sophia
+                dédiées pour Monaco, Cannes, Nice, Fréjus, Juan-les-Pins, Sophia
                 Antipolis et l&apos;aéroport de Nice, et accédez à des
                 informations détaillées sur les transferts, les établissements de
                 santé desservis et nos engagements qualité.

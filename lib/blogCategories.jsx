@@ -22,6 +22,7 @@ const blogCategories = [
       "Transferts Aéroport",
       "Taxi",
       "Transport",
+      "Taxi & Transport",
       "Services",
     ],
   },
