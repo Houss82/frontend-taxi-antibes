@@ -856,6 +856,28 @@ export default function TaxiConventionnePage() {
             </div>
           </section>
 
+          {/* Ressources utiles */}
+          <section className="py-16 md:py-24 bg-white">
+            <div className="container mx-auto px-6 max-w-6xl">
+              <div className="bg-cyan-50 border border-cyan-100 rounded-3xl p-8">
+                <h2 className="text-3xl font-bold text-cyan-900 mb-4">
+                  Ressources utiles
+                </h2>
+                <p className="text-cyan-900 mb-4">
+                  Pour en savoir plus sur les hôpitaux et centres médicaux de Nice, consultez notre guide complet avec distances, spécialités et informations pratiques.
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="/blog/hopitaux-centres-medicaux-nice-guide-complet"
+                    className="inline-flex items-center gap-2 text-cyan-700 font-semibold underline hover:text-cyan-600 transition-colors"
+                  >
+                    📖 Guide complet : Hôpitaux et Centres Médicaux de Nice →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* CTA Section */}
           <section className="py-16 md:py-24 bg-gradient-to-r from-cyan-700 to-cyan-600 text-white">
             <div className="container mx-auto px-6 max-w-6xl text-center">
