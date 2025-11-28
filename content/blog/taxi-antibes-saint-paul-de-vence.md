@@ -94,6 +94,55 @@ Ces données sont issues des courses effectuées entre juin et octobre 2025 et m
 
 ---
 
+## 🌟 Tableau récapitulatif des attractions à Saint-Paul-de-Vence
+
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Attraction</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Type</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Durée visite</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Points d'intérêt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Fondation Maeght</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Musée d'art</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">1h30-2h</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Art moderne, sculptures, jardins</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Remparts du XVIe</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Patrimoine</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30-45 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Chemin de ronde, vues panoramiques</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Place du Jeu de Boules</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Place centrale</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">15-30 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Cœur du village, ambiance authentique</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Galeries d'art</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Artisanat</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">1-2h</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30+ galeries, ateliers d'artistes</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Ruelles médiévales</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Patrimoine</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30-45 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Ruelles pavées, maisons en pierre</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 💬 7. Témoignage client
 
 > “Trajet impeccable entre Antibes et Saint-Paul-de-Vence. Chauffeur ponctuel, voiture impeccable et arrivée juste devant les remparts, sans avoir à marcher avec nos bagages. Nous recommandons vivement&nbsp!”  

@@ -182,6 +182,55 @@ Ces données sont issues de nos statistiques internes et mises à jour mensuelle
 
 ---
 
+## 🌟 Tableau récapitulatif des informations pratiques
+
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Type de transfert</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Distance</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Temps moyen</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Tarif indicatif</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Antibes → Aéroport</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">18 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">22 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45-60€</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Aéroport → Antibes</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">18 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">22 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45-60€</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Aller-retour</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">36 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">80-100€</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Avec attente</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">18 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">22 min + attente</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">60-80€</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Transfert combiné</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Variable</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Journée</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Sur devis</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 💬 8. Témoignages clients vérifiés
 
 <div class="content-box">

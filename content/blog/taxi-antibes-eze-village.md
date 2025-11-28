@@ -229,6 +229,55 @@ Notre service premium inclut :
 
 ---
 
+## 🌟 Tableau récapitulatif des attractions à Èze
+
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Attraction</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Type</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Durée visite</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Points d'intérêt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Jardin Exotique</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Jardin botanique</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45-60 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">400+ espèces, vue 360°, statues</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Ruelles médiévales</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Patrimoine</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30-45 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Maisons en pierre, boutiques artisanales</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Chapelle des Pénitents</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Monument religieux</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">15-20 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Édifice du XIVe siècle, architecture</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Sentier Nietzsche</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Randonnée</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">1h30</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Chemin historique, vue sur mer</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Ateliers d'artistes</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Artisanat</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30-60 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Galeries, boutiques, créations locales</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 💬 9. Témoignages clients
 
 > "Le chauffeur nous a déposés au plus près du Jardin Exotique. Vue incroyable. Merci pour les conseils sur les horaires, nous avons évité la foule. Expérience parfaite."  

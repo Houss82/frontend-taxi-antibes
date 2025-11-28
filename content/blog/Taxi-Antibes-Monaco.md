@@ -248,6 +248,61 @@ Ce niveau de confort, associé à notre professionnalisme, fait de Taxi Antibes 
 
 ---
 
+## 🌟 Tableau récapitulatif des principales destinations à Monaco
+
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Destination</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Quartier</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Distance depuis Antibes</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Points d'intérêt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Monte-Carlo</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Monte-Carlo</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Casino, hôtels de luxe, boutiques</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Port Hercule</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">La Condamine</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Port de plaisance, yachts, restaurants</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Palais Princier</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Monaco-Ville</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Résidence officielle, musée, relève de la garde</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Circuit de F1</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Monte-Carlo</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Grand Prix de Monaco, circuit urbain</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Jardin Exotique</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Fontvieille</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Jardin botanique, grotte, musée</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Musée Océanographique</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Monaco-Ville</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Aquarium, musée, expositions</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 💶 Tarifs, devis & réservation
 
 <div class="content-box">

@@ -243,52 +243,52 @@ Chirurgie (générale, orthopédique, viscérale, urologique), médecine, radiol
 
 ## 🌟 Tableau récapitulatif des établissements
 
-<div class="content-box">
-  <table style="width: 100%; border-collapse: collapse;">
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
     <thead>
       <tr style="background-color: #f3f4f6;">
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Établissement</th>
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Distance depuis Antibes</th>
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Temps moyen</th>
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Spécialité principale</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Établissement</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Distance depuis Antibes</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Temps moyen</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Spécialité principale</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>CHU Pasteur 2</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">22 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">30 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Cardiologie, neurologie, urgences</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>CHU Pasteur 2</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">22 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Cardiologie, neurologie, urgences</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>CHU Archet</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">25 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">35 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Transplantation, chirurgie cardiaque</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>CHU Archet</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">25 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">35 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Transplantation, chirurgie cardiaque</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Centre Lacassagne</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">23 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">30 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Cancérologie, radiothérapie</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Centre Lacassagne</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">23 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Cancérologie, radiothérapie</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Hôpital Lenval</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">20 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">28 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Pédiatrie, néonatologie</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Hôpital Lenval</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">20 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">28 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Pédiatrie, néonatologie</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Clinique Saint-Georges</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">21 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">30 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Maternité, chirurgie</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Clinique Saint-Georges</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">21 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">30 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Maternité, chirurgie</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Clinique Parc Impérial</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">22 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">32 min</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">Médecine, chirurgie</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Clinique Parc Impérial</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">22 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">32 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Médecine, chirurgie</td>
       </tr>
     </tbody>
   </table>

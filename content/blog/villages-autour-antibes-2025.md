@@ -222,40 +222,40 @@ Valbonne conserve un charme provençal authentique. Organisé autour d'une place
 
 ## 🌟 Carte rapide des distances
 
-<div class="content-box">
-  <table style="width: 100%; border-collapse: collapse;">
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 500px;">
     <thead>
       <tr style="background-color: #f3f4f6;">
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Village</th>
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Distance depuis Antibes</th>
-        <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb;">Temps moyen</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Village</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Distance depuis Antibes</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Temps moyen</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Biot</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">7 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">10 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Biot</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">7 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">10 min</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Saint-Paul-de-Vence</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">19 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">25 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Saint-Paul-de-Vence</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">19 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">25 min</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Tourrettes-sur-Loup</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">27 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">35 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Tourrettes-sur-Loup</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">27 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">35 min</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Èze</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">28 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">35 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Èze</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">28 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">35 min</td>
       </tr>
       <tr>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Gourdon</strong></td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">35 km</td>
-        <td style="padding: 12px; border: 1px solid #e5e7eb;">45 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Gourdon</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">35 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45 min</td>
       </tr>
     </tbody>
   </table>

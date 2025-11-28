@@ -293,6 +293,61 @@ Notre service premium inclut :
 
 ---
 
+## 🌟 Tableau récapitulatif des principales destinations à Cannes
+
+<div class="content-box" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+  <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0; min-width: 600px;">
+    <thead>
+      <tr style="background-color: #f3f4f6;">
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Destination</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Distance depuis Antibes</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Temps de trajet</th>
+        <th style="padding: 12px 8px; text-align: left; border: 1px solid #e5e7eb; font-size: 0.875rem;">Points d'intérêt</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>La Croisette</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">10-12 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">15-20 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Plages privées, hôtels de luxe, boutiques</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Palais des Festivals</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">11 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">18-22 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Festival de Cannes, événements internationaux</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Vieux-Port de Cannes</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">10 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">15-20 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Yachts de prestige, restaurants, îles de Lérins</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Le Suquet</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">11 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">18-22 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Vieille ville, musée de la Castre, vues panoramiques</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Cannes La Bocca</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">8-9 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">12-15 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Quartier résidentiel, plages, commerces</td>
+      </tr>
+      <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Le Cannet</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">6-7 km</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">10-12 min</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Village perché, musées, vues sur la baie</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+---
+
 ## 💬 9. Témoignages clients
 
 > "Service impeccable pour le Festival de Cannes. Le chauffeur connaissait parfaitement les horaires et nous a déposés directement devant le Palais. Très professionnel et ponctuel."  
