@@ -995,6 +995,185 @@ export const sectorData = {
       longitude: "6.724863",
     },
   },
+  "sophia-antipolis": {
+    slug: "sophia-antipolis",
+    cityName: "Sophia Antipolis",
+    hero: {
+      title: "Taxi vers Sophia Antipolis – Service Professionnel",
+      highlight: "Sophia Antipolis & Technopole",
+      subtitle:
+        "Transferts entreprises, centres de R&D et déplacements professionnels",
+      image: "/sophia-antipolis.png",
+      imageAlt: "Taxi vers Sophia Antipolis",
+    },
+    introduction: [
+      "Sophia Antipolis est l'un de nos secteurs privilégiés depuis Antibes. Située à seulement 8 kilomètres, la technopole est accessible rapidement depuis notre base. Nous desservons quotidiennement les entreprises, centres de R&D et établissements de la zone pour les professionnels antibois.",
+      "Notre connaissance approfondie de Sophia Antipolis nous permet de vous conseiller sur les meilleurs itinéraires selon votre destination précise dans la technopole. Nous connaissons les bâtiments, les parkings et les accès les plus pratiques pour chaque entreprise.",
+    ],
+    secondaryIntro: [
+      "Pour les entreprises antiboises ayant des collaborateurs travaillant à Sophia Antipolis, nous proposons des abonnements navette avec horaires fixes (matin et soir). Ces services réguliers permettent de réduire les coûts et d'assurer une ponctualité optimale pour vos équipes.",
+      "Nous facturons directement les entreprises avec des devis détaillés et des factures mensuelles. Idéal pour les sociétés ayant des besoins récurrents de transport vers la technopole.",
+    ],
+    servicesTitle: "Services taxi vers Sophia Antipolis",
+    services: [
+      "Transferts Aéroport Nice ↔ Sophia Antipolis",
+      "Navettes entreprises et centres de R&D",
+      "Déplacements professionnels",
+      "Mise à disposition pour événements business",
+      "Transport médical conventionné",
+      "Excursions personnalisées",
+    ],
+    coverageDescription: "Nous desservons Sophia Antipolis et ses alentours :",
+    coverageAreas: [
+      "✓ Technopole Sophia Antipolis",
+      "✓ Centres de R&D",
+      "✓ Sièges d'entreprises",
+      "✓ Valbonne & Biot",
+      "✓ Antibes & Juan-les-Pins",
+      "✓ Aéroport Nice Côte d'Azur",
+    ],
+    map: {
+      description: "Notre zone d'intervention autour de Sophia Antipolis.",
+      info: "Depuis Sophia Antipolis, nous proposons des trajets vers Antibes (10 min), Nice (25 min), Cannes (20 min) et l'aéroport Nice (30 min). Nous organisons également des navettes régulières pour les entreprises.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Sophia+Antipolis&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Abonnements navette entreprises",
+        description:
+          "Pour les entreprises antiboises, nous proposons des abonnements navette avec horaires fixes et tarifs préférentiels. Facturation mensuelle détaillée et suivi personnalisé.",
+      },
+      {
+        title: "Connaissance approfondie de la technopole",
+        description:
+          "Nous connaissons parfaitement les bâtiments, les parkings et les accès de Sophia Antipolis. Nous pouvons vous conseiller sur les meilleurs itinéraires selon votre destination précise.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Ponctualité",
+        description:
+          "Prise en charge rapide et ponctuelle pour vos rendez-vous.",
+      },
+      {
+        title: "✓ Confort véhicules",
+        description:
+          "Berlines et vans climatisés adaptés aux déplacements professionnels.",
+      },
+      {
+        title: "✓ Facturation entreprise",
+        description: "Factures détaillées conformes aux exigences entreprises.",
+      },
+      {
+        title: "✓ Support 24/7",
+        description:
+          "Équipe disponible de jour comme de nuit pour vos urgences.",
+      },
+    ],
+    hospitalsTitle: "Établissements desservis depuis Sophia Antipolis",
+    hospitals: [
+      {
+        name: "Clinique Arnault Tzanck",
+        city: "Mougins",
+        description: "Établissement pluridisciplinaire renommé.",
+        speciality: "Cardiologie, pneumologie, chirurgie",
+        website: "https://www.tzanck.org/mougins/",
+        phone: "04 93 90 60 00",
+      },
+    ],
+    establishmentsTitle: "Lieux accessibles en taxi depuis Sophia Antipolis",
+    establishments: [
+      {
+        name: "Sophia Antipolis",
+        city: "Valbonne",
+        speciality: "Technopole & sièges d'entreprises",
+        website: "https://www.sophia-antipolis.fr/",
+        phone: "04 92 96 92 00",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 & 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Peut-on organiser des navettes régulières pour Sophia Antipolis ?",
+        answer:
+          "Oui, nous proposons des navettes quotidiennes pour les entreprises de la technopole avec facturation détaillée et suivi personnalisé.",
+      },
+      {
+        question:
+          "Quel est le tarif pour l'aéroport de Nice depuis Sophia Antipolis ?",
+        answer:
+          "Le forfait débute à 75€ selon l'adresse de prise en charge et l'heure. Devis personnalisé sur simple demande.",
+      },
+    ],
+    resource: {
+      description:
+        "Organisez facilement vos trajets vers Sophia Antipolis avec notre guide complet.",
+      links: [
+        {
+          label: "Guide Taxi Antibes",
+          url: "https://www.taxi-antibes.fr/blog",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "Vous programmez des trajets réguliers vers Sophia Antipolis ? ",
+      linkText: "Taxi Antibes",
+      after:
+        " vous accompagne depuis notre base antiboise avec des transferts fréquents et un suivi personnalisé.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Déplacements technopole",
+        description:
+          "Navettes quotidiennes vers Sophia Antipolis, entreprises et incubateurs.",
+      },
+      {
+        title: "Service entreprises",
+        description:
+          "Gestion des déplacements professionnels avec facturation détaillée.",
+      },
+    ],
+    pricing: [
+      "Sophia Antipolis ↔ Nice aéroport dès 75€",
+      "Sophia Antipolis ↔ Monaco à partir de 150€",
+      "Sophia Antipolis ↔ Cannes dès 65€",
+      "Forfait entreprise : devis sur demande",
+    ],
+    commitments: [
+      {
+        title: "Disponibilité locale",
+        description: "Chauffeurs basés à Antibes pour une réaction rapide.",
+      },
+      {
+        title: "Relation de confiance",
+        description:
+          "Clients réguliers, entreprises et particuliers suivis toute l'année.",
+      },
+      {
+        title: "Sécurité & confort",
+        description: "Véhicules entretenus quotidiennement, conduite souple.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Sophia Antipolis - Taxi Antibes",
+      image: "https://www.taxi-antibes.fr/premium copie.jpeg",
+      telephone: "+33749777621",
+      locality: "Sophia Antipolis",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/sophia-antipolis",
+      latitude: "43.616667",
+      longitude: "7.050000",
+    },
+  },
 };
 
 export const sectorSlugs = Object.keys(sectorData);
