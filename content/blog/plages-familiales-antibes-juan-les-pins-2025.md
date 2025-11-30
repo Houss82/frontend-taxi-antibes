@@ -1,6 +1,6 @@
 ---
 title: "Les 7 meilleures plages familiales à Antibes & Juan-les-Pins : guide 2025"
-date: "2025-11-29"
+date: "2025-11-30"
 excerpt: "Découvrez les 7 plages les plus adaptées aux familles à Antibes et Juan-les-Pins : eau calme, accès faciles, services pratiques et conseils locaux pour profiter en toute sérénité."
 image: "/plages-familiales-antibes-juan-les-pins-2025.png"
 imagePosition: "center 60%"
@@ -566,4 +566,4 @@ N'oubliez pas : en haute saison, l'accès peut être le défi principal. Planifi
 
 ---
 
-_Article mis à jour le 29 novembre 2025_
+_Article mis à jour le 30 novembre 2025_
