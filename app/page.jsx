@@ -655,6 +655,25 @@ export default function Home() {
       </section>
 
       <Footer />
+
+      {/* Bouton WhatsApp flottant - Mobile uniquement */}
+      <a
+        href="https://wa.me/33749777621?text=Bonjour,%20je%20souhaite%20réserver%20un%20taxi%20à%20Antibes"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 md:hidden group"
+        aria-label="Contacter Taxi Antibes sur WhatsApp"
+      >
+        <div className="relative">
+          {/* Effet de glow animé */}
+          <div className="absolute inset-0 bg-green-500 rounded-full blur-lg opacity-50 group-hover:opacity-75 animate-pulse"></div>
+
+          {/* Bouton principal */}
+          <div className="relative w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-green-500/50">
+            <Phone className="h-8 w-8 text-white" />
+          </div>
+        </div>
+      </a>
     </main>
   );
 }

@@ -1,5 +1,5 @@
 ---
-title: "Réglementation VTC 2025 : Quel impact pour les taxis à Antibes ?"
+title: "Réglementation VTC 2025 à Antibes : ce que les habitants doivent vraiment savoir sur les taxis"
 date: "2025-11-14"
 excerpt: "Découvrez les changements de la nouvelle réglementation VTC 2025 et leur impact pour les taxis officiels à Antibes et sur la Côte d'Azur."
 image: "/lamparo-antibes .jpeg"

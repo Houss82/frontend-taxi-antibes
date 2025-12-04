@@ -999,12 +999,12 @@ export const sectorData = {
     slug: "sophia-antipolis",
     cityName: "Sophia Antipolis",
     hero: {
-      title: "Taxi vers Sophia Antipolis – Service Professionnel",
+      title: "Taxi Antibes vers Sophia Antipolis – Service Professionnel",
       highlight: "Sophia Antipolis & Technopole",
       subtitle:
         "Transferts entreprises, centres de R&D et déplacements professionnels",
       image: "/sophia-antipolis.png",
-      imageAlt: "Taxi vers Sophia Antipolis",
+      imageAlt: "Taxi Antibes vers Sophia Antipolis",
     },
     introduction: [
       "Sophia Antipolis est l'un de nos secteurs privilégiés depuis Antibes. Située à seulement 8 kilomètres, la technopole est accessible rapidement depuis notre base. Nous desservons quotidiennement les entreprises, centres de R&D et établissements de la zone pour les professionnels antibois.",
