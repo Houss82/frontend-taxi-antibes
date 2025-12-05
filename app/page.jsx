@@ -76,7 +76,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pt-0 pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0">
+          <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0">
             <span
               className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
             >

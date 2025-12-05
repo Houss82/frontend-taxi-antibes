@@ -2,6 +2,7 @@
 
 import { sectorData, sectorSlugs } from "@/app/secteurs/[slug]/data";
 import { Button } from "@/components/ui/button";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   Briefcase,
   Building2,
@@ -14,11 +15,17 @@ import {
   Plane,
   Waves,
   X,
+  BookOpen,
+  Euro,
+  Calendar,
+  Car,
+  Home,
 } from "lucide-react";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700"],
@@ -79,17 +86,53 @@ export function Navigation() {
   const [isSectorsMobileOpen, setIsSectorsMobileOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isServicesMobileOpen, setIsServicesMobileOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
   const sectorsMenuRef = useRef(null);
   const servicesMenuRef = useRef(null);
 
+  // Icônes pour chaque élément de navigation
+  const getIcon = (label) => {
+    const iconMap = {
+      Accueil: Home,
+      Services: Briefcase,
+      "Nos secteurs": NavigationIcon,
+      Tarifs: Euro,
+      Blog: BookOpen,
+      Contact: Phone,
+      Réservation: Calendar,
+    };
+    return iconMap[label] || Briefcase;
+  };
+
+  // Navigation items pour le menu mobile
+  const navItems = [
+    { label: "Services", href: "/services", submenu: [
+      { label: "Tous les services", href: "/services" },
+      { label: "Taxi Aéroport Nice", href: "/services/taxi-aeroport-nice" },
+      { label: "Taxi Conventionné CPAM", href: "/services/taxi-conventionne" },
+    ]},
+    { label: "Nos secteurs", href: "/secteurs", submenu: [
+      { label: "Tous les secteurs", href: "/secteurs" },
+      ...mainSectors.map(sector => ({ label: sector.name, href: `/secteurs/${sector.slug}` })),
+    ]},
+    { label: "Tarifs", href: "/tarifs" },
+    { label: "Blog", href: "/blog" },
+    { label: "Réservation", href: "/reservation" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setOpenSubmenu(null);
+    }
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
     setIsSectorsMobileOpen(false);
     setIsServicesMobileOpen(false);
+    setOpenSubmenu(null);
   };
 
   const toggleSectorsMenu = () => {
@@ -142,6 +185,194 @@ export function Navigation() {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isSectorsOpen, isServicesOpen]);
+
+  // Fermer le menu quand on change de page
+  useEffect(() => {
+    setIsMenuOpen(false);
+    setOpenSubmenu(null);
+  }, [pathname]);
+
+  // Menu mobile rendu via portail pour éviter les problèmes de positionnement
+  const mobileMenu = (
+    <AnimatePresence mode="wait">
+      {isMenuOpen && (
+        <>
+          {/* Overlay avec effet de flou */}
+          <motion.div
+            key="overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden fixed inset-0 bg-black/20 backdrop-blur-sm z-[60]"
+            onClick={closeMenu}
+          />
+
+          {/* Menu principal */}
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="md:hidden fixed top-0 right-0 bottom-0 w-full max-w-md z-[70] bg-gradient-to-br from-white to-gray-50 border-l border-gray-200 shadow-2xl flex flex-col pt-16"
+          >
+            <motion.nav
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              exit={{ y: -20 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
+              className="flex-1 overflow-y-auto px-6 py-6 space-y-1"
+            >
+              {/* Logo et titre en haut avec bouton fermer */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+                className="flex items-center justify-between mb-8 pb-6 border-b border-gray-200"
+              >
+                <div className="flex items-center space-x-3">
+                  <Image
+                    src="/logo.png"
+                    alt="Taxi Antibes Logo"
+                    width={48}
+                    height={48}
+                    className="object-contain w-12 h-12"
+                  />
+                  <div>
+                    <h2 className="text-xl font-bold text-gray-900">
+                      TAXI ANTIBES
+                    </h2>
+                    <p className="text-sm text-gray-600">Côte d'Azur</p>
+                  </div>
+                </div>
+
+                {/* Bouton fermer dans le menu */}
+                <motion.button
+                  onClick={closeMenu}
+                  className="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
+                  aria-label="Fermer le menu"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <X className="w-5 h-5 text-gray-600" />
+                </motion.button>
+              </motion.div>
+
+              {/* Menu items avec icônes */}
+              <div className="space-y-2">
+                {navItems.map((item, index) => {
+                  const Icon = getIcon(item.label);
+                  const hasSubmenu = item.submenu && item.submenu.length > 0;
+                  const isSubmenuOpen = openSubmenu === item.href;
+
+                  if (hasSubmenu) {
+                    return (
+                      <motion.div
+                        key={item.href}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+                      >
+                        <div className="space-y-1">
+                          <button
+                            onClick={() =>
+                              setOpenSubmenu(
+                                isSubmenuOpen ? null : item.href
+                              )
+                            }
+                            className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 hover:from-cyan-100 hover:to-blue-100 text-gray-800 hover:text-cyan-600 font-medium transition-all duration-300 group"
+                          >
+                            <div className="flex items-center space-x-4">
+                              <Icon className="w-5 h-5 text-cyan-600 group-hover:scale-110 transition-transform" />
+                              <span>{item.label.toUpperCase()}</span>
+                            </div>
+                            <ChevronDown
+                              className={`w-4 h-4 transition-transform ${
+                                isSubmenuOpen ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                          <AnimatePresence>
+                            {isSubmenuOpen && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="overflow-hidden"
+                              >
+                                <div className="pl-8 space-y-1 mt-1">
+                                  {item.submenu.map((subItem) => (
+                                    <a
+                                      key={subItem.href}
+                                      href={subItem.href}
+                                      className="block px-4 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-cyan-600 transition-colors text-sm"
+                                      onClick={closeMenu}
+                                    >
+                                      {subItem.label}
+                                    </a>
+                                  ))}
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      </motion.div>
+                    );
+                  }
+
+                  return (
+                    <motion.div
+                      key={item.href}
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+                      whileHover={{ scale: 1.02, x: 5 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <a
+                        href={item.href}
+                        className="flex items-center space-x-4 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-50 to-blue-50 hover:from-cyan-100 hover:to-blue-100 text-gray-800 hover:text-cyan-600 font-medium transition-all duration-300 group"
+                        onClick={closeMenu}
+                      >
+                        <Icon className="w-5 h-5 text-cyan-600 group-hover:scale-110 transition-transform" />
+                        <span>{item.label.toUpperCase()}</span>
+                      </a>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            </motion.nav>
+
+            {/* Bouton Réserver fixe en bas */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.3, delay: 1.0 }}
+              className="px-6 py-4 border-t border-gray-200 bg-white"
+            >
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <a
+                  href="/reservation"
+                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white text-center py-4 px-6 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={closeMenu}
+                >
+                  <Car className="w-5 h-5" />
+                  RÉSERVER
+                </a>
+              </motion.div>
+            </motion.div>
+          </motion.div>
+        </>
+      )}
+    </AnimatePresence>
+  );
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -395,133 +626,8 @@ export function Navigation() {
             </button>
           </div>
         </div>
-
-        {/* Menu mobile */}
-        {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-black/20">
-            <div className="flex flex-col gap-4 pt-4">
-              {/* Menu déroulant mobile Services */}
-              <div>
-                <button
-                  onClick={() =>
-                    setIsServicesMobileOpen(!isServicesMobileOpen)
-                  }
-                  className="w-full flex items-center justify-between text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                >
-                  <span>Services</span>
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform duration-300 ${
-                      isServicesMobileOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {isServicesMobileOpen && (
-                  <div className="ml-4 mt-2 space-y-2 border-l-2 border-cyan-300 pl-4 bg-gradient-to-r from-cyan-50/50 to-blue-50/50 rounded-r-lg py-2 pr-2">
-              <a
-                href="/services"
-                      className="flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-cyan-600 transition-colors py-2 px-2 rounded-lg hover:bg-white"
-                      onClick={closeMenu}
-                    >
-                      <Briefcase className="h-4 w-4 text-cyan-600" />
-                      <span>Tous les services</span>
-                    </a>
-                    <a
-                      href="/services/taxi-aeroport-nice"
-                      className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-cyan-600 transition-all py-2 px-2 rounded-lg hover:bg-white bg-blue-50"
-                      onClick={closeMenu}
-                    >
-                      <div className="p-1.5 rounded-lg bg-blue-50">
-                        <Plane className="h-4 w-4 text-blue-600" />
-                      </div>
-                      <span>Taxi Aéroport Nice</span>
-                    </a>
-                    <a
-                      href="/services/taxi-conventionne"
-                      className="flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-cyan-600 transition-all py-2 px-2 rounded-lg hover:bg-white bg-rose-50"
-                onClick={closeMenu}
-              >
-                      <div className="p-1.5 rounded-lg bg-rose-50">
-                        <Heart className="h-4 w-4 text-rose-600" />
-                      </div>
-                      <span>Taxi Conventionné CPAM</span>
-              </a>
-                  </div>
-                )}
-              </div>
-              {/* Menu déroulant mobile Nos secteurs */}
-              <div>
-                <button
-                  onClick={() => setIsSectorsMobileOpen(!isSectorsMobileOpen)}
-                  className="w-full flex items-center justify-between text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                >
-                  <span>Nos secteurs</span>
-                  <ChevronDown
-                    className={`h-4 w-4 transition-transform duration-300 ${
-                      isSectorsMobileOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-                {isSectorsMobileOpen && (
-                  <div className="ml-4 mt-2 space-y-2 border-l-2 border-amber-300 pl-4 bg-gradient-to-r from-amber-50/50 to-gold-50/50 rounded-r-lg py-2 pr-2">
-                    <a
-                      href="/secteurs"
-                      className="flex items-center gap-2 text-sm font-semibold text-gray-800 hover:text-gold-600 transition-colors py-2 px-2 rounded-lg hover:bg-white"
-                      onClick={closeMenu}
-                    >
-                      <NavigationIcon className="h-4 w-4 text-gold-600" />
-                      <span>Tous les secteurs</span>
-                    </a>
-                    {mainSectors.map((sector) => {
-                      const Icon = sector.icon;
-                      return (
-                        <a
-                          key={sector.slug}
-                          href={`/secteurs/${sector.slug}`}
-                          className={`flex items-center gap-3 text-sm font-medium text-gray-700 hover:text-gold-600 transition-all py-2 px-2 rounded-lg hover:bg-white ${sector.bgColor}`}
-                          onClick={closeMenu}
-                        >
-                          <div className={`p-1.5 rounded-lg ${sector.bgColor}`}>
-                            <Icon className={`h-4 w-4 ${sector.color}`} />
-                          </div>
-                          <span>{sector.name}</span>
-                        </a>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
-              <a
-                href="/tarifs"
-                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                onClick={closeMenu}
-              >
-                Tarifs
-              </a>
-              <a
-                href="/blog"
-                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                onClick={closeMenu}
-              >
-                Blog
-              </a>
-              <a
-                href="/reservation"
-                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                onClick={closeMenu}
-              >
-                Réservation
-              </a>
-              <a
-                href="/contact"
-                className="text-sm font-light text-black hover:text-gold-600 transition-all duration-300 py-2 hover:translate-x-2"
-                onClick={closeMenu}
-              >
-                Contact
-              </a>
-            </div>
-          </div>
-        )}
       </div>
+      {typeof window !== "undefined" && createPortal(mobileMenu, document.body)}
     </nav>
   );
 }
