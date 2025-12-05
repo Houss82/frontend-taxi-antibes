@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const outfit = Outfit({
@@ -68,6 +69,11 @@ const mainSectors = sectorSlugs
   });
 
 export function Navigation() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+  
+  // Sur la page d'accueil, on commence transparent, sinon on commence avec le fond
+  const [isScrolled, setIsScrolled] = useState(!isHomePage);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSectorsOpen, setIsSectorsOpen] = useState(false);
   const [isSectorsMobileOpen, setIsSectorsMobileOpen] = useState(false);
@@ -96,6 +102,21 @@ export function Navigation() {
     setIsSectorsOpen(false);
   };
 
+  // Gérer la transparence de la navbar au scroll
+  useEffect(() => {
+    // Si on n'est pas sur la page d'accueil, toujours avoir le fond
+    if (!isHomePage) {
+      setIsScrolled(true);
+      return;
+    }
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHomePage]);
+
   // Fermer les menus quand on clique en dehors
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -123,12 +144,18 @@ export function Navigation() {
   }, [isSectorsOpen, isServicesOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-black/20">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled
+        ? "bg-white/95 backdrop-blur-md border-b border-black/20 shadow-sm"
+        : "bg-transparent"
+    }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a
             href="/"
-            className={`flex items-center gap-2 md:gap-3 text-base md:text-2xl font-bold tracking-wider transition-colors text-black ${outfit.className}`}
+            className={`flex items-center gap-2 md:gap-3 text-base md:text-2xl font-bold tracking-wider transition-colors ${
+              isScrolled ? "text-black" : "text-white"
+            } ${outfit.className}`}
           >
             <Image
               src="/logo.png"
@@ -152,7 +179,11 @@ export function Navigation() {
             <div className="relative" ref={servicesMenuRef}>
               <button
                 onClick={toggleServicesMenu}
-                className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1"
+                className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1 ${
+                  isScrolled
+                    ? "text-black hover:text-gold-600"
+                    : "text-white/80 hover:text-white"
+                }`}
               >
                 Services
                 <ChevronDown
@@ -216,7 +247,11 @@ export function Navigation() {
             <div className="relative" ref={sectorsMenuRef}>
               <button
                 onClick={toggleSectorsMenu}
-                className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1"
+                className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 flex items-center gap-1 ${
+                  isScrolled
+                    ? "text-black hover:text-gold-600"
+                    : "text-white/80 hover:text-white"
+                }`}
               >
                 Nos secteurs
                 <ChevronDown
@@ -282,25 +317,41 @@ export function Navigation() {
             </div>
             <a
               href="/tarifs"
-              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+              className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
+                isScrolled
+                  ? "text-black hover:text-gold-600"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               Tarifs
             </a>
             <a
               href="/blog"
-              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+              className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
+                isScrolled
+                  ? "text-black hover:text-gold-600"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               Blog
             </a>
             <a
               href="/reservation"
-              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+              className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
+                isScrolled
+                  ? "text-black hover:text-gold-600"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               Réservation
             </a>
             <a
               href="/contact"
-              className="text-lg font-light text-black hover:text-gold-600 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
+              className={`text-lg font-bold transition-all duration-300 hover:scale-110 hover:-translate-y-1 ${
+                isScrolled
+                  ? "text-black hover:text-gold-600"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               Contact
             </a>
@@ -337,9 +388,9 @@ export function Navigation() {
               aria-label="Menu"
             >
               {isMenuOpen ? (
-                <X className="h-6 w-6" />
+                <X className={`h-6 w-6 ${isScrolled ? "text-black" : "text-white"}`} />
               ) : (
-                <Menu className="h-6 w-6" />
+                <Menu className={`h-6 w-6 ${isScrolled ? "text-black" : "text-white"}`} />
               )}
             </button>
           </div>

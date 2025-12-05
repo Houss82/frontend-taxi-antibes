@@ -49,142 +49,271 @@ export default function Home() {
       <Navigation />
 
       {/* ✅ HERO SECTION SSR - H1/H2 inclus dans le HTML initial */}
-      <section className="relative bg-black overflow-hidden mt-10 sm:mt-0 md:mt-0">
-        <div className="container mx-auto px-4 sm:px-6 py-12 md:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center min-h-[70vh] md:min-h-[80vh]">
-            {/* Colonne texte SSR - visible dans la source HTML */}
-            <div className="text-center md:text-left space-y-6">
-              {/* Badge moderne */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-gold-600/20 to-cyan-500/20 backdrop-blur-sm rounded-full border border-gold-600/30 mt-2 sm:mt-8">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-gold-500"></span>
-                </span>
-                <span className="text-sm font-medium text-white/90">
-                  Disponible 24h/24 • 7j/7
-                </span>
-              </div>
+      <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-20">
+        {/* Image mobile - optimisée pour mobile */}
+        <Image
+          src="/taxi-antibes-mobile.png"
+          alt="Taxi Antibes Mercedes pour transferts aéroport Nice"
+          fill
+          className="md:hidden"
+          priority
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center",
+            width: "100%",
+            height: "100%",
+          }}
+        />
+        {/* Image desktop */}
+        <Image
+          src="/taxi-antibes-accueil.png"
+          alt="Taxi Antibes Mercedes pour transferts aéroport Nice"
+          fill
+          className="hidden md:block object-cover object-center"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pt-0 pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance -mt-20 md:mt-0">
+            <span
+              className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
+            >
+              Taxi Antibes
+            </span>
+          </h1>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-white font-semibold">
+            Taxi Aéroport Nice
+          </h2>
+          <p className="text-xl sm:text-2xl md:text-3xl mb-4 text-white/90 font-semibold">
+            Tous transports sur la Côte d'Azur
+          </p>
 
-              {/* ✅ H1 unique - SEO principal avec effet gradient moderne */}
-              <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 sm:mb-6 tracking-tight text-balance leading-tight">
-                <span
-                  className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
-                >
-                  Taxi Antibes
-                </span>
-                <br />
-                <span className="font-light text-white">
-                  Taxi Aéroport Nice
-                </span>
-              </h1>
-              {/* SEO : Métadonnées enrichies dans le alt/aria pour les crawlers */}
-
-              {/* ✅ H2 descriptif - visible côté serveur avec style moderne */}
-              <h2 className="text-xl sm:text-2xl md:text-3xl text-cyan-100/90 mb-3 sm:mb-5 font-light flex items-center gap-3 justify-center md:justify-start">
-                <span className="hidden md:inline-block w-12 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-gold-400"></span>
-                Tous transports sur la Côte d'Azur
-                <span className="hidden md:inline-block w-12 h-[2px] bg-gradient-to-r from-gold-400 via-cyan-400 to-transparent"></span>
-              </h2>
-
-              {/* ✅ Texte descriptif SEO - pas de display:none avec icônes */}
-              <div className="text-base sm:text-lg text-cyan-700 mb-8 sm:mb-10 max-w-2xl md:max-w-none mx-auto md:mx-0 font-light leading-relaxed bg-white p-6 rounded-2xl border border-cyan-100 shadow-lg">
-                <p className="mb-3">
-                  Service de{" "}
-                  <strong className="text-orange-400">
-                    taxi officiel à Antibes
-                  </strong>
-                  .{" "}
-                  <Link
-                    href="/services"
-                    className="text-cyan-700 hover:text-amber-600 underline"
-                  >
-                    Transferts aéroport Nice
-                  </Link>
-                  , courses locales, Juan-les-Pins, Cannes, Monaco.
-                </p>
-                <p className="text-cyan-600">
-                  ✓{" "}
-                  <Link
-                    href="/reservation"
-                    className="hover:text-amber-600 underline"
-                  >
-                    Réservation 24h/24
-                  </Link>{" "}
-                  • ✓ Chauffeurs pros • ✓{" "}
-                  <Link
-                    href="/tarifs"
-                    className="hover:text-amber-600 underline"
-                  >
-                    Tarifs transparents
-                  </Link>
-                </p>
-              </div>
-
-              <nav
-                aria-label="Actions principales"
-                className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+          {/* Texte descriptif SEO */}
+          <div className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
+            <p className="mb-3">
+              Service de{" "}
+              <strong className="text-cyan-400 font-semibold">
+                taxi officiel à Antibes
+              </strong>
+              .{" "}
+              <Link
+                href="/services"
+                className="text-white hover:text-amber-300 underline"
               >
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-gradient-to-r from-gold-500 to-gold-600 hover:bg-cyan-500 text-white font-semibold text-base px-8 py-6 gap-2 rounded-xl border-amber-600 border-2 transition-all duration-300 hover:scale-105"
-                >
-                  <a
-                    href="/reservation"
-                    className="flex items-center gap-2 text-orange-400 "
-                  >
-                    Réserver maintenant
-                    <ArrowRight className="h-5 w-5" />
-                  </a>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-cyan-400/50 text-white hover:bg-cyan-400/10 hover:border-cyan-400 backdrop-blur-sm bg-white/5 text-base px-8 py-6 rounded-xl transition-all duration-300 hover:scale-105"
-                >
-                  <a href="/tarifs" className="flex items-center gap-2">
-                    Voir nos tarifs
-                  </a>
-                </Button>
-              </nav>
-            </div>
+                Transferts aéroport Nice
+              </Link>
+              , courses locales, Juan-les-Pins, Cannes, Monaco.
+            </p>
+            <p className="text-white/90">
+              ✓{" "}
+              <Link
+                href="/reservation"
+                className="hover:text-amber-300 underline"
+              >
+                Réservation 24h/24
+              </Link>{" "}
+              • ✓ Chauffeurs pros • ✓{" "}
+              <Link href="/tarifs" className="hover:text-amber-300 underline">
+                Tarifs transparents
+              </Link>
+            </p>
+          </div>
 
-            {/* Colonne image avec Next/Image optimisé et effets modernes */}
-            <div className="relative w-full h-[40vh] md:h-[70vh] lg:h-[70vh] group">
-              {/* Effet de glow */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-gold-500 via-cyan-500 to-gold-500 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-
-              {/* Container image avec bordure */}
-              <div className="relative h-full rounded-2xl overflow-hidden border-2 border-white/10 group-hover:border-gold-400/30 transition-all duration-500 shadow-2xl">
-                <Image
-                  src="/van-aéro copie.jpeg"
-                  alt="Taxi Antibes - Véhicule premium pour transferts aéroport Nice"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  quality={85}
-                  style={{ objectFit: "cover" }}
-                  className="rounded-2xl group-hover:scale-105 transition-transform duration-700"
-                />
-
-                {/* Overlay gradient subtil */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent rounded-2xl"></div>
-
-                {/* Badge de qualité flottant */}
-                <div className="absolute top-6 right-6 bg-gradient-to-br from-gold-500 to-gold-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg backdrop-blur-sm flex items-center gap-2">
-                  <span className="text-yellow-200">★</span>
-                  Service Premium
-                </div>
-              </div>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <a
+              href="/reservation"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-base sm:text-lg font-medium bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg text-white px-6 sm:px-8 py-4 sm:py-6 transition-all duration-300"
+            >
+              Réserver maintenant
+            </a>
+            <a
+              href="/tarifs"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-base sm:text-lg font-medium border-2 border-cyan-400 text-white hover:bg-cyan-400/10 px-6 sm:px-8 py-4 sm:py-6 bg-transparent transition-all duration-300"
+            >
+              Consulter les tarifs
+            </a>
           </div>
         </div>
+      </section>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden sm:block">
-          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1 h-3 bg-white/50 rounded-full animate-bounce" />
+      {/* ✅ Bloc texte SEO riche - contenu local */}
+      <section className="py-24 bg-gradient-to-b from-cyan-50/30 via-white to-gold-50/30 relative overflow-hidden">
+        {/* Éléments décoratifs */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div
+            className="absolute bottom-0 right-1/4 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl animate-pulse"
+            style={{ animationDelay: "1s" }}
+          ></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-3xl"></div>
+        </div>
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          {/* En-tête centré avec design moderne */}
+          <div className="mb-16 text-center">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gradient-to-r from-cyan-100 to-gold-100 rounded-full border border-cyan-300/30">
+              <span className="w-2 h-2 bg-cyan-500 rounded-full animate-pulse"></span>
+              <span className="text-sm font-bold text-cyan-700 uppercase tracking-wider">
+                Transport Premium
+              </span>
+            </div>
+            <div className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
+                Taxi Antibes
+              </span>
+              <br />
+              <span className="text-gray-700">
+                Votre partenaire de confiance
+              </span>{" "}
+              <span className="relative inline-block">
+                <span className="relative z-10 bg-gradient-to-r from-cyan-600 via-gold-500 to-amber-500 bg-clip-text text-transparent font-extrabold">
+                  sur la Côte d'Azur
+                </span>
+                <span className="absolute bottom-2 left-0 right-0 h-4 bg-gold-400/30 -rotate-1 z-0 rounded-sm"></span>
+              </span>
+            </div>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <div className="h-1 w-16 bg-gradient-to-r from-transparent to-cyan-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+              <div className="h-1 w-24 bg-gradient-to-r from-cyan-500 via-gold-500 to-amber-500 rounded-full"></div>
+              <div className="w-2 h-2 bg-gold-500 rounded-full"></div>
+              <div className="h-1 w-16 bg-gradient-to-r from-amber-500 to-transparent rounded-full"></div>
+            </div>
+          </div>
+
+          {/* Contenu avec design amélioré */}
+          <div className="space-y-10 text-lg leading-relaxed">
+            {/* Premier paragraphe avec fond coloré */}
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100">
+              <p className="text-gray-800 mb-0 leading-relaxed text-lg">
+                <strong className="font-bold text-cyan-600 text-xl">
+                  Taxi Antibes
+                </strong>{" "}
+                assure tous vos déplacements entre{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Antibes
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Juan-les-Pins
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Cannes
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Nice
+                </strong>{" "}
+                et{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Monaco
+                </strong>
+                . Spécialiste du{" "}
+                <Link
+                  href="/tarifs"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    transfert vers l'aéroport Nice Côte d'Azur
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>
+                , nous proposons un{" "}
+                <strong className="font-bold text-gold-600 text-xl">
+                  service premium
+                </strong>
+                , ponctuel et disponible 24h/24 et 7j/7.
+              </p>
+            </div>
+
+            {/* Deuxième paragraphe avec bordure accent */}
+            <div className="relative pl-6 border-l-4 border-cyan-500 bg-gradient-to-r from-cyan-50/50 to-transparent py-6 rounded-r-lg">
+              <p className="text-gray-800 leading-relaxed text-lg">
+                Nos{" "}
+                <Link
+                  href="/services"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    chauffeurs professionnels
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>{" "}
+                assurent vos{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  courses locales
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  transferts longue distance
+                </strong>
+                , et{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  déplacements d'affaires
+                </strong>{" "}
+                dans des véhicules tout confort. Réservez facilement{" "}
+                <Link
+                  href="/reservation"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    en ligne
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>{" "}
+                ou contactez-nous par téléphone pour un devis rapide et
+                transparent.
+              </p>
+            </div>
+
+            {/* Troisième paragraphe avec design premium */}
+            <div className="bg-gradient-to-r from-cyan-50/50 via-white to-gold-50/50 border-2 border-cyan-300/30 rounded-2xl p-8 md:p-10 shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-gold-500/10 rounded-full blur-2xl -ml-16 -mb-16"></div>
+              <p className="text-gray-800 mb-0 leading-relaxed text-lg relative z-10">
+                Que vous partiez de{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Cap d'Antibes
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Vallauris
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Biot
+                </strong>{" "}
+                ou{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Sophia Antipolis
+                </strong>
+                ,{" "}
+                <strong className="font-bold text-gold-600 text-xl">
+                  Taxi Antibes est à votre service
+                </strong>{" "}
+                pour des trajets sûrs, rapides et confortables sur toute la{" "}
+                <strong className="font-bold text-cyan-600 text-lg">
+                  Côte d'Azur
+                </strong>
+                .
+              </p>
+            </div>
+          </div>
+
+          {/* Séparateur décoratif amélioré */}
+          <div className="mt-16 pt-8">
+            <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-3">
+                <div className="h-px w-20 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+                <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
+                <div className="h-px w-20 bg-gradient-to-r from-transparent via-gold-500 to-transparent"></div>
+              </div>
+              <span className="text-base font-bold text-gray-700 bg-white/80 px-6 py-2 rounded-full border border-gray-200 shadow-sm">
+                Service disponible 24h/24 - 7j/7
+              </span>
+            </div>
           </div>
         </div>
       </section>
@@ -600,57 +729,6 @@ export default function Home() {
               </a>
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* ✅ Bloc texte SEO riche - contenu local */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-6 max-w-4xl text-gray-700 leading-relaxed text-lg">
-          <h2 className="text-3xl font-bold text-cyan-700 mb-6">
-            Taxi Antibes – Votre partenaire de confiance sur la Côte d'Azur
-          </h2>
-          <p className="mb-4">
-            <strong>Taxi Antibes</strong> assure tous vos déplacements entre{" "}
-            <strong>Antibes</strong>, <strong>Juan-les-Pins</strong>,{" "}
-            <strong>Cannes</strong>, <strong>Nice</strong> et{" "}
-            <strong>Monaco</strong>. Spécialiste du{" "}
-            <Link
-              href="/tarifs"
-              className="text-cyan-700 hover:text-amber-600 underline"
-            >
-              <strong>transfert vers l'aéroport Nice Côte d'Azur</strong>
-            </Link>
-            , nous proposons un <strong>service premium</strong>, ponctuel et
-            disponible 24h/24 et 7j/7.
-          </p>
-          <p className="mb-4">
-            Nos{" "}
-            <Link
-              href="/services"
-              className="text-cyan-700 hover:text-amber-600 underline"
-            >
-              <strong>chauffeurs professionnels</strong>
-            </Link>{" "}
-            assurent vos <strong>courses locales</strong>,{" "}
-            <strong>transferts longue distance</strong>, et{" "}
-            <strong>déplacements d'affaires</strong> dans des véhicules tout
-            confort. Réservez facilement{" "}
-            <Link
-              href="/reservation"
-              className="text-cyan-700 hover:text-amber-600 underline"
-            >
-              en ligne
-            </Link>{" "}
-            ou contactez-nous par téléphone pour un devis rapide et transparent.
-          </p>
-          <p>
-            Que vous partiez de <strong>Cap d'Antibes</strong>,{" "}
-            <strong>Vallauris</strong>, <strong>Biot</strong> ou{" "}
-            <strong>Sophia Antipolis</strong>,{" "}
-            <strong>Taxi Antibes est à votre service</strong> pour des trajets
-            sûrs, rapides et confortables sur toute la{" "}
-            <strong>Côte d'Azur</strong>.
-          </p>
         </div>
       </section>
 
