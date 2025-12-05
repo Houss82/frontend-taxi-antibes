@@ -49,7 +49,7 @@ export default function Home() {
       <Navigation />
 
       {/* ✅ HERO SECTION SSR - H1/H2 inclus dans le HTML initial */}
-      <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-20">
+      <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-20">
         {/* Image mobile - optimisée pour mobile */}
         <Image
           src="/taxi-antibes-mobile.png"
@@ -76,7 +76,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pt-0 pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance -mt-20 md:mt-0">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0">
             <span
               className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
             >
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
 
           {/* Texte descriptif SEO */}
-          <div className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed bg-white/10 backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
+          <div className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
             <p className="mb-3">
               Service de{" "}
               <strong className="text-cyan-400 font-semibold">
