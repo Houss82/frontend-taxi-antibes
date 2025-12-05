@@ -310,7 +310,7 @@ export const sectorData = {
         city: "Cannes",
         speciality: "Hotel 5★ Grand Luxe",
         website:
-          "https://www.hyatt.com/fr-FR/hotel/france/hotel-martinez/jcnrz",
+          "https://www.hyatt.com/unbound-collection/fr-FR/jcagh-hotel-martinez",
         phone: "04 93 90 12 34",
       },
       {
