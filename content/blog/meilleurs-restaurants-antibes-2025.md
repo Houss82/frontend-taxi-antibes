@@ -44,7 +44,7 @@ Ce guide complet présente les **meilleurs restaurants d'Antibes**, sélectionn�
 - **Menu dégustation** et menu du jour
 - **Ambiance élégante** et service raffiné
 
-👉 <a href="https://www.bellesrives.com/fr/restaurant-la-passagere" target="_blank" rel="noopener noreferrer">Site officiel du Restaurant La Passagère</a>
+👉 <a href="https://la-passagere.com/fr/" target="_blank" rel="noopener noreferrer">Site officiel du Restaurant La Passagère</a>
 
 **Informations pratiques :**
 
@@ -73,6 +73,7 @@ _Le Restaurant La Passagère, étoilé Michelin, offre une expérience gastronom
 - **Prix moyen :** 100-150€ par personne
 - **Réservation :** Essentielle, surtout en haute saison
 - **Adresse :** 9 rue du Docteur Rostan, Vieil Antibes
+- **Site web :** [le-figuier-de-saint-esprit.com](https://le-figuier-de-saint-esprit.com/)
 - **Parking :** Difficile dans le Vieil Antibes, service de taxi recommandé
 
 <div style="max-width: 500px; margin: 1rem auto;">
@@ -80,22 +81,25 @@ _Le Restaurant La Passagère, étoilé Michelin, offre une expérience gastronom
 </div>
 _Le Restaurant Le Figuier de Saint-Esprit, étoilé Michelin, installé dans une magnifique villa du XIXe siècle avec jardin intérieur ombragé_
 
-### ⭐ Restaurant L'Amandier (1 étoile Michelin)
+### 🍽️ Restaurant L'Arazur
 
-**L'Amandier** est un restaurant gastronomique situé dans le Cap d'Antibes, dans un cadre exceptionnel face à la mer. Ce restaurant étoilé offre :
+**L'Arazur** est un restaurant gastronomique situé dans les petites ruelles du Vieil Antibes depuis 2016. Ce restaurant propose une cuisine créative et une carte qui change régulièrement, au gré des saisons et des envies du Chef Lucas Marini :
 
-- **Cuisine méditerranéenne raffinée** avec produits de la mer
-- **Terrasse panoramique** avec vue directe sur la Méditerranée
-- **Menu dégustation** et spécialités de poissons
-- **Carte des vins** sélectionnée avec vins de Provence
-- **Service attentif** et ambiance romantique
+- **Cuisine gastronomique créative** avec produits frais de haute qualité
+- **Menu dégustation** avec 2 entrées, 2 plats et dessert ou fromage
+- **Carte à la carte** adaptable aux allergies et intolérances
+- **Carte des vins** sélectionnée avec respect des vignerons
+- **Décor authentique** avec terrasse, salle mêlant l'ancien et le moderne, et salle voûtée en pierres
+- **Ambiance chaleureuse** transmise par une équipe expérimentée
 
 **Informations pratiques :**
 
-- **Prix moyen :** 110-170€ par personne
-- **Réservation :** Fortement recommandée
-- **Accès :** Route du Cap d'Antibes, parking limité
-- **Meilleur moment :** Coucher de soleil pour une expérience inoubliable
+- **Prix moyen :** 80-120€ par personne
+- **Réservation :** Fortement conseillée (24h à 48h à l'avance)
+- **Adresse :** 8 rue des Palmiers, Vieil Antibes
+- **Site web :** [larazur.fr](https://www.larazur.fr/)
+- **Téléphone :** 04 93 34 75 60
+- **Parking :** Difficile dans le Vieil Antibes, service de taxi recommandé
 
 ---
 
@@ -178,7 +182,7 @@ _Le Brulot, adresse authentique du Vieil Antibes avec cuisine provençale tradit
 - Poissons grillés
 - Plateau de fruits de mer
 
-👉 <a href="https://www.port-vauban.com" target="_blank" rel="noopener noreferrer">Site officiel du Port Vauban</a>
+👉 <a href="https://www.levauban.fr/" target="_blank" rel="noopener noreferrer">Site officiel du Port Vauban</a>
 
 <div style="max-width: 500px; margin: 1rem auto;">
   <img src="/restaurant-port-vauban.png" alt="Restaurant Le Vauban face au port Vauban avec terrasse vue mer" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
@@ -499,6 +503,13 @@ La **salade niçoise** est une spécialité traditionnelle de la région, prépa
         <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Essentielle</td>
       </tr>
       <tr>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>L'Arazur</strong></td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Gastronomique</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">80-120€</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Cuisine créative, menu dégustation</td>
+        <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Fortement conseillée</td>
+      </tr>
+      <tr>
         <td style="padding: 12px 8px; border: 1px solid #e5e7eb;"><strong>Le Vauban</strong></td>
         <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">Vue mer</td>
         <td style="padding: 12px 8px; border: 1px solid #e5e7eb;">45-75€</td>
@@ -623,7 +634,7 @@ La **salade niçoise** est une spécialité traditionnelle de la région, prépa
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Les meilleurs restaurants pour un dîner romantique sont La Terrasse (vue mer exceptionnelle), Le Jardin Secret (jardin intérieur fleuri), L'Amandier (terrasse panoramique au Cap d'Antibes) et Le Rocher (vue sur les remparts). Tous offrent une ambiance intimiste et une cuisine raffinée.
+      Les meilleurs restaurants pour un dîner romantique sont La Terrasse (vue mer exceptionnelle), Le Jardin Secret (jardin intérieur fleuri) et Le Rocher (vue sur les remparts). Tous offrent une ambiance intimiste et une cuisine raffinée.
     </div>
   </details>
 
