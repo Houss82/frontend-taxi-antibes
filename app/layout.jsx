@@ -133,6 +133,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
+        {/* ✅ Linkavista - Vérification de propriété du site */}
+        <meta name="linkavista" content="link-8847-6460" />
         {/* ✅ Google Ads (gtag.js) - Suivi des conversions */}
         <script
           async
