@@ -228,7 +228,7 @@ export default function TaxiConventionnePage() {
               {/* Image principale */}
               <div className="relative w-full h-[300px] md:h-[500px] mb-12 rounded-2xl overflow-hidden shadow-xl">
                 <Image
-                  src="/medecin.jpeg"
+                  src="/taxi-antibes-l'archet-nice.jpeg"
                   alt="Taxi conventionné CPAM Antibes vers hôpitaux de Nice"
                   fill
                   className="object-cover object-center"
@@ -864,7 +864,9 @@ export default function TaxiConventionnePage() {
                   Ressources utiles
                 </h2>
                 <p className="text-cyan-900 mb-4">
-                  Pour en savoir plus sur les hôpitaux et centres médicaux de Nice, consultez notre guide complet avec distances, spécialités et informations pratiques.
+                  Pour en savoir plus sur les hôpitaux et centres médicaux de
+                  Nice, consultez notre guide complet avec distances,
+                  spécialités et informations pratiques.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a
