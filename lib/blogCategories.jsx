@@ -66,6 +66,7 @@ const blogCategories = [
       "Partenaires",
       "Actualités",
       "Entreprises",
+      "Vie locale & Entreprises",
     ],
   },
   {
