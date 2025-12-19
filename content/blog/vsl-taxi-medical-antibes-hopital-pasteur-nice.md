@@ -79,7 +79,7 @@ L'**hôpital Pasteur** est l'un des principaux établissements du CHU de Nice, s
 **Téléphone :** 04 92 03 77 77
 
 <div style="max-width: 600px; margin: 1.5rem auto;">
-  <img src="/pasteur-nice-classe-v.jpeg" alt="Taxi conventionné CPAM Antibes transport médical vers hôpital Pasteur Nice" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/pasteur-nice-2025.png" alt="Taxi conventionné CPAM Antibes transport médical vers hôpital Pasteur Nice" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 _Taxi conventionné CPAM Antibes : transport médical sécurisé vers l'hôpital Pasteur de Nice_
 
