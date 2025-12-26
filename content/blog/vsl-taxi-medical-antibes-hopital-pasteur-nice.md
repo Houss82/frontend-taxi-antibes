@@ -30,7 +30,7 @@ Notre service de **VSL Antibes** (Véhicule Sanitaire Léger) et de **taxi médi
 
 ## 🏥 Pourquoi choisir un VSL ou taxi médical conventionné depuis Antibes ?
 
-Le **transport médical conventionné** depuis Antibes vers l'hôpital Pasteur offre de nombreux avantages par rapport aux transports en commun ou à la conduite personnelle :
+Le **transport médical conventionné** depuis Antibes vers l'hôpital Pasteur offre de nombreux avantages par rapport aux transports en commun ou à la conduite personnelle. Pour en savoir plus sur notre [service de taxi conventionné CPAM Antibes](/services/taxi-conventionne), consultez notre page dédiée.
 
 ### ✅ Avantages du transport médical conventionné
 

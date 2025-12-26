@@ -124,7 +124,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700">
               Nos{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                services de taxi Antibes
+                Services de Transport Premium à Antibes
               </span>
             </h2>
             <p className="text-cyan-700 text-lg max-w-3xl mx-auto leading-relaxed">

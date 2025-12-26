@@ -132,6 +132,8 @@ Pour encore plus de confort, nous assurons des prises en charge **directement** 
 
 ## 🎯 2. Pourquoi choisir un Taxi Conventionné à Antibes pour vos rendez-vous médicaux ?
 
+Notre [service de transport médical conventionné CPAM Antibes](/services/taxi-conventionne) vous accompagne pour tous vos déplacements médicaux vers les hôpitaux de Nice, avec prise en charge selon conditions CPAM.
+
 ### 🔹 Avantages spécifiques à Antibes
 
 - Départ au plus près de votre domicile (y compris rues difficilement accessibles)

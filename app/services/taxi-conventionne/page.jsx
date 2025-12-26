@@ -189,38 +189,47 @@ export default function TaxiConventionnePage() {
             <div className="container mx-auto px-6 max-w-6xl">
               <div className="mb-12">
                 <h2 className="text-2xl md:text-3xl text-cyan-600 mb-6 font-semibold">
-                  Transport Médical et VSL sur Antibes et ses environs
+                  Transport Médical Conventionné au Départ d'Antibes
                 </h2>
 
                 <div className="prose prose-lg max-w-none mb-8">
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    <strong>Taxi conventionné Antibes</strong> : Profitez d'un
-                    service de transport médical fiable et reconnu à Antibes,
-                    agréé par la CPAM pour tous vos déplacements médicaux. Notre{" "}
-                    <strong>taxi agréé CPAM Antibes</strong> vous accompagne
-                    pour vos rendez-vous à l'hôpital, en centre de soins ou chez
-                    le spécialiste. Besoin d'un <strong>VSL Antibes</strong> ?
-                    Notre équipe de chauffeurs professionnels est à votre
-                    disposition avec des véhicules modernes et adaptés pour tous
-                    vos besoins de transport sanitaire, avec prescription
-                    médicale.
+                    <strong>Taxi conventionné CPAM à Antibes</strong> : nous
+                    assurons vos <strong>transports médicaux</strong> au départ
+                    d'<strong>Antibes</strong> et des environs, vers les
+                    établissements de santé de la région (Nice, Cannes,
+                    Mougins…), <strong>selon prescription médicale</strong>. Nos
+                    chauffeurs sont habitués aux rendez-vous hospitaliers et aux
+                    contraintes horaires, pour un trajet ponctuel et
+                    confortable.
                   </p>
 
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    Avec notre <strong>taxi VSL à Antibes</strong>, bénéficiez
-                    d'un accompagnement humain et ponctuel pour tous vos trajets
-                    médicaux. Nous mettons un point d'honneur à assurer votre
-                    confort, votre sécurité et la gestion administrative de
-                    votre transport, pour que vous puissiez vous concentrer sur
-                    votre santé.
+                    Que vous soyez à <strong>Antibes centre</strong>,{" "}
+                    <strong>Juan-les-Pins</strong> ou au{" "}
+                    <strong>Cap d'Antibes</strong>, nous venons vous chercher à
+                    domicile et vous accompagnons jusqu'à votre service de
+                    soins. Nous réalisons des trajets pour consultations,
+                    examens, hospitalisations, chimiothérapie, dialyse ou suivi
+                    ALD, avec un service disponible{" "}
+                    <strong>24h/24 et 7j/7</strong>.
+                  </p>
+
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                    Grâce à notre conventionnement, le{" "}
+                    <strong>tiers payant</strong> peut être appliqué{" "}
+                    <strong>selon conditions CPAM</strong>, ce qui limite ou
+                    évite l'avance de frais. Nous vous aidons aussi sur la
+                    partie administrative (documents, justificatifs), pour que
+                    tout soit simple.
                   </p>
 
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    Notre flotte de <strong>taxis à Antibes</strong> est idéale
-                    pour vos transports médicaux. Que ce soit pour des
-                    consultations régulières ou des urgences, notre{" "}
-                    <strong>service de taxi conventionné Antibes</strong>{" "}
-                    s'adapte à vous.
+                    Nos chauffeurs connaissent les accès et déposes des hôpitaux
+                    et cliniques (Pasteur, Archet, Lenval, Lacassagne, etc.)
+                    depuis <strong>Antibes</strong>, afin de sécuriser votre
+                    arrivée à l'heure. Pour une demande rapide, appelez-nous ou
+                    réservez en ligne.
                   </p>
                 </div>
               </div>
@@ -279,6 +288,80 @@ export default function TaxiConventionnePage() {
             </div>
           </section>
 
+          {/* Section Prise en Charge CPAM */}
+          <section className="py-16 md:py-24 bg-gradient-to-b from-cyan-50 to-white">
+            <div className="container mx-auto px-6 max-w-6xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-cyan-700 mb-8 text-center">
+                Prise en Charge CPAM et Documents Nécessaires
+              </h2>
+              <div className="bg-white p-8 rounded-2xl shadow-lg border border-cyan-200">
+                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                  Notre service de{" "}
+                  <strong>transport médical conventionné</strong> bénéficie d'un
+                  agrément officiel de la Caisse Primaire d'Assurance Maladie
+                  des Alpes-Maritimes. Cet agrément CPAM vous permet de
+                  bénéficier d'une prise en charge{" "}
+                  <strong>selon conditions CPAM</strong> de vos transports
+                  médicaux depuis <strong>Antibes</strong> vers les
+                  établissements de santé de la région.
+                </p>
+                <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                  Grâce à notre conventionnement, le{" "}
+                  <strong>tiers payant</strong> peut être appliqué{" "}
+                  <strong>selon prescription médicale</strong>, ce qui limite ou
+                  évite l'avance de frais. Le tiers payant est appliqué
+                  directement avec la CPAM, ce qui simplifie considérablement la
+                  gestion administrative de votre transport médical. Votre
+                  prescription médicale de transport (PMT) est nécessaire pour
+                  bénéficier de ce service à <strong>Antibes</strong>.
+                </p>
+                <div className="grid md:grid-cols-2 gap-6 mt-6">
+                  <div className="bg-cyan-50 p-6 rounded-xl border border-cyan-200">
+                    <h3 className="font-bold text-cyan-700 mb-3 text-lg">
+                      Avantages de l'agrément CPAM
+                    </h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>
+                          Tiers payant selon conditions CPAM : limite ou évite
+                          l'avance de frais
+                        </span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>Prise en charge CPAM selon conditions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>Gestion administrative simplifiée</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="bg-cyan-50 p-6 rounded-xl border border-cyan-200">
+                    <h3 className="font-bold text-cyan-700 mb-3 text-lg">
+                      Pour les résidents d'Antibes
+                    </h3>
+                    <ul className="space-y-2 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>Service disponible dans tout Antibes</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>Chauffeurs formés au transport médical</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-cyan-600 mt-0.5 flex-shrink-0" />
+                        <span>Véhicules adaptés pour votre confort</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Section Services */}
           <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
             <div className="container mx-auto px-6 max-w-6xl">
@@ -303,7 +386,7 @@ export default function TaxiConventionnePage() {
           <section className="py-16 md:py-24 bg-white">
             <div className="container mx-auto px-6 max-w-6xl">
               <h2 className="text-3xl md:text-4xl font-bold text-cyan-700 mb-8">
-                Zones Couvertes autour d'Antibes
+                Zones Desservies autour d'Antibes
               </h2>
               <p className="text-gray-700 text-lg mb-6">
                 Notre service de taxi conventionné couvre Antibes et ses
@@ -393,7 +476,7 @@ export default function TaxiConventionnePage() {
           <section className="py-16 md:py-24 bg-gradient-to-b from-cyan-50 to-white">
             <div className="container mx-auto px-6 max-w-6xl">
               <h2 className="text-3xl md:text-4xl font-bold text-cyan-700 mb-8 text-center">
-                Pourquoi Choisir Notre Taxi Conventionné à Antibes ?
+                Pourquoi Choisir notre Service de Transport Médical à Antibes ?
               </h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <Card className="p-6 text-center bg-white hover:shadow-xl transition-all">
@@ -752,7 +835,7 @@ export default function TaxiConventionnePage() {
           <section className="py-16 md:py-24 bg-gray-50">
             <div className="container mx-auto px-6 max-w-6xl">
               <h2 className="text-3xl md:text-4xl font-bold text-cyan-700 mb-8">
-                Questions Fréquentes - Taxi Conventionné Antibes
+                Questions Fréquentes - Transport Médical Conventionné
               </h2>
               <div className="space-y-4">
                 <details className="group bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
@@ -850,6 +933,60 @@ export default function TaxiConventionnePage() {
                     proposons des véhicules adaptés avec rampe d'accès. Précisez
                     vos besoins lors de la réservation pour garantir le véhicule
                     approprié.
+                  </div>
+                </details>
+
+                <details className="group bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-4 cursor-pointer text-lg font-semibold text-cyan-700 hover:bg-cyan-50 transition-colors">
+                    <span>
+                      Comment fonctionne la prise en charge CPAM pour un
+                      transport médical conventionné à Antibes ?
+                    </span>
+                    <span className="text-cyan-500 group-open:rotate-180 transition-transform">
+                      ⌄
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-4 text-gray-700 leading-relaxed bg-gray-50">
+                    Pour bénéficier de la prise en charge CPAM avec notre{" "}
+                    <strong>
+                      service de transport médical conventionné à Antibes
+                    </strong>
+                    , vous devez disposer d'une prescription médicale de
+                    transport (PMT) délivrée par votre médecin traitant ou le
+                    médecin hospitalier. Notre service pratique le{" "}
+                    <strong>tiers payant selon conditions CPAM</strong>, ce qui
+                    signifie que l'avance de frais peut être limitée ou évitée{" "}
+                    <strong>selon votre prescription</strong>. La CPAM des
+                    Alpes-Maritimes prend en charge le transport{" "}
+                    <strong>selon les conditions de votre PMT</strong>. Le
+                    remboursement peut être partiel ou total selon votre
+                    situation et votre mutuelle complémentaire.
+                  </div>
+                </details>
+
+                <details className="group bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+                  <summary className="flex items-center justify-between px-6 py-4 cursor-pointer text-lg font-semibold text-cyan-700 hover:bg-cyan-50 transition-colors">
+                    <span>
+                      Votre service de transport médical conventionné
+                      intervient-il dans tous les quartiers d'Antibes ?
+                    </span>
+                    <span className="text-cyan-500 group-open:rotate-180 transition-transform">
+                      ⌄
+                    </span>
+                  </summary>
+                  <div className="px-6 pb-4 text-gray-700 leading-relaxed bg-gray-50">
+                    Oui, notre{" "}
+                    <strong>service de transport médical conventionné</strong>{" "}
+                    intervient dans tous les quartiers d'
+                    <strong>Antibes</strong> : centre-ville,{" "}
+                    <strong>Juan-les-Pins</strong>,{" "}
+                    <strong>Cap d'Antibes</strong>, et toutes les zones
+                    résidentielles. Nous desservons également les communes
+                    environnantes comme Biot, Vallauris, Valbonne et Sophia
+                    Antipolis. Nos chauffeurs connaissent parfaitement les accès
+                    et les meilleurs itinéraires depuis votre domicile à{" "}
+                    <strong>Antibes</strong> vers les établissements de santé de
+                    la région.
                   </div>
                 </details>
               </div>
