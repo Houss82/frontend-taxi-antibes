@@ -1,5 +1,5 @@
 ---
-title: "Week-end à Antibes : Guide Complet Visites & Transports 2025"
+title: "Que faire à Antibes en un week-end ? Visites, plages et transports"
 date: "2026-01-03"
 excerpt: "Guide complet pour un week-end réussi à Antibes : visites incontournables, musées, plages, restaurants, transports et conseils pratiques. Itinéraire sur 2-3 jours pour découvrir Antibes et la Côte d'Azur sans voiture."
 image: "/week-end-antibes.png"
