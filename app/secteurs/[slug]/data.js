@@ -549,10 +549,10 @@ export const sectorData = {
       },
     ],
     homepageLink: {
-      before:
-        "💡 Cette page détaille les transferts depuis Antibes vers Nice. Pour découvrir tous nos services Taxi Antibes 24/7 avec réservation en ligne, consultez ",
-      linkText: "notre page d'accueil",
-      after: ".",
+      before: "Pour vos départs ou retours depuis Antibes, contactez ",
+      linkText: "Taxi Antibes",
+      after:
+        " : notre équipe basée à Antibes planifie vos transferts Antibes ↔ Nice avec la même exigence que les trajets intra-Nice.",
       href: "/",
     },
     resource: {
@@ -1118,7 +1118,11 @@ export const sectorData = {
         "Organisez facilement vos trajets vers Sophia Antipolis avec notre guide complet.",
       links: [
         {
-          label: "Guide Taxi Antibes",
+          label: "Guide zones d'activité Antibes",
+          url: "https://www.taxi-antibes.fr/blog/zones-activite-entreprises-antibes-guide-2025",
+        },
+        {
+          label: "Tous nos guides",
           url: "https://www.taxi-antibes.fr/blog",
         },
       ],
@@ -1172,6 +1176,217 @@ export const sectorData = {
       url: "https://www.taxi-antibes.fr/secteurs/sophia-antipolis",
       latitude: "43.616667",
       longitude: "7.050000",
+    },
+  },
+  "cap-d-antibes": {
+    slug: "cap-d-antibes",
+    cityName: "Cap d'Antibes",
+    hero: {
+      title: "Taxi Cap d'Antibes – Service Premium",
+      highlight: "Cap d'Antibes & Péninsule",
+      subtitle:
+        "Transferts aéroport Nice, Monaco, Cannes depuis les villas de luxe 24/7",
+      image: "/taxi-antibes-cap-d'antibes.jpeg",
+      imageAlt: "Taxi premium Cap d'Antibes",
+    },
+    introduction: [
+      "Le Cap d'Antibes est l'une des péninsules les plus prestigieuses de la Côte d'Azur, réputée pour ses villas de luxe, ses plages privées et son ambiance exclusive. Depuis notre base à Antibes, nous desservons quotidiennement le Cap d'Antibes pour tous vos besoins de transport vers l'aéroport de Nice, Monaco, Cannes, Saint-Tropez ou d'autres destinations de la région.",
+      "Nos chauffeurs locaux connaissent parfaitement les accès au Cap d'Antibes, les villas, les hôtels de prestige et les restaurants. Nous maîtrisons les routes étroites et les meilleurs itinéraires pour vous garantir un service ponctuel et confortable, même en haute saison.",
+      "Le parking étant très limité au Cap d'Antibes, notre service de taxi premium est la solution idéale pour tous vos déplacements. Nous proposons une prise en charge directement à votre villa, hôtel ou restaurant, avec un service sur-mesure adapté à vos besoins.",
+    ],
+    secondaryIntro: [
+      "Pour les résidents du Cap d'Antibes, nous proposons des services réguliers avec tarifs préférentiels et suivi personnalisé. Nous connaissons vos habitudes, vos horaires et vos destinations favorites pour vous offrir un service adapté.",
+      "Nous desservons également les événements prestigieux organisés au Cap d'Antibes (mariages, galas, événements privés) avec mise à disposition de véhicules premium et coordination logistique complète.",
+    ],
+    servicesTitle: "Services de transport depuis le Cap d'Antibes",
+    services: [
+      "Transferts Aéroport Nice ↔ Cap d'Antibes avec suivi de vol",
+      "Transferts vers Monaco, Cannes, Saint-Tropez",
+      "Prise en charge à votre villa ou hôtel de luxe",
+      "Mises à disposition pour événements prestigieux",
+      "Excursions touristiques sur la Côte d'Azur",
+      "Service navette régulier pour résidents",
+    ],
+    coverageDescription: "Nous desservons le Cap d'Antibes et ses environs :",
+    coverageAreas: [
+      "✓ Villas de luxe du Cap d'Antibes",
+      "✓ Hôtel du Cap-Eden-Roc",
+      "✓ Plages privées et publiques",
+      "✓ Restaurants de prestige",
+      "✓ Port de la Garoupe",
+      "✓ Sentier du littoral",
+    ],
+    map: {
+      description: "Notre zone d'intervention sur le Cap d'Antibes.",
+      info: "Depuis le Cap d'Antibes, nous proposons des trajets vers l'aéroport Nice (25-35 min), Monaco (35-45 min), Cannes (20-30 min) et Saint-Tropez (1h15-1h30). Nous connaissons parfaitement les accès aux villas et hôtels.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Cap+d%27Antibes&t=&z=14&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Connaissance approfondie du Cap",
+        description:
+          "Nos chauffeurs résidant à Antibes connaissent parfaitement les accès au Cap d'Antibes, les villas, les routes étroites et les meilleurs itinéraires selon la saison et les événements.",
+      },
+      {
+        title: "Service résidents privilégié",
+        description:
+          "Pour les résidents du Cap d'Antibes, nous proposons des tarifs préférentiels, un suivi personnalisé et une mémorisation de vos préférences (horaires, destinations, véhicules).",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Accès villas & hôtels",
+        description:
+          "Nous venons vous chercher directement à votre villa, hôtel ou restaurant. Nos chauffeurs connaissent tous les accès, même les routes les plus étroites du Cap d'Antibes.",
+      },
+      {
+        title: "✓ Service premium",
+        description:
+          "Véhicules Mercedes haut de gamme, chauffeurs professionnels multilingues, service personnalisé et ponctualité garantie pour tous vos déplacements.",
+      },
+      {
+        title: "✓ Disponibilité 24/7",
+        description:
+          "Service disponible jour et nuit, 7 jours sur 7, y compris les jours fériés. Réaction rapide pour vos besoins urgents ou modifications de dernière minute.",
+      },
+      {
+        title: "✓ Tarifs transparents",
+        description:
+          "Devis gratuit, tarif fixe garanti sans surprise. Pas de suppléments cachés. Facturation détaillée pour les professionnels et résidents.",
+      },
+    ],
+    hospitalsTitle: "Établissements desservis depuis le Cap d'Antibes",
+    hospitals: [
+      {
+        name: "Centre Hospitalier d'Antibes",
+        city: "Antibes",
+        description: "Urgences et consultations générales.",
+        speciality: "Médecine générale, urgences",
+        website: "https://www.ch-antibes.fr/",
+        phone: "04 92 91 77 77",
+      },
+      {
+        name: "Hôpital Pasteur",
+        city: "Nice",
+        description: "Centre hospitalier universitaire de référence.",
+        speciality: "Toutes spécialités médicales et chirurgicales",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+    ],
+    establishmentsTitle:
+      "Établissements de prestige accessibles depuis le Cap d'Antibes",
+    establishments: [
+      {
+        name: "Hôtel du Cap-Eden-Roc",
+        city: "Cap d'Antibes",
+        speciality: "Palace 5★",
+        website:
+          "https://www.oetkercollection.com/fr/hotels/hotel-du-cap-eden-roc/",
+        phone: "04 93 61 39 01",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 & 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+      {
+        name: "Port de la Garoupe",
+        city: "Cap d'Antibes",
+        speciality: "Port de plaisance",
+        website: "https://www.antibesjuanlespins.com/",
+        phone: "04 97 23 11 11",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Combien coûte un taxi depuis le Cap d'Antibes vers l'aéroport de Nice ?",
+        answer:
+          "Le tarif moyen est de 60 à 80€ selon votre emplacement exact sur le Cap d'Antibes et le type de véhicule choisi. Le tarif est fixe et garanti, sans surprise. Pour un devis précis, contactez-nous avec votre adresse exacte.",
+      },
+      {
+        question:
+          "Le taxi peut-il venir me chercher directement à ma villa au Cap d'Antibes ?",
+        answer:
+          "Oui, absolument. Nos chauffeurs connaissent parfaitement les accès au Cap d'Antibes et peuvent venir vous chercher directement à votre villa, hôtel ou restaurant. Précisez bien votre adresse exacte lors de la réservation.",
+      },
+      {
+        question:
+          "Proposez-vous un service pour les événements au Cap d'Antibes ?",
+        answer:
+          "Oui, nous proposons des mises à disposition pour événements prestigieux (mariages, galas, événements privés) avec coordination logistique complète, véhicules premium et chauffeurs dédiés.",
+      },
+    ],
+    resource: {
+      description:
+        "Découvrez notre guide complet pour organiser vos transferts depuis le Cap d'Antibes.",
+      links: [
+        {
+          label: "Guide complet Cap d'Antibes",
+          url: "https://www.taxi-antibes.fr/blog/taxi-cap-antibes-destinations-guide-complet",
+        },
+        {
+          label: "Tous nos guides",
+          url: "https://www.taxi-antibes.fr/blog",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "Vous résidez ou séjournez au Cap d'Antibes ? ",
+      linkText: "Taxi Antibes",
+      after:
+        " vous accompagne depuis notre base antiboise avec un service premium adapté aux exigences de la péninsule : transferts aéroport, Monaco, Cannes et destinations Côte d'Azur.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Transferts villas de luxe",
+        description:
+          "Prise en charge directement à votre villa avec connaissance parfaite des accès et routes étroites du Cap d'Antibes.",
+      },
+      {
+        title: "Service événements prestigieux",
+        description:
+          "Mise à disposition pour mariages, galas et événements privés avec coordination logistique complète.",
+      },
+    ],
+    pricing: [
+      "Cap d'Antibes ↔ Aéroport Nice dès 60€",
+      "Cap d'Antibes ↔ Monaco à partir de 90€",
+      "Cap d'Antibes ↔ Cannes dès 50€",
+      "Cap d'Antibes ↔ Saint-Tropez à partir de 180€",
+    ],
+    commitments: [
+      {
+        title: "Connaissance locale parfaite",
+        description:
+          "Chauffeurs antibois connaissant parfaitement les accès au Cap d'Antibes, les villas, les routes et les meilleurs itinéraires selon la saison.",
+      },
+      {
+        title: "Service résidents privilégié",
+        description:
+          "Pour les résidents du Cap d'Antibes, tarifs préférentiels, suivi personnalisé et mémorisation de vos préférences.",
+      },
+      {
+        title: "Ponctualité & discrétion",
+        description:
+          "Arrivée systématiquement en avance, service discret et professionnel adapté aux exigences de la péninsule.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Cap d'Antibes - Taxi Antibes",
+      image:
+        "https://www.taxi-antibes.fr/taxi-antibes-classe-V-cap-d'antibes.jpeg",
+      telephone: "+33749777621",
+      locality: "Cap d'Antibes",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/cap-d-antibes",
+      latitude: "43.550000",
+      longitude: "7.116667",
     },
   },
 };

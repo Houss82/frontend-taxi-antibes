@@ -1,12 +1,11 @@
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
-import { Button } from "@/components/ui/button";
 import { getAllPosts } from "@/lib/blog";
-import { Car, CheckCircle, MapPin, Phone, Star } from "lucide-react";
+import { Car, CheckCircle, MapPin, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import { sectorData, sectorSlugs } from "./data";
 
 export async function generateStaticParams() {
@@ -146,9 +145,7 @@ export default async function SecteurPage({ params }) {
                 </Link>
               </li>
               <li>/</li>
-              <li className="text-cyan-700 font-semibold">
-                {data.cityName}
-              </li>
+              <li className="text-cyan-700 font-semibold">{data.cityName}</li>
             </ol>
           </nav>
         </div>
@@ -186,7 +183,10 @@ export default async function SecteurPage({ params }) {
                   {data.homepageLink.before}
                   <Link
                     href={data.homepageLink.href}
-                    className="text-cyan-700 font-semibold hover:text-cyan-600 transition-colors"
+                    className="text-cyan-700 font-semibold hover:text-cyan-600 transition-colors underline decoration-2 underline-offset-2"
+                    title={`${data.homepageLink.linkText} - Service de taxi premium à Antibes`}
+                    aria-label={`${data.homepageLink.linkText} - Retour à la page d'accueil`}
+                    rel="dofollow"
                   >
                     {data.homepageLink.linkText}
                   </Link>
@@ -218,8 +218,12 @@ export default async function SecteurPage({ params }) {
                     <Star className="w-5 h-5 text-white fill-white" />
                   </div>
                   <div>
-                    <div className="text-xs text-gray-500 font-semibold">Note</div>
-                    <div className="text-lg font-black text-gray-900">4,9/5</div>
+                    <div className="text-xs text-gray-500 font-semibold">
+                      Note
+                    </div>
+                    <div className="text-lg font-black text-gray-900">
+                      4,9/5
+                    </div>
                   </div>
                 </div>
               </div>
@@ -358,7 +362,9 @@ export default async function SecteurPage({ params }) {
                     </h3>
                     <p className="text-gray-600 mb-2">{hospital.city}</p>
                     {hospital.description && (
-                      <p className="text-gray-700 mb-2">{hospital.description}</p>
+                      <p className="text-gray-700 mb-2">
+                        {hospital.description}
+                      </p>
                     )}
                     {hospital.speciality && (
                       <p className="text-cyan-700 font-medium mb-3">
@@ -493,7 +499,9 @@ export default async function SecteurPage({ params }) {
                 Ressources utiles
               </h2>
               {data.resource.description && (
-                <p className="text-cyan-900 mb-3">{data.resource.description}</p>
+                <p className="text-cyan-900 mb-3">
+                  {data.resource.description}
+                </p>
               )}
               {Array.isArray(data.resource.links) &&
                 data.resource.links.length > 0 && (
@@ -708,4 +716,3 @@ export default async function SecteurPage({ params }) {
     </div>
   );
 }
-

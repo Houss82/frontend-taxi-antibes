@@ -220,6 +220,8 @@ Les entreprises d'Antibes bénéficient particulièrement de cette proximité da
 - **Services professionnels** : Cabinets d'avocats, experts-comptables, consultants
 - **Commerce B2B** : Fournisseurs de services aux entreprises de Sophia Antipolis
 
+💡 **Besoin d'un transport professionnel vers Sophia Antipolis ?** Découvrez notre [service de taxi premium vers Sophia Antipolis](/secteurs/sophia-antipolis) depuis Antibes : transferts réguliers, navettes entreprises et service sur-mesure pour vos déplacements professionnels.
+
 ---
 
 ## 📊 7. Tableau récapitulatif des zones d'activité

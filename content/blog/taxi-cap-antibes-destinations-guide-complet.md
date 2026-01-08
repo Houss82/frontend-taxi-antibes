@@ -15,6 +15,8 @@ Le **Cap d'Antibes** est l'une des **péninsules les plus prestigieuses de la C�
 
 Avec **Taxi Antibes**, vous bénéficiez d'un **service de transport premium** depuis le Cap d'Antibes vers toutes les destinations de la Côte d'Azur. Nos chauffeurs locaux connaissent parfaitement les accès au Cap d'Antibes et vous proposent un service sur-mesure, ponctuel et confortable pour tous vos déplacements.
 
+💡 **Découvrez notre [service de taxi premium depuis le Cap d'Antibes](/secteurs/cap-d-antibes) : transferts aéroport Nice, Monaco, Cannes, Saint-Tropez et destinations Côte d'Azur avec prise en charge directement à votre villa ou hôtel.**
+
 <div class="kpi-strip">
   <span class="badge success">✈️ Aéroport Nice</span>
   <span class="badge info">🏰 Monaco</span>
