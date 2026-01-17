@@ -143,6 +143,37 @@ export default async function BlogPostPage({ params }) {
         }
       : null;
 
+  // Schema TaxiService spécifique pour l'article "taxi gare Antibes"
+  const taxiServiceSchema =
+    post.slug === "taxi-gare-sncf-antibes-guide-complet"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "TaxiService",
+          name: "Taxi Antibes",
+          telephone: "+33749777621",
+          areaServed: [
+            "Antibes",
+            "Juan-les-Pins",
+            "Cap d'Antibes",
+            "Cannes",
+            "Nice",
+            "Monaco",
+            "Sophia Antipolis",
+          ],
+          availableChannel: {
+            "@type": "ServiceChannel",
+            serviceUrl: "https://www.taxi-antibes.fr/reservation",
+            availableLanguage: ["fr"],
+          },
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "Antibes",
+            postalCode: "06600",
+            addressCountry: "FR",
+          },
+        }
+      : null;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -198,7 +229,11 @@ export default async function BlogPostPage({ params }) {
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(
-                faqSchema ? [articleSchema, faqSchema] : [articleSchema]
+                [
+                  articleSchema,
+                  ...(faqSchema ? [faqSchema] : []),
+                  ...(taxiServiceSchema ? [taxiServiceSchema] : []),
+                ]
               ),
             }}
           />
