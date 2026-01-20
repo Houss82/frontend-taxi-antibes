@@ -6,7 +6,7 @@ export const sectorData = {
       title: "Taxi Antibes vers Monaco ",
       highlight: "Monaco & Riviera",
       subtitle: "Transferts aéroport, port Hercule et hôtels 5 étoiles 24/7",
-      image: "/Monaco.ville.jpg",
+      image: "/taxi-antibes-Monaco-centre.jpeg",
       imageAlt: "Taxi premium à Monaco",
     },
     introduction: [
