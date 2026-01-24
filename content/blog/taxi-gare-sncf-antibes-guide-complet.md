@@ -2,7 +2,7 @@
 title: "Taxi Gare Antibes – Réservation 24/7 depuis la gare SNCF"
 date: "2026-01-17"
 excerpt: "Taxi gare Antibes : service de taxi officiel à la gare SNCF d'Antibes. Prise en charge immédiate, réservation 24/7, tarifs transparents. Taxi gare Antibes vers centre-ville, aéroport Nice, Juan-les-Pins."
-image: "/taxi-gare-d'antibes.jpeg"
+image: "/taxi-antibes.jpeg"
 imagePosition: "center 50%"
 category: "Taxi & Transport"
 author: "Taxi Antibes"
