@@ -14,11 +14,11 @@ export const metadata = {
     title: "Blog | Taxi Antibes",
     description:
       "Découvrez nos conseils pour vos transports à Antibes. Guides pratiques, actualités et informations sur nos services de taxi premium.",
-    url: "https://taxi-antibes.fr/blog",
+    url: "https://www.taxi-antibes.fr/blog", // ✅ Version canonique avec www
     type: "website",
     images: [
       {
-        url: "https://taxi-antibes.fr/bg-image.png",
+        url: "https://www.taxi-antibes.fr/bg-image.png", // ✅ Version canonique avec www
         width: 1200,
         height: 630,
         alt: "Blog Taxi Antibes",
@@ -29,12 +29,12 @@ export const metadata = {
     card: "summary_large_image",
     title: "Blog | Taxi Antibes",
     description: "Découvrez nos conseils pour vos transports à Antibes.",
-    images: ["https://taxi-antibes.fr/bg-image.png"],
+    images: ["https://www.taxi-antibes.fr/bg-image.png"], // ✅ Version canonique avec www
   },
   alternates: {
-    canonical: "https://taxi-antibes.fr/blog",
+    canonical: "/blog", // ✅ Relatif, metadataBase gère le domaine (www)
     languages: {
-      fr: "https://taxi-antibes.fr/blog",
+      fr: "/blog",
     },
   },
   robots: {

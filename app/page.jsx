@@ -43,6 +43,16 @@ const outfit = Outfit({
 // ✅ Force le rendu statique (SSG) pour de meilleures performances SEO
 export const dynamic = "force-static";
 
+// ✅ Metadata spécifique à la homepage (écrase le template du layout)
+export const metadata = {
+  title: "Taxi Antibes Riviera | Aéroport Nice & Conventionné CPAM",
+  description:
+    "Taxi à Antibes : transferts Aéroport Nice Côte d'Azur et taxi conventionné CPAM. Réservation 24h/24, service premium.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -80,11 +90,11 @@ export default function Home() {
             <span
               className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
             >
-              Taxi Antibes
+              Taxi Antibes Riviera 
             </span>
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-white font-semibold">
-            Taxi Aéroport Nice
+          Aéroport Nice & Conventionné CPAM
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl mb-4 text-white/90 font-semibold">
             Tous transports sur la Côte d'Azur
@@ -160,7 +170,7 @@ export default function Home() {
             </div>
             <div className="text-4xl md:text-6xl font-bold mb-8 leading-tight">
               <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
-                Taxi Antibes
+                Taxi Antibes Riviera
               </span>
               <br />
               <span className="text-gray-700">
@@ -188,7 +198,7 @@ export default function Home() {
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 shadow-lg border border-gray-100">
               <p className="text-gray-800 mb-0 leading-relaxed text-lg">
                 <strong className="font-bold text-cyan-600 text-xl">
-                  Taxi Antibes
+                  Taxi Antibes Riviera
                 </strong>{" "}
                 assure tous vos déplacements entre{" "}
                 <strong className="font-bold text-cyan-600 text-lg">
@@ -291,7 +301,7 @@ export default function Home() {
                 </strong>
                 ,{" "}
                 <strong className="font-bold text-gold-600 text-xl">
-                  Taxi Antibes est à votre service
+                  Taxi Antibes Riviera est à votre service
                 </strong>{" "}
                 pour des trajets sûrs, rapides et confortables sur toute la{" "}
                 <strong className="font-bold text-cyan-600 text-lg">
@@ -432,7 +442,7 @@ export default function Home() {
             <h3
               className={`text-4xl md:text-5xl font-bold mb-6 text-cyan-700 ${poppins.className}`}
             >
-              Pourquoi choisir Taxi Antibes ?
+              Pourquoi choisir Taxi Antibes Riviera ?
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Un service premium de confiance pour tous vos déplacements sur la
@@ -453,7 +463,7 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                <strong className="text-cyan-600">Taxi Antibes</strong> est
+                <strong className="text-cyan-600">Taxi Antibes Riviera</strong> est
                 votre partenaire de confiance pour tous vos déplacements dans
                 les Alpes-Maritimes. Que vous ayez besoin d'un{" "}
                 <strong className="text-cyan-600">

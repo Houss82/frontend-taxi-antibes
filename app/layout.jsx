@@ -20,23 +20,24 @@ const outfit = Outfit({
 
 // ✅ Génère <title>, <meta>, canonical… côté serveur (HTML initial)
 export async function generateMetadata() {
-  const siteUrl = "https://taxi-antibes.fr";
-  const siteName = "Taxi Antibes";
-  const title =
-    "Taxi Antibes - Transferts Aéroport Nice 24/7 | Service Premium Côte d'Azur";
-  const description =
+  const siteUrl = "https://www.taxi-antibes.fr"; // ✅ Version canonique avec www
+  const siteName = "Taxi Antibes Riviera";
+  const defaultDescription =
     "Service de taxi officiel à Antibes. Transferts aéroport Nice, courses locales, Juan-les-Pins, Cannes, Monaco. Réservation 24h/24 - Chauffeurs professionnels - Tarifs transparents.";
 
   return {
-    metadataBase: new URL(siteUrl),
-    title,
-    description,
+    metadataBase: new URL("https://www.taxi-antibes.fr"), // ✅ Version canonique avec www
+    title: {
+      default: "Taxi Antibes Riviera",
+      template: "%s | Taxi Antibes Riviera",
+    },
+    description: defaultDescription,
     keywords:
       "taxi antibes, transferts aéroport nice, taxi pour l'aéroport de nice depuis antibes, taxi antibes aéroport, vtc antibes nice, chauffeur privé antibes, taxi juan-les-pins, taxi côte d'azur",
     alternates: {
-      canonical: siteUrl,
+      canonical: "/", // ✅ Next.js gère automatiquement selon la route
       languages: {
-        fr: siteUrl,
+        fr: "/",
       },
     },
     robots: {
@@ -58,8 +59,11 @@ export async function generateMetadata() {
       locale: "fr_FR",
       url: siteUrl,
       siteName,
-      title,
-      description,
+      title: {
+        default: "Taxi Antibes Riviera",
+        template: "%s | Taxi Antibes Riviera",
+      },
+      description: defaultDescription,
       images: [
         {
           url: `${siteUrl}/van-aéro copie.jpeg`,
@@ -71,8 +75,11 @@ export async function generateMetadata() {
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: {
+        default: "Taxi Antibes Riviera",
+        template: "%s | Taxi Antibes Riviera",
+      },
+      description: defaultDescription,
       images: [`${siteUrl}/van-aéro copie.jpeg`],
     },
     // Métadonnées géo
@@ -90,44 +97,26 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TaxiService",
-    "@id": "https://taxi-antibes.fr/#organization",
-    name: "Taxi Antibes",
-    description:
-      "Service de taxi premium à Antibes pour l'aéroport de Nice et toute la Côte d'Azur",
-    url: "https://taxi-antibes.fr",
+    name: "Taxi Antibes Riviera",
+    legalName: "JO Services 06",
+    url: "https://www.taxi-antibes.fr", // ✅ Version canonique avec www
     telephone: "+33749777621",
-    email: "contact@taxi-antibes.fr",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Antibes",
-      addressLocality: "Antibes",
-      postalCode: "06600",
-      addressRegion: "Alpes-Maritimes",
-      addressCountry: "FR",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: "43.580418",
-      longitude: "7.125102",
-    },
+    priceRange: "€€",
+    image: "https://www.taxi-antibes.fr/van-aéro%20copie.jpeg", // ✅ Version canonique avec www
     areaServed: [
       { "@type": "City", name: "Antibes" },
-      { "@type": "City", name: "Nice" },
-      { "@type": "City", name: "Cannes" },
-      { "@type": "City", name: "Monaco" },
       { "@type": "City", name: "Juan-les-Pins" },
     ],
-    serviceType: "Transport de personnes",
-    priceRange: "€€",
-    openingHours: "Mo-Su 00:00-23:59",
-    sameAs: ["https://maps.app.goo.gl/gAA4M31jtVcsY3Km9"],
-    potentialAction: {
-      "@type": "ReserveAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: "https://taxi-antibes.fr/reservation",
-      },
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Antibes",
+      postalCode: "06600",
+      addressCountry: "FR",
     },
+    sameAs: [
+      "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
+      "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
+    ],
   };
 
   return (

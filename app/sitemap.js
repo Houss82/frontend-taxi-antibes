@@ -2,7 +2,7 @@ import { getAllPostSlugs } from "@/lib/blog";
 import { sectorSlugs } from "./secteurs/[slug]/data";
 
 export default function sitemap() {
-  const baseUrl = "https://www.taxi-antibes.fr";
+  const baseUrl = "https://www.taxi-antibes.fr"; // ✅ Version canonique avec www
 
   // Pages statiques principales
   const staticPages = [

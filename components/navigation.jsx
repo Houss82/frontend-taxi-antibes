@@ -244,7 +244,7 @@ export function Navigation() {
                     <h2 className="text-xl font-bold text-gray-900">
                       TAXI ANTIBES
                     </h2>
-                    <p className="text-sm text-gray-600">Côte d'Azur</p>
+                    <p className="text-xs text-gray-600 font-light">Riviera</p>
                   </div>
                 </div>
 
@@ -396,12 +396,17 @@ export function Navigation() {
               className="object-contain w-12 h-12 md:w-20 md:h-20 -my-4 -mx-2 md:-my-4 md:-mx-2"
               priority
             />
-            <span>
-              TAXI{" "}
-              <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                ANTIBES
+            <div className={`flex flex-col ${isScrolled ? "text-black" : "text-white"}`}>
+              <span>
+                TAXI{" "}
+                <span className="font-bold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                  ANTIBES
+                </span>
               </span>
-            </span>
+              <span className="text-[0.65rem] md:text-xs font-light -mt-1 opacity-80 transition-opacity">
+                Riviera
+              </span>
+            </div>
           </a>
 
           {/* Menu desktop */}

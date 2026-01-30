@@ -10,7 +10,7 @@ export const metadata = {
     follow: false,
   },
   alternates: {
-    canonical: "https://www.taxi-antibes.fr/blog",
+    canonical: "/blog", // ✅ Relatif, metadataBase gère le domaine (www)
   },
 };
 

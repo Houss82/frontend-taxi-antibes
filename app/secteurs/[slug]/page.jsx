@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   const description =
     data.introduction[0]?.slice(0, 155) ??
     `Taxi Antibes - Chauffeur privé ${data.cityName}.`;
-  const canonical = `https://www.taxi-antibes.fr/secteurs/${data.slug}`;
+  const canonical = `https://www.taxi-antibes.fr/secteurs/${data.slug}`; // ✅ Version canonique avec www
 
   return {
     title,
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       type: "website",
       images: [
         {
-          url: `https://www.taxi-antibes.fr${data.hero.image}`,
+          url: `https://www.taxi-antibes.fr${data.hero.image}`, // ✅ Version canonique avec www
           width: 1200,
           height: 630,
           alt: `Taxi ${data.cityName}`,
@@ -55,7 +55,7 @@ export async function generateMetadata({ params }) {
       card: "summary_large_image",
       title,
       description,
-      images: [`https://www.taxi-antibes.fr${data.hero.image}`],
+      images: [`https://www.taxi-antibes.fr${data.hero.image}`], // ✅ Version canonique avec www
     },
     alternates: {
       canonical,

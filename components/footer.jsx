@@ -19,10 +19,14 @@ export function Footer() {
               TAXI{" "}
               <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
                 ANTIBES
-              </span>
+              </span>{" "}
+              <span className="text-lg font-light text-white/70">Riviera</span>
             </h3>
-            <p className="text-white/80 font-light leading-relaxed">
+            <p className="text-white/80 font-light leading-relaxed mb-3">
               Votre service de transport premium sur la Côte d'Azur
+            </p>
+            <p className="text-white/60 text-xs font-light">
+              JO Services 06 – SIREN : 819018391 – Licence 14 Taxi Antibes
             </p>
           </div>
 
@@ -101,9 +105,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gold-600/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm font-light">
-            © 2025 Taxi Antibes. Tous droits réservés.
-          </p>
+          <div className="text-white/60 text-sm font-light">
+            <p>© 2025 Taxi Antibes Riviera. Tous droits réservés.</p>
+            <p className="mt-2 text-xs">JO Services 06 – SIREN : 819018391 – Licence 14 Taxi Antibes</p>
+          </div>
           <div className="flex gap-6 text-sm text-white/60 font-light">
             <a href="#" className="hover:text-gold-600 transition-colors">
               Mentions légales

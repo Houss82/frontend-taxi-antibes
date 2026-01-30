@@ -40,7 +40,7 @@ export default async function BlogPostPage({ params }) {
 
   const imageUrl = post.image.startsWith("http")
     ? post.image
-    : `https://www.taxi-antibes.fr${post.image}`;
+    : `https://www.taxi-antibes.fr${post.image}`; // ✅ Version canonique avec www
 
   // Extraire les questions FAQ du contenu HTML
   const extractFAQFromContent = (htmlContent) => {
@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }) {
       name: "Taxi Antibes",
       logo: {
         "@type": "ImageObject",
-        url: "https://www.taxi-antibes.fr/logo.png",
+        url: "https://www.taxi-antibes.fr/logo.png", // ✅ Version canonique avec www
       },
     },
     description: post.excerpt,
@@ -123,7 +123,7 @@ export default async function BlogPostPage({ params }) {
       : post.keywords || "",
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`,
+      "@id": `https://www.taxi-antibes.fr/blog/${post.slug}`, // ✅ Version canonique avec www
     },
   };
 
@@ -162,7 +162,7 @@ export default async function BlogPostPage({ params }) {
           ],
           availableChannel: {
             "@type": "ServiceChannel",
-            serviceUrl: "https://www.taxi-antibes.fr/reservation",
+            serviceUrl: "https://www.taxi-antibes.fr/reservation", // ✅ Version canonique avec www
             availableLanguage: ["fr"],
           },
           address: {

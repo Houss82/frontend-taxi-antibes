@@ -150,33 +150,45 @@ export const revalidate = 3600;
 export default function TaxiConventionnePage() {
   return (
     <>
-      <Script id="local-business-schema" type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "LocalBusiness",
-          name: "Taxi Conventionné CPAM Antibes",
-          image: "/taxi-conventionne-nice-pasteur.jpeg",
-          telephone: "+33749777621",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Antibes",
-            addressRegion: "PACA",
-            addressCountry: "FR",
-          },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: "43.5804",
-            longitude: "7.1251",
-          },
-          url: "https://www.taxi-antibes.fr/services/taxi-conventionne",
-          openingHours: "Mo-Su 00:00-23:59",
-          priceRange: "€€",
-          serviceArea: {
-            "@type": "City",
-            name: "Antibes",
-          },
-        })}
-      </Script>
+      {/* ✅ JSON-LD optimisé avec type TaxiService et syntaxe correcte */}
+      <Script
+        id="taxi-conventionne-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            name: "Taxi Antibes Riviera - Taxi Conventionné CPAM",
+            legalName: "JO Services 06",
+            url: "https://www.taxi-antibes.fr/services/taxi-conventionne", // ✅ Version canonique avec www
+            telephone: "+33749777621",
+            image: "https://www.taxi-antibes.fr/taxi-conventionne-nice-pasteur.jpeg", // ✅ Version canonique avec www
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Antibes",
+              postalCode: "06600",
+              addressCountry: "FR",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "43.5804",
+              longitude: "7.1251",
+            },
+            openingHours: "Mo-Su 00:00-23:59",
+            priceRange: "€€",
+            areaServed: [
+              { "@type": "City", name: "Antibes" },
+              { "@type": "City", name: "Juan-les-Pins" },
+              { "@type": "City", name: "Nice" },
+              { "@type": "City", name: "Cannes" },
+            ],
+            sameAs: [
+              "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
+              "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
+            ],
+          }),
+        }}
+      />
 
       <PageLayout
         title="Taxi Conventionné CPAM Antibes"

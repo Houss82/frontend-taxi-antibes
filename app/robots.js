@@ -7,6 +7,6 @@ export default function robots() {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://www.taxi-antibes.fr/sitemap.xml",
+    sitemap: "https://www.taxi-antibes.fr/sitemap.xml", // ✅ Version canonique avec www
   };
 }

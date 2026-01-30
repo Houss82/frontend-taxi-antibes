@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const baseUrl = "https://www.taxi-antibes.fr";
+  const baseUrl = "https://www.taxi-antibes.fr"; // ✅ Version canonique avec www
   const imageUrl = post.image.startsWith("http")
     ? post.image
     : `${baseUrl}${post.image}`;

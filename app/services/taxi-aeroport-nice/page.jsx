@@ -119,34 +119,45 @@ export const revalidate = 3600;
 export default function TaxiAeroportNicePage() {
   return (
     <>
-      <Script id="local-business-schema" type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "TaxiService",
-          name: "Taxi Aéroport Nice - Taxi Antibes",
-          image: "/aeroport-nice-depart-t2-2.jpeg",
-          telephone: "+33749777621",
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Antibes",
-            addressRegion: "PACA",
-            addressCountry: "FR",
-          },
-          geo: {
-            "@type": "GeoCoordinates",
-            latitude: "43.5804",
-            longitude: "7.1251",
-          },
-          areaServed: {
-            "@type": "Airport",
-            name: "Aéroport Nice Côte d'Azur",
-            iataCode: "NCE",
-          },
-          url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
-          openingHours: "Mo-Su 00:00-23:59",
-          priceRange: "€€",
-        })}
-      </Script>
+      {/* ✅ JSON-LD optimisé avec syntaxe correcte et branding cohérent */}
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            name: "Taxi Antibes Riviera - Taxi Aéroport Nice",
+            legalName: "JO Services 06",
+            image: "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg", // ✅ Version canonique avec www
+            telephone: "+33749777621",
+            url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice", // ✅ Version canonique avec www
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Antibes",
+              postalCode: "06600",
+              addressRegion: "PACA",
+              addressCountry: "FR",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "43.5804",
+              longitude: "7.1251",
+            },
+            areaServed: {
+              "@type": "Airport",
+              name: "Aéroport Nice Côte d'Azur",
+              iataCode: "NCE",
+            },
+            openingHours: "Mo-Su 00:00-23:59",
+            priceRange: "€€",
+            sameAs: [
+              "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
+              "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
+            ],
+          }),
+        }}
+      />
 
       <PageLayout
         title="Taxi Aéroport Nice Côte d'Azur"
