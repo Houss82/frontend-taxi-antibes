@@ -1389,6 +1389,226 @@ export const sectorData = {
       longitude: "7.116667",
     },
   },
+  "gare-sncf-antibes": {
+    slug: "gare-sncf-antibes",
+    cityName: "Gare SNCF d'Antibes",
+    hero: {
+      title: "Taxi Gare SNCF Antibes",
+      highlight: "Gare SNCF d'Antibes Juan-les-Pins",
+      subtitle: "Service de taxi officiel à la gare SNCF d'Antibes. Prise en charge immédiate 24/7, réservation à l'avance, tarifs transparents.",
+      image: "/taxi-gare-antibes-centre-ville.jpeg",
+      imageAlt: "Taxi à la gare SNCF d'Antibes - Service de prise en charge immédiate",
+    },
+    introduction: [
+      "Taxi Antibes est une société de taxi locale basée à Antibes (06600), intervenant quotidiennement à la gare SNCF d'Antibes Juan-les-Pins. Nous proposons un service de transport premium vers le centre-ville, l'aéroport Nice, Juan-les-Pins, Monaco, Cannes et toutes les destinations de la Côte d'Azur.",
+      "Avec Taxi Antibes, bénéficiez d'un service de taxi à la gare d'Antibes disponible 24h/24 et 7j/7, avec prise en charge directement à la sortie de la gare, assistance bagages et tarifs transparents. Nos chauffeurs locaux connaissent parfaitement les accès à la gare SNCF d'Antibes et vous proposent un service ponctuel et confortable.",
+      "La gare SNCF d'Antibes accueille chaque année plus de 1,5 million de voyageurs. Nous intervenons chaque jour à la gare SNCF d'Antibes Juan-les-Pins pour proposer un service de taxi depuis la gare SNCF d'Antibes fiable et professionnel. Le stationnement étant limité près de la gare, le service de taxi à la sortie de la gare est la solution idéale pour tous vos déplacements.",
+    ],
+    secondaryIntro: [
+      "Pour les voyageurs arrivant en train à Antibes, nous proposons un service de prise en charge directement à la sortie de la gare. Nos chauffeurs vous attendent avec une pancarte nominative si vous avez réservé à l'avance, ou vous pouvez nous appeler au +33 7 49 77 76 21 pour une prise en charge immédiate.",
+      "Nous suivons également les retards de train en temps réel et ajustons notre horaire d'arrivée en conséquence. Que votre train soit en retard ou en avance, nous sommes là pour vous accueillir à la gare SNCF d'Antibes.",
+    ],
+    servicesTitle: "Services de transport depuis la gare SNCF d'Antibes",
+    services: [
+      "Prise en charge directement à la sortie de la gare SNCF d'Antibes",
+      "Transferts vers le centre-ville d'Antibes (5-10 min)",
+      "Transferts vers Juan-les-Pins (10-15 min)",
+      "Transferts vers l'aéroport Nice Côte d'Azur (20-25 min)",
+      "Transferts vers Monaco, Cannes, Sophia Antipolis",
+      "Service de suivi des retards de train en temps réel",
+      "Assistance bagages et valises",
+      "Réservation à l'avance ou prise en charge immédiate",
+    ],
+    coverageDescription:
+      "Nous desservons toutes les destinations depuis la gare SNCF d'Antibes :",
+    coverageAreas: [
+      "✓ Centre-ville d'Antibes (2-3 min)",
+      "✓ Vieille ville d'Antibes (3-5 min)",
+      "✓ Juan-les-Pins (10-15 min)",
+      "✓ Cap d'Antibes (15-20 min)",
+      "✓ Aéroport Nice Côte d'Azur (20-25 min)",
+      "✓ Monaco (30-35 min)",
+      "✓ Cannes (15-20 min)",
+      "✓ Sophia Antipolis (10-15 min)",
+    ],
+    map: {
+      description:
+        "Visualisez notre zone d'intervention depuis la gare SNCF d'Antibes.",
+      info: "La gare SNCF d'Antibes est située Avenue de la Gare, 06600 Antibes. Nous proposons des transferts vers toutes les destinations de la Côte d'Azur depuis la gare.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Gare+SNCF+Antibes&t=&z=15&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Prise en charge à la gare",
+        description:
+          "Nos chauffeurs vous attendent directement à la sortie de la gare SNCF d'Antibes avec une pancarte nominative si vous avez réservé à l'avance. Assistance bagages incluse.",
+      },
+      {
+        title: "Suivi des retards de train",
+        description:
+          "Nous suivons les retards de train en temps réel et ajustons notre horaire d'arrivée en conséquence. Pas de stress si votre train est en retard.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Service 24/7 à la gare",
+        description:
+          "Service disponible jour et nuit, 7 jours sur 7, y compris les jours fériés. Prise en charge immédiate ou réservation à l'avance pour une arrivée en toute sérénité.",
+      },
+      {
+        title: "✓ Prise en charge directe",
+        description:
+          "Nos chauffeurs vous attendent directement à la sortie de la gare SNCF d'Antibes avec assistance bagages. Pas besoin de chercher le taxi, nous venons à vous.",
+      },
+      {
+        title: "✓ Connaissance locale parfaite",
+        description:
+          "Chauffeurs antibois connaissant parfaitement les accès à la gare, les meilleurs itinéraires selon l'heure et la saison, et toutes les destinations de la Côte d'Azur.",
+      },
+      {
+        title: "✓ Tarifs transparents",
+        description:
+          "Devis gratuit, tarif fixe garanti sans surprise. Pas de suppléments cachés. Facturation détaillée pour les professionnels et voyageurs réguliers.",
+      },
+    ],
+    hospitalsTitle: "Établissements desservis depuis la gare SNCF d'Antibes",
+    hospitals: [
+      {
+        name: "Centre Hospitalier d'Antibes",
+        city: "Antibes",
+        description: "Urgences et consultations générales.",
+        speciality: "Médecine générale, urgences",
+        website: "https://www.ch-antibes.fr/",
+        phone: "04 92 91 77 77",
+      },
+      {
+        name: "Hôpital Pasteur",
+        city: "Nice",
+        description: "Centre hospitalier universitaire de référence.",
+        speciality: "Toutes spécialités médicales et chirurgicales",
+        website: "https://www.chu-nice.fr/",
+        phone: "04 92 03 77 77",
+      },
+    ],
+    establishmentsTitle:
+      "Destinations accessibles depuis la gare SNCF d'Antibes",
+    establishments: [
+      {
+        name: "Gare SNCF d'Antibes",
+        city: "Antibes",
+        speciality: "Gare ferroviaire principale",
+        website: "https://www.sncf-connect.com/gare/antibes",
+        phone: "3635",
+      },
+      {
+        name: "Aéroport Nice Côte d'Azur",
+        city: "Nice",
+        speciality: "Terminal 1 & 2",
+        website: "https://www.nice.aeroport.fr/",
+        phone: "08 20 42 33 33",
+      },
+      {
+        name: "Port Vauban",
+        city: "Antibes",
+        speciality: "Port de plaisance",
+        website: "https://www.antibesjuanlespins.com/",
+        phone: "04 97 23 11 11",
+      },
+    ],
+    faq: [
+      {
+        question:
+          "Où se trouve le taxi à la gare SNCF d'Antibes ?",
+        answer:
+          "Le point de prise en charge se trouve directement à la sortie principale de la gare SNCF d'Antibes, Avenue de la Gare. Nos chauffeurs vous attendent avec une pancarte nominative si vous avez réservé à l'avance, ou vous pouvez nous appeler au +33 7 49 77 76 21 pour une prise en charge immédiate.",
+      },
+      {
+        question:
+          "Peut-on réserver un taxi gare Antibes à l'avance ?",
+        answer:
+          "Oui, absolument. Nous recommandons même de réserver à l'avance pour garantir votre prise en charge à l'heure exacte de votre arrivée. Vous pouvez réserver par téléphone au +33 7 49 77 76 21 ou via notre formulaire de réservation en ligne.",
+      },
+      {
+        question:
+          "Que faire si mon train est en retard ?",
+        answer:
+          "Pas de problème ! Nous suivons les retards de train en temps réel et ajustons automatiquement notre horaire d'arrivée. Informez-nous simplement de votre numéro de train lors de la réservation, et nous nous adapterons à votre heure d'arrivée réelle.",
+      },
+      {
+        question:
+          "Combien coûte un taxi depuis la gare SNCF d'Antibes vers le centre-ville ?",
+        answer:
+          "Le tarif moyen pour un trajet depuis la gare SNCF d'Antibes vers le centre-ville est de 12 à 18€ selon votre destination exacte. Le tarif est fixe et garanti, sans surprise. Pour un devis précis, contactez-nous avec votre adresse exacte.",
+      },
+    ],
+    resource: {
+      description:
+        "Découvrez notre guide complet pour organiser vos transferts depuis la gare SNCF d'Antibes.",
+      links: [
+        {
+          label: "Guide complet Taxi Gare Antibes",
+          url: "https://www.taxi-antibes.fr/blog/taxi-gare-sncf-antibes-guide-complet",
+        },
+        {
+          label: "Tous nos guides",
+          url: "https://www.taxi-antibes.fr/blog",
+        },
+      ],
+    },
+    homepageLink: {
+      before: "Vous arrivez en train à Antibes ? ",
+      linkText: "Taxi Antibes",
+      after:
+        " vous accueille directement à la sortie de la gare SNCF d'Antibes avec un service de transport premium vers toutes les destinations de la Côte d'Azur.",
+      href: "/",
+    },
+    specialties: [
+      {
+        title: "Prise en charge gare",
+        description:
+          "Service dédié aux voyageurs SNCF avec prise en charge directement à la sortie de la gare, assistance bagages et suivi des retards de train en temps réel.",
+      },
+      {
+        title: "Transferts aéroport",
+        description:
+          "Transferts depuis la gare SNCF d'Antibes vers l'aéroport Nice Côte d'Azur avec suivi de vol et coordination parfaite entre train et avion.",
+      },
+    ],
+    pricing: [
+      "Gare SNCF Antibes ↔ Centre-ville dès 12€",
+      "Gare SNCF Antibes ↔ Aéroport Nice dès 70€",
+      "Gare SNCF Antibes ↔ Monaco à partir de 80€",
+      "Gare SNCF Antibes ↔ Cannes dès 40€",
+    ],
+    commitments: [
+      {
+        title: "Ponctualité garantie",
+        description:
+          "Arrivée systématiquement en avance à la gare SNCF d'Antibes pour vos trajets, avec marge de sécurité adaptée aux retards de train éventuels.",
+      },
+      {
+        title: "Connaissance locale approfondie",
+        description:
+          "Chauffeurs antibois connaissant parfaitement les accès à la gare SNCF d'Antibes, les meilleurs itinéraires selon l'heure et la saison, et toutes les destinations de la Côte d'Azur.",
+      },
+      {
+        title: "Service voyageurs privilégié",
+        description:
+          "Pour les voyageurs réguliers, nous proposons un suivi personnalisé avec mémorisation de vos préférences (horaires, destinations, véhicules) et tarifs préférentiels.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Gare SNCF Antibes - Taxi Antibes",
+      image: "https://www.taxi-antibes.fr/taxi-gare-d'antibes.jpeg",
+      telephone: "+33749777621",
+      locality: "Antibes",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/gare-sncf-antibes",
+      latitude: "43.5804",
+      longitude: "7.1251",
+    },
+  },
 };
 
 export const sectorSlugs = Object.keys(sectorData);
