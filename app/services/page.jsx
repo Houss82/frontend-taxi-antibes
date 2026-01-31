@@ -1,6 +1,7 @@
 import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 import {
   Building,
   Clock,
@@ -11,6 +12,7 @@ import {
   Plane,
   Shield,
   Star,
+  Stethoscope,
   Users,
   Wifi,
 } from "lucide-react";
@@ -70,6 +72,20 @@ const services = [
       "Service personnalisé",
     ],
     price: "Sur devis",
+  },
+  {
+    icon: Stethoscope,
+    title: "Taxi Conventionné CPAM",
+    description:
+      "Service de taxi conventionné CPAM à Antibes pour les transports médicaux. Prise en charge CPAM selon prescription vers les hôpitaux de Nice, Cannes et Mougins.",
+    features: [
+      "Agréé CPAM",
+      "Transport médical",
+      "Hôpitaux Nice, Cannes, Mougins",
+      "Service 24/7",
+    ],
+    price: "Selon prescription CPAM",
+    link: "/services/taxi-conventionne",
   },
 ];
 
@@ -134,39 +150,51 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {services.map((service, index) => (
-              <Card
-                key={index}
-                className="p-8 hover:shadow-xl transition-all duration-300 border-cyan-100 bg-white rounded-3xl group"
-              >
-                <div className="flex items-start gap-6">
-                  <div className="w-16 h-16 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <service.icon className="h-8 w-8 text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-semibold mb-3 text-cyan-700">
-                      {service.title}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed mb-4 font-light">
-                      {service.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {service.features.map((feature, idx) => (
-                        <span
-                          key={idx}
-                          className="px-3 py-1 bg-cyan-50 text-cyan-700 text-sm rounded-full border border-cyan-100"
-                        >
-                          {feature}
-                        </span>
-                      ))}
+            {services.map((service, index) => {
+              const CardContent = (
+                <Card
+                  key={index}
+                  className={`p-8 hover:shadow-xl transition-all duration-300 border-cyan-100 bg-white rounded-3xl group ${
+                    service.link ? "cursor-pointer" : ""
+                  }`}
+                >
+                  <div className="flex items-start gap-6">
+                    <div className="w-16 h-16 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <service.icon className="h-8 w-8 text-white" />
                     </div>
-                    <div className="text-lg font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                      {service.price}
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-semibold mb-3 text-cyan-700">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-700 leading-relaxed mb-4 font-light">
+                        {service.description}
+                      </p>
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {service.features.map((feature, idx) => (
+                          <span
+                            key={idx}
+                            className="px-3 py-1 bg-cyan-50 text-cyan-700 text-sm rounded-full border border-cyan-100"
+                          >
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                      <div className="text-lg font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                        {service.price}
+                      </div>
                     </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              );
+
+              return service.link ? (
+                <Link key={index} href={service.link}>
+                  {CardContent}
+                </Link>
+              ) : (
+                CardContent
+              );
+            })}
           </div>
         </div>
       </section>

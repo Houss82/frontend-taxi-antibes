@@ -221,7 +221,9 @@ export default function TaxiConventionnePage() {
                     <strong>Juan-les-Pins</strong> ou au{" "}
                     <strong>Cap d'Antibes</strong>, nous venons vous chercher à
                     domicile et vous accompagnons jusqu'à votre service de
-                    soins. Nous réalisons des trajets pour consultations,
+                    soins. Nos taxis conventionnés assurent les transports médicaux depuis Antibes et Juan-les-Pins vers le{" "}
+                    <strong>Centre Hospitalier d'Antibes</strong>, la{" "}
+                    <strong>Polyclinique Oxford</strong>, l'hôpital de Cannes Simone Veil ou le CHU de Nice. Nous réalisons des trajets pour consultations,
                     examens, hospitalisations, chimiothérapie, dialyse ou suivi
                     ALD, avec un service disponible{" "}
                     <strong>24h/24 et 7j/7</strong>.

@@ -5,13 +5,13 @@ import { Navigation } from "@/components/navigation";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
 import {
-  ArrowRight,
-  Car,
-  Clock,
-  CreditCard,
-  Phone,
-  Plane,
-  Smartphone,
+    ArrowRight,
+    Car,
+    Clock,
+    CreditCard,
+    Phone,
+    Plane,
+    Smartphone,
 } from "lucide-react";
 import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
@@ -234,7 +234,17 @@ export default function Home() {
                 <strong className="font-bold text-gold-600 text-xl">
                   service premium
                 </strong>
-                , ponctuel et disponible 24h/24 et 7j/7.
+                , ponctuel et disponible 24h/24 et 7j/7. Nous proposons également un{" "}
+                <Link
+                  href="/services/taxi-conventionne"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    service de taxi conventionné CPAM à Antibes
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>{" "}
+                pour les transports médicaux vers les hôpitaux de Nice, Cannes et Mougins.
               </p>
             </div>
 
@@ -259,10 +269,20 @@ export default function Home() {
                 <strong className="font-bold text-cyan-600 text-lg">
                   transferts longue distance
                 </strong>
-                , et{" "}
+                ,{" "}
                 <strong className="font-bold text-cyan-600 text-lg">
                   déplacements d'affaires
-                </strong>{" "}
+                </strong>
+                , et{" "}
+                <Link
+                  href="/services/taxi-conventionne"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-lg"
+                >
+                  <span className="relative">
+                    transports médicaux conventionnés CPAM
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>{" "}
                 dans des véhicules tout confort. Réservez facilement{" "}
                 <Link
                   href="/reservation"
