@@ -4,6 +4,7 @@ import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
 import {
   Award,
   CheckCircle,
@@ -189,7 +190,11 @@ export default function ContactPage() {
               </span>
             </h2>
             <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-              Plusieurs façons de contacter taxi Antibes selon vos préférences
+              Plusieurs façons de contacter{" "}
+              <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+                taxi Antibes
+              </Link>{" "}
+              selon vos préférences
             </p>
           </div>
 

@@ -240,6 +240,13 @@ export default async function SecteurPage({ params }) {
               {paragraph}
             </p>
           ))}
+          <p className="text-lg text-gray-700 leading-relaxed mb-4">
+            Pour réserver un{" "}
+            <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+              taxi à Antibes
+            </Link>
+            , contactez-nous au 07 49 77 76 21 ou réservez en ligne.
+          </p>
         </section>
 
         <section className="max-w-6xl mx-auto px-6 mt-14">

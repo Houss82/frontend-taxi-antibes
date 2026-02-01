@@ -5,13 +5,13 @@ import { Navigation } from "@/components/navigation";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
 import {
-    ArrowRight,
-    Car,
-    Clock,
-    CreditCard,
-    Phone,
-    Plane,
-    Smartphone,
+  ArrowRight,
+  Car,
+  Clock,
+  CreditCard,
+  Phone,
+  Plane,
+  Smartphone,
 } from "lucide-react";
 import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
@@ -45,9 +45,9 @@ export const dynamic = "force-static";
 
 // ✅ Metadata spécifique à la homepage (écrase le template du layout)
 export const metadata = {
-  title: "Taxi Antibes Riviera | Aéroport Nice & Conventionné CPAM",
+  title: "Taxi Antibes 24h/24 – Réservation, Aéroport Nice, CPAM | Taxi Antibes Riviera",
   description:
-    "Taxi à Antibes : transferts Aéroport Nice Côte d'Azur et taxi conventionné CPAM. Réservation 24h/24, service premium.",
+    "Taxi à Antibes 24h/24 : réservation immédiate, courses locales, transferts Aéroport Nice et taxi conventionné CPAM. Paiement CB. Devis rapide.",
   alternates: {
     canonical: "/",
   },
@@ -63,7 +63,7 @@ export default function Home() {
         {/* Image mobile - optimisée pour mobile */}
         <Image
           src="/taxi-antibes-mobile.png"
-          alt="Taxi Antibes Mercedes pour transferts aéroport Nice"
+          alt="Taxi à Antibes – réservation 24h/24"
           fill
           className="md:hidden"
           priority
@@ -78,7 +78,7 @@ export default function Home() {
         {/* Image desktop */}
         <Image
           src="/taxi-antibes-accueil.png"
-          alt="Taxi Antibes Mercedes pour transferts aéroport Nice"
+          alt="Taxi Antibes – transfert Aéroport Nice et courses locales"
           fill
           className="hidden md:block object-cover object-center"
           priority
@@ -90,31 +90,51 @@ export default function Home() {
             <span
               className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
             >
-              Taxi Antibes Riviera 
+              Taxi Antibes
             </span>
+            <span className="sr-only"> Riviera</span>
           </h1>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-white font-semibold">
-          Aéroport Nice & Conventionné CPAM
+          <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-2 font-light">
+            Taxi Antibes Riviera
+          </p>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-2 text-white font-semibold">
+            Service de taxi à Antibes 24h/24 – Courses locales & transferts
           </h2>
           <p className="text-xl sm:text-2xl md:text-3xl mb-4 text-white/90 font-semibold">
-            Tous transports sur la Côte d'Azur
+            Aéroport Nice & Taxi conventionné CPAM
           </p>
 
           {/* Texte descriptif SEO */}
           <div className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
+            <p className="mb-3 font-semibold">
+              Besoin d'un <strong className="text-cyan-400">taxi à Antibes</strong> maintenant ? Appelez le{" "}
+              <a
+                href="tel:+33749777621"
+                className="text-white hover:text-amber-300 underline font-bold"
+              >
+                07 49 77 76 21
+              </a>{" "}
+              ou réservez en ligne en 30 secondes.
+            </p>
             <p className="mb-3">
-              Service de{" "}
               <strong className="text-cyan-400 font-semibold">
-                taxi officiel à Antibes
-              </strong>
-              .{" "}
+                Taxi Antibes Riviera
+              </strong>{" "}
+              est votre taxi à Antibes disponible 24h/24. Courses locales, Juan-les-Pins, gare d'Antibes,{" "}
               <Link
                 href="/services"
                 className="text-white hover:text-amber-300 underline"
               >
-                Transferts aéroport Nice
+                transferts Aéroport Nice
+              </Link>{" "}
+              et option{" "}
+              <Link
+                href="/services/taxi-conventionne"
+                className="text-white hover:text-amber-300 underline"
+              >
+                taxi conventionné CPAM
               </Link>
-              , courses locales, Juan-les-Pins, Cannes, Monaco.
+              .
             </p>
             <p className="text-white/90">
               ✓{" "}
@@ -712,6 +732,31 @@ export default function Home() {
                     },
                   },
                 ],
+              }),
+            }}
+          />
+          {/* ✅ Schema JSON-LD TaxiService pour SEO local - optimisé avec next/script */}
+          <Script
+            id="taxi-schema"
+            type="application/ld+json"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "TaxiService",
+                name: "Taxi Antibes Riviera",
+                url: "https://www.taxi-antibes.fr/",
+                telephone: "+33749777621",
+                areaServed: [
+                  { "@type": "City", name: "Antibes" },
+                  { "@type": "City", name: "Juan-les-Pins" },
+                  { "@type": "City", name: "Cannes" },
+                  { "@type": "City", name: "Nice" },
+                  { "@type": "City", name: "Monaco" },
+                ],
+                availableLanguage: ["fr"],
+                openingHours: "Mo-Su 00:00-23:59",
+                priceRange: "€€",
               }),
             }}
           />

@@ -257,13 +257,16 @@ export default async function BlogPostPage({ params }) {
           <div className="mt-12 p-8 bg-gradient-to-r from-cyan-700 to-cyan-900 rounded-2xl text-white text-center">
             <h3 className="text-2xl font-bold mb-4 text-white">
               Besoin d'un{" "}
-              <span className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+              <Link href="/" className="underline font-semibold hover:text-amber-300">
                 taxi à Antibes
-              </span>
+              </Link>
               ?
             </h3>
             <p className="text-lg mb-6">
-              Réservez dès maintenant votre course avec Taxi Antibes
+              Réservez dès maintenant votre course avec{" "}
+              <Link href="/" className="underline font-semibold hover:text-amber-300">
+                Taxi Antibes
+              </Link>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button

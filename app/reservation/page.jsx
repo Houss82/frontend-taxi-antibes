@@ -2,6 +2,7 @@
 
 import { Footer } from "@/components/footer.jsx";
 import { Navigation } from "@/components/navigation.jsx";
+import Link from "next/link";
 import {
   Calendar,
   Clock,
@@ -373,9 +374,11 @@ export default function ReservationPage() {
               <span className="font-semibold">Réservation Taxi Antibes</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 font-light font-serif max-w-3xl mx-auto leading-relaxed px-2">
-              Réservez votre transport en quelques clics. Remplissez le
-              formulaire ci-dessous et nous vous confirmerons votre réservation
-              rapidement.
+              Réservez votre{" "}
+              <Link href="/" className="underline font-semibold text-white hover:text-amber-300">
+                taxi à Antibes
+              </Link>{" "}
+              en quelques clics. Remplissez le formulaire ci-dessous et nous vous confirmerons votre réservation rapidement.
             </p>
           </div>
         </section>

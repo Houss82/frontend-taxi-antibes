@@ -1,5 +1,6 @@
 import { ExternalLink, Mail, MapPin, Phone } from "lucide-react";
 import { Outfit } from "next/font/google";
+import Link from "next/link";
 
 const outfit = Outfit({
   weight: ["300", "400", "500", "600", "700"],
@@ -13,15 +14,17 @@ export function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div>
-            <h3
-              className={`text-2xl font-light mb-4 tracking-wider ${outfit.className}`}
-            >
-              TAXI{" "}
-              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                ANTIBES
-              </span>{" "}
-              <span className="text-lg font-light text-white/70">Riviera</span>
-            </h3>
+            <Link href="/">
+              <h3
+                className={`text-2xl font-light mb-4 tracking-wider ${outfit.className} hover:opacity-80 transition-opacity cursor-pointer`}
+              >
+                TAXI{" "}
+                <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                  ANTIBES
+                </span>{" "}
+                <span className="text-lg font-light text-white/70">Riviera</span>
+              </h3>
+            </Link>
             <p className="text-white/80 font-light leading-relaxed mb-3">
               Votre service de transport premium sur la Côte d'Azur
             </p>

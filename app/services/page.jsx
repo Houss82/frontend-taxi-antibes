@@ -1,7 +1,6 @@
 import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import Link from "next/link";
 import {
   Building,
   Clock,
@@ -16,6 +15,7 @@ import {
   Users,
   Wifi,
 } from "lucide-react";
+import Link from "next/link";
 import { metadata } from "./metadata";
 
 export { metadata };
@@ -144,8 +144,11 @@ export default function ServicesPage() {
               </span>
             </h2>
             <p className="text-cyan-700 text-lg max-w-3xl mx-auto leading-relaxed">
-              Découvrez notre gamme complète de services de transport premium
-              taxi Antibes à Antibes et sur toute la Côte d'Azur
+              Découvrez notre gamme complète de services de transport premium{" "}
+              <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+                taxi à Antibes
+              </Link>{" "}
+              à Antibes et sur toute la Côte d'Azur
             </p>
           </div>
 

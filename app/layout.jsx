@@ -106,7 +106,15 @@ export default function RootLayout({ children }) {
     areaServed: [
       { "@type": "City", name: "Antibes" },
       { "@type": "City", name: "Juan-les-Pins" },
+      { "@type": "City", name: "Cannes" },
+      { "@type": "City", name: "Nice" },
+      { "@type": "City", name: "Monaco" },
     ],
+    availableChannel: {
+      "@type": "ServiceChannel",
+      availableLanguage: "fr",
+      serviceUrl: "https://www.taxi-antibes.fr/reservation",
+    },
     address: {
       "@type": "PostalAddress",
       addressLocality: "Antibes",

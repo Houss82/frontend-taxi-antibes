@@ -1,6 +1,7 @@
 import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import Link from "next/link";
 import {
   Bus,
   Calculator,
@@ -297,8 +298,11 @@ export default function TarifsPage() {
               </span>
             </h2>
             <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-              Des tarifs transparents et compétitifs taxi Antibes pour tous vos
-              déplacements vers et depuis l'aéroport de Nice.
+              Des tarifs transparents et compétitifs{" "}
+              <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+                taxi Antibes
+              </Link>{" "}
+              pour tous vos déplacements vers et depuis l'aéroport de Nice.
             </p>
           </div>
 
