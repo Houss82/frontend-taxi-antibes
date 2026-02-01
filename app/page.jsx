@@ -59,7 +59,7 @@ export default function Home() {
       <Navigation />
 
       {/* ✅ HERO SECTION SSR - H1/H2 inclus dans le HTML initial */}
-      <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-20">
+      <section className="relative min-h-screen md:h-screen flex items-center justify-center overflow-hidden pt-16 sm:pt-20 md:pt-20 pb-8 sm:pb-12">
         {/* Image mobile - optimisée pour mobile */}
         <Image
           src="/taxi-antibes-mobile.png"
@@ -85,8 +85,8 @@ export default function Home() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pt-0 pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
-          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0">
+        <div className="relative z-10 text-center text-white w-full max-w-3xl px-3 sm:px-4 md:px-6 pt-0 pb-6 sm:pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-2 sm:mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0 px-2">
             <span
               className={`bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 inline-block bg-clip-text text-transparent ${oleoScript.className}`}
             >
@@ -94,49 +94,49 @@ export default function Home() {
             </span>
             <span className="sr-only"> Riviera</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white/80 mb-2 font-light">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/80 mb-1 sm:mb-2 font-light px-2">
             Taxi Antibes Riviera
           </p>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl mb-2 text-white font-semibold">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 sm:mb-3 text-white font-semibold px-2 break-words">
             Service de taxi à Antibes 24h/24 – Courses locales & transferts
           </h2>
-          <p className="text-xl sm:text-2xl md:text-3xl mb-4 text-white/90 font-semibold">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3 sm:mb-4 text-white/90 font-semibold px-2 break-words">
             Aéroport Nice & Taxi conventionné CPAM
           </p>
 
           {/* Texte descriptif SEO */}
-          <div className="text-base sm:text-lg text-white/90 mb-6 sm:mb-8 max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-4 sm:p-6 rounded-2xl border border-white/20 shadow-lg">
-            <p className="mb-3 font-semibold">
+          <div className="text-sm sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 md:mb-8 w-full max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl border border-white/20 shadow-lg">
+            <p className="mb-2 sm:mb-3 font-semibold text-sm sm:text-base md:text-lg break-words">
               Besoin d'un <strong className="text-cyan-400">taxi à Antibes</strong> maintenant ? Appelez le{" "}
               <a
                 href="tel:+33749777621"
-                className="text-white hover:text-amber-300 underline font-bold"
+                className="text-white hover:text-amber-300 underline font-bold break-all"
               >
                 07 49 77 76 21
               </a>{" "}
               ou réservez en ligne en 30 secondes.
             </p>
-            <p className="mb-3">
+            <p className="mb-2 sm:mb-3 text-sm sm:text-base md:text-lg break-words">
               <strong className="text-cyan-400 font-semibold">
                 Taxi Antibes Riviera
               </strong>{" "}
               est votre taxi à Antibes disponible 24h/24. Courses locales, Juan-les-Pins, gare d'Antibes,{" "}
               <Link
                 href="/services"
-                className="text-white hover:text-amber-300 underline"
+                className="text-white hover:text-amber-300 underline break-words"
               >
                 transferts Aéroport Nice
               </Link>{" "}
               et option{" "}
               <Link
                 href="/services/taxi-conventionne"
-                className="text-white hover:text-amber-300 underline"
+                className="text-white hover:text-amber-300 underline break-words"
               >
                 taxi conventionné CPAM
               </Link>
               .
             </p>
-            <p className="text-white/90">
+            <p className="text-white/90 text-sm sm:text-base md:text-lg break-words">
               ✓{" "}
               <Link
                 href="/reservation"
@@ -151,16 +151,16 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center w-full sm:w-auto px-2 sm:px-0">
             <a
               href="/reservation"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-base sm:text-lg font-medium bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg text-white px-6 sm:px-8 py-4 sm:py-6 transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm sm:text-base md:text-lg font-medium bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 shadow-lg text-white px-5 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 transition-all duration-300 w-full sm:w-auto"
             >
               Réserver maintenant
             </a>
             <a
               href="/tarifs"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-base sm:text-lg font-medium border-2 border-cyan-400 text-white hover:bg-cyan-400/10 px-6 sm:px-8 py-4 sm:py-6 bg-transparent transition-all duration-300"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-lg text-sm sm:text-base md:text-lg font-medium border-2 border-cyan-400 text-white hover:bg-cyan-400/10 px-5 sm:px-6 md:px-8 py-3 sm:py-4 md:py-6 bg-transparent transition-all duration-300 w-full sm:w-auto"
             >
               Consulter les tarifs
             </a>
