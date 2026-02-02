@@ -44,12 +44,16 @@ const outfit = Outfit({
 export const dynamic = "force-static";
 
 // ✅ Metadata spécifique à la homepage (écrase le template du layout)
+// Note: metadataBase est déjà défini dans layout.jsx → Next.js génère automatiquement l'URL absolue
 export const metadata = {
   title: "Taxi Antibes 24h/24 – Réservation, Aéroport Nice, CPAM | Taxi Antibes Riviera",
   description:
     "Taxi à Antibes 24h/24 : réservation immédiate, courses locales, transferts Aéroport Nice et taxi conventionné CPAM. Paiement CB. Devis rapide.",
   alternates: {
-    canonical: "/",
+    canonical: "/", // ✅ Relatif : Next.js utilise metadataBase du layout pour générer https://www.taxi-antibes.fr/
+  },
+  openGraph: {
+    url: "https://www.taxi-antibes.fr/", // ✅ URL absolue pour OpenGraph (cohérence)
   },
 };
 
