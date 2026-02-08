@@ -396,7 +396,7 @@ Pour un accès facilité aux marchés d'Antibes, un **service de taxi profession
 
 Un service de taxi peut vous déposer directement aux marchés (Cours Masséna, Port Vauban, Juan-les-Pins) et vous récupérer après vos courses, vous permettant de profiter pleinement de votre visite sans vous soucier du stationnement ou du transport de vos achats.
 
-👉 <a href="/contact">Contactez-nous</a> pour organiser votre transport vers les marchés d'Antibes
+👉 <a href="/contact">Contactez-nous</a> pour organiser votre transport vers les marchés d'Antibes. Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>.
 
 ---
 
@@ -439,7 +439,7 @@ Les marchés d'Antibes sont régis par :
 
 👉 <a href="/services">Nos services premium</a>
 
-👉 <a href="/contact">Contactez-nous</a>
+👉 <a href="/contact">Contactez-nous</a> – <a href="/blog/taxi-antibes-numero-officiel">Numéro de taxi à Antibes</a> : 07 49 77 76 21
 
 👉 <a href="/blog">Tous nos articles de blog</a>
 

@@ -529,7 +529,7 @@ En haute saison, les parkings sont rapidement complets. Options :
 
 - 👉 [Les plus belles promenades à faire à Antibes](/blog/promenades-antibes-2025)
 - 👉 [Taxi Antibes → Plages & loisirs](/services)
-- 👉 [Réserver un taxi à Antibes](/reservation)
+- 👉 [Réserver un taxi à Antibes](/reservation) – [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) : 07 49 77 76 21
 - 👉 [Guide complet Antibes & Juan-les-Pins](/secteurs/antibes)
 
 ---

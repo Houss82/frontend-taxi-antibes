@@ -442,7 +442,7 @@ Ces promenades font partie de ce qui rend Antibes unique — un lieu où l'on pe
 
 Cet article sera mis à jour régulièrement pour intégrer de nouvelles idées de balades et découvertes.
 
-👉 <a href="/reservation">Réservez un taxi pour découvrir Antibes en toute sérénité</a>
+👉 <a href="/reservation">Réservez un taxi pour découvrir Antibes en toute sérénité</a>. Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>.
 
 ---
 

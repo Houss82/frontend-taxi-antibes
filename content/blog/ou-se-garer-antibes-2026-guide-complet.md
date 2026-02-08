@@ -338,7 +338,7 @@ En période estivale (juin à septembre), le stationnement près des plages d'An
 - **Option parking** : arriver avant 9h, chercher une place 10-15 minutes, marcher jusqu'au marché
 - **Option taxi** : réservation à l'avance, dépose directe devant le marché, **gain de 30 minutes**
 
-**Réservation :** Appelez **[Taxi Antibes](/)** au **+33 7 49 77 76 21** ou réservez en ligne sur notre [page de réservation](/reservation).
+**Réservation :** Appelez **[Taxi Antibes](/)** au **[+33 7 49 77 76 21](tel:+33749777621)** ou réservez en ligne sur notre [page de réservation](/reservation). Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 
 ---
 

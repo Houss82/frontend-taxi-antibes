@@ -223,7 +223,7 @@ Vous choisissez la formule qui vous convient :
 
 La réservation est simple et rapide :
 
-1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **07 49 77 76 21**.
+1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **[07 49 77 76 21](tel:+33749777621)**. Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 2. **Précisez votre destination** exacte à Isola 2000 (hôtel, résidence, remontées mécaniques), votre horaire, le nombre de passagers et le matériel de ski.
 3. **Pour les vacances scolaires** et les week-ends de forte affluence, réservez **à l'avance** pour garantir votre disponibilité.
 4. **Recevez un SMS de confirmation** avec le nom du chauffeur et le numéro de véhicule.
@@ -548,7 +548,7 @@ Notre expertise locale, nos véhicules 4x4 sécurisés et notre service personna
 
 👉 <a href="/reservation">Réservez dès maintenant votre transfert vers Isola 2000</a>
 
-👉 <a href="/contact">Contactez-nous pour toute question</a>
+👉 <a href="/contact">Contactez-nous pour toute question</a> – Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 
 ---
 

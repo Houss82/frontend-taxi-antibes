@@ -62,7 +62,7 @@ Notre taxi vous dépose **au plus près de l’entrée du village**, ce qui évi
 
 La réservation se fait en quelques minutes :
 
-1. **Demandez un devis** via le formulaire en ligne ou en nous appelant directement.
+1. **Demandez un devis** via le formulaire en ligne ou en nous appelant directement au **[07 49 77 76 21](tel:+33749777621)**. Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 2. **Confirmez votre course** : nous validons l’horaire, l’adresse de prise en charge et le type de véhicule.
 3. **Recevez la confirmation** par SMS ou e-mail avec les coordonnées de votre chauffeur.
 
@@ -185,13 +185,13 @@ Perché sur son éperon rocheux, Saint-Paul-de-Vence est l’un des villages for
 - Existe-t-il un service de **navette privée pour un circuit Antibes – Vence – Gourdon** ?
 - Peut-on réserver un **chauffeur à l’heure** pour explorer plusieurs villages perchés ?
 
-Ces sujets sont également traités dans nos guides : retrouvez nos conseils sur la page [blog](https://www.taxi-antibes.fr/blog) et contactez-nous pour un itinéraire personnalisé.
+Ces sujets sont également traités dans nos guides : retrouvez nos conseils sur la page [blog](https://www.taxi-antibes.fr/blog) et contactez-nous pour un itinéraire personnalisé. Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
 
 ---
 
 ## 🔗 Liens internes utiles
 
-👉 <a href="https://taxi-antibes.fr">Accueil Taxi Antibes</a>
+👉 <a href="https://taxi-antibes.fr">Accueil Taxi Antibes</a> – <a href="/blog/taxi-antibes-numero-officiel">Numéro de taxi à Antibes</a> : 07 49 77 76 21
 
 ---
 

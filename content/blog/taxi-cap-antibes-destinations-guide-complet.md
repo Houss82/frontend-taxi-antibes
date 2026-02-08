@@ -195,7 +195,7 @@ Notre flotte premium Mercedes adaptée à tous vos besoins :
 
 La réservation se fait en **quelques minutes** :
 
-1. **Demande de devis** : Formulaire en ligne, appel téléphonique ou email avec vos informations (date, heure, adresse de prise en charge au Cap d'Antibes, destination)
+1. **Demande de devis** : Formulaire en ligne, appel téléphonique au **[07 49 77 76 21](tel:+33749777621)** ou email avec vos informations (date, heure, adresse de prise en charge au Cap d'Antibes, destination). Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 2. **Confirmation** : Validation des détails, choix du véhicule adapté, devis avec tarif fixe garanti
 3. **Suivi** : Confirmation par SMS/email avec coordonnées du chauffeur, rappel automatique
 
@@ -203,7 +203,7 @@ La réservation se fait en **quelques minutes** :
 
 👉 Besoin d'un transfert aller-retour ? Nous organisons votre trajet sur-mesure.
 
-👉 [Réserver un taxi depuis le Cap d'Antibes](https://www.taxi-antibes.fr/reservation)
+👉 [Réserver un taxi depuis le Cap d'Antibes](https://www.taxi-antibes.fr/reservation) – Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 
 ---
 
@@ -314,7 +314,7 @@ Ces données sont issues des courses effectuées entre juin et octobre 2025 et m
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Le tarif moyen est de **60 à 80€** selon votre emplacement exact sur le Cap d'Antibes et le type de véhicule choisi. Le tarif est fixe et garanti, sans surprise. Pour un devis précis, contactez-nous avec votre adresse exacte au Cap d'Antibes.
+      Le tarif moyen est de **60 à 80€** selon votre emplacement exact sur le Cap d'Antibes et le type de véhicule choisi. Le tarif est fixe et garanti, sans surprise. Pour un devis précis, contactez-nous au **[07 49 77 76 21](tel:+33749777621)** avec votre adresse exacte au Cap d'Antibes ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
     </div>
   </details>
 
@@ -324,7 +324,7 @@ Ces données sont issues des courses effectuées entre juin et octobre 2025 et m
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Oui, absolument. Nos chauffeurs connaissent parfaitement les accès au Cap d'Antibes et peuvent venir vous chercher directement à votre villa, hôtel ou restaurant. Précisez bien votre adresse exacte lors de la réservation.
+      Oui, absolument. Nos chauffeurs connaissent parfaitement les accès au Cap d'Antibes et peuvent venir vous chercher directement à votre villa, hôtel ou restaurant. Précisez bien votre adresse exacte lors de la réservation. Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
     </div>
   </details>
 
@@ -461,7 +461,7 @@ Ces données sont issues des courses effectuées entre juin et octobre 2025 et m
 
 Prêt à partir depuis le Cap d'Antibes vers votre destination ?
 
-👉 [Réservez votre transfert](https://www.taxi-antibes.fr/reservation) | [Contactez-nous](https://www.taxi-antibes.fr/contact) | [Nos services](https://www.taxi-antibes.fr/services)
+👉 [Réservez votre transfert](https://www.taxi-antibes.fr/reservation) | [Contactez-nous](https://www.taxi-antibes.fr/contact) | [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) : 07 49 77 76 21 | [Nos services](https://www.taxi-antibes.fr/services)
 
 ---
 

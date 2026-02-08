@@ -252,7 +252,7 @@ Vous choisissez la formule qui vous convient :
 
 La réservation est simple et rapide :
 
-1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **07 49 77 76 21**.
+1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **[07 49 77 76 21](tel:+33749777621)**. Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 2. **Précisez votre destination** exacte dans Cannes (hôtel, Palais des Festivals, restaurant, etc.), votre horaire et le véhicule souhaité.
 3. **Pour les événements** (Festival de Cannes, etc.), réservez **à l'avance** pour garantir votre disponibilité.
 4. **Recevez un SMS de confirmation** avec le nom du chauffeur et le numéro de véhicule.
@@ -575,7 +575,7 @@ Notre proximité géographique (seulement 10 km), notre expertise locale, nos v�
 
 👉 <a href="/reservation">Réservez dès maintenant votre transfert vers Cannes</a>
 
-👉 <a href="/contact">Contactez-nous pour toute question</a>
+👉 <a href="/contact">Contactez-nous pour toute question</a> – Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 
 ---
 

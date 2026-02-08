@@ -288,7 +288,7 @@ Vous êtes convaincu de faire appel à [Taxi Antibes](/) ? Passons à l'action !
 
 ### Réservation immédiate
 
-**Par téléphone** : Appelez-nous au **07 49 77 76 21** pour une réservation immédiate ou pour toute question urgente. Notre équipe est disponible 24h/24 pour répondre à vos besoins.
+**Par téléphone** : Appelez-nous au **[07 49 77 76 21](tel:+33749777621)** pour une réservation immédiate ou pour toute question urgente. Notre équipe est disponible 24h/24 pour répondre à vos besoins. Consultez notre **[guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)** pour toutes les informations.
 
 **En ligne** : Utilisez notre [formulaire de réservation en ligne](/reservation) pour réserver votre course en quelques clics, à toute heure du jour et de la nuit.
 

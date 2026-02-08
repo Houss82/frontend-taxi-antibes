@@ -477,7 +477,7 @@ Certains secteurs sont en forte croissance :
 
 👉 <a href="/services">Nos services premium</a>
 
-👉 <a href="/contact">Contactez-nous</a>
+👉 <a href="/contact">Contactez-nous</a> – <a href="/blog/taxi-antibes-numero-officiel">Numéro de taxi à Antibes</a> : 07 49 77 76 21
 
 👉 <a href="/blog">Tous nos articles de blog</a>
 

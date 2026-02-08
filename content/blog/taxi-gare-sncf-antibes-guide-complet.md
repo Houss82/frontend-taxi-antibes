@@ -59,7 +59,7 @@ Avec **[Taxi Antibes](/)**, bénéficiez d'un **service de taxi à la gare d'Ant
 
 **3 façons de réserver :**
 
-1. **Par téléphone** : **+33 7 49 77 76 21** (service disponible 24/7)
+1. **Par téléphone** : **[+33 7 49 77 76 21](tel:+33749777621)** (service disponible 24/7) – [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 2. **En ligne** : [Formulaire de réservation](/reservation)
 3. **À l'arrivée** : Appelez-nous depuis la gare pour une prise en charge immédiate
 

@@ -173,10 +173,105 @@ export default function ContactPage() {
 
   return (
     <PageLayout
-      title="Contact"
-      subtitle="Nous sommes à votre écoute 24h/24 pour tous vos besoins de transport"
+      title="Taxi Antibes : Numéro de téléphone direct 24h/24"
+      subtitle=""
       backgroundImage="/contact.jpg"
     >
+      {/* Bloc NUMÉRO en haut - Priorité SEO */}
+      <section className="py-12 md:py-16 bg-gradient-to-r from-cyan-600 via-cyan-700 to-cyan-600 text-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <Phone className="h-12 w-12 mx-auto mb-4 text-amber-400" />
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+                📞 Numéro de Taxi à Antibes
+              </h2>
+              <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                07 49 77 76 21
+              </div>
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                <span className="text-lg font-medium">Réponse immédiate – 24h/24 – 7j/7</span>
+              </div>
+              <Button
+                asChild
+                size="lg"
+                className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-xl text-lg px-8 py-6 gap-2 rounded-xl"
+              >
+                <a href="tel:+33749777621" className="flex items-center gap-2 justify-center">
+                  <Phone className="h-5 w-5" />
+                  📲 Appeler maintenant
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Premier paragraphe optimisé SEO */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-800 leading-relaxed text-center">
+              Vous cherchez le <strong>numéro de taxi à Antibes</strong> ? Appelez directement le{" "}
+              <a href="tel:+33749777621" className="font-bold text-cyan-600 hover:text-amber-600 underline">
+                07 49 77 76 21
+              </a>{" "}
+              pour une prise en charge immédiate à Antibes et alentours. Notre <strong>taxi à Antibes</strong> est disponible{" "}
+              <strong>24h/24</strong>, y compris nuits, week-ends et jours fériés. Consultez notre{" "}
+              <Link href="/blog/taxi-antibes-numero-officiel" className="font-bold text-cyan-600 hover:text-amber-600 underline">
+                guide complet sur le numéro de taxi à Antibes
+              </Link>{" "}
+              pour plus d'informations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - Arme secrète SEO */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className={`text-3xl md:text-4xl font-light mb-8 text-center text-cyan-700 ${outfit.className}`}>
+              Questions fréquentes
+            </h2>
+            <div className="space-y-6">
+              <Card className="p-6 bg-white border-cyan-100 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-semibold mb-3 text-cyan-700 flex items-center gap-2">
+                  <span className="text-2xl">❓</span>
+                  Quel est le numéro de taxi à Antibes ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Le <strong>numéro de taxi à Antibes</strong> est le{" "}
+                  <a href="tel:+33749777621" className="font-bold text-cyan-600 hover:text-amber-600 underline">
+                    07 49 77 76 21
+                  </a>
+                  . Appelez pour une réservation immédiate, 24h/24.{" "}
+                  <Link href="/blog/taxi-antibes-numero-officiel" className="text-cyan-600 hover:text-amber-600 underline">
+                    Découvrez notre article complet sur le numéro de taxi à Antibes
+                  </Link>
+                  .
+                </p>
+              </Card>
+              <Card className="p-6 bg-white border-cyan-100 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-semibold mb-3 text-cyan-700 flex items-center gap-2">
+                  <span className="text-2xl">❓</span>
+                  Peut-on appeler un taxi à Antibes la nuit ?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Oui, notre <strong>taxi à Antibes</strong> est joignable{" "}
+                  <strong>24h/24 et 7j/7</strong> au{" "}
+                  <a href="tel:+33749777621" className="font-bold text-cyan-600 hover:text-amber-600 underline">
+                    07 49 77 76 21
+                  </a>
+                  .
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Informations de Contact */}
       <section className="py-24 md:py-32 bg-white">
         <div className="container mx-auto px-6">

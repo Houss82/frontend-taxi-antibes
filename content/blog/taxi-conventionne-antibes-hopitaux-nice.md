@@ -222,7 +222,7 @@ Tous nos véhicules sont :
 
 ## 🚖 5. Comment réserver votre Taxi Conventionné Antibes ?
 
-1. Remplissez le **formulaire de réservation** ou appelez le **07 49 77 76 21**
+1. Remplissez le **formulaire de réservation** ou appelez le **[07 49 77 76 21](tel:+33749777621)** – Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 2. Indiquez votre **heure de convocation**
 3. Précisez si vous avez une **prescription médicale de transport**
 4. Recevez la confirmation chauffeur

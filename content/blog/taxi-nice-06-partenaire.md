@@ -83,7 +83,7 @@ Taxi Nice 06 se distingue par sa flotte exclusivement composée de véhicules Me
 
 ## Comment réserver avec Taxi Nice 06 ?
 
-Réserver avec Taxi Nice 06 est simple et rapide. Leur [formulaire de réservation en ligne](https://taxi-nice-06.com/reservation) vous permet de préciser toutes les informations nécessaires : destination, heure, nombre de passagers, type de véhicule, et même votre numéro de vol pour les transferts aéroport. La réservation est disponible 24h/24 et 7j/7 en quelques clics.
+Réserver avec Taxi Nice 06 est simple et rapide. Leur [formulaire de réservation en ligne](https://taxi-nice-06.com/reservation) vous permet de préciser toutes les informations nécessaires : destination, heure, nombre de passagers, type de véhicule, et même votre numéro de vol pour les transferts aéroport. La réservation est disponible 24h/24 et 7j/7 en quelques clics. Pour réserver un taxi à Antibes, appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
 
 <div class="callout info">
   <strong>ℹ️ Information :</strong> Pour toute question ou besoin particulier, leur équipe répond rapidement et professionnellement à toutes vos demandes, en français et en anglais.
@@ -121,5 +121,5 @@ Réserver avec Taxi Nice 06 est simple et rapide. Leur [formulaire de réservati
 Avec plus de 15 ans d'expérience, Taxi Nice 06 s'est imposé comme un acteur majeur du transport privé sur la Côte d'Azur. Leur expertise dans les transferts aéroport, le transport médical et les courses locales, combinée à une flotte premium et un service irréprochable, en fait un partenaire de choix pour tous vos déplacements.
 
 <div class="highlight-box">
-  Que vous soyez résident, visiteur ou professionnel, Taxi Nice 06 vous accompagne avec professionnalisme et qualité. Leur service disponible 24h/24 et 7j/7 répond à tous vos besoins de transport sur la Côte d'Azur.
+  Que vous soyez résident, visiteur ou professionnel, Taxi Nice 06 vous accompagne avec professionnalisme et qualité. Leur service disponible 24h/24 et 7j/7 répond à tous vos besoins de transport sur la Côte d'Azur. Pour réserver un taxi à Antibes, appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide complet sur le numéro de taxi à Antibes</a>.
 </div>

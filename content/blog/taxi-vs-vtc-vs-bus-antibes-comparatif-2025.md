@@ -302,7 +302,7 @@ Pour les trajets importants (aéroport, événements), **réservez votre transpo
 
 Avant de choisir, **comparez les tarifs** selon votre destination et vos contraintes :
 
-- Demandez un devis pour un taxi (tarif fixe possible)
+- Demandez un devis pour un taxi (tarif fixe possible) – [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) : 07 49 77 76 21
 - Vérifiez les tarifs VTC en temps réel sur l'application
 - Consultez les tarifs bus/train sur les sites officiels
 
@@ -385,7 +385,7 @@ Pour les trajets vers l'aéroport ou les événements, **prévoyez toujours 15-3
 
   <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm overflow-hidden">
     <summary class="flex items-center justify-between px-5 py-4 cursor-pointer text-lg font-semibold text-cyan-700">
-      Les taxis sont-ils disponibles 24h/24 à Antibes ?
+      Comment contacter un taxi à Antibes ?
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
@@ -399,7 +399,7 @@ Pour les trajets vers l'aéroport ou les événements, **prévoyez toujours 15-3
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Vous pouvez réserver un taxi à Antibes de plusieurs façons : <strong>par téléphone</strong> (appel direct), <strong>en ligne</strong> via le site web ou formulaire de réservation, ou <strong>à l'avance</strong> pour garantir votre transport. Pour les trajets importants (aéroport, événements), il est recommandé de réserver à l'avance pour garantir la disponibilité et obtenir un tarif fixe.
+      Vous pouvez réserver un taxi à Antibes de plusieurs façons : <strong>par téléphone</strong> en appelant le <a href="tel:+33749777621">07 49 77 76 21</a> (appel direct), <strong>en ligne</strong> via le site web ou formulaire de réservation, ou <strong>à l'avance</strong> pour garantir votre transport. Pour les trajets importants (aéroport, événements), il est recommandé de réserver à l'avance pour garantir la disponibilité et obtenir un tarif fixe. Consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide complet sur le numéro de taxi à Antibes</a> pour toutes les informations.
     </div>
   </details>
 

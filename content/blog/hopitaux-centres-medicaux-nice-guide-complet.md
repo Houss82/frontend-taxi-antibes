@@ -328,7 +328,7 @@ Pour vos rendez-vous médicaux à Nice, un **transport médical conventionné** 
 
 👉 <a href="/secteurs/nice">📍 Page secteur Nice : services et établissements</a>
 
-👉 <a href="/reservation">Réserver un transport médical</a>
+👉 <a href="/reservation">Réserver un transport médical</a> – Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>
 
 👉 <a href="/blog">Tous nos articles de blog</a>
 

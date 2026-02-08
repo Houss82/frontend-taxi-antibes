@@ -346,6 +346,19 @@
     box-shadow: 0 2px 8px rgba(59, 130, 246, 0.12) !important;
   }
 
+  /* Permettre les styles inline pour les info-box avec style personnalisé */
+  .info-box[style],
+  .prose .info-box[style] {
+    border-left: none !important;
+  }
+
+  /* Réduire la taille du numéro sur mobile */
+  @media (max-width: 768px) {
+    .numero-telephone {
+      font-size: 2rem !important;
+    }
+  }
+
   .section-box,
   .prose .section-box {
     background: linear-gradient(

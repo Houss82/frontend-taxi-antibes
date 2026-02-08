@@ -345,4 +345,4 @@ Valbonne conserve un charme provençal authentique. Organisé autour d'une place
 
 Les villages autour d'Antibes offrent des expériences variées : art, histoire, panoramas et ambiance provençale. Que vous soyez amateur de photos, de balades ou de patrimoine, ces 5 villages sont parfaits pour découvrir une nouvelle facette de la Côte d'Azur.
 
-👉 <a href="/reservation">Réservez un taxi pour découvrir les plus beaux villages de la région</a>
+👉 <a href="/reservation">Réservez un taxi pour découvrir les plus beaux villages de la région</a>. Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>.

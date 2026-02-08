@@ -83,7 +83,7 @@ Ces chiffres proviennent des projections de la DREAL PACA (mise à jour novembre
 
 ## 📞 7. Comment nous contacter ?
 
-- Téléphone direct : <a href="tel:+33749777621">07 49 77 76 21</a>
+- Téléphone direct : <a href="tel:+33749777621">07 49 77 76 21</a> – <a href="/blog/taxi-antibes-numero-officiel">Guide complet sur le numéro de taxi à Antibes</a>
 - Formulaire : <a href="https://www.taxi-antibes.fr/contact">contact Taxi Antibes</a>
 - Résa immédiate : [réservez votre course en ligne](https://www.taxi-antibes.fr/reservation)
 
@@ -140,6 +140,7 @@ Retrouvez d’autres dossiers pratiques sur notre [blog Taxi Antibes](https://ww
 
 - [Accueil Taxi Antibes](https://www.taxi-antibes.fr)
 - [Réservation immédiate](https://www.taxi-antibes.fr/reservation)
+- [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) : 07 49 77 76 21
 - [Services taxi Antibes](https://www.taxi-antibes.fr/services)
 
 ---

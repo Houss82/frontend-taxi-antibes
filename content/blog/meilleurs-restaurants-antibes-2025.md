@@ -694,7 +694,7 @@ La **salade niçoise** est une spécialité traditionnelle de la région, prépa
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Le stationnement est très difficile dans le Vieil Antibes, surtout en été. Les rues sont étroites et les places de parking sont limitées. Nous recommandons fortement d'utiliser notre service de taxi pour vous déposer directement devant votre restaurant. Cela vous évite les problèmes de stationnement et vous permet de profiter pleinement de votre repas sans stress.
+      Le stationnement est très difficile dans le Vieil Antibes, surtout en été. Les rues sont étroites et les places de parking sont limitées. Nous recommandons fortement d'utiliser notre service de taxi pour vous déposer directement devant votre restaurant. Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>. Cela vous évite les problèmes de stationnement et vous permet de profiter pleinement de votre repas sans stress.
     </div>
   </details>
 
@@ -712,7 +712,7 @@ Ces restaurants font partie de ce qui rend Antibes unique — un lieu où l'on p
 
 Cet article sera mis à jour régulièrement pour intégrer de nouvelles adresses et découvertes culinaires.
 
-👉 <a href="/reservation">Réservez un taxi pour découvrir les restaurants d'Antibes en toute sérénité</a>
+👉 <a href="/reservation">Réservez un taxi pour découvrir les restaurants d'Antibes en toute sérénité</a>. Appelez le <a href="tel:+33749777621">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel">guide sur le numéro de taxi à Antibes</a>.
 
 ---
 

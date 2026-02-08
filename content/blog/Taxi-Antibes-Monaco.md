@@ -360,8 +360,8 @@ Ce niveau de confort, associé à notre professionnalisme, fait de Taxi Antibes 
 <div class="cta">
   <a class="cta-button" href="/reservation">📲 Réserver en ligne maintenant</a>
   <span> ou </span>
-  <a class="cta-button" href="/contact">Contact direct</a>
-  <p class="cta-sub">Service disponible 24h/24 et 7j/7</p>
+  <a class="cta-button" href="tel:+33749777621">📞 Appeler le 07 49 77 76 21</a>
+  <p class="cta-sub">Service disponible 24h/24 et 7j/7 – <a href="/blog/taxi-antibes-numero-officiel" style="color: inherit; text-decoration: underline;">Numéro de taxi à Antibes</a></p>
 </div>
 
 ---

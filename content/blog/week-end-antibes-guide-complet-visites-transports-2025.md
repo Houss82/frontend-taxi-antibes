@@ -313,7 +313,7 @@ Antibes est idéalement située pour explorer la **Côte d'Azur** et ses destina
 
 ### Liens internes
 
-👉 <a href="/">Réserver un taxi à Antibes</a>
+👉 <a href="/">Réserver un taxi à Antibes</a> – <a href="/blog/taxi-antibes-numero-officiel">Numéro de taxi à Antibes</a> : 07 49 77 76 21
 
 👉 <a href="/services">Services de transport premium Antibes</a>
 

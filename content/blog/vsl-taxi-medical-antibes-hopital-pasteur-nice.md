@@ -139,7 +139,7 @@ Pour bénéficier de la prise en charge CPAM, vous devez :
 
 ### Réservation par téléphone
 
-**Téléphone :** [Numéro à compléter]  
+**Téléphone :** **[07 49 77 76 21](tel:+33749777621)** – Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.  
 **Disponibilité :** 24h/24 et 7j/7
 
 Lors de votre appel, précisez :
@@ -330,7 +330,7 @@ L'hôpital Pasteur propose de nombreuses spécialités médicales :
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Nous recommandons de réserver au moins <strong>24h à l'avance</strong>, surtout pour les rendez-vous tôt le matin ou en fin de journée. Pour les rendez-vous réguliers (dialyse, chimiothérapie), nous pouvons mettre en place un planning récurrent. En cas d'urgence, contactez-nous directement par téléphone.
+      Nous recommandons de réserver au moins <strong>24h à l'avance</strong>, surtout pour les rendez-vous tôt le matin ou en fin de journée. Pour les rendez-vous réguliers (dialyse, chimiothérapie), nous pouvons mettre en place un planning récurrent. En cas d'urgence, contactez-nous directement au **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
     </div>
   </details>
 
@@ -380,7 +380,7 @@ L'hôpital Pasteur propose de nombreuses spécialités médicales :
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Oui, nous proposons des <strong>plannings récurrents</strong> pour les rendez-vous médicaux réguliers (dialyse, chimiothérapie, consultations de suivi). Cela vous permet de bénéficier d'un service régulier et fiable, avec le même chauffeur si possible. Contactez-nous pour mettre en place votre planning.
+      Oui, nous proposons des <strong>plannings récurrents</strong> pour les rendez-vous médicaux réguliers (dialyse, chimiothérapie, consultations de suivi). Cela vous permet de bénéficier d'un service régulier et fiable, avec le même chauffeur si possible. Contactez-nous au **[07 49 77 76 21](tel:+33749777621)** pour mettre en place votre planning ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
     </div>
   </details>
 
@@ -413,5 +413,5 @@ Avec une prise en charge possible par l'Assurance Maladie, un service disponible
 
 <div class="cta">
   <a class="cta-button" href="/reservation">📲 Réserver un transport médical</a>
-  <p class="cta-sub">Service disponible 24h/24 et 7j/7</p>
+  <p class="cta-sub">Service disponible 24h/24 et 7j/7 – Appelez le <a href="tel:+33749777621" style="color: inherit; text-decoration: underline;">07 49 77 76 21</a> ou consultez notre <a href="/blog/taxi-antibes-numero-officiel" style="color: inherit; text-decoration: underline;">guide sur le numéro de taxi à Antibes</a></p>
 </div>

@@ -190,7 +190,7 @@ Vous choisissez la formule qui vous convient :
 
 La réservation est simple et rapide :
 
-1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **07 49 77 76 21**.
+1. **Contactez-nous** via le [formulaire de réservation](/reservation) ou par téléphone au **[07 49 77 76 21](tel:+33749777621)**. Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 2. **Validez votre horaire**, votre lieu de prise en charge (Antibes, Juan-les-Pins, etc.) et le véhicule souhaité.
 3. **Recevez un SMS de confirmation** avec le nom du chauffeur et le numéro de véhicule.
 
@@ -479,7 +479,7 @@ Notre expertise locale, nos véhicules Mercedes confortables et notre service pe
 
 👉 <a href="/reservation">Réservez dès maintenant votre excursion vers Èze</a>
 
-👉 <a href="/contact">Contactez-nous pour toute question</a>
+👉 <a href="/contact">Contactez-nous pour toute question</a> – Appelez le **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 
 ---
 

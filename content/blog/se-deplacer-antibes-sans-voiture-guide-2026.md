@@ -197,7 +197,7 @@ Pour se déplacer à Antibes sans voiture, **[Taxi Antibes](/)** vous propose un
 
 ### 📞 Comment réserver un taxi à Antibes ?
 
-**Réservation par téléphone :** **+33 7 49 77 76 21** (disponible 24/7)
+**Réservation par téléphone :** **[+33 7 49 77 76 21](tel:+33749777621)** (disponible 24/7) – Consultez notre guide complet : [Numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel)
 
 **Réservation en ligne :** Utilisez notre [formulaire de réservation](/reservation) pour réserver votre taxi à l'avance.
 

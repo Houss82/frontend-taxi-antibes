@@ -151,6 +151,13 @@ export default function Home() {
               • ✓ Chauffeurs pros • ✓{" "}
               <Link href="/tarifs" className="hover:text-amber-300 underline">
                 Tarifs transparents
+              </Link>{" "}
+              • ✓{" "}
+              <Link
+                href="/contact"
+                className="hover:text-amber-300 underline"
+              >
+                Téléphone taxi Antibes
               </Link>
             </p>
           </div>
@@ -317,8 +324,22 @@ export default function Home() {
                     <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
                   </span>
                 </Link>{" "}
-                ou contactez-nous par téléphone pour un devis rapide et
-                transparent.
+                ou{" "}
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-lg"
+                >
+                  <span className="relative">
+                    contactez-nous par téléphone
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </Link>{" "}
+                (<Link
+                  href="/contact"
+                  className="text-cyan-600 font-semibold hover:text-amber-600 underline"
+                >
+                  numéro de taxi à Antibes
+                </Link>) pour un devis rapide et transparent.
               </p>
             </div>
 

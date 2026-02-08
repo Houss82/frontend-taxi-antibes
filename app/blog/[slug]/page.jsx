@@ -143,9 +143,10 @@ export default async function BlogPostPage({ params }) {
         }
       : null;
 
-  // Schema TaxiService spécifique pour l'article "taxi gare Antibes"
+  // Schema TaxiService spécifique pour les articles "taxi gare Antibes" et "taxi antibes numero"
   const taxiServiceSchema =
-    post.slug === "taxi-gare-sncf-antibes-guide-complet"
+    post.slug === "taxi-gare-sncf-antibes-guide-complet" ||
+    post.slug === "taxi-antibes-numero-officiel"
       ? {
           "@context": "https://schema.org",
           "@type": "TaxiService",
