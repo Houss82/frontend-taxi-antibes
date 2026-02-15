@@ -2,6 +2,7 @@ import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
+import Script from "next/script";
 import {
   Bus,
   Calculator,
@@ -13,9 +14,21 @@ import {
   Car as PremiumCarIcon,
 } from "lucide-react";
 import { Outfit } from "next/font/google";
-import { metadata } from "./metadata";
 
-export { metadata };
+export const metadata = {
+  title: "Prix Taxi Antibes : Tarifs 2026, Devis & Transferts Aéroport Nice",
+  description:
+    "Prix taxi Antibes et tarifs 2026 : courses locales, transferts aéroport Nice, Juan-les-Pins, Cannes, Monaco. Devis gratuit, prix annoncés à l'avance, service 24h/24.",
+  keywords:
+    "prix taxi antibes, tarif taxi antibes, tarifs taxi antibes, prix taxi antibes aéroport nice, taxi antibes tarif, taxi antibes prix",
+  openGraph: {
+    title: "Prix Taxi Antibes : Tarifs 2026 & Devis",
+    description:
+      "Consultez les tarifs taxi Antibes : prix fixes, estimations et suppléments. Devis gratuit 24h/24.",
+    type: "website",
+    locale: "fr_FR",
+  },
+};
 
 // Import de la police Outfit
 const outfit = Outfit({
@@ -279,34 +292,188 @@ const suppléments = [
 ];
 
 export default function TarifsPage() {
-  return (
-    <PageLayout
-      title="Nos Tarifs"
-      subtitle="Tarifs transparents et compétitifs pour tous vos déplacements sur la Côte d'Azur"
-      backgroundImage="/tarif.jpg"
-    >
-      {/* Tarifs Principaux */}
-      <section className="py-24  md:py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2
-              className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
-            >
-              Nos{" "}
-              <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                tarifs taxi Antibes
-              </span>
-            </h2>
-            <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-              Des tarifs transparents et compétitifs{" "}
-              <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
-                taxi Antibes
-              </Link>{" "}
-              pour tous vos déplacements vers et depuis l'aéroport de Nice.
-            </p>
-          </div>
+  // Schema JSON-LD pour FAQ
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quel est le prix d'un taxi à Antibes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le prix d'un taxi à Antibes dépend de la destination, de l'heure (jour/nuit) et des suppléments éventuels. Pour un prix exact, appelez le 07 49 77 76 21."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les tarifs taxi Antibes sont-ils fixes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Certains trajets peuvent être proposés en prix fixes selon la destination. D'autres varient selon l'horaire et la distance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment obtenir un devis taxi Antibes ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Demandez un devis gratuit par téléphone au 07 49 77 76 21 ou via la réservation en ligne."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le tarif taxi Antibes la nuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le tarif taxi Antibes la nuit (22h-6h) inclut un supplément de 20% par rapport au tarif de jour. Pour connaître le prix exact selon votre destination, appelez le 07 49 77 76 21."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Prix taxi Antibes → Aéroport Nice ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Le prix pour un transfert taxi Antibes vers l'aéroport Nice dépend de votre adresse exacte à Antibes et de l'horaire. Un prix fixe peut être annoncé à l'avance. Appelez le 07 49 77 76 21 pour un devis précis."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Peut-on réserver un taxi à Antibes à l'avance ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Oui, vous pouvez réserver un taxi à Antibes à l'avance, même plusieurs jours ou semaines avant votre déplacement. C'est particulièrement recommandé pour les transferts aéroport ou les trajets importants. Réservez au 07 49 77 76 21 ou via notre page réservation."
+        }
+      }
+    ]
+  };
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  // Schema JSON-LD pour LocalBusiness/TaxiService
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "Taxi Antibes Riviera",
+    "telephone": "+33749777621",
+    "url": "https://www.taxi-antibes.fr/tarifs",
+    "areaServed": ["Antibes", "Juan-les-Pins", "Côte d'Azur"],
+    "availableLanguage": "fr",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "€€",
+    "image": "https://www.taxi-antibes.fr/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Antibes",
+      "postalCode": "06600",
+      "addressCountry": "FR"
+    }
+  };
+
+  return (
+    <>
+      <Script
+        id="faq-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <Script
+        id="taxi-jsonld"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <PageLayout
+        title="Prix Taxi Antibes : Tarifs 2026, Devis & Transferts"
+        subtitle="Tarifs transparents (jour/nuit), prix fixes et devis gratuit 24h/24."
+        backgroundImage="/tarif.jpg"
+      >
+        {/* Tarifs Principaux */}
+        <section className="py-24  md:py-24 bg-background">
+          <div className="container mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2
+                className={`text-4xl md:text-5xl font-light mb-4 text-balance text-cyan-700 ${outfit.className}`}
+              >
+                Nos{" "}
+                <span className="font-semibold bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
+                  tarifs taxi Antibes
+                </span>
+              </h2>
+              <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
+                Des tarifs transparents et compétitifs pour votre <strong>taxi à Antibes</strong>{" "}
+                pour tous vos déplacements depuis Antibes vers l'aéroport de Nice, Juan-les-Pins, Cannes, Monaco et toute la Côte d'Azur.
+              </p>
+            </div>
+
+            {/* Bloc SEO en haut */}
+            <section className="max-w-4xl mx-auto mt-8 p-6 rounded-2xl border border-cyan-100 bg-cyan-50">
+              <h2 className="text-2xl md:text-3xl font-semibold text-cyan-800 mb-3 text-center">
+                Tarifs taxi Antibes : estimations et prix fixes
+              </h2>
+
+              <p className="text-gray-700 mt-3 leading-relaxed">
+                Vous cherchez le <strong>prix d'un taxi à Antibes</strong> ou un{" "}
+                <strong>tarif taxi Antibes</strong> clair ? Sur cette page, vous trouverez
+                nos <strong>tarifs taxi Antibes</strong> les plus demandés (courses locales,
+                transferts aéroport Nice, Juan-les-Pins, Cannes, Monaco…), avec des{" "}
+                <strong>prix annoncés à l'avance</strong>.
+              </p>
+
+              <p className="text-gray-700 mt-3 leading-relaxed">
+                Le <strong>prix taxi Antibes</strong> dépend principalement de la destination,
+                de l'horaire (jour/nuit) et des éventuels suppléments (bagages, attente…).
+              </p>
+
+              <div className="mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+                <a
+                  href="tel:+33749777621"
+                  className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-white bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 transition-colors"
+                >
+                  📞 Appeler pour un prix exact : 07 49 77 76 21
+                </a>
+                <Link
+                  href="/reservation"
+                  className="inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold border border-cyan-200 bg-white text-cyan-800 hover:bg-cyan-50 transition-colors"
+                >
+                  Réserver en ligne
+                </Link>
+              </div>
+            </section>
+
+            {/* Section Prix Populaires */}
+            <section className="max-w-4xl mx-auto mt-10">
+              <h2 className="text-2xl font-semibold text-cyan-800 mb-2">
+                Tarifs taxi Antibes les plus demandés
+              </h2>
+
+              <p className="text-gray-700 mt-2 mb-4">
+                Voici des exemples de <strong>prix taxi Antibes</strong> fréquemment demandés.
+                Pour un <strong>tarif taxi Antibes</strong> exact selon votre adresse et l'horaire,
+                appelez le <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a>.
+              </p>
+
+              <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
+                <li className="p-4 bg-white border border-cyan-100 rounded-xl">
+                  <strong className="text-cyan-700">Antibes → Cannes</strong> : à partir de 89 €
+                </li>
+                <li className="p-4 bg-white border border-cyan-100 rounded-xl">
+                  <strong className="text-cyan-700">Antibes → Monaco</strong> : à partir de 99 €
+                </li>
+                <li className="p-4 bg-white border border-cyan-100 rounded-xl">
+                  <strong className="text-cyan-700">Antibes → Juan-les-Pins</strong> : 60-70 €
+                </li>
+                <li className="p-4 bg-white border border-cyan-100 rounded-xl">
+                  <strong className="text-cyan-700">Antibes → Aéroport Nice</strong> : prix annoncé à l'avance
+                </li>
+              </ul>
+            </section>
+
+            {/* Phrase avant tableau */}
+            <p className="text-gray-700 max-w-4xl mx-auto mt-6 text-center">
+              Les <strong>tarifs taxi Antibes</strong> ci-dessous couvrent Antibes, Juan-les-Pins et les principales destinations de la Côte d'Azur.
+            </p>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
             {tarifs.map((tarif, index) => (
               <Card
                 key={index}
@@ -501,12 +668,109 @@ export default function TarifsPage() {
                 Pour un devis personnalisé ou des trajets spécifiques,
                 contactez-nous directement.
               </p>
-              <Button className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg">
-                <Phone className="h-4 w-4 mr-2" />
-                Demander un devis
+              <Button asChild className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 hover:from-amber-500 hover:via-gold-600 hover:to-orange-500 text-white shadow-lg">
+                <a href="tel:+33749777621" className="flex items-center">
+                  <Phone className="h-4 w-4 mr-2" />
+                  Demander un devis
+                </a>
               </Button>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Section Comment est calculé le prix */}
+      <section className="max-w-4xl mx-auto mt-10 p-6 bg-white border border-cyan-100 rounded-2xl">
+        <h2 className="text-2xl font-semibold text-cyan-800 mb-3">
+          Comment est calculé le prix d'un taxi à Antibes ?
+        </h2>
+        <p className="text-gray-700 mt-2 leading-relaxed">
+          Le <strong>prix taxi Antibes</strong> dépend de la distance, de l'horaire (jour/nuit),
+          et des éventuels suppléments (bagages, attente, jours fériés…). Pour certains trajets,
+          un <strong>tarif fixe</strong> peut être annoncé à l'avance.
+        </p>
+        <p className="text-gray-700 mt-2 leading-relaxed">
+          Pour connaître le <strong>tarif taxi Antibes</strong> exact selon votre adresse de départ,
+          l'horaire et le nombre de passagers, appelez le{" "}
+          <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">
+            07 49 77 76 21
+          </a>.
+        </p>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="max-w-4xl mx-auto mt-12 py-16 px-6">
+        <h2 className="text-2xl md:text-3xl font-semibold text-cyan-800 mb-6">
+          FAQ – Prix et tarif taxi Antibes
+        </h2>
+
+        <div className="mt-4 space-y-4">
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Quel est le prix d'un taxi à Antibes ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Le <strong>prix taxi Antibes</strong> dépend de la destination, de l'heure (jour/nuit)
+              et des suppléments éventuels (bagages, attente…). Pour un prix exact, appelez le{" "}
+              <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a>.
+            </p>
+          </details>
+
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Les tarifs taxi Antibes sont-ils fixes ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Certains trajets peuvent être proposés en <strong>prix fixes</strong> (selon destination).
+              Sinon, le tarif dépend des conditions (jour/nuit, distance). Consultez notre tableau de tarifs
+              pour voir les destinations avec prix fixes.
+            </p>
+          </details>
+
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Comment obtenir un devis taxi Antibes ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Vous pouvez demander un <strong>devis gratuit</strong> par téléphone au{" "}
+              <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a>{" "}
+              ou via la <Link href="/reservation" className="underline font-semibold text-cyan-600 hover:text-amber-600">page réservation</Link>.
+            </p>
+          </details>
+
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Quel est le tarif taxi Antibes la nuit ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Le <strong>tarif taxi Antibes la nuit</strong> (22h-6h) inclut un supplément de 20% par rapport au tarif de jour.
+              Pour connaître le prix exact selon votre destination, appelez le{" "}
+              <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a>.
+            </p>
+          </details>
+
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Prix taxi Antibes → Aéroport Nice ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Le <strong>prix pour un transfert taxi Antibes vers l'aéroport Nice</strong> dépend de votre adresse exacte à Antibes et de l'horaire.
+              Un prix fixe peut être annoncé à l'avance. Appelez le{" "}
+              <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a> pour un devis précis.
+            </p>
+          </details>
+
+          <details className="p-4 bg-white border border-cyan-100 rounded-xl hover:shadow-md transition-shadow">
+            <summary className="font-semibold cursor-pointer text-cyan-700 hover:text-cyan-800">
+              Peut-on réserver un taxi à Antibes à l'avance ?
+            </summary>
+            <p className="text-gray-700 mt-2 leading-relaxed">
+              Oui, vous pouvez <strong>réserver un taxi à Antibes à l'avance</strong>, même plusieurs jours ou semaines avant votre déplacement.
+              C'est particulièrement recommandé pour les transferts aéroport ou les trajets importants. Réservez au{" "}
+              <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a>{" "}
+              ou via notre <Link href="/reservation" className="underline font-semibold text-cyan-600 hover:text-amber-600">page réservation</Link>.
+            </p>
+          </details>
         </div>
       </section>
 
@@ -532,19 +796,23 @@ export default function TarifsPage() {
             >
               <a href="tel:+33749777621" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
-                Appeler nous
+                Appelez-nous
               </a>
             </Button>
             <Button
+              asChild
               size="lg"
               variant="outline"
               className="border border-amber-400 text-white hover:bg-amber-400 hover:text-black text-base px-8 py-6 bg-transparent rounded-xl"
             >
-              Réserver en ligne
+              <Link href="/reservation">
+                Réserver en ligne
+              </Link>
             </Button>
           </div>
         </div>
       </section>
-    </PageLayout>
+      </PageLayout>
+    </>
   );
 }
