@@ -60,6 +60,12 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/taxi-antibes-numero`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
   ];
 
   // Pages de secteurs dynamiques (toutes les villes de data.js sont automatiquement incluses)

@@ -101,16 +101,16 @@ export default function Home() {
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-white/80 mb-1 sm:mb-2 font-light px-2">
             Taxi Antibes Riviera
           </p>
-          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-2 sm:mb-3 text-white font-semibold px-2 break-words">
+          <h2 className="hero-content-box text-lg sm:text-xl md:text-xl lg:text-3xl xl:text-4xl mb-2 sm:mb-3 text-white font-semibold px-2 break-words">
             Service de taxi à Antibes 24h/24 – Courses locales & transferts
           </h2>
-          <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-3 sm:mb-4 text-white/90 font-semibold px-2 break-words">
+          <p className="hero-content-box text-base sm:text-lg md:text-lg lg:text-2xl xl:text-3xl mb-3 sm:mb-4 text-white/90 font-semibold px-2 break-words">
             Aéroport Nice & Taxi conventionné CPAM
           </p>
 
           {/* Texte descriptif SEO */}
-          <div className="text-sm sm:text-base md:text-lg text-white/90 mb-4 sm:mb-6 md:mb-8 w-full max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl border border-white/20 shadow-lg">
-            <p className="mb-2 sm:mb-3 font-semibold text-sm sm:text-base md:text-lg break-words">
+          <div className="hero-content-box text-sm sm:text-base md:text-base lg:text-lg text-white/90 mb-4 sm:mb-6 md:mb-8 w-full max-w-2xl mx-auto font-light leading-relaxed bg-white/10 md:backdrop-blur-sm p-3 sm:p-4 md:p-6 rounded-xl sm:rounded-2xl border border-white/20 shadow-lg">
+            <p className="mb-2 sm:mb-3 font-semibold text-sm sm:text-base md:text-base lg:text-lg break-words">
               Besoin d'un <strong className="text-cyan-400">taxi à Antibes</strong> maintenant ? Appelez le{" "}
               <a
                 href="tel:+33749777621"
@@ -120,7 +120,7 @@ export default function Home() {
               </a>{" "}
               ou réservez en ligne en 30 secondes.
             </p>
-            <p className="mb-2 sm:mb-3 text-sm sm:text-base md:text-lg break-words">
+            <p className="mb-2 sm:mb-3 text-sm sm:text-base md:text-base lg:text-lg break-words">
               <strong className="text-cyan-400 font-semibold">
                 Taxi Antibes Riviera
               </strong>{" "}
@@ -140,7 +140,7 @@ export default function Home() {
               </Link>
               .
             </p>
-            <p className="text-white/90 text-sm sm:text-base md:text-lg break-words">
+            <p className="text-white/90 text-sm sm:text-base md:text-base lg:text-lg break-words">
               ✓{" "}
               <Link
                 href="/reservation"

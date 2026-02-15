@@ -359,6 +359,45 @@
     }
   }
 
+  /* Réduire la taille de la police dans la boîte centrale sur écrans moyens (MacBook 13 pouces) */
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    /* H2 principal */
+    .hero-content-box.text-lg,
+    .hero-content-box.text-xl,
+    .hero-content-box.text-2xl {
+      font-size: 1.125rem !important;
+      line-height: 1.4 !important;
+    }
+    
+    /* Sous-titre */
+    .hero-content-box.text-base,
+    .hero-content-box.text-lg,
+    .hero-content-box.text-xl {
+      font-size: 0.9375rem !important;
+      line-height: 1.4 !important;
+    }
+    
+    /* Boîte centrale et tous ses enfants */
+    .hero-content-box {
+      font-size: 0.875rem !important;
+    }
+    
+    .hero-content-box p,
+    .hero-content-box a,
+    .hero-content-box strong,
+    .hero-content-box span {
+      font-size: 0.875rem !important;
+      line-height: 1.5 !important;
+    }
+    
+    /* Override des classes Tailwind dans la boîte */
+    .hero-content-box .text-sm,
+    .hero-content-box .text-base,
+    .hero-content-box .text-lg {
+      font-size: 0.875rem !important;
+    }
+  }
+
   .section-box,
   .prose .section-box {
     background: linear-gradient(

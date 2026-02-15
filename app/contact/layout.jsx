@@ -1,14 +1,14 @@
 export const metadata = {
-  title: "Taxi Antibes Numéro ☎️ 07 49 77 76 21 | Disponible 24h/24",
+  title: "Contact Taxi Antibes Riviera – Réservation et Service Client 24h/24",
   description:
-    "Besoin du numéro de taxi à Antibes ? Appelez le 07 49 77 76 21. Taxi disponible 24h/24 – réponse immédiate.",
+    "Contactez Taxi Antibes Riviera : téléphone, email, formulaire de contact. Service client disponible 24h/24 pour vos réservations et questions.",
   alternates: {
     canonical: "/contact",
   },
   openGraph: {
-    title: "Taxi Antibes Numéro ☎️ 07 49 77 76 21 | Disponible 24h/24",
+    title: "Contact Taxi Antibes Riviera – Réservation et Service Client 24h/24",
     description:
-      "Besoin du numéro de taxi à Antibes ? Appelez le 07 49 77 76 21. Taxi disponible 24h/24 – réponse immédiate.",
+      "Contactez Taxi Antibes Riviera : téléphone, email, formulaire de contact. Service client disponible 24h/24 pour vos réservations et questions.",
     url: "https://www.taxi-antibes.fr/contact",
     type: "website",
     locale: "fr_FR",
@@ -17,15 +17,15 @@ export const metadata = {
         url: "https://www.taxi-antibes.fr/contact.jpg",
         width: 1200,
         height: 630,
-        alt: "Contact Taxi Antibes - Numéro de téléphone",
+        alt: "Contact Taxi Antibes Riviera",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Antibes Numéro ☎️ 07 49 77 76 21 | Disponible 24h/24",
+    title: "Contact Taxi Antibes Riviera – Réservation et Service Client 24h/24",
     description:
-      "Besoin du numéro de taxi à Antibes ? Appelez le 07 49 77 76 21. Taxi disponible 24h/24 – réponse immédiate.",
+      "Contactez Taxi Antibes Riviera : téléphone, email, formulaire de contact. Service client disponible 24h/24 pour vos réservations et questions.",
     images: ["https://www.taxi-antibes.fr/contact.jpg"],
   },
 };
