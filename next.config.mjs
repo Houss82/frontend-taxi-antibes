@@ -20,6 +20,17 @@ const nextConfig = {
         destination: '/blog',
         permanent: true, // 301 redirect
       },
+      // Redirections services pour corriger les 404
+      {
+        source: '/services/transferts-aeroport',
+        destination: '/services/taxi-aeroport-nice',
+        permanent: true, // 301 redirect
+      },
+      {
+        source: '/services/transport-medical',
+        destination: '/services/taxi-conventionne',
+        permanent: true, // 301 redirect
+      },
     ];
   },
 };
