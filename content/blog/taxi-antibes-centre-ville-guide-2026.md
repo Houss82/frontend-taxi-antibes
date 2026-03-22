@@ -1,13 +1,12 @@
 ---
 title: "Taxi Antibes Centre-Ville : Transferts & Courses Locales 24h/24 – Guide Complet 2026"
-date: "2026-03-12"
+date: "2026-03-22"
 excerpt: "Service taxi Antibes centre-ville : courses locales, transferts dans Antibes, Vieux Antibes, Port Vauban. Disponible 24h/24 avec véhicules Mercedes premium. Réservez votre taxi Antibes."
-image: "/taxi-antibes-centre.jpg"
+image: "/taxi-antibes-hotel-royal.jpeg"
 imagePosition: "center 65%"
 category: "Taxi & Transport"
 author: "Taxi Antibes"
 language: "fr"
-keywords: ["taxi antibes centre ville", "taxi antibes", "courses locales antibes", "taxi vieux antibes", "transfert antibes"]
 ---
 
 ## 🚕 Taxi Antibes Centre-Ville : votre service de transport local 24h/24
@@ -42,6 +41,7 @@ Notre service de **taxi Antibes centre-ville** dessert tous les quartiers d'Anti
 Le **Vieux Antibes** est le quartier historique de la ville, avec ses ruelles étroites, ses remparts et son ambiance authentique. Notre service vous dépose directement devant les musées, restaurants, boutiques et attractions du quartier historique.
 
 **Points d'intérêt desservis :**
+
 - Musée Picasso (Château Grimaldi)
 - Musée Peynet
 - Musée d'Archéologie
@@ -54,6 +54,7 @@ Le **Vieux Antibes** est le quartier historique de la ville, avec ses ruelles é
 Le **Port Vauban** est le plus grand port de plaisance d'Europe avec plus de 1 600 places d'amarrage. Notre service vous dépose directement devant les restaurants du port, les pontons et les attractions portuaires.
 
 **Points d'intérêt desservis :**
+
 - Restaurants du Port Vauban
 - Yachts de luxe et pontons
 - Promenade le long des quais
@@ -64,6 +65,7 @@ Le **Port Vauban** est le plus grand port de plaisance d'Europe avec plus de 1 6
 Le **centre-ville d'Antibes** regroupe les commerces, restaurants et services. Notre service vous accompagne pour tous vos déplacements dans le centre-ville.
 
 **Points d'intérêt desservis :**
+
 - Cours Masséna (commerces et marché)
 - Rue de la République (boutiques)
 - Restaurants et cafés
@@ -74,6 +76,7 @@ Le **centre-ville d'Antibes** regroupe les commerces, restaurants et services. N
 **Juan-les-Pins** est une station balnéaire située à l'ouest d'Antibes, connue pour ses plages, sa vie nocturne et ses festivals de jazz. Notre service dessert également Juan-les-Pins.
 
 **Points d'intérêt desservis :**
+
 - Plages de Juan-les-Pins
 - Restaurants et bars
 - Festivals et événements
@@ -84,6 +87,7 @@ Le **centre-ville d'Antibes** regroupe les commerces, restaurants et services. N
 Le **Cap d'Antibes** est un quartier résidentiel exclusif avec villas de prestige et plages privées. Notre service dessert également le Cap d'Antibes.
 
 **Points d'intérêt desservis :**
+
 - Villas de prestige
 - Plages privées
 - Hôtels de luxe
@@ -308,4 +312,4 @@ Que ce soit pour une sortie au restaurant, une visite culturelle, un déplacemen
 
 ---
 
-_Article mis à jour le 15 février 2026_
+_Article mis à jour le 22 mars 2026_
