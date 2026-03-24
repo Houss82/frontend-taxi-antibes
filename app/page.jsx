@@ -2,6 +2,7 @@
 import { BookingSection } from "@/components/booking-section";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import { ReviewsSection } from "@/components/reviews-section";
 import { ServicesSection } from "@/components/services-section";
 import { Button } from "@/components/ui/button";
 import {
@@ -787,6 +788,8 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <ReviewsSection />
 
       <BookingSection />
 
