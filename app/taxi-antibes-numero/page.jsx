@@ -84,6 +84,16 @@ export default function TaxiAntibesNumeroPage() {
                 ponctuel et fiable. Nos chauffeurs locaux connaissent parfaitement Antibes, Juan-les-Pins et toute la région, 
                 vous assurant le meilleur itinéraire pour votre trajet.
               </p>
+              <p className="text-base text-gray-600 border-l-4 border-cyan-500 pl-4 py-3 mb-6 bg-cyan-50/60 rounded-r">
+                <span className="font-semibold text-cyan-800">Pour aller plus loin :</span>{" "}
+                <Link
+                  href="/blog/taxi-antibes-numero-officiel"
+                  className="text-cyan-700 underline font-medium hover:text-amber-700"
+                >
+                  article de blog — numéro de taxi, usages et FAQ
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>

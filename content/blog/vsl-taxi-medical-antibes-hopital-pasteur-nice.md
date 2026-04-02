@@ -9,6 +9,10 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Page service</strong> — Réservation et cadre CPAM : <a href="/services/taxi-conventionne"><strong>Taxi conventionné Antibes</strong></a>. <em>Cet article se concentre sur le trajet vers l’hôpital Pasteur (VSL / transport médical).</em>
+</div>
+
 ## 🚑 VSL Antibes : Transport Médical Conventionné CPAM vers l'Hôpital Pasteur de Nice
 
 Pour de nombreux patients d'Antibes nécessitant des soins réguliers à l'**hôpital Pasteur de Nice**, le transport médical conventionné représente une solution essentielle pour accéder aux soins en toute sécurité et confort.

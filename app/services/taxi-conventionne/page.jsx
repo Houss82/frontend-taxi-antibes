@@ -12,6 +12,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 
 const hospitalsAntibes = [
@@ -244,6 +245,24 @@ export default function TaxiConventionnePage() {
                     depuis <strong>Antibes</strong>, afin de sécuriser votre
                     arrivée à l'heure. Pour une demande rapide, appelez-nous ou
                     réservez en ligne.
+                  </p>
+
+                  <p className="text-base text-gray-600 border-l-4 border-cyan-500 pl-4 py-3 mt-6 bg-cyan-50/60 rounded-r not-prose">
+                    <span className="font-semibold text-cyan-800">Guides détaillés :</span>{" "}
+                    <Link
+                      href="/blog/taxi-conventionne-antibes-hopitaux-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      hôpitaux de Nice, durées et parcours
+                    </Link>
+                    {" · "}
+                    <Link
+                      href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      trajet vers l’hôpital Pasteur
+                    </Link>
+                    .
                   </p>
                 </div>
               </div>

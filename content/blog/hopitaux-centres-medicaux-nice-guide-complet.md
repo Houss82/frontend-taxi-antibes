@@ -15,6 +15,10 @@ Nice compte parmi les **plus importants pôles hospitaliers de la Côte d'Azur**
 
 Ce guide présente les **6 établissements médicaux incontournables de Nice**, avec distances précises depuis Antibes, spécialités médicales et informations pratiques.
 
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Transport médical depuis Antibes</strong> — Ce guide est <strong>informatif</strong> sur les établissements. Pour le <strong>taxi conventionné CPAM</strong> : <a href="/services/taxi-conventionne">page service officielle</a>. Article complémentaire : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">Taxi conventionné Antibes → hôpitaux de Nice</a>.
+</div>
+
 <div class="kpi-strip">
   <span class="badge success">🏥 Hôpitaux publics</span>
   <span class="badge info">🎯 Centres spécialisés</span>

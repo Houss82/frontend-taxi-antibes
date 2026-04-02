@@ -9,6 +9,10 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Page service (réservation)</strong> — Pour réserver un transfert, tarifs indicatifs et présentation officielle : <a href="/services/taxi-aeroport-nice"><strong>Transfert Aéroport Nice</strong></a>. <em>Cet article est un guide approfondi (conseils, trajets, FAQ).</em>
+</div>
+
 ## ✈️ Taxi Aéroport Nice depuis Antibes : votre solution premium pour des transferts sans stress
 
 L'**aéroport Nice Côte d'Azur** est la porte d'entrée principale de la Côte d'Azur. Chaque année, plus de **14 millions de passagers** transitent par ses deux terminaux, faisant de lui le **3ᵉ aéroport de France** en termes de trafic. Depuis Antibes, situé à seulement **20 kilomètres**, notre service de taxi premium vous garantit un transfert **confortable, ponctuel et sans stress** vers ou depuis l'aéroport.

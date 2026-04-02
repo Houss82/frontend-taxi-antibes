@@ -13,6 +13,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 
 const destinations = [
@@ -199,6 +200,17 @@ export default function TaxiAeroportNicePage() {
                     départ ou une arrivée, notre{" "}
                     <strong>service taxi aéroport</strong> s'adapte à vos
                     besoins et à vos horaires de vol.
+                  </p>
+
+                  <p className="text-base text-gray-600 border-l-4 border-cyan-500 pl-4 py-3 mt-6 bg-cyan-50/60 rounded-r not-prose">
+                    <span className="font-semibold text-cyan-800">Guide détaillé :</span>{" "}
+                    <Link
+                      href="/blog/taxi-aeroport-nice-antibes-guide-complet"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      conseils, temps de trajet et FAQ — Aéroport Nice depuis Antibes
+                    </Link>
+                    .
                   </p>
                 </div>
               </div>

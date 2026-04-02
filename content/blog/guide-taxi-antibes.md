@@ -8,6 +8,19 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Pages de référence (site officiel)</strong>
+  <p>Ce guide est un <strong>complément d’information</strong>. Pour réserver, les tarifs et la présentation principale du service :</p>
+  <ul style="margin: 0.75rem 0 0 1.25rem;">
+    <li><a href="/">Accueil Taxi Antibes Riviera</a> — page principale</li>
+    <li><a href="/reservation">Réservation en ligne</a></li>
+    <li><a href="/services">Vue d’ensemble des services</a></li>
+    <li><a href="/services/taxi-aeroport-nice">Transfert Aéroport Nice</a></li>
+    <li><a href="/services/taxi-conventionne">Taxi conventionné CPAM</a></li>
+    <li><a href="/taxi-antibes-numero">Numéro officiel</a></li>
+  </ul>
+</div>
+
 Bienvenue dans notre guide complet des services de transport à Antibes ! **[Taxi Antibes](/)**, votre partenaire de confiance pour tous vos déplacements sur la Côte d'Azur, vous propose ce guide informatif pour découvrir nos services de transport premium. Que vous soyez résident, visiteur ou professionnel, nous offrons des solutions de transport sur mesure adaptées à chaque situation.
 
 Notre engagement : vous transporter en toute sécurité, confort et ponctualité, 24 heures sur 24 et 7 jours sur 7. Découvrez dans ce guide toutes les raisons de nous faire confiance pour vos déplacements à Antibes et dans la région.
@@ -39,7 +52,7 @@ Notre service de taxi à Antibes vous propose des solutions de transport adapté
 
 ### Transferts aéroport Nice Côte d'Azur
 
-L'aéroport Nice Côte d'Azur est la porte d'entrée principale de la Côte d'Azur. Depuis Antibes, nous assurons vos [transferts vers l'aéroport de Nice](/services) en toute sécurité et ponctualité. Nos véhicules premium sont spécialement équipés pour accueillir vos bagages en toute sérénité.
+L'aéroport Nice Côte d'Azur est la porte d'entrée principale de la Côte d'Azur. Depuis Antibes, nous assurons vos [transferts vers l'aéroport de Nice](/services/taxi-aeroport-nice) en toute sécurité et ponctualité. Nos véhicules premium sont spécialement équipés pour accueillir vos bagages en toute sérénité.
 
 <div class="info-box">
   <strong>💡 Avantages de notre service aéroport :</strong>

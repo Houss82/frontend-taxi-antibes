@@ -9,6 +9,10 @@ author: "Taxi Antibes"
 language: "fr"
 ---
 
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Page dédiée</strong> — Pour le <strong>numéro officiel</strong>, les CTA et la fiche « appeler un taxi à Antibes », la référence du site est : <a href="/taxi-antibes-numero"><strong>Taxi Antibes – numéro</strong></a>. <em>Cet article de blog détaille les usages, types de courses et questions fréquentes.</em>
+</div>
+
 ## Numéro de taxi à Antibes : 07 49 77 76 21 – Service disponible 24h/24
 
 **Vous cherchez le numéro de taxi à Antibes ?** Appelez directement le **[07 49 77 76 21](tel:+33749777621)** pour une réservation immédiate. **[Taxi Antibes](/)** est votre service de taxi officiel à Antibes, disponible **24h/24 et 7j/7**, avec réponse immédiate et prise en charge rapide dans toute la région.

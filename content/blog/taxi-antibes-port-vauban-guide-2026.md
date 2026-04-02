@@ -2,12 +2,11 @@
 title: "Taxi Antibes Port Vauban : Transfert vers le Plus Grand Port de Plaisance d'Europe – Guide 2026"
 date: "2026-04-16"
 excerpt: "Service taxi Antibes Port Vauban : transferts vers le port de plaisance, restaurants du port, yachts de luxe. Disponible 24h/24 avec dépose directe. Réservez votre taxi Antibes Port Vauban."
-image: "/taxi-antibes-port-vauban.jpg"
+image: "/taxi-antibes-port-vauban.jpeg"
 imagePosition: "center 65%"
 category: "Taxi & Transport"
 author: "Taxi Antibes"
 language: "fr"
-keywords: ["taxi antibes port vauban", "taxi port vauban", "port vauban antibes", "transfert port vauban", "taxi antibes port"]
 ---
 
 ## 🚢 Taxi Antibes Port Vauban : votre transfert vers le plus grand port de plaisance d'Europe
