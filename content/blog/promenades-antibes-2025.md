@@ -2,7 +2,7 @@
 title: "Les 10 plus belles promenades à faire à Antibes : guide lifestyle 2025"
 date: "2025-11-21"
 excerpt: "Découvrez les plus belles balades et promenades d'Antibes : front de mer, sentiers naturels, ruelles historiques, vues panoramiques et lieux incontournables."
-image: "/antibes-panorama.jpeg"
+image: "/Antibes-promenade.png"
 imagePosition: "center 65%"
 category: "Guides pratiques & Lifestyle"
 author: "Rédaction Antibes"
@@ -35,7 +35,7 @@ Ce guide complet présente les **10 promenades incontournables**, enrichies de c
 ## 1. 🌊 La Promenade du Front de Mer
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/front-de-mer-antibes.jpg" alt="Promenade du front de mer à Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/front-de-mer-antibes.png" alt="Promenade du front de mer à Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 La balade la plus iconique d'Antibes.
@@ -72,7 +72,7 @@ Le meilleur moment : 18h30–20h en été, pour l'ambiance dorée du sunset.
 ## 2. 🏰 Les Remparts d'Antibes – histoire & mer
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/les-remparts-anitbes.JPG" alt="Remparts d'Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/les-remparts-antibes-coucher-de-soleil.png" alt="Remparts d'Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 Une promenade chargée d'histoire.
@@ -103,7 +103,7 @@ Après la balade, entrez dans le Vieil Antibes pour boire un verre place Nationa
 ## 3. 🌿 Le Sentier du Littoral (Cap d'Antibes) – sauvage & magnifique
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/Le_Sentier_du_Littoral__Cap_dAntibes.jpg" alt="Sentier du littoral Cap d'Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Sentier côtier au coucher du soleil.png" alt="Sentier du littoral Cap d'Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 L'une des randonnées les plus célèbres de la Côte d'Azur.
@@ -134,7 +134,7 @@ C'est une balade parfaite pour les amoureux de nature.
 ## 4. 🖼️ Du Musée Picasso au Port Vauban
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/musee-picasso-antibes.jpg" alt="Port Vauban Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/taxi-antibes-musée-picasso.jpeg" alt="Port Vauban Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 Une balade urbaine culturelle et agréable.
@@ -169,7 +169,7 @@ Le port est sublime à la tombée de la nuit quand les yachts s'illuminent.
 ## 5. 🌳 Parc de la Pinède (Juan-les-Pins) – calme & ombragé
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/la-pinede-juan-les-pins.jpg" alt="Parc de la Pinède Juan-les-Pins" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Chemin ensoleillé sous les pins.png" alt="Parc de la Pinède Juan-les-Pins" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 ### 🌴 Pourquoi y aller
@@ -191,7 +191,7 @@ Un lieu idéal pour marcher à l'ombre des pins, se poser avec un livre ou faire
 ## 6. 🚤 Tour du Port Vauban – luxe & patrimoine maritime
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/tour-port-vauban.jpeg" alt="Port Vauban Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Crépuscule paisible au port.png" alt="Port Vauban Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 Une balade parfaite pour découvrir le patrimoine maritime d'Antibes.
@@ -212,7 +212,7 @@ Un excellent spot photo se trouve au niveau du "Bastion Saint-Jaume".
 ## 7. 🌿 Promenade de la Garoupe – discrète & locale
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/la-garoupe-antibes.jpg" alt="Promenade de la Garoupe" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Coucher-de-soleil-sur-le-littoral-rocheux-antibes.png" alt="Promenade de la Garoupe" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 Une balade très appréciée des habitants.
@@ -230,7 +230,7 @@ La vue sur les îles de Lérins par temps clair est magnifique.
 ## 8. 🕍 Vieil Antibes – patrimoine & charme provençal
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/vieil-antibes.jpg" alt="Vieil Antibes ruelles" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Ruelle méditerranéenne au coucher du soleil.png" alt="Vieil Antibes ruelles" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 La vieille ville est un labyrinthe de ruelles, d'ateliers d'artistes et de petites places fleuries.
@@ -255,7 +255,7 @@ Parfait pour une balade lente, pour sentir l'âme d'Antibes et sa douceur de viv
 ## 9. 🌅 Chemin des Douaniers – sauvage & spectaculaire
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/chemin-douaniers-antibes.webp" alt="Chemin des Douaniers" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Coucher du soleil sur la côte rocheuse-antibes.png" alt="Chemin des Douaniers" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 ### 🌊 Pourquoi ce sentier plaît autant
@@ -275,7 +275,7 @@ La lumière y est incroyable le matin.
 ## 10. 🌄 Belvédère du Cap – panorama à couper le souffle
 
 <div style="max-width: 500px; margin: 1rem auto;">
-  <img src="/belvedere-du-cap-antibes.jpg" alt="Belvédère du Cap Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
+  <img src="/Voile sur l'horizon au coucher du soleil-antibes.png" alt="Belvédère du Cap Antibes" loading="lazy" style="width: 100%; height: auto; border-radius: 0.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.1);" />
 </div>
 
 Un point de vue immanquable sur toute la baie.

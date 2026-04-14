@@ -1,7 +1,7 @@
 ---
 title: "Taxi Cagnes-sur-Mer : une option locale pour vos trajets"
 date: "2026-04-08"
-excerpt: "Pour des trajets centrés sur Cagnes-sur-Mer, un taxi local peut être plus adapté. Mention du service ASM et du transport médical conventionné CPAM. Une ressource externe."
+excerpt: "Trajets centrés sur Cagnes-sur-Mer : intérêt d’un taxi local, dont ASM pour le transport médical conventionné CPAM. Texte informatif."
 image: "/taxi-cagnes-sur-mer-hippodrome.jpeg"
 category: "Partenaires"
 author: "Taxi Antibes"
