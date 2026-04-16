@@ -1,16 +1,15 @@
 ---
 title: "Musée Picasso Antibes : Guide Complet 2026 – Visite, Horaires & Tarifs"
-date: "2026-04-23"
+date: "2026-04-16"
 excerpt: "Guide complet du Musée Picasso à Antibes : visite, horaires, tarifs, collections, expositions temporaires. Découvrez le musée Picasso installé dans le Château Grimaldi."
-image: "/musee-picasso-antibes.jpg"
+image: "/taxi-antibes-musée-picasso-2.jpeg"
 imagePosition: "center 65%"
 category: "Voyage & Tourisme"
 author: "Taxi Antibes"
 language: "fr"
-keywords: ["musee picasso antibes", "musee picasso", "chateau grimaldi", "visiter musee picasso antibes", "picasso antibes"]
 ---
 
-_Mis à jour le 23 avril 2026_
+_Mis à jour le 16 avril 2026_
 
 ## 🎨 Musée Picasso Antibes : guide complet du musée emblématique 2026
 
@@ -61,12 +60,14 @@ Ce guide complet vous présente toutes les informations pratiques pour visiter l
 Le **Musée Picasso** a été créé en **1966** dans le Château Grimaldi, suite au don d'œuvres par Picasso à la ville d'Antibes.
 
 **Histoire de la création :**
+
 - **1946** : Séjour de Picasso au Château Grimaldi
 - **Donation** : Donation d'œuvres par Picasso à la ville
 - **1966** : Création du Musée Picasso dans le Château Grimaldi
 - **Développement** : Développement de la collection au fil des années
 
 **Évolution :**
+
 - **Collection permanente** : Enrichissement de la collection permanente
 - **Expositions temporaires** : Programmation d'expositions temporaires
 - **Renommée** : Renommée internationale du musée
@@ -74,6 +75,7 @@ Le **Musée Picasso** a été créé en **1966** dans le Château Grimaldi, suit
 ### Séjour de Picasso à Antibes
 
 **Picasso à Antibes (1946) :**
+
 - **Séjour** : Séjour de Picasso au Château Grimaldi en 1946
 - **Créations** : Création de nombreuses œuvres pendant son séjour
 - **Inspiration** : Inspiration par la lumière méditerranéenne et l'ambiance d'Antibes
@@ -88,12 +90,14 @@ Le **Musée Picasso** a été créé en **1966** dans le Château Grimaldi, suit
 **Pablo Picasso** (1881-1973) a séjourné au **Château Grimaldi** en **1946**, période particulièrement féconde de sa carrière.
 
 **Contexte du séjour :**
+
 - **1946** : Séjour à Antibes après la Seconde Guerre mondiale
 - **Château Grimaldi** : Résidence au Château Grimaldi mis à disposition par la ville
 - **Créativité** : Période particulièrement créative et productive
 - **Inspiration** : Inspiration par la Méditerranée et Antibes
 
 **Œuvres créées :**
+
 - **Peintures** : Nombreuses peintures créées pendant le séjour
 - **Dessins** : Dessins et croquis
 - **Céramiques** : Céramiques réalisées à Vallauris (proche d'Antibes)
@@ -102,6 +106,7 @@ Le **Musée Picasso** a été créé en **1966** dans le Château Grimaldi, suit
 ### Donation à la ville
 
 **Donation de Picasso :**
+
 - **Œuvres données** : Donation d'une partie des œuvres créées à Antibes
 - **Collection** : Collection de base du musée
 - **Reconnaissance** : Reconnaissance de l'hospitalité de la ville
@@ -115,6 +120,7 @@ Le **Musée Picasso** a été créé en **1966** dans le Château Grimaldi, suit
 Le **Château Grimaldi** est un monument historique du **XVIe siècle** qui a appartenu à la famille Grimaldi.
 
 **Histoire du château :**
+
 - **XIVe siècle** : Construction du château
 - **Famille Grimaldi** : Résidence de la famille Grimaldi
 - **XVIe siècle** : Transformations et aménagements
@@ -122,6 +128,7 @@ Le **Château Grimaldi** est un monument historique du **XVIe siècle** qui a ap
 - **1966** : Transformation en Musée Picasso
 
 **Architecture :**
+
 - **Architecture historique** : Architecture historique préservée
 - **Vue panoramique** : Vue exceptionnelle sur la Méditerranée
 - **Salles** : Salles adaptées pour les expositions
@@ -135,12 +142,14 @@ Le **Musée Picasso Antibes** présente une collection exceptionnelle d'œuvres 
 ### Collection permanente Picasso
 
 **Plus de 200 œuvres de Picasso :**
+
 - **Peintures** : Peintures créées en 1946 à Antibes
 - **Dessins** : Dessins et croquis
 - **Céramiques** : Céramiques réalisées à Vallauris
 - **Thèmes** : Thèmes méditerranéens, mythologie, nature morte, portraits
 
 **Œuvres majeures :**
+
 - **Peintures emblématiques** : Peintures emblématiques de la période antiboise
 - **Série "La Joie de vivre"** : Série créée à Antibes
 - **Portraits** : Portraits et autoportraits
@@ -149,6 +158,7 @@ Le **Musée Picasso Antibes** présente une collection exceptionnelle d'œuvres 
 ### Collection d'art moderne et contemporain
 
 **Collection complémentaire :**
+
 - **Nicolas de Staël** : Œuvres de Nicolas de Staël
 - **Miró** : Œuvres de Miró
 - **Autres artistes** : Œuvres d'autres artistes modernes et contemporains
@@ -157,6 +167,7 @@ Le **Musée Picasso Antibes** présente une collection exceptionnelle d'œuvres 
 ### Expositions temporaires
 
 **Expositions temporaires régulières :**
+
 - **Artistes contemporains** : Expositions d'artistes contemporains
 - **Expositions thématiques** : Expositions thématiques
 - **Programmation** : Programmation variée tout au long de l'année
@@ -169,6 +180,7 @@ Le **Musée Picasso Antibes** présente une collection exceptionnelle d'œuvres 
 ### Architecture du Château Grimaldi
 
 **Caractéristiques architecturales :**
+
 - **Architecture historique** : Architecture historique du XVIe siècle
 - **Salles** : Salles adaptées pour les expositions
 - **Lumière** : Lumière naturelle pour mettre en valeur les œuvres
@@ -177,6 +189,7 @@ Le **Musée Picasso Antibes** présente une collection exceptionnelle d'œuvres 
 ### Organisation des salles
 
 **Répartition des collections :**
+
 - **Salles Picasso** : Salles dédiées à la collection permanente Picasso
 - **Salles expositions temporaires** : Salles pour expositions temporaires
 - **Salles art moderne** : Salles pour collection d'art moderne
@@ -191,12 +204,14 @@ Le **Musée Picasso** offre une **vue panoramique exceptionnelle** sur la Médit
 ### Points de vue
 
 **Vues depuis le musée :**
+
 - **Méditerranée** : Vue panoramique sur la Méditerranée
 - **Baie d'Antibes** : Vue sur la baie d'Antibes
 - **Port Vauban** : Vue sur le Port Vauban
 - **Alpes** : Vue sur les Alpes au loin
 
 **Meilleur moment :**
+
 - **Matin** : Matin pour meilleure lumière
 - **Fin d'après-midi** : Fin d'après-midi pour coucher de soleil
 - **Météo** : Journée claire pour meilleure visibilité
@@ -249,6 +264,7 @@ Le **Musée Picasso** offre une **vue panoramique exceptionnelle** sur la Médit
 ### Horaires détaillés
 
 **Horaires d'ouverture :**
+
 - **Haute saison** (juillet-août) : 10h-18h tous les jours
 - **Moyenne saison** : 10h-18h (fermé le lundi)
 - **Basse saison** : 10h-18h (fermé le lundi)
@@ -257,6 +273,7 @@ Le **Musée Picasso** offre une **vue panoramique exceptionnelle** sur la Médit
 ### Tarifs détaillés
 
 **Tarifs :**
+
 - **Plein tarif** : 8€
 - **Tarif réduit** : 6€ (étudiants, seniors, etc.)
 - **Gratuit** : Gratuit pour les moins de 18 ans
@@ -266,6 +283,7 @@ Le **Musée Picasso** offre une **vue panoramique exceptionnelle** sur la Médit
 ### Réservation
 
 **Comment réserver :**
+
 - **En ligne** : Réservation en ligne sur le site du musée
 - **Téléphone** : Réservation par téléphone
 - **Sur place** : Achat de billets sur place (selon disponibilités)
@@ -282,12 +300,14 @@ Pour vous rendre au **Musée Picasso Antibes** depuis votre hôtel ou l'aéropor
 - **WhatsApp** : [07 49 77 76 21](https://wa.me/33749777621)
 
 **Avantages :**
+
 - Dépose directe devant le musée
 - Pas de problème de stationnement (très difficile dans le Vieux Antibes)
 - Confort et gain de temps
 - Service disponible toute la journée
 
 **Informations pratiques :**
+
 - **Distance** : 500 m depuis le centre-ville d'Antibes
 - **Durée à pied** : 5 minutes à pied depuis le centre-ville
 - **Durée en taxi** : 2-3 minutes en taxi
@@ -353,6 +373,7 @@ Pour vous rendre au **Musée Picasso Antibes** depuis votre hôtel ou l'aéropor
 ### Préparer sa visite
 
 **Avant votre visite :**
+
 - **Réserver** : Réserver votre visite à l'avance en haute saison
 - **Horaires** : Vérifier les horaires d'ouverture
 - **Expositions** : Vérifier les expositions temporaires en cours
@@ -361,6 +382,7 @@ Pour vous rendre au **Musée Picasso Antibes** depuis votre hôtel ou l'aéropor
 ### Pendant la visite
 
 **Conseils :**
+
 - **Arriver tôt** : Arriver à l'ouverture pour éviter la foule
 - **Prendre son temps** : Prendre le temps d'admirer les œuvres
 - **Vue panoramique** : Profiter de la vue panoramique depuis les salles
