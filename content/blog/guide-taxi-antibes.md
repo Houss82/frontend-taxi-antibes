@@ -1,7 +1,7 @@
 ---
-title: "Guide Complet des Services de Transport Premium à Antibes"
+title: "S’orienter entre taxi, VTC et transport à Antibes (guide pratique)"
 date: "2025-10-28"
-excerpt: "Découvrez tous nos services de transport premium à Antibes : transferts aéroport, courses locales, transport VIP et plus encore."
+excerpt: "Cadre réglementaire, différences utiles et bonnes questions à se poser avant de réserver — sans remplacer l’accueil ni les pages service."
 image: "/premium copie.jpeg"
 category: "Services"
 author: "Taxi Antibes"
@@ -21,9 +21,9 @@ language: "fr"
   </ul>
 </div>
 
-Bienvenue dans notre guide complet des services de transport à Antibes ! **[Taxi Antibes](/)**, votre partenaire de confiance pour tous vos déplacements sur la Côte d'Azur, vous propose ce guide informatif pour découvrir nos services de transport premium. Que vous soyez résident, visiteur ou professionnel, nous offrons des solutions de transport sur mesure adaptées à chaque situation.
+Ce guide vise à **clarifier les options** (taxi réglementé, VTC, autres modes) et à **renvoyer vers les bonnes pages** du site : l’**[accueil](/)** pour la présentation du service, les **pages listées ci-dessus** pour réserver ou voir les tarifs. Ce n’est **pas** une deuxième page d’accueil : le ton reste **pédagogique**.
 
-Notre engagement : vous transporter en toute sécurité, confort et ponctualité, 24 heures sur 24 et 7 jours sur 7. Découvrez dans ce guide toutes les raisons de nous faire confiance pour vos déplacements à Antibes et dans la région.
+Pour réserver ou obtenir un tarif officiel, passez par les liens du encadré bleu en tête d’article plutôt que de tout retrouver ici.
 
 <!-- SOMMAIRE -->
 <details class="toc">
@@ -38,17 +38,9 @@ Notre engagement : vous transporter en toute sécurité, confort et ponctualité
   </ol>
 </details>
 
-<!-- BADGES KPI -->
-<div class="kpi-strip">
-  <span class="badge success">✅ Service 24h/24</span>
-  <span class="badge info">🚗 Flotte Mercedes</span>
-  <span class="badge info">⭐ Service premium</span>
-  <span class="badge neutral">💰 Tarifs transparents</span>
-</div>
+## Ce guide couvre quoi (et quoi laisser aux pages du site)
 
-## Guide Complet des Services de Transport Premium à Antibes
-
-Notre service de taxi à Antibes vous propose des solutions de transport adaptées à tous vos besoins, de la course simple au transport VIP pour vos événements les plus importants.
+Les sections ci-dessous donnent un **aperçu thématique** (aéroport, local, VIP, etc.). Pour **tarifs à jour**, **réservation** et **engagement commercial**, utilisez l’**[accueil](/)** et les pages **[services](/services)**, **[transfert aéroport](/services/taxi-aeroport-nice)** ou **[CPAM](/services/taxi-conventionne)** selon votre besoin.
 
 ### Transferts aéroport Nice Côte d'Azur
 

@@ -500,4 +500,4 @@ Le **Musée Picasso** est l'un des musées les plus célèbres de la Côte d'Azu
 
 ---
 
-_Article mis à jour le 23 avril 2026_
+_Article mis à jour le 16 avril 2026_

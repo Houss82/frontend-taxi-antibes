@@ -144,19 +144,19 @@ export default function ServicesPage() {
               </span>
             </h2>
             <p className="text-cyan-700 text-lg max-w-3xl mx-auto leading-relaxed">
-              Découvrez notre gamme complète de services de transport premium{" "}
+              Découvrez notre gamme de prestations de transport{" "}
               <Link href="/" className="underline font-semibold text-cyan-600 hover:text-amber-600">
-                taxi à Antibes
-              </Link>{" "}
-              à Antibes et sur toute la Côte d'Azur. Besoin d'un{" "}
+                sur Antibes et la Côte d&apos;Azur
+              </Link>
+              . Pour le{" "}
+              <Link href="/taxi-antibes-numero" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+                numéro officiel et l&apos;appel immédiat
+              </Link>
+              , utilisez la page dédiée (07 49 77 76 21). Pour un message ou l&apos;adresse :{" "}
               <Link href="/contact" className="underline font-semibold text-cyan-600 hover:text-amber-600">
-                numéro de taxi à Antibes
-              </Link>{" "}
-              ?{" "}
-              <Link href="/contact" className="underline font-semibold text-cyan-600 hover:text-amber-600">
-                Appelez un taxi à Antibes
-              </Link>{" "}
-              au 07 49 77 76 21.
+                contact
+              </Link>
+              .
             </p>
           </div>
 

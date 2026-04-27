@@ -13,6 +13,10 @@ language: "fr"
   <strong>📌 Page service (réservation CPAM)</strong> — Informations officielles, réservation et prise en charge : <a href="/services/taxi-conventionne"><strong>Taxi conventionné CPAM Antibes</strong></a>. <em>Cet article détaille les hôpitaux de Nice, durées et parcours patients.</em>
 </div>
 
+<div class="highlight-box" style="margin: 1.25rem 0;">
+  <strong>Réserver le transport médical conventionné</strong> — <a href="/services/taxi-conventionne">Taxi conventionné CPAM à Antibes — page officielle</a>. Présentation générale du service : <a href="/">accueil</a>.
+</div>
+
 ## 🚖 Taxi Conventionné Antibes → Hôpitaux de Nice : Transport Médical Sécurisé & Prise en Charge CPAM
 
 Pour de nombreux patients d'Antibes, se rendre régulièrement aux **hôpitaux de Nice**, que ce soit pour une consultation, une dialyse, une chimiothérapie ou une radiothérapie, peut devenir fatigant et stressant.
