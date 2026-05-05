@@ -1,13 +1,12 @@
 ---
 title: "Taxi Antibes → Beaulieu-sur-Mer : Transfert Premium vers la Petite Afrique – Guide Complet 2026"
-date: "2026-07-30"
+date: "2026-05-05"
 excerpt: "Service taxi Antibes vers Beaulieu-sur-Mer : transfert premium en 20-25 minutes vers la station balnéaire. Véhicules Mercedes, chauffeurs locaux experts. Disponible 24h/24."
-image: "/taxi-antibes-beaulieu.jpg"
+image: "/taxi-antibes-st-cap-ferrat-et-beaulieu-sur-mer.jpeg"
 imagePosition: "center 70%"
 category: "Taxi & Transport"
 author: "Taxi Antibes"
 language: "fr"
-keywords: ["taxi antibes beaulieu", "taxi antibes vers beaulieu", "transfert antibes beaulieu", "beaulieu sur mer depuis antibes", "prix taxi antibes beaulieu"]
 ---
 
 ## 🌊 Taxi Antibes → Beaulieu-sur-Mer : votre transfert premium vers la Petite Afrique
@@ -197,4 +196,4 @@ Que ce soit pour une escapade balnéaire, une visite culturelle ou simplement po
 
 ---
 
-_Article mis à jour le 15 février 2026_
+_Article mis à jour le 5 mai 2026_
