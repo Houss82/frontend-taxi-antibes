@@ -450,6 +450,17 @@ export default function Home() {
                     <span className="text-cyan-500 font-bold mt-0.5 text-xl">
                       ✓
                     </span>
+                    <Link
+                      href="/services/taxi-port-vauban-aeroport-nice"
+                      className="text-cyan-700 underline font-semibold hover:text-amber-600"
+                    >
+                      Port Vauban ⇄ Aéroport Nice
+                    </Link>
+                  </li>
+                  <li className="flex items-start gap-3 group-hover:translate-x-1 transition-transform">
+                    <span className="text-cyan-500 font-bold mt-0.5 text-xl">
+                      ✓
+                    </span>
                     <span>
                       Service 24h/24, vols tôt le matin ou tard le soir
                     </span>

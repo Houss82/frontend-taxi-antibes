@@ -5,6 +5,7 @@ import {
   Building,
   Clock,
   Coffee,
+  Anchor,
   MapPin,
   Newspaper,
   Phone,
@@ -33,6 +34,21 @@ const services = [
       "WiFi gratuit",
     ],
     price: "À partir de 45€",
+    link: "/services/taxi-aeroport-nice",
+  },
+  {
+    icon: Anchor,
+    title: "Port Vauban ⇄ Aéroport Nice",
+    description:
+      "Transfert premium entre le Port Vauban d'Antibes et l'aéroport Nice Côte d'Azur. Dépose pontons, restaurants, yachts, hôtels et terminaux T1/T2.",
+    features: [
+      "Suivi de vol",
+      "Dépose pontons",
+      "Bagages inclus",
+      "Service 24/7",
+    ],
+    price: "Devis rapide",
+    link: "/services/taxi-port-vauban-aeroport-nice",
   },
   {
     icon: MapPin,

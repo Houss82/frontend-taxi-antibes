@@ -11,6 +11,7 @@ export default async function BlogPage({ searchParams }) {
   const posts = getAllPosts().filter((post) => post.language === LANGUAGE_FILTER);
   const resolvedSearchParams = await searchParams;
   const selectedCategoryId = resolvedSearchParams?.category || null;
+  const initialPage = Number.parseInt(resolvedSearchParams?.page || "1", 10);
 
   return (
     <PageLayout
@@ -19,7 +20,11 @@ export default async function BlogPage({ searchParams }) {
       backgroundImage="/blog-image.jpg"
     >
       <Suspense fallback={<div className="py-20 text-center">Chargement...</div>}>
-        <BlogPageClient posts={posts} initialCategoryId={selectedCategoryId} />
+        <BlogPageClient
+          posts={posts}
+          initialCategoryId={selectedCategoryId}
+          initialPage={Number.isFinite(initialPage) && initialPage > 0 ? initialPage : 1}
+        />
       </Suspense>
     </PageLayout>
   );

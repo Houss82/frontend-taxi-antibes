@@ -1,16 +1,23 @@
 ---
 title: "Fort Carré Antibes : Guide Complet 2026 – Visite, Histoire & Accès"
-date: "2026-05-28"
+date: "2026-05-25"
 excerpt: "Guide complet du Fort Carré à Antibes : visite, histoire, architecture Vauban, horaires, tarifs. Découvrez cette fortification militaire du XVIe siècle avec vue panoramique sur la baie."
-image: "/fort-carre-antibes.jpg"
+image: "/taxi-antibes-fort-carre.jpeg"
 imagePosition: "center 65%"
 category: "Voyage & Tourisme"
 author: "Taxi Antibes"
 language: "fr"
-keywords: ["fort carre antibes", "fort carre", "visiter fort carre", "vauban antibes", "fortification antibes"]
+keywords:
+  [
+    "fort carre antibes",
+    "fort carre",
+    "visiter fort carre",
+    "vauban antibes",
+    "fortification antibes",
+  ]
 ---
 
-_Mis à jour le 28 mai 2026_
+_Mis à jour le 25 mai 2026_
 
 ## 🏰 Fort Carré Antibes : guide complet de la fortification Vauban 2026
 
@@ -62,25 +69,30 @@ Le **Fort Carré** a été construit au **XVIe siècle** par l'ingénieur milita
 **Périodes clés de l'histoire du Fort Carré :**
 
 **XVIe siècle :**
+
 - **Construction** : Construction du fort par Vauban
 - **Objectif** : Protéger Antibes et la frontière avec le Comté de Nice
 - **Architecture** : Architecture militaire caractéristique de Vauban
 
 **XVIIe-XVIIIe siècles :**
+
 - **Renforcements** : Renforcements et modifications de la fortification
 - **Améliorations** : Améliorations des défenses
 - **Utilisation** : Utilisation militaire active
 
 **XIXe siècle :**
+
 - **Prison militaire** : Utilisation comme prison militaire
 - **Défense** : Rôle dans la défense de la côte
 - **Évolution** : Évolution des usages militaires
 
 **1906 :**
+
 - **Classement** : Classement Monument Historique
 - **Protection** : Protection du patrimoine architectural
 
 **Aujourd'hui :**
+
 - **Visites guidées** : Visites guidées et événements culturels
 - **Patrimoine** : Patrimoine préservé et mis en valeur
 - **Tourisme** : Destination touristique majeure
@@ -88,6 +100,7 @@ Le **Fort Carré** a été construit au **XVIe siècle** par l'ingénieur milita
 ### Rôle stratégique
 
 **Rôle stratégique du Fort Carré :**
+
 - **Protection d'Antibes** : Protection de la ville d'Antibes
 - **Frontière** : Défense de la frontière avec le Comté de Nice
 - **Côte** : Protection de la côte méditerranéenne
@@ -102,6 +115,7 @@ Le **Fort Carré** a été construit au **XVIe siècle** par l'ingénieur milita
 Le **Fort Carré** présente une **architecture militaire caractéristique de Vauban** avec sa forme en étoile.
 
 **Caractéristiques :**
+
 - **Forme en étoile** : Forteresse en étoile caractéristique
 - **Bastions** : Bastions aux angles pour défense
 - **Fossés** : Fossés défensifs autour du fort
@@ -109,6 +123,7 @@ Le **Fort Carré** présente une **architecture militaire caractéristique de Va
 - **Position** : Position stratégique sur une hauteur
 
 **Architecture Vauban :**
+
 - **Système défensif** : Système de fortifications perfectionné
 - **Efficacité** : Fortifications très efficaces pour l'époque
 - **Patrimoine** : Patrimoine architectural exceptionnel
@@ -118,6 +133,7 @@ Le **Fort Carré** présente une **architecture militaire caractéristique de Va
 **Sébastien Le Prestre de Vauban** (1633-1707) était un ingénieur militaire français qui a conçu de nombreuses fortifications en France.
 
 **Œuvre de Vauban :**
+
 - **Fortifications** : Plus de 300 fortifications en France
 - **Système défensif** : Système de fortifications perfectionné
 - **Patrimoine UNESCO** : Fortifications Vauban classées au patrimoine mondial de l'UNESCO
@@ -131,12 +147,14 @@ Le **Fort Carré** présente une **architecture militaire caractéristique de Va
 Les visites du **Fort Carré** se font uniquement sur **réservation** avec un guide.
 
 **Caractéristiques des visites :**
+
 - **Réservation obligatoire** : Réservation obligatoire pour toutes les visites
 - **Visites guidées** : Visites guidées uniquement (pas de visite libre)
 - **Durée** : Durée de visite d'environ 1 heure
 - **Guide** : Guide professionnel pour découvrir l'histoire et l'architecture
 
 **Contenu de la visite :**
+
 - **Histoire** : Découverte de l'histoire du fort
 - **Architecture** : Explication de l'architecture Vauban
 - **Remparts** : Montée sur les remparts pour la vue
@@ -145,6 +163,7 @@ Les visites du **Fort Carré** se font uniquement sur **réservation** avec un g
 ### Réservation
 
 **Comment réserver :**
+
 - **Office de Tourisme** : Contacter l'Office de Tourisme d'Antibes Juan-les-Pins
 - **En ligne** : Réservation en ligne possible selon disponibilités
 - **Téléphone** : Réservation par téléphone
@@ -159,6 +178,7 @@ Le **Fort Carré** offre une **vue panoramique exceptionnelle** sur la baie d'An
 ### Points de vue
 
 **Vues depuis le Fort Carré :**
+
 - **Baie d'Antibes** : Vue sur la baie d'Antibes
 - **Port Vauban** : Vue sur le Port Vauban
 - **Vieux Antibes** : Vue sur le Vieux Antibes
@@ -167,6 +187,7 @@ Le **Fort Carré** offre une **vue panoramique exceptionnelle** sur la baie d'An
 - **Alpes** : Vue sur les Alpes au loin
 
 **Meilleur moment :**
+
 - **Matin** : Matin pour meilleure lumière
 - **Fin d'après-midi** : Fin d'après-midi pour coucher de soleil
 - **Météo** : Journée claire pour meilleure visibilité
@@ -180,11 +201,13 @@ Le **Fort Carré** fait partie du **patrimoine Vauban** classé au patrimoine mo
 ### Classement UNESCO
 
 **Patrimoine Vauban :**
+
 - **Classement** : Fortifications Vauban classées au patrimoine mondial de l'UNESCO
 - **Reconnaissance** : Reconnaissance de la valeur universelle exceptionnelle
 - **Protection** : Protection et préservation du patrimoine
 
 **Importance :**
+
 - **Patrimoine architectural** : Patrimoine architectural exceptionnel
 - **Histoire militaire** : Témoin de l'histoire militaire française
 - **Valeur universelle** : Valeur universelle exceptionnelle
@@ -198,12 +221,14 @@ Le **Fort Carré** accueille des **événements culturels** tout au long de l'an
 ### Types d'événements
 
 **Événements organisés :**
+
 - **Expositions** : Expositions temporaires
 - **Concerts** : Concerts en plein air
 - **Spectacles** : Spectacles et représentations
 - **Événements historiques** : Reconstitutions historiques
 
 **Programmation :**
+
 - **Toute l'année** : Événements réguliers
 - **Été** : Programmation estivale plus dense
 - **Réservation** : Réservation généralement nécessaire
@@ -256,6 +281,7 @@ Le **Fort Carré** accueille des **événements culturels** tout au long de l'an
 ### Horaires détaillés
 
 **Horaires des visites :**
+
 - **Haute saison** (juillet-août) : Visites plus fréquentes
 - **Moyenne saison** : Visites régulières
 - **Basse saison** : Visites sur réservation
@@ -264,6 +290,7 @@ Le **Fort Carré** accueille des **événements culturels** tout au long de l'an
 ### Tarifs détaillés
 
 **Tarifs :**
+
 - **Plein tarif** : 3€
 - **Tarif réduit** : Tarifs réduits possibles (étudiants, seniors, etc.)
 - **Gratuit** : Gratuit pour les moins de 18 ans
@@ -280,12 +307,14 @@ Pour vous rendre au **Fort Carré Antibes**, réservez un **[taxi Antibes](/)** 
 - **WhatsApp** : [07 49 77 76 21](https://wa.me/33749777621)
 
 **Avantages :**
+
 - Dépose directe devant le fort
 - Pas de problème de stationnement (parking limité)
 - Confort et gain de temps
 - Service disponible toute la journée
 
 **Informations pratiques :**
+
 - **Distance** : 2 km depuis le centre-ville d'Antibes
 - **Durée à pied** : 15 minutes à pied depuis le centre-ville
 - **Durée en taxi** : 5 minutes en taxi
@@ -351,6 +380,7 @@ Pour vous rendre au **Fort Carré Antibes**, réservez un **[taxi Antibes](/)** 
 ### Préparer sa visite
 
 **Avant votre visite :**
+
 - **Réserver** : Réserver votre visite à l'avance (obligatoire)
 - **Horaires** : Vérifier les horaires de visite
 - **Météo** : Vérifier la météo pour meilleure vue
@@ -359,6 +389,7 @@ Pour vous rendre au **Fort Carré Antibes**, réservez un **[taxi Antibes](/)** 
 ### Pendant la visite
 
 **Conseils :**
+
 - **Arriver à l'heure** : Arriver à l'heure pour la visite guidée
 - **Écouter le guide** : Écouter attentivement le guide
 - **Prendre des photos** : Prendre des photos de la vue panoramique
@@ -476,4 +507,4 @@ Le **Fort Carré** est une fortification militaire exceptionnelle qui témoigne 
 
 ---
 
-_Article mis à jour le 28 mai 2026_
+_Article mis à jour le 25 mai 2026_

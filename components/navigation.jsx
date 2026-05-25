@@ -20,6 +20,7 @@ import {
   Calendar,
   Car,
   Home,
+  Anchor,
 } from "lucide-react";
 import { Outfit } from "next/font/google";
 import Image from "next/image";
@@ -109,6 +110,7 @@ export function Navigation() {
     { label: "Services", href: "/services", submenu: [
       { label: "Tous les services", href: "/services" },
       { label: "Taxi Aéroport Nice", href: "/services/taxi-aeroport-nice" },
+      { label: "Port Vauban ⇄ Aéroport Nice", href: "/services/taxi-port-vauban-aeroport-nice" },
       { label: "Taxi Conventionné CPAM", href: "/services/taxi-conventionne" },
     ]},
     { label: "Nos secteurs", href: "/secteurs", submenu: [
@@ -459,6 +461,19 @@ export function Navigation() {
                       </div>
                       <span className="flex-1 group-hover:font-semibold transition-all">
                         Taxi Aéroport Nice
+                      </span>
+                      <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
+                    </a>
+                    <a
+                      href="/services/taxi-port-vauban-aeroport-nice"
+                      className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg transition-all duration-200 group hover:shadow-md hover:scale-[1.02] bg-cyan-50 hover:bg-gradient-to-r hover:from-cyan-100 hover:to-amber-100"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      <div className="p-1.5 rounded-lg bg-cyan-50 group-hover:bg-white transition-colors">
+                        <Anchor className="h-4 w-4 text-cyan-700 group-hover:scale-110 transition-transform" />
+                      </div>
+                      <span className="flex-1 group-hover:font-semibold transition-all">
+                        Port Vauban ⇄ Aéroport Nice
                       </span>
                       <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
                     </a>

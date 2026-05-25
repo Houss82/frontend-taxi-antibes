@@ -15,7 +15,11 @@ language: "fr"
 
 Notre service de **taxi Antibes Port Vauban** vous garantit un transfert **confortable et direct** vers le port, ses restaurants et ses yachts de luxe. Avec une **dépose directe** devant les restaurants du port ou les pontons, notre service vous évite les problèmes de stationnement et vous fait gagner du temps.
 
-Ce guide complet vous présente notre **service de taxi Antibes Port Vauban**, les avantages du service, les destinations desservies, les tarifs et toutes les informations pratiques pour réserver votre transfert.
+Ce guide complet vous présente le **Port Vauban**, les avantages d'un taxi local, les zones desservies et les informations pratiques. Pour une demande commerciale précise entre le port et l'aéroport, utilisez plutôt notre page service dédiée : **[taxi Port Vauban ⇄ Aéroport Nice](/services/taxi-port-vauban-aeroport-nice)**.
+
+<div class="info-box" style="border-left: 4px solid #0891b2;">
+  <strong>📌 Page service officielle</strong> — Besoin d'un transfert avec bagages, suivi de vol ou dépose ponton ? Consultez la page <a href="/services/taxi-port-vauban-aeroport-nice">Port Vauban ⇄ Aéroport Nice</a>. Cet article reste un guide pratique sur le port, ses accès et ses usages.
+</div>
 
 <div class="kpi-strip">
   <span class="badge success">🚢 Port de plaisance</span>
