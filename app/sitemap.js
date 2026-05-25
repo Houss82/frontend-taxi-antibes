@@ -31,6 +31,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/services/taxi-port-vauban-aeroport-nice`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/secteurs`,
       lastModified: new Date(),
       changeFrequency: "weekly",
