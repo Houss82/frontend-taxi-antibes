@@ -61,6 +61,8 @@ La gastronomie antiboise est riche avec des **restaurants étoilés**, des **bis
 
 ## 📅 2. Itinéraire week-end : 2-3 jours à Antibes
 
+**Vous n'avez qu'une seule journée ?** Consultez notre [programme horaire 1 jour](/blog/visiter-antibes-1-jour-guide-2026) plutôt que cet itinéraire multi-jours.
+
 ### 🗓️ Jour 1 : Découverte du centre historique
 
 **Matin :** Arrivée à Antibes, installation à votre hébergement. Visite du **Vieil Antibes** (ruelles pittoresques, remparts, cathédrale Notre-Dame-de-la-Platea). **Marché provençal du Cours Masséna** pour découvrir les produits locaux. 💡 Découvrez aussi les [plus belles promenades à Antibes](/blog/promenades-antibes-2025) pour explorer la ville à pied.

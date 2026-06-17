@@ -32,6 +32,10 @@ Ce guide vous présente les principales **activités à Antibes**, avec des cons
   <strong>📌 Repères utiles :</strong> Antibes Juan-les-Pins rassemble un centre historique dense, plusieurs musées, un grand port de plaisance, des plages familiales et de nombreuses adresses de restauration. Avant de partir, vérifiez toujours les horaires et tarifs sur les sites officiels, notamment pour les musées et activités saisonnières. Pour un trajet avec bagages, une arrivée en gare ou un retour tardif depuis Juan-les-Pins, vous pouvez appeler notre taxi local au <a href="tel:+33749777621">07 49 77 76 21</a>.
 </div>
 
+<div class="highlight-box">
+  <strong>⏱️ Vous n'avez qu'une journée ?</strong> Ce guide liste <em>toutes</em> les activités possibles. Pour un <strong>programme horaire prêt à suivre</strong> (9h → 21h, étapes minute par minute), consultez notre guide dédié : <a href="/blog/visiter-antibes-1-jour-guide-2026"><strong>Visiter Antibes en 1 jour — itinéraire complet 2026</strong></a>.
+</div>
+
 ---
 
 <!-- SOMMAIRE -->
@@ -657,7 +661,7 @@ Si vous arrivez à la **gare d'Antibes** avec des bagages, le plus simple est so
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Pour une journée à Antibes, commencez par le <strong>Vieux Antibes</strong> et le <strong>Musée Picasso</strong>, continuez vers le <strong>Port Vauban</strong>, puis gardez une plage comme la Gravette, le Ponteil ou la Salis pour l'après-midi. Un <a href="/">taxi Antibes</a> est utile si vous arrivez avec des bagages, si vous logez hors centre ou si vous devez rejoindre Juan-les-Pins en fin de journée.
+      En résumé : Picasso le matin, Vieux Antibes, Port Vauban, plage l'après-midi. Le <strong>détail heure par heure</strong> (tableau 9h–21h, variantes culture/plage/famille) est dans notre guide dédié : <a href="/blog/visiter-antibes-1-jour-guide-2026">Visiter Antibes en 1 jour</a>. Un <a href="/">taxi Antibes</a> reste utile avec bagages, hors centre ou pour Juan-les-Pins en fin de journée.
     </div>
   </details>
 
@@ -771,7 +775,7 @@ Si vous arrivez à la **gare d'Antibes** avec des bagages, le plus simple est so
 
 **Que faire à Antibes ?** Le meilleur programme dépend de votre rythme : culture le matin avec le Musée Picasso et le Vieux Antibes, balade au Port Vauban, pause plage l'après-midi, puis restaurant ou sortie à Juan-les-Pins le soir.
 
-Le plus important est de ne pas sous-estimer les déplacements : Antibes se marche très bien dans le centre, mais la chaleur, les bagages, les enfants, les retours de plage et les horaires de train ou d'avion peuvent changer l'organisation d'une journée.
+Le plus important est de ne pas sous-estimer les déplacements : Antibes se marche très bien dans le centre, mais la chaleur, les bagages, les enfants, les retours de plage et les horaires de train ou d'avion peuvent changer l'organisation d'une journée. Pour un **planning horaire détaillé sur 1 journée**, voir [Visiter Antibes en 1 jour](/blog/visiter-antibes-1-jour-guide-2026).
 
 👉 **Pour optimiser vos déplacements entre les attractions**, réservez un **[taxi Antibes](/)** au **[07 49 77 76 21](tel:+33749777621)** ou consultez notre [guide sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
 
