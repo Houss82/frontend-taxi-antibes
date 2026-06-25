@@ -262,6 +262,13 @@ export default function TaxiConventionnePage() {
                     >
                       trajet vers l’hôpital Pasteur
                     </Link>
+                    {" · "}
+                    <Link
+                      href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      trajet vers le Centre Lacassagne
+                    </Link>
                     .
                   </p>
                 </div>

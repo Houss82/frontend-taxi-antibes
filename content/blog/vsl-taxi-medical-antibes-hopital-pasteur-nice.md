@@ -101,6 +101,7 @@ Cet exemple reste indicatif. Les traitements, examens et consultations hospitali
 ## Liens utiles
 
 - **[Taxi conventionné CPAM Antibes](/services/taxi-conventionne)** : page principale pour le transport médical conventionné.
+- **[Antibes → Centre Lacassagne Nice](/blog/taxi-conventionne-antibes-centre-lacassagne-nice)** : article dédié au trajet oncologique vers Lacassagne.
 - **[Taxi conventionné Antibes vers hôpitaux de Nice](/blog/taxi-conventionne-antibes-hopitaux-nice)** : article plus large sur les trajets médicaux vers Nice.
 - **[Hôpitaux et centres médicaux de Nice](/blog/hopitaux-centres-medicaux-nice-guide-complet)** : guide informatif des établissements.
 - **[Réservation](/reservation)** : organiser un trajet.

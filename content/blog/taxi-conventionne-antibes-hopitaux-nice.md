@@ -63,7 +63,7 @@ Le **Taxi Conventionné Antibes** vous permet d'accéder facilement aux services
 
 Les trajets les plus demandés depuis Antibes :
 
-- Antibes → **Centre Antoine Lacassagne** (oncologie)
+- Antibes → **Centre Antoine Lacassagne** (oncologie) — voir l'[article dédié Antibes → Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice)
 - Antibes → **CHU Pasteur 2**
 - Antibes → **CHU Archet 1 & 2**
 - Antibes → **Hôpital Lenval** (pédiatrie)

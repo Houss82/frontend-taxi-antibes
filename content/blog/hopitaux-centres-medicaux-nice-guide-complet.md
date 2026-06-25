@@ -16,7 +16,7 @@ Nice regroupe plusieurs établissements de santé majeurs des Alpes-Maritimes. P
 Cet article est volontairement **informatif** : il présente les principaux hôpitaux et centres médicaux de Nice. Pour les sujets de prise en charge CPAM, de réservation ou de transport médical conventionné, consultez plutôt les pages spécialisées.
 
 <div class="info-box" style="border-left: 4px solid #0891b2;">
-  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a> et <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers l'hôpital Pasteur</a>.
+  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a>, <a href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice">trajet vers Lacassagne</a> et <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers l'hôpital Pasteur</a>.
 </div>
 
 ## Vue d'ensemble rapide
@@ -81,6 +81,8 @@ Le Centre Antoine Lacassagne est un centre de lutte contre le cancer. Il est con
 - **Site web** : <a href="https://www.centreantoinelacassagne.org/" target="_blank" rel="noopener noreferrer">centreantoinelacassagne.org</a>
 - **Accès** : secteur Nice Est, proche du CHU Pasteur
 - **À anticiper** : horaires de traitement, fatigue au retour, accompagnant si nécessaire
+
+Pour un article centré uniquement sur ce trajet depuis Antibes, voir **[Taxi conventionné Antibes → Centre Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice)**.
 
 ## Hôpital Lenval
 
