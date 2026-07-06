@@ -76,7 +76,7 @@ Nous assurons les transferts vers Grasse depuis plusieurs zones autour d'Antibes
 - **Antibes centre-ville** : hôtels, gare SNCF, Vieil Antibes, Port Vauban
 - **Juan-les-Pins** : hôtels, plages, restaurants, Palais des Congrès
 - **Cap d'Antibes** : hôtels de luxe, villas privées, plages de la Garoupe
-- **Sophia Antipolis** : déplacements professionnels, hôtels, entreprises
+- **Sophia Antipolis** : déplacements professionnels, hôtels, entreprises — voir le [guide taxi Antibes → Sophia](/blog/taxi-antibes-vers-sophia-antipolis-2026)
 - **Biot / Vallauris / Golfe-Juan** : prise en charge à domicile, hôtel ou résidence
 - **Cannes / Mougins / Valbonne** : transfert privé vers Grasse sur demande
 

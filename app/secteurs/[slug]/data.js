@@ -1118,6 +1118,10 @@ export const sectorData = {
         "Organisez facilement vos trajets vers Sophia Antipolis avec notre guide complet.",
       links: [
         {
+          label: "Guide taxi Antibes → Sophia Antipolis",
+          url: "https://www.taxi-antibes.fr/blog/taxi-antibes-vers-sophia-antipolis-2026",
+        },
+        {
           label: "Guide zones d'activité Antibes",
           url: "https://www.taxi-antibes.fr/blog/zones-activite-entreprises-antibes-guide-2025",
         },

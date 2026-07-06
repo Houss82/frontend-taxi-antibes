@@ -19,7 +19,7 @@ Pour les habitants comme pour les visiteurs, réserver un taxi à l'avance perme
 
 Depuis Antibes, les demandes concernent souvent la **gare SNCF d'Antibes**, le centre-ville, Juan-les-Pins ou le Cap d'Antibes. Côté Cagnes-sur-Mer, les trajets vont régulièrement vers le centre-ville, le Cros-de-Cagnes, le secteur de l'hippodrome, les hôtels ou les résidences proches du bord de mer.
 
-Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamment pour les salariés, consultants ou visiteurs d'entreprises qui doivent rejoindre ensuite Cagnes-sur-Mer, Nice ou l'aéroport.
+Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamment pour les salariés, consultants ou visiteurs d'entreprises qui doivent rejoindre ensuite Cagnes-sur-Mer, Nice ou l'aéroport. Voir le [guide taxi Antibes → Sophia Antipolis](/blog/taxi-antibes-vers-sophia-antipolis-2026) pour les durées et tarifs.
 
 ## Taxi conventionné CPAM et trajets médicaux
 
