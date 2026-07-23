@@ -16,7 +16,7 @@ Nice regroupe plusieurs établissements de santé majeurs des Alpes-Maritimes. P
 Cet article est volontairement **informatif** : il présente les principaux hôpitaux et centres médicaux de Nice. Pour les sujets de prise en charge CPAM, de réservation ou de transport médical conventionné, consultez plutôt les pages spécialisées.
 
 <div class="info-box" style="border-left: 4px solid #0891b2;">
-  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a>, <a href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice">trajet vers Lacassagne</a> et <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers l'hôpital Pasteur</a>.
+  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a>, <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers Pasteur</a>, <a href="/blog/taxi-conventionne-antibes-chu-archet-nice">trajet vers l’Archet</a> et <a href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice">trajet vers Lacassagne</a>.
 </div>
 
 ## Vue d'ensemble rapide
@@ -64,7 +64,9 @@ Le site de l'Archet regroupe plusieurs services hospitaliers importants, notamme
 - **Téléphone** : <a href="tel:0492037777">04 92 03 77 77</a>
 - **Site web** : <a href="https://www.chu-nice.fr/" target="_blank" rel="noopener noreferrer">chu-nice.fr</a>
 - **Accès** : secteur Nice Ouest, accès routier parfois dense
-- **À anticiper** : marge horaire aux heures de pointe et identification du bon bâtiment
+- **À anticiper** : marge horaire aux heures de pointe et identification du bon bâtiment (Archet 1 ou 2)
+
+Pour un article centré uniquement sur ce trajet depuis Antibes, voir **[Taxi conventionné Antibes → CHU Archet](/blog/taxi-conventionne-antibes-chu-archet-nice)**.
 
 ## Centre Antoine Lacassagne
 

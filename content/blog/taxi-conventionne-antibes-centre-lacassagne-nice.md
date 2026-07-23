@@ -325,7 +325,8 @@ Un **taxi conventionné** ou un transport médical assis permet une **course ret
 
 - **[Taxi conventionné CPAM Antibes](/services/taxi-conventionne)** : page principale pour le transport médical conventionné.
 - **[Taxi conventionné Antibes → hôpitaux de Nice](/blog/taxi-conventionne-antibes-hopitaux-nice)** : vue d'ensemble des déplacements médicaux vers Nice.
-- **[Antibes → Hôpital Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice)** : article dédié à un autre établissement niçois.
+- **[Antibes → Hôpital Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice)** : article dédié Nice Est.
+- **[Antibes → CHU Archet](/blog/taxi-conventionne-antibes-chu-archet-nice)** : article dédié Nice Ouest / Ginestière.
 - **[Hôpitaux et centres médicaux de Nice](/blog/hopitaux-centres-medicaux-nice-guide-complet)** : guide informatif des établissements.
 - **[Taxi gare SNCF Antibes](/blog/taxi-gare-sncf-antibes-guide-complet)** : si vous arrivez en train avant un rendez-vous.
 - **[Réservation](/reservation)** : organiser un transport.
@@ -393,7 +394,7 @@ Un **taxi conventionné** ou un transport médical assis permet une **course ret
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Non. Lacassagne se situe à <strong>Valombrose / Cimiez</strong>, Pasteur à <strong>Nice Est</strong> : ce sont des adresses et des accès différents, avec des durées de route souvent proches (~35–45 min). Pour Pasteur, voir l'article dédié : <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">Antibes → Hôpital Pasteur</a>.
+      Non. Lacassagne se situe à <strong>Valombrose / Cimiez</strong>, Pasteur à <strong>Nice Est</strong>, l’Archet à <strong>Nice Ouest (Ginestière)</strong> : adresses et accès différents, avec des durées souvent proches (~30–45 min). Voir aussi <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">Antibes → Pasteur</a> et <a href="/blog/taxi-conventionne-antibes-chu-archet-nice">Antibes → Archet</a>.
     </div>
   </details>
 

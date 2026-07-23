@@ -269,6 +269,13 @@ export default function TaxiConventionnePage() {
                     >
                       trajet vers le Centre Lacassagne
                     </Link>
+                    {" · "}
+                    <Link
+                      href="/blog/taxi-conventionne-antibes-chu-archet-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      trajet vers le CHU Archet
+                    </Link>
                     .
                   </p>
                 </div>
