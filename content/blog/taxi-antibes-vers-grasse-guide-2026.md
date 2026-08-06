@@ -110,7 +110,7 @@ En plus des trajets **Antibes → Grasse**, nous assurons aussi les transferts v
 - **Monaco → Grasse** : trajet premium longue distance sur réservation
 
 <div class="info-box">
-  <strong>💡 Bon à savoir :</strong> pour une arrivée à l'aéroport de Nice, communiquez votre numéro de vol au moment de la réservation. Le chauffeur peut adapter l'horaire en cas de retard et prévoir le véhicule adapté à vos bagages.
+  <strong>💡 Bon à savoir :</strong> pour une arrivée à l'aéroport de Nice, communiquez votre numéro de vol au moment de la réservation. Le chauffeur peut adapter l'horaire en cas de retard et prévoir le véhicule adapté à vos bagages. Pour un trajet Antibes ↔ terminaux uniquement, consultez aussi notre <a href="/services/taxi-aeroport-nice">service de taxi aéroport</a>.
 </div>
 
 ---

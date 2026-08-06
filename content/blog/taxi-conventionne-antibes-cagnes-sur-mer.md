@@ -25,13 +25,13 @@ Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamme
 
 Pour un rendez-vous médical, il est important de distinguer un taxi classique d'un **taxi conventionné CPAM**. Lorsque le transport est prescrit par un médecin et respecte les conditions de l'Assurance Maladie, le trajet peut être pris en charge en partie ou totalement.
 
-Les trajets médicaux entre Antibes, Cagnes-sur-Mer et Nice concernent souvent les consultations spécialisées, les examens, les soins réguliers ou les sorties d'hospitalisation. Les destinations fréquentes incluent les hôpitaux et cliniques de Nice : [CHU Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice), [Archet](/blog/taxi-conventionne-antibes-chu-archet-nice), Lenval, [Centre Antoine Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice) ou établissements privés selon les besoins du patient.
+Les trajets médicaux entre Antibes, Cagnes-sur-Mer et Nice concernent souvent les consultations spécialisées, les examens, les soins réguliers ou les sorties d'hospitalisation. Les destinations fréquentes incluent les hôpitaux et cliniques de Nice : [CHU Pasteur](/services/taxi-conventionne-pasteur-nice), [Archet](/blog/taxi-conventionne-antibes-chu-archet-nice), Lenval, [Centre Antoine Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice) ou établissements privés selon les besoins du patient.
 
 Si le départ se fait côté Cagnes-sur-Mer, il peut être utile de contacter un **[service de taxi conventionné à Cagnes-sur-Mer](https://www.taxiasm06.fr/)** afin d'organiser un transport médical adapté depuis ce secteur.
 
 ## Gare, aéroport et déplacements longue distance
 
-Un taxi entre Antibes et Cagnes-sur-Mer peut aussi servir pour un transfert vers l'**aéroport de Nice Côte d'Azur**. C'est pratique pour les voyageurs avec bagages, les arrivées tardives ou les départs matinaux.
+Un taxi entre Antibes et Cagnes-sur-Mer peut aussi servir pour un [transfert vers l'aéroport Nice](/services/taxi-aeroport-nice). C'est pratique pour les voyageurs avec bagages, les arrivées tardives ou les départs matinaux.
 
 Depuis la gare d'Antibes, le taxi évite les changements de transport avec valises, surtout si la destination finale se trouve dans un quartier résidentiel de Cagnes-sur-Mer ou vers le bord de mer. Pour les déplacements longue distance, il est possible d'organiser un trajet vers Nice, Cannes, Monaco, Grasse ou d'autres communes des Alpes-Maritimes.
 

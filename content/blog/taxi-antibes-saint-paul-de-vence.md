@@ -66,7 +66,7 @@ La réservation se fait en quelques minutes :
 2. **Confirmez votre course** : nous validons l’horaire, l’adresse de prise en charge et le type de véhicule.
 3. **Recevez la confirmation** par SMS ou e-mail avec les coordonnées de votre chauffeur.
 
-👉 Besoin d’un transfert retour ou d’un aller simple vers l’aéroport de Nice ? Nous nous chargeons d’organiser votre trajet pour vous.
+👉 Besoin d’un transfert retour ou d’un aller simple vers l’aéroport de Nice ? Organisez votre [taxi aéroport Nice](/services/taxi-aeroport-nice) : nous nous chargeons du trajet pour vous.
 👉 Vous pouvez aussi réserver immédiatement via notre page dédiée : [Réserver un taxi à Antibes](https://www.taxi-antibes.fr/reservation).
 
 ---

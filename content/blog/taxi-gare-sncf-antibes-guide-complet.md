@@ -217,7 +217,7 @@ Avec **[Taxi Antibes](/)**, bénéficiez d'un **service de taxi à la gare d'Ant
 
 Nos chauffeurs connaissent parfaitement les terminaux et vous déposent directement au bon terminal selon votre compagnie aérienne.
 
-👉 En savoir plus : [Guide complet transfert aéroport Nice depuis Antibes](/blog/taxi-aeroport-nice-antibes-guide-complet)
+👉 En savoir plus : [Guide complet transfert aéroport Nice depuis Antibes](/blog/taxi-aeroport-nice-antibes-guide-complet) · [Réserver un transfert aéroport Nice](/services/taxi-aeroport-nice)
 
 ---
 

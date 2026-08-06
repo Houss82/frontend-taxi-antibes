@@ -463,7 +463,13 @@ export default function TarifsPage() {
                   <strong className="text-cyan-700">Antibes → Juan-les-Pins</strong> : 60-70 €
                 </li>
                 <li className="p-4 bg-white border border-cyan-100 rounded-xl">
-                  <strong className="text-cyan-700">Antibes → Aéroport Nice</strong> : prix annoncé à l'avance
+                  <strong className="text-cyan-700">Antibes → Aéroport Nice</strong> :{" "}
+                  <Link
+                    href="/services/taxi-aeroport-nice"
+                    className="text-cyan-600 underline hover:text-amber-600"
+                  >
+                    tarif annoncé à l&apos;avance
+                  </Link>
                 </li>
               </ul>
             </section>
@@ -754,8 +760,12 @@ export default function TarifsPage() {
               Prix taxi Antibes → Aéroport Nice ?
             </summary>
             <p className="text-gray-700 mt-2 leading-relaxed">
-              Le <strong>prix pour un transfert taxi Antibes vers l'aéroport Nice</strong> dépend de votre adresse exacte à Antibes et de l'horaire.
-              Un prix fixe peut être annoncé à l'avance. Appelez le{" "}
+              Le <strong>prix pour un transfert taxi Antibes vers l&apos;aéroport Nice</strong> dépend de votre adresse exacte à Antibes et de l&apos;horaire.
+              Un prix fixe peut être annoncé à l&apos;avance. Voir aussi la page{" "}
+              <Link href="/services/taxi-aeroport-nice" className="underline font-semibold text-cyan-600 hover:text-amber-600">
+                taxi Antibes aéroport Nice
+              </Link>
+              {" "}ou appelez le{" "}
               <a className="underline font-semibold text-cyan-600 hover:text-amber-600" href="tel:+33749777621">07 49 77 76 21</a> pour un devis précis.
             </p>
           </details>

@@ -127,10 +127,10 @@ export default function Home() {
               </strong>{" "}
               est votre taxi à Antibes disponible 24h/24. Courses locales, Juan-les-Pins, gare d'Antibes,{" "}
               <Link
-                href="/services"
+                href="/services/taxi-aeroport-nice"
                 className="text-white hover:text-amber-300 underline break-words"
               >
-                transferts Aéroport Nice
+                taxi entre Antibes et l&apos;aéroport de Nice
               </Link>{" "}
               et option{" "}
               <Link
@@ -254,11 +254,11 @@ export default function Home() {
                 </strong>
                 . Spécialiste du{" "}
                 <Link
-                  href="/tarifs"
+                  href="/services/taxi-aeroport-nice"
                   className="inline-flex items-center gap-1 text-cyan-600 font-bold hover:text-amber-600 transition-all duration-200 relative group text-xl"
                 >
                   <span className="relative">
-                    transfert vers l'aéroport Nice Côte d'Azur
+                    transfert Antibes aéroport Nice
                     <span className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-cyan-600 to-amber-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
                   </span>
                 </Link>
@@ -451,6 +451,17 @@ export default function Home() {
                       ✓
                     </span>
                     <Link
+                      href="/services/taxi-aeroport-nice"
+                      className="text-cyan-700 underline font-semibold hover:text-amber-600"
+                    >
+                      Taxi pour l&apos;aéroport de Nice
+                    </Link>
+                  </li>
+                  <li className="flex items-start gap-3 group-hover:translate-x-1 transition-transform">
+                    <span className="text-cyan-500 font-bold mt-0.5 text-xl">
+                      ✓
+                    </span>
+                    <Link
                       href="/services/taxi-port-vauban-aeroport-nice"
                       className="text-cyan-700 underline font-semibold hover:text-amber-600"
                     >
@@ -610,13 +621,17 @@ export default function Home() {
 
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Le{" "}
-                <strong className="bg-gradient-to-r from-amber-400 via-gold-500 to-orange-400 bg-clip-text text-transparent">
-                  transfert aéroport Nice
-                </strong>{" "}
+                <Link
+                  href="/services/taxi-aeroport-nice"
+                  className="font-semibold text-cyan-700 underline hover:text-amber-600"
+                >
+                  transfert aéroport depuis Antibes
+                </Link>{" "}
                 est notre spécialité. Depuis Antibes, Juan-les-Pins ou les
                 communes environnantes, nous vous conduisons directement aux
-                terminaux 1 et 2 de l'aéroport Nice Côte d'Azur. Suivi de vol en
-                temps réel, accueil personnalisé et aide aux bagages inclus.
+                terminaux 1 et 2 de l&apos;aéroport Nice Côte d&apos;Azur. Suivi
+                de vol en temps réel, accueil personnalisé et aide aux bagages
+                inclus.
               </p>
 
               <div className="bg-gradient-to-br from-gold-50 to-orange-50 p-4 md:p-6 rounded-2xl border-2 border-gold-200 mb-6">

@@ -25,6 +25,12 @@ export default function sitemap() {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/services/taxi-conventionne-pasteur-nice`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/services/taxi-aeroport-nice`,
       lastModified: new Date(),
       changeFrequency: "monthly",

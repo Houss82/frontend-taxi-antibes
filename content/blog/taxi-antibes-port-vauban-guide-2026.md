@@ -18,7 +18,7 @@ Notre service de **taxi Antibes Port Vauban** vous garantit un transfert **confo
 Ce guide complet vous présente le **Port Vauban**, les avantages d'un taxi local, les zones desservies et les informations pratiques. Pour une demande commerciale précise entre le port et l'aéroport, utilisez plutôt notre page service dédiée : **[taxi Port Vauban ⇄ Aéroport Nice](/services/taxi-port-vauban-aeroport-nice)**.
 
 <div class="info-box" style="border-left: 4px solid #0891b2;">
-  <strong>📌 Page service officielle</strong> — Besoin d'un transfert avec bagages, suivi de vol ou dépose ponton ? Consultez la page <a href="/services/taxi-port-vauban-aeroport-nice">Port Vauban ⇄ Aéroport Nice</a>. Cet article reste un guide pratique sur le port, ses accès et ses usages.
+  <strong>📌 Page service officielle</strong> — Besoin d'un transfert avec bagages, suivi de vol ou dépose ponton ? Consultez la page <a href="/services/taxi-port-vauban-aeroport-nice">Port Vauban ⇄ Aéroport Nice</a>. Pour un départ depuis une autre adresse à Antibes, voir aussi le <a href="/services/taxi-aeroport-nice">service de taxi aéroport</a>. Cet article reste un guide pratique sur le port, ses accès et ses usages.
 </div>
 
 <div class="kpi-strip">

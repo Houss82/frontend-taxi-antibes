@@ -48,7 +48,7 @@ Le CHU Pasteur 2 est l'un des grands sites hospitaliers du CHU de Nice. Il accue
 - **Accès** : tramway et accès routier par Nice Est
 - **À anticiper** : temps d'accès au bâtiment, stationnement, horaire de convocation
 
-Pour un article centré uniquement sur ce trajet, voir **[VSL / taxi médical Antibes vers Hôpital Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice)**.
+Pour un article centré uniquement sur ce trajet, voir **[VSL / taxi médical Antibes vers Hôpital Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice)**. Pour organiser la prise en charge, utilisez la page **[taxi Antibes → Pasteur](/services/taxi-conventionne-pasteur-nice)**.
 
 ## CHU Archet 1 & 2
 

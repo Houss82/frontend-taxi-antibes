@@ -19,15 +19,27 @@ import Script from "next/script";
 const destinations = [
   {
     destination: "Antibes",
-    duration: "20-25 min",
+    duration: "20-30 min",
     price: "À partir de 45€",
-    description: "Transfert direct vers Antibes centre-ville",
+    description: "Antibes centre, Vieil Antibes et Port Vauban",
   },
   {
     destination: "Juan-les-Pins",
-    duration: "25-30 min",
+    duration: "25-35 min",
     price: "À partir de 50€",
-    description: "Desserte complète de Juan-les-Pins",
+    description: "Hôtels, plages et résidences de Juan-les-Pins",
+  },
+  {
+    destination: "Cap d'Antibes",
+    duration: "30-40 min",
+    price: "Tarif sur devis",
+    description: "Hôtels, villas et plages du Cap d'Antibes",
+  },
+  {
+    destination: "Nice Centre",
+    duration: "15-20 min",
+    price: "À partir de 35€",
+    description: "Transfert rapide vers Nice centre",
   },
   {
     destination: "Cannes",
@@ -40,12 +52,6 @@ const destinations = [
     duration: "30-35 min",
     price: "À partir de 90€",
     description: "Service premium vers Monaco",
-  },
-  {
-    destination: "Nice Centre",
-    duration: "15-20 min",
-    price: "À partir de 35€",
-    description: "Transfert rapide vers Nice centre",
   },
   {
     destination: "Saint-Tropez",
@@ -69,13 +75,13 @@ const services = [
 const terminals = [
   {
     name: "Terminal 1",
-    description: "Vols internationaux et européens",
-    airlines: "Air France, Lufthansa, British Airways, etc.",
+    description:
+      "Prise en charge et dépose devant le terminal 1 de l'aéroport de Nice.",
   },
   {
     name: "Terminal 2",
-    description: "Vols internationaux et long-courriers",
-    airlines: "Emirates, Qatar Airways, Turkish Airlines, etc.",
+    description:
+      "Prise en charge et dépose devant le terminal 2 de l'aéroport de Nice.",
   },
 ];
 
@@ -120,41 +126,107 @@ export const revalidate = 3600;
 export default function TaxiAeroportNicePage() {
   return (
     <>
-      {/* ✅ JSON-LD optimisé avec syntaxe correcte et branding cohérent */}
+      {/* Schema.org : entreprise + service aéroport + fil d'Ariane */}
       <Script
-        id="local-business-schema"
+        id="aeroport-nice-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "TaxiService",
-            name: "Taxi Antibes Riviera - Taxi Aéroport Nice",
-            legalName: "JO Services 06",
-            image: "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg", // ✅ Version canonique avec www
-            telephone: "+33749777621",
-            url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice", // ✅ Version canonique avec www
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Antibes",
-              postalCode: "06600",
-              addressRegion: "PACA",
-              addressCountry: "FR",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: "43.5804",
-              longitude: "7.1251",
-            },
-            areaServed: {
-              "@type": "Airport",
-              name: "Aéroport Nice Côte d'Azur",
-              iataCode: "NCE",
-            },
-            openingHours: "Mo-Su 00:00-23:59",
-            priceRange: "€€",
-            sameAs: [
-              "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-              "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
+            "@graph": [
+              {
+                "@type": "TaxiService",
+                "@id": "https://www.taxi-antibes.fr/#business",
+                name: "Taxi Antibes Riviera",
+                legalName: "JO Services 06",
+                url: "https://www.taxi-antibes.fr/",
+                telephone: "+33749777621",
+                image:
+                  "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Antibes",
+                  postalCode: "06600",
+                  addressRegion: "Provence-Alpes-Côte d'Azur",
+                  addressCountry: "FR",
+                },
+                geo: {
+                  "@type": "GeoCoordinates",
+                  latitude: "43.5804",
+                  longitude: "7.1251",
+                },
+                areaServed: [
+                  "Antibes",
+                  "Juan-les-Pins",
+                  "Cap d'Antibes",
+                  "Aéroport Nice Côte d'Azur",
+                ],
+                openingHoursSpecification: {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday",
+                  ],
+                  opens: "00:00",
+                  closes: "23:59",
+                },
+                priceRange: "€€",
+                sameAs: [
+                  "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
+                  "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
+                ],
+              },
+              {
+                "@type": "Service",
+                "@id":
+                  "https://www.taxi-antibes.fr/services/taxi-aeroport-nice#service",
+                name: "Taxi Antibes Aéroport Nice",
+                serviceType:
+                  "Transfert en taxi entre Antibes et l'aéroport Nice Côte d'Azur",
+                provider: {
+                  "@id": "https://www.taxi-antibes.fr/#business",
+                },
+                areaServed: [
+                  {
+                    "@type": "City",
+                    name: "Antibes",
+                  },
+                  {
+                    "@type": "Airport",
+                    name: "Aéroport Nice Côte d'Azur",
+                    iataCode: "NCE",
+                  },
+                ],
+                url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+              },
+              {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  {
+                    "@type": "ListItem",
+                    position: 1,
+                    name: "Accueil",
+                    item: "https://www.taxi-antibes.fr/",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 2,
+                    name: "Services",
+                    item: "https://www.taxi-antibes.fr/services",
+                  },
+                  {
+                    "@type": "ListItem",
+                    position: 3,
+                    name: "Taxi Aéroport Nice",
+                    item: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+                  },
+                ],
+              },
             ],
           }),
         }}
@@ -162,7 +234,7 @@ export default function TaxiAeroportNicePage() {
 
       <PageLayout
         title="Taxi Aéroport Nice Côte d'Azur"
-        subtitle="Transferts Porte-à-Porte - Suivi de Vol - Service Premium 24/7"
+        subtitle="Transferts depuis et vers Antibes, Juan-les-Pins et toute la Côte d'Azur"
         backgroundImage="/aeroport-nice-depart-t2-2.jpeg"
       >
         <div className="min-h-screen bg-gray-50">
@@ -171,44 +243,44 @@ export default function TaxiAeroportNicePage() {
             <div className="container mx-auto px-6 max-w-6xl">
               <div className="mb-12">
                 <h2 className="text-2xl md:text-3xl text-cyan-600 mb-6 font-semibold">
-                  Transferts Porte-à-Porte avec Suivi de Vol en Temps Réel
+                  Transfert Antibes ↔ Aéroport Nice avec suivi de vol
                 </h2>
 
                 <div className="prose prose-lg max-w-none mb-8">
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    <strong>Taxi Aéroport Nice</strong> : Profitez d'un service
-                    de transfert premium depuis et vers l'aéroport Nice Côte
-                    d'Azur. Notre <strong>taxi Antibes</strong> vous accompagne
-                    pour tous vos déplacements aéroport avec un service
-                    personnalisé, ponctuel et confortable. Que vous partiez en
-                    voyage d'affaires ou en vacances, notre équipe de chauffeurs
-                    professionnels est à votre disposition 24h/24 et 7j/7.
+                    Vous recherchez un{" "}
+                    <strong>taxi entre Antibes et l&apos;aéroport de Nice</strong>{" "}
+                    ? Taxi Antibes Riviera assure vos transferts depuis Antibes,
+                    Juan-les-Pins et le Cap d&apos;Antibes vers les terminaux 1
+                    et 2 de l&apos;aéroport Nice Côte d&apos;Azur.
                   </p>
 
                   <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                    Avec notre <strong>service taxi aéroport Nice</strong>,
-                    bénéficiez d'un transfert sans stress avec suivi de vol en
-                    temps réel, accueil personnalisé avec panneau nominatif et
-                    assistance complète pour vos bagages. Nous mettons un point
-                    d'honneur à assurer votre ponctualité et votre confort pour
-                    que vous puissiez voyager en toute sérénité.
+                    Pour une arrivée à Nice, votre chauffeur suit votre vol en
+                    temps réel et adapte l&apos;heure de prise en charge en cas
+                    de retard. Il vous accueille à l&apos;aéroport, vous aide
+                    avec vos bagages et vous conduit directement à votre adresse
+                    à Antibes.
                   </p>
 
                   <p className="text-gray-700 text-lg leading-relaxed">
-                    Notre flotte de <strong>véhicules Mercedes</strong> est
-                    idéale pour vos transferts aéroport. Que ce soit pour un
-                    départ ou une arrivée, notre{" "}
-                    <strong>service taxi aéroport</strong> s'adapte à vos
-                    besoins et à vos horaires de vol.
+                    Pour un départ depuis Antibes, nous calculons l&apos;heure de
+                    prise en charge selon votre terminal, l&apos;horaire du vol
+                    et les conditions de circulation. Le prix est communiqué
+                    avant la réservation et reste fixe une fois le trajet
+                    confirmé.
                   </p>
 
                   <p className="text-base text-gray-600 border-l-4 border-cyan-500 pl-4 py-3 mt-6 bg-cyan-50/60 rounded-r not-prose">
-                    <span className="font-semibold text-cyan-800">Guide détaillé :</span>{" "}
+                    <span className="font-semibold text-cyan-800">
+                      Guide détaillé :
+                    </span>{" "}
                     <Link
                       href="/blog/taxi-aeroport-nice-antibes-guide-complet"
                       className="text-cyan-700 underline font-medium hover:text-amber-700"
                     >
-                      conseils, temps de trajet et FAQ — Aéroport Nice depuis Antibes
+                      conseils, temps de trajet et FAQ — Aéroport Nice depuis
+                      Antibes
                     </Link>
                     .
                   </p>
@@ -226,7 +298,62 @@ export default function TaxiAeroportNicePage() {
                   priority
                 />
               </div>
+            </div>
+          </section>
 
+          {/* Section Antibes ↔ Aéroport */}
+          <section className="py-16 bg-cyan-50">
+            <div className="container mx-auto px-6 max-w-6xl">
+              <h2 className="text-3xl font-bold text-cyan-700 mb-6">
+                Taxi entre Antibes et l&apos;aéroport Nice Côte d&apos;Azur
+              </h2>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    Antibes vers l&apos;aéroport de Nice
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Nous venons vous chercher à votre domicile, votre hôtel,
+                    votre entreprise ou au{" "}
+                    <Link
+                      href="/services/taxi-port-vauban-aeroport-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      Port Vauban
+                    </Link>
+                    . Votre chauffeur vous dépose directement devant le terminal
+                    1 ou le terminal 2.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                    Aéroport de Nice vers Antibes
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    À votre arrivée, nous suivons votre numéro de vol et
+                    ajustons l&apos;heure de prise en charge. Le transfert est
+                    assuré jusqu&apos;à Antibes, Juan-les-Pins ou le Cap
+                    d&apos;Antibes.
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-white rounded-xl p-6 border border-cyan-200">
+                <p className="text-gray-700">
+                  <strong>Temps de trajet moyen :</strong> environ 20 à 30
+                  minutes selon l&apos;adresse et la circulation. Service
+                  disponible 24h/24, y compris vols tôt le matin ou tard le
+                  soir.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Badges KPI + suite */}
+          <section className="py-16 md:py-24 bg-white">
+            <div className="container mx-auto px-6 max-w-6xl">
               {/* Badges KPI */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 p-6 rounded-xl text-center border border-blue-200">
@@ -309,10 +436,6 @@ export default function TaxiAeroportNicePage() {
                     </div>
                     <p className="text-gray-700 mb-3 text-lg">
                       {terminal.description}
-                    </p>
-                    <p className="text-gray-600 text-sm">
-                      <strong>Compagnies aériennes :</strong>{" "}
-                      {terminal.airlines}
                     </p>
                   </Card>
                 ))}

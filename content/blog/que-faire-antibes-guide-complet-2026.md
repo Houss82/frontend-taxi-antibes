@@ -645,7 +645,7 @@ Pour vos déplacements à Antibes, notre **[service de taxi Antibes](/)** vous a
 
 ### Exemple d'itinéraire simple avec taxi
 
-Si vous arrivez à la **gare d'Antibes** avec des bagages, le plus simple est souvent de commencer par le **Port Vauban** ou le **Vieux Antibes**, de déjeuner dans le centre, puis de rejoindre la **Salis** ou **Juan-les-Pins** en fin de journée. Le taxi devient surtout utile pour les portions moins agréables à pied : gare avec valises, retour de plage, soirée restaurant ou départ vers l'aéroport de Nice.
+Si vous arrivez à la **gare d'Antibes** avec des bagages, le plus simple est souvent de commencer par le **Port Vauban** ou le **Vieux Antibes**, de déjeuner dans le centre, puis de rejoindre la **Salis** ou **Juan-les-Pins** en fin de journée. Le taxi devient surtout utile pour les portions moins agréables à pied : valises, soirée restaurant ou [transfert aéroport Nice](/services/taxi-aeroport-nice).
 
 👉 **Conseil :** Consultez notre [guide complet sur le numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel) pour toutes les informations.
 

@@ -273,7 +273,7 @@ Antibes est idéalement située pour explorer la **Côte d'Azur** et ses destina
       <span class="text-cyan-500 group-open:rotate-180">⌄</span>
     </summary>
     <div class="px-5 pb-5 bg-gray-50">
-      Depuis l'aéroport de Nice (15 km), vous avez plusieurs options : <strong>train</strong> (gare SNCF d'Antibes, 20 min), <strong>bus</strong> (ligne 200, 45 min) ou <strong>transport premium</strong> (15-20 min, service disponible 24h/24). Le transport premium est particulièrement pratique si vous avez des bagages ou si vous arrivez en dehors des horaires de train/bus. Consultez notre [guide complet des transferts aéroport Nice vers Antibes](/blog/taxi-aeroport-nice-antibes-guide-complet) pour tous les détails.
+      Depuis l'aéroport de Nice (15 km), vous avez plusieurs options : <strong>train</strong> (gare SNCF d'Antibes, 20 min), <strong>bus</strong> (ligne 200, 45 min) ou <a href="/services/taxi-aeroport-nice">taxi entre Antibes et l'aéroport</a> (15-20 min, service disponible 24h/24). Le taxi est particulièrement pratique si vous avez des bagages ou si vous arrivez en dehors des horaires de train/bus. Consultez aussi notre [guide complet des transferts aéroport Nice vers Antibes](/blog/taxi-aeroport-nice-antibes-guide-complet) pour tous les détails.
     </div>
   </details>
 

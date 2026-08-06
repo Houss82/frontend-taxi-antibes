@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Clock, MapPin, Shield, Star } from "lucide-react";
+import Link from "next/link";
 
 const services = [
   {
@@ -7,6 +8,7 @@ const services = [
     title: "Taxi pour l'aéroport de Nice",
     description:
       "Transferts aéroport Nice depuis Antibes, Juan-les-Pins, Cannes. Service porte-à-porte avec suivi de vol en temps réel.",
+    href: "/services/taxi-aeroport-nice",
   },
   {
     icon: Clock,
@@ -46,24 +48,41 @@ export function ServicesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <Card
-              key={index}
-              className="p-8 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-3xl"
-            >
-              <div className="mb-6">
-                <div className="w-12 h-12 bg-black/80 rounded-3xl flex items-center justify-center border border-gold-600">
-                  <service.icon className="h-6 w-6 text-gold-600" />
+          {services.map((service, index) => {
+            const content = (
+              <>
+                <div className="mb-6">
+                  <div className="w-12 h-12 bg-black/80 rounded-3xl flex items-center justify-center border border-gold-600">
+                    <service.icon className="h-6 w-6 text-gold-600" />
+                  </div>
                 </div>
-              </div>
-              <h3 className="text-xl font-semibold mb-3 text-white">
-                {service.title}
-              </h3>
-              <p className="text-white/80 leading-relaxed font-light">
-                {service.description}
-              </p>
-            </Card>
-          ))}
+                <h3 className="text-xl font-semibold mb-3 text-white">
+                  {service.title}
+                </h3>
+                <p className="text-white/80 leading-relaxed font-light">
+                  {service.description}
+                </p>
+              </>
+            );
+
+            return (
+              <Card
+                key={index}
+                className="p-8 hover:shadow-lg transition-shadow border-gold-600/30 bg-black rounded-3xl"
+              >
+                {service.href ? (
+                  <Link
+                    href={service.href}
+                    className="block h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 rounded-xl"
+                  >
+                    {content}
+                  </Link>
+                ) : (
+                  content
+                )}
+              </Card>
+            );
+          })}
         </div>
       </div>
     </section>

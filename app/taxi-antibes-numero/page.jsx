@@ -76,8 +76,11 @@ export default function TaxiAntibesNumeroPage() {
                 Le <strong>numéro taxi Antibes</strong> que vous pouvez appeler est le{" "}
                 <strong>07 49 77 76 21</strong>. Ce numéro vous permet de{" "}
                 <strong>contacter directement votre taxi à Antibes</strong> pour une réservation immédiate ou à l'avance. 
-                Que vous ayez besoin d'un <strong>téléphone taxi Antibes</strong> pour une course locale, un transfert aéroport Nice, 
-                ou un déplacement vers Monaco, Cannes ou toute autre destination de la Côte d'Azur, notre équipe vous répond en quelques secondes.
+                Que vous ayez besoin d'un <strong>téléphone taxi Antibes</strong> pour une course locale, un{" "}
+                <Link href="/services/taxi-aeroport-nice" className="text-cyan-700 underline font-semibold hover:text-amber-700">
+                  transfert aéroport Nice
+                </Link>
+                , ou un déplacement vers Monaco, Cannes ou toute autre destination de la Côte d'Azur, notre équipe vous répond en quelques secondes.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 <strong>Appeler taxi Antibes</strong> au <strong>07 49 77 76 21</strong> vous garantit un service professionnel, 

@@ -560,6 +560,10 @@ export const sectorData = {
         "Pour préparer vos trajets vers Nice, consultez aussi nos guides et articles dédiés.",
       links: [
         {
+          label: "Taxi aéroport Nice",
+          url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+        },
+        {
           label: "Tous nos articles",
           url: "https://www.taxi-antibes.fr/blog",
         },

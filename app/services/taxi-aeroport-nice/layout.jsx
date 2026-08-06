@@ -1,5 +1,7 @@
-// ✅ Layout simplifié : metadata.js gère tout, pas de doublons
+import { metadata } from "./metadata";
+
+export { metadata };
+
 export default function TaxiAeroportNiceLayout({ children }) {
   return children;
 }
-

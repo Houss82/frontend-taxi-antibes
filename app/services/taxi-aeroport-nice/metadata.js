@@ -1,40 +1,44 @@
 export const metadata = {
-  title: "Taxi Aéroport Nice Côte d'Azur - Transferts Premium depuis Antibes",
+  title: "Taxi Aéroport Nice depuis Antibes | Réservation 24h/24",
   description:
-    "Taxi aéroport Nice : transferts porte-à-porte depuis et vers l'aéroport Nice Côte d'Azur. Suivi de vol en temps réel, service 24/7, véhicules Mercedes premium. Réservation immédiate.",
+    "Réservez votre taxi entre Antibes et l'aéroport Nice Côte d'Azur. Tarif annoncé à l'avance, suivi de vol, accueil aux terminaux 1 et 2, berline ou van Mercedes.",
   keywords: [
     "taxi aéroport nice",
-    "transfert aéroport nice",
     "taxi antibes aéroport nice",
-    "navette aéroport nice",
-    "taxi nice côte d'azur",
+    "transfert aéroport nice antibes",
+    "taxi aéroport nice antibes",
+    "navette aéroport nice antibes",
     "transfert aéroport antibes",
   ],
   alternates: {
-    canonical: "/services/taxi-aeroport-nice", // ✅ Relatif, metadataBase gère le domaine
+    canonical: "/services/taxi-aeroport-nice",
   },
   openGraph: {
-    title: "Taxi Aéroport Nice Côte d'Azur - Transferts Premium depuis Antibes",
+    title: "Taxi Aéroport Nice depuis Antibes | Taxi Antibes Riviera",
     description:
-      "Transferts porte-à-porte vers l'aéroport Nice Côte d'Azur depuis Antibes. Suivi de vol, service 24/7, véhicules premium.",
-    type: "website",
+      "Transfert privé entre Antibes et l'aéroport de Nice. Suivi de vol, tarif annoncé à l'avance, attente adaptée et service 24h/24.",
+    url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+    siteName: "Taxi Antibes Riviera",
     locale: "fr_FR",
-    url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice", // ✅ Version canonique avec www
+    type: "website",
     images: [
       {
-        url: "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg", // ✅ Version canonique avec www
+        url: "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg",
         width: 1200,
         height: 630,
-        alt: "Taxi Aéroport Nice Côte d'Azur",
+        alt: "Taxi entre Antibes et l'aéroport Nice Côte d'Azur",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Aéroport Nice Côte d'Azur - Transferts Premium depuis Antibes",
+    title: "Taxi Aéroport Nice depuis Antibes",
     description:
-      "Transferts porte-à-porte vers l'aéroport Nice Côte d'Azur depuis Antibes. Suivi de vol, service 24/7, véhicules premium.",
-    images: ["https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg"], // ✅ Version canonique avec www
+      "Réservez votre transfert privé entre Antibes et l'aéroport de Nice.",
+    images: ["https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
-

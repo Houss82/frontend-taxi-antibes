@@ -38,10 +38,32 @@ export function Footer() {
               Services
             </h4>
             <ul className="space-y-2 text-white/80 font-light">
-              <li>Transferts aéroport</li>
-              <li>Courses locales</li>
-              <li>Mise à disposition</li>
-              <li>Événements</li>
+              <li>
+                <Link
+                  href="/services/taxi-aeroport-nice"
+                  className="hover:text-white transition-colors"
+                >
+                  Taxi aéroport Nice
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/taxi-conventionne"
+                  className="hover:text-white transition-colors"
+                >
+                  Taxi conventionné CPAM
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-white transition-colors">
+                  Tous les services
+                </Link>
+              </li>
+              <li>
+                <Link href="/reservation" className="hover:text-white transition-colors">
+                  Réservation
+                </Link>
+              </li>
             </ul>
           </div>
 

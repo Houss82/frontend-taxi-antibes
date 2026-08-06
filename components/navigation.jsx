@@ -13,6 +13,7 @@ import {
   Navigation as NavigationIcon,
   Phone,
   Plane,
+  Stethoscope,
   Waves,
   X,
   BookOpen,
@@ -112,6 +113,7 @@ export function Navigation() {
       { label: "Taxi Aéroport Nice", href: "/services/taxi-aeroport-nice" },
       { label: "Port Vauban ⇄ Aéroport Nice", href: "/services/taxi-port-vauban-aeroport-nice" },
       { label: "Taxi Conventionné CPAM", href: "/services/taxi-conventionne" },
+      { label: "Taxi Antibes → Pasteur Nice", href: "/services/taxi-conventionne-pasteur-nice" },
     ]},
     { label: "Nos secteurs", href: "/secteurs", submenu: [
       { label: "Tous les secteurs", href: "/secteurs" },
@@ -487,6 +489,19 @@ export function Navigation() {
                       </div>
                       <span className="flex-1 group-hover:font-semibold transition-all">
                         Taxi Conventionné CPAM
+                      </span>
+                      <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
+                    </a>
+                    <a
+                      href="/services/taxi-conventionne-pasteur-nice"
+                      className="flex items-center gap-3 px-3 py-2.5 text-sm font-medium text-gray-700 rounded-lg transition-all duration-200 group hover:shadow-md hover:scale-[1.02] bg-teal-50 hover:bg-gradient-to-r hover:from-teal-100 hover:to-cyan-100"
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      <div className="p-1.5 rounded-lg bg-teal-50 group-hover:bg-white transition-colors">
+                        <Stethoscope className="h-4 w-4 text-teal-700 group-hover:scale-110 transition-transform" />
+                      </div>
+                      <span className="flex-1 group-hover:font-semibold transition-all">
+                        Taxi Antibes → Pasteur Nice
                       </span>
                       <ChevronDown className="h-3 w-3 text-gray-400 group-hover:text-cyan-600 -rotate-90 transition-all" />
                     </a>

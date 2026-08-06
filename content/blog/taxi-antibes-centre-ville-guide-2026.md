@@ -26,7 +26,7 @@ Dans le centre, la marche suffit souvent pour un trajet court. Le taxi devient u
 - bagages depuis ou vers la gare ;
 - arrivée tardive dans le Vieil Antibes ;
 - retour après un restaurant ou une soirée ;
-- départ vers l'aéroport de Nice ;
+- [transfert vers l'aéroport Nice](/services/taxi-aeroport-nice) ;
 - rendez-vous médical ou professionnel ;
 - pluie, forte chaleur ou mobilité réduite ;
 - accès à une adresse précise autour du Port Vauban, des remparts ou des hôtels.

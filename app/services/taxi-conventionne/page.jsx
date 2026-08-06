@@ -260,7 +260,14 @@ export default function TaxiConventionnePage() {
                       href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice"
                       className="text-cyan-700 underline font-medium hover:text-amber-700"
                     >
-                      trajet vers l’hôpital Pasteur
+                      guide trajet Pasteur
+                    </Link>
+                    {" · "}
+                    <Link
+                      href="/services/taxi-conventionne-pasteur-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      réserver un taxi vers Pasteur
                     </Link>
                     {" · "}
                     <Link

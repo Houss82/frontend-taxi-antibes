@@ -107,7 +107,7 @@ Nous assurons les transferts vers Sophia depuis :
 - **Juan-les-Pins** : hôtels, plages, Palais des Congrès
 - **Cap d'Antibes** : villas, hôtels, résidences
 - **Biot / Vallauris / Golfe-Juan** : prise en charge à domicile ou hôtel
-- **Aéroport Nice Côte d'Azur** : liaison directe vers Sophia — voir le [guide aéroport ↔ Antibes](/blog/taxi-aeroport-nice-antibes-guide-complet)
+- **Aéroport Nice Côte d'Azur** : liaison directe vers Sophia — voir le [taxi aéroport Nice](/services/taxi-aeroport-nice)
 
 Dans l'autre sens, un taxi depuis Sophia peut aussi rejoindre **Grasse**, **Cannes** ou **Nice** : consultez par exemple le [transfert Antibes → Grasse](/blog/taxi-antibes-vers-grasse-guide-2026).
 

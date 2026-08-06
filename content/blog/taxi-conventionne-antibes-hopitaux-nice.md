@@ -64,7 +64,7 @@ Le **Taxi Conventionné Antibes** vous permet d'accéder facilement aux services
 Les trajets les plus demandés depuis Antibes :
 
 - Antibes → **Centre Antoine Lacassagne** (oncologie) — voir l'[article dédié Antibes → Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice)
-- Antibes → **CHU Pasteur 2** — voir l'[article dédié Antibes → Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice)
+- Antibes → **CHU Pasteur 2** — voir l'[article dédié Antibes → Pasteur](/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice) ou [réserver un transfert Pasteur](/services/taxi-conventionne-pasteur-nice)
 - Antibes → **CHU Archet 1 & 2** — voir l'[article dédié Antibes → Archet](/blog/taxi-conventionne-antibes-chu-archet-nice)
 - Antibes → **Hôpital Lenval** (pédiatrie)
 - Antibes → **Clinique Saint-Georges** & **Clinique du Parc Impérial**

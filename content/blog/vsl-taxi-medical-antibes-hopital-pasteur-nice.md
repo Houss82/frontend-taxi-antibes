@@ -10,7 +10,7 @@ language: "fr"
 ---
 
 <div class="info-box" style="border-left: 4px solid #0891b2;">
-  <strong>📌 Angle de cet article :</strong> trajet spécifique <strong>Antibes → Hôpital Pasteur de Nice</strong>. Pour le cadre général CPAM, la réservation et les conditions de prise en charge, consultez la page <a href="/services/taxi-conventionne"><strong>Taxi conventionné CPAM Antibes</strong></a>. Pour une vue globale des établissements niçois, consultez aussi le <a href="/blog/hopitaux-centres-medicaux-nice-guide-complet">guide des hôpitaux et centres médicaux de Nice</a>.
+  <strong>📌 Angle de cet article :</strong> trajet spécifique <strong>Antibes → Hôpital Pasteur de Nice</strong>. Pour réserver la prise en charge, utilisez la page <a href="/services/taxi-conventionne-pasteur-nice"><strong>taxi Antibes → Pasteur</strong></a>. Pour le cadre général CPAM, consultez <a href="/services/taxi-conventionne"><strong>Taxi conventionné CPAM Antibes</strong></a>. Pour une vue globale des établissements niçois, consultez aussi le <a href="/blog/hopitaux-centres-medicaux-nice-guide-complet">guide des hôpitaux et centres médicaux de Nice</a>.
 </div>
 
 ## Antibes vers Hôpital Pasteur Nice : trajet VSL et taxi médical

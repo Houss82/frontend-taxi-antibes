@@ -112,8 +112,17 @@ export default function TaxiPortVaubanAeroportNicePage() {
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">
                   Cette page est dédiée à la réservation du trajet{" "}
-                  <strong>Port Vauban ⇄ Aéroport Nice</strong>. Pour les
-                  informations touristiques sur le port, consultez notre{" "}
+                  <strong>Port Vauban ⇄ Aéroport Nice</strong>. Pour un départ
+                  depuis Antibes centre, Juan-les-Pins ou une autre adresse,
+                  utilisez plutôt notre page{" "}
+                  <Link
+                    href="/services/taxi-aeroport-nice"
+                    className="text-cyan-700 underline font-semibold hover:text-amber-700"
+                  >
+                    taxi aéroport Nice
+                  </Link>
+                  . Pour les informations touristiques sur le port, consultez
+                  notre{" "}
                   <Link
                     href="/blog/taxi-antibes-port-vauban-guide-2026"
                     className="text-cyan-700 underline font-semibold hover:text-amber-700"
