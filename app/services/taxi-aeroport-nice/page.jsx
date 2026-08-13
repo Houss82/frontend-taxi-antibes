@@ -138,7 +138,6 @@ export default function TaxiAeroportNicePage() {
                 "@type": "TaxiService",
                 "@id": "https://www.taxi-antibes.fr/#business",
                 name: "Taxi Antibes Riviera",
-                legalName: "JO Services 06",
                 url: "https://www.taxi-antibes.fr/",
                 telephone: "+33749777621",
                 image:
@@ -178,7 +177,6 @@ export default function TaxiAeroportNicePage() {
                 priceRange: "€€",
                 sameAs: [
                   "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-                  "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
                 ],
               },
               {

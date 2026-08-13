@@ -28,9 +28,6 @@ export function Footer() {
             <p className="text-white/80 font-light leading-relaxed mb-3">
               Votre service de transport premium sur la Côte d'Azur
             </p>
-            <p className="text-white/60 text-xs font-light">
-              JO Services 06 – SIREN : 819018391 – Licence 14 Taxi Antibes
-            </p>
           </div>
 
           <div>
@@ -123,18 +120,6 @@ export function Footer() {
                   Notre fiche Google
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-white/80 font-light">
-                <ExternalLink className="h-4 w-4 text-orange-300" />
-                <a
-                  href="https://hoodspot.fr/taxi/taxi-antibes-81901839100022/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors underline"
-                  title="Taxi Antibes"
-                >
-                  Taxi Antibes sur Hoodspot
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -142,7 +127,6 @@ export function Footer() {
         <div className="border-t border-gold-600/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/60 text-sm font-light">
             <p>© 2025 Taxi Antibes Riviera. Tous droits réservés.</p>
-            <p className="mt-2 text-xs">JO Services 06 – SIREN : 819018391 – Licence 14 Taxi Antibes</p>
           </div>
           <div className="flex gap-6 text-sm text-white/60 font-light">
             <a href="#" className="hover:text-gold-600 transition-colors">

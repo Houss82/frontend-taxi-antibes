@@ -69,7 +69,6 @@ export default function TaxiPortVaubanAeroportNicePage() {
             "@context": "https://schema.org",
             "@type": "TaxiService",
             name: "Taxi Antibes Riviera - Port Vauban vers Aéroport Nice",
-            legalName: "JO Services 06",
             url: "https://www.taxi-antibes.fr/services/taxi-port-vauban-aeroport-nice",
             telephone: "+33749777621",
             image:

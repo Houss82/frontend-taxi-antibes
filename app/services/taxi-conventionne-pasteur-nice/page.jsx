@@ -156,7 +156,6 @@ export default function TaxiConventionnePasteurNicePage() {
                 "@type": "TaxiService",
                 "@id": "https://www.taxi-antibes.fr/#business",
                 name: "Taxi Antibes Riviera",
-                legalName: "JO Services 06",
                 url: "https://www.taxi-antibes.fr/",
                 telephone: "+33749777621",
                 image:

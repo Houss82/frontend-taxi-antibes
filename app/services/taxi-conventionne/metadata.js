@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Taxi Conventionné CPAM Antibes - Transport Médical Agréé 7j/7",
   description:
-    "Taxi conventionné CPAM à Antibes : transport médical agréé, prise en charge CPAM selon prescription, trajets vers hôpitaux de Nice, Cannes, Mougins. Service 24h/24 7j/7. JO Services 06.",
+    "Taxi conventionné CPAM à Antibes : transport médical agréé, prise en charge CPAM selon prescription, trajets vers hôpitaux de Nice, Cannes, Mougins. Service 24h/24 7j/7.",
   alternates: {
     canonical: "/services/taxi-conventionne", // ✅ Relatif, metadataBase gère le domaine
   },

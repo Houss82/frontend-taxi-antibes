@@ -98,7 +98,6 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "TaxiService",
     name: "Taxi Antibes Riviera",
-    legalName: "JO Services 06",
     url: "https://www.taxi-antibes.fr", // ✅ Version canonique avec www
     telephone: "+33749777621",
     priceRange: "€€",
@@ -121,10 +120,7 @@ export default function RootLayout({ children }) {
       postalCode: "06600",
       addressCountry: "FR",
     },
-    sameAs: [
-      "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-      "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
-    ],
+    sameAs: ["https://maps.app.goo.gl/gAA4M31jtVcsY3Km9"],
   };
 
   return (

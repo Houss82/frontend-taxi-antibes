@@ -160,7 +160,6 @@ export default function TaxiConventionnePage() {
             "@context": "https://schema.org",
             "@type": "TaxiService",
             name: "Taxi Antibes Riviera - Taxi Conventionné CPAM",
-            legalName: "JO Services 06",
             url: "https://www.taxi-antibes.fr/services/taxi-conventionne", // ✅ Version canonique avec www
             telephone: "+33749777621",
             image: "https://www.taxi-antibes.fr/taxi-conventionne-nice-pasteur.jpeg", // ✅ Version canonique avec www
@@ -185,7 +184,6 @@ export default function TaxiConventionnePage() {
             ],
             sameAs: [
               "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-              "https://hoodspot.fr/taxi/taxi-antibes-81901839100022/",
             ],
           }),
         }}
