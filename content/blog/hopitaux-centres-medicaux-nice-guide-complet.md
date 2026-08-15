@@ -16,7 +16,7 @@ Nice regroupe plusieurs établissements de santé majeurs des Alpes-Maritimes. P
 Cet article est volontairement **informatif** : il présente les principaux hôpitaux et centres médicaux de Nice. Pour les sujets de prise en charge CPAM, de réservation ou de transport médical conventionné, consultez plutôt les pages spécialisées.
 
 <div class="info-box" style="border-left: 4px solid #0891b2;">
-  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a>, <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers Pasteur</a>, <a href="/blog/taxi-conventionne-antibes-chu-archet-nice">trajet vers l’Archet</a> et <a href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice">trajet vers Lacassagne</a>.
+  <strong>📌 Rôle de cet article :</strong> guide des établissements de santé à Nice. Pour un trajet général Antibes → Nice (centre, gare, Promenade), voir <a href="/secteurs/nice">taxi Antibes vers Nice</a>. Pour le transport médical depuis Antibes : <a href="/services/taxi-conventionne">Taxi conventionné CPAM Antibes</a>. Articles complémentaires : <a href="/blog/taxi-conventionne-antibes-hopitaux-nice">trajets vers les hôpitaux de Nice</a>, <a href="/blog/vsl-taxi-medical-antibes-hopital-pasteur-nice">trajet vers Pasteur</a>, <a href="/blog/taxi-conventionne-antibes-chu-archet-nice">trajet vers l’Archet</a> et <a href="/blog/taxi-conventionne-antibes-centre-lacassagne-nice">trajet vers Lacassagne</a>.
 </div>
 
 ## Vue d'ensemble rapide
@@ -101,6 +101,8 @@ Lenval est l'établissement pédiatrique de référence à Nice. Il concerne les
 - **Site web** : <a href="https://www.lenval.org/" target="_blank" rel="noopener noreferrer">lenval.org</a>
 - **Accès** : Promenade des Anglais, tramway et accès routier
 - **À anticiper** : circulation sur le bord de mer, accompagnement enfant, temps de stationnement
+
+Pour un article centré uniquement sur ce trajet, voir **[Antibes vers Hôpital Lenval](/blog/taxi-conventionne-antibes-hopital-lenval-nice)**.
 
 ## Clinique Saint-Georges
 

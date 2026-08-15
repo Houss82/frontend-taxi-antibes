@@ -26,6 +26,13 @@ const sectors = [
     image: "/taxi-nice-glc.jpeg",
   },
   {
+    slug: "cagnes-sur-mer",
+    name: "Cagnes-sur-Mer",
+    description:
+      "Taxi Antibes vers Cagnes-sur-Mer : Cros-de-Cagnes, gare, hippodrome et bord de mer.",
+    image: "/taxi-antibes-cagnes-sur-mer-cros.png",
+  },
+  {
     slug: "juan-les-pins",
     name: "Juan-les-Pins",
     description:
@@ -41,6 +48,7 @@ const sectors = [
   },
   {
     slug: "aeroport-nice",
+    href: "/services/taxi-aeroport-nice",
     name: "Aéroport Nice",
     description:
       "Transferts aéroport Nice Côte d'Azur : Terminal 1 & 2, suivi de vol et accueil personnalisé.",
@@ -144,7 +152,7 @@ export default function SecteursPage() {
             {sectors.map((sector) => (
               <Link
                 key={sector.slug}
-                href={`/secteurs/${sector.slug}`}
+                href={sector.href || `/secteurs/${sector.slug}`}
                 className="group bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition-shadow"
               >
                 <div className="relative h-48">

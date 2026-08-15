@@ -18,4 +18,4 @@ En effet, un chauffeur local connaît mieux les accès au village perché, au li
 
 Dans ce cas, vous pouvez par exemple consulter <a href="https://taxi-cagnes-sur-mer.fr/">un taxi à Cagnes-sur-Mer</a> pour voir les disponibilités et organiser votre trajet selon vos besoins.
 
-Pour un départ ou une arrivée à Antibes, contactez-nous au **[07 49 77 76 21](tel:+33749777621)** ou consultez notre page sur le [numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).
+Pour un départ ou une arrivée à Antibes, contactez-nous au **[07 49 77 76 21](tel:+33749777621)**, consultez la page [taxi Antibes vers Cagnes-sur-Mer](/secteurs/cagnes-sur-mer) ou le [numéro de taxi à Antibes](/blog/taxi-antibes-numero-officiel).

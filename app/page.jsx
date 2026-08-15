@@ -245,9 +245,12 @@ export default function Home() {
                   Cannes
                 </strong>
                 ,{" "}
-                <strong className="font-bold text-cyan-600 text-lg">
+                <Link
+                  href="/secteurs/nice"
+                  className="font-bold text-cyan-600 text-lg hover:text-amber-600 underline"
+                >
                   Nice
-                </strong>{" "}
+                </Link>{" "}
                 et{" "}
                 <strong className="font-bold text-cyan-600 text-lg">
                   Monaco

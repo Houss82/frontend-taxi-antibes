@@ -281,6 +281,13 @@ export default function TaxiConventionnePage() {
                     >
                       trajet vers le CHU Archet
                     </Link>
+                    {" · "}
+                    <Link
+                      href="/blog/taxi-conventionne-antibes-hopital-lenval-nice"
+                      className="text-cyan-700 underline font-medium hover:text-amber-700"
+                    >
+                      trajet vers Lenval
+                    </Link>
                     .
                   </p>
                 </div>

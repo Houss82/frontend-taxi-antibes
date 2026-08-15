@@ -17,7 +17,7 @@ Pour les habitants comme pour les visiteurs, réserver un taxi à l'avance perme
 
 ## Les trajets les plus fréquents entre Antibes et Cagnes-sur-Mer
 
-Depuis Antibes, les demandes concernent souvent la **gare SNCF d'Antibes**, le centre-ville, Juan-les-Pins ou le Cap d'Antibes. Côté Cagnes-sur-Mer, les trajets vont régulièrement vers le centre-ville, le Cros-de-Cagnes, le secteur de l'hippodrome, les hôtels ou les résidences proches du bord de mer.
+Depuis Antibes, les demandes concernent souvent la **gare SNCF d'Antibes**, le centre-ville, Juan-les-Pins ou le Cap d'Antibes. Côté Cagnes-sur-Mer, les trajets vont régulièrement vers le centre-ville, le Cros-de-Cagnes, le secteur de l'hippodrome, les hôtels ou les résidences proches du bord de mer. Pour une course hors cadre CPAM, voir la page [taxi Antibes vers Cagnes-sur-Mer](/secteurs/cagnes-sur-mer).
 
 Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamment pour les salariés, consultants ou visiteurs d'entreprises qui doivent rejoindre ensuite Cagnes-sur-Mer, Nice ou l'aéroport. Voir le [guide taxi Antibes → Sophia Antipolis](/blog/taxi-antibes-vers-sophia-antipolis-2026) pour les durées et tarifs.
 
@@ -25,7 +25,7 @@ Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamme
 
 Pour un rendez-vous médical, il est important de distinguer un taxi classique d'un **taxi conventionné CPAM**. Lorsque le transport est prescrit par un médecin et respecte les conditions de l'Assurance Maladie, le trajet peut être pris en charge en partie ou totalement.
 
-Les trajets médicaux entre Antibes, Cagnes-sur-Mer et Nice concernent souvent les consultations spécialisées, les examens, les soins réguliers ou les sorties d'hospitalisation. Les destinations fréquentes incluent les hôpitaux et cliniques de Nice : [CHU Pasteur](/services/taxi-conventionne-pasteur-nice), [Archet](/blog/taxi-conventionne-antibes-chu-archet-nice), Lenval, [Centre Antoine Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice) ou établissements privés selon les besoins du patient.
+Les trajets médicaux entre Antibes, Cagnes-sur-Mer et Nice concernent souvent les consultations spécialisées, les examens, les soins réguliers ou les sorties d'hospitalisation. Les destinations fréquentes incluent les hôpitaux et cliniques de Nice : [CHU Pasteur](/services/taxi-conventionne-pasteur-nice), [Archet](/blog/taxi-conventionne-antibes-chu-archet-nice), [Lenval](/blog/taxi-conventionne-antibes-hopital-lenval-nice), [Centre Antoine Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice) ou établissements privés selon les besoins du patient.
 
 Si le départ se fait côté Cagnes-sur-Mer, il peut être utile de contacter un **[service de taxi conventionné à Cagnes-sur-Mer](https://www.taxiasm06.fr/)** afin d'organiser un transport médical adapté depuis ce secteur.
 

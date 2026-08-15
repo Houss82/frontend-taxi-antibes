@@ -70,7 +70,11 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-white/80 font-light">
               <li>Antibes</li>
-              <li>Nice</li>
+              <li>
+                <Link href="/secteurs/nice" className="hover:text-white transition-colors">
+                  Nice
+                </Link>
+              </li>
               <li>Cannes</li>
               <li>Monaco</li>
             </ul>

@@ -37,6 +37,7 @@ const destinations = [
   },
   {
     destination: "Nice Centre",
+    href: "/secteurs/nice",
     duration: "15-20 min",
     price: "À partir de 35€",
     description: "Transfert rapide vers Nice centre",
@@ -466,7 +467,16 @@ export default function TaxiAeroportNicePage() {
                     <div className="flex items-center gap-3 mb-3">
                       <MapPin className="h-6 w-6 text-cyan-600" />
                       <h3 className="text-xl font-bold text-cyan-700">
-                        {dest.destination}
+                        {dest.href ? (
+                          <Link
+                            href={dest.href}
+                            className="hover:text-amber-700 underline"
+                          >
+                            {dest.destination}
+                          </Link>
+                        ) : (
+                          dest.destination
+                        )}
                       </h3>
                     </div>
                     <div className="space-y-2 mb-4">

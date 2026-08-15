@@ -406,30 +406,33 @@ export const sectorData = {
   nice: {
     slug: "nice",
     cityName: "Nice",
+    seoTitle: "Taxi Antibes Nice | Transfert vers Nice Centre & Gare",
+    seoDescription:
+      "Réservez un taxi entre Antibes et Nice : centre-ville, gare Nice-Ville, Promenade et port. Prise en charge locale, 24h/24, tarif annoncé à la réservation.",
     hero: {
       title: "Taxi Antibes vers Nice ",
       highlight: "Nice & Alentours",
       subtitle:
-        "Transferts aéroport, gare, centre-ville et établissements de santé",
+        "Centre-ville, gare Nice-Ville, Promenade des Anglais et port",
       image: "/nice-promenade-des-anglais.jpg",
       imageAlt: "Taxi à Nice",
     },
     introduction: [
-      "Nice est notre destination la plus fréquente depuis Antibes. Situés à 20 kilomètres, nous intervenons quotidiennement pour les transferts aéroport, les rendez-vous médicaux, les déplacements professionnels et les courses locales.",
-      "Notre connaissance approfondie de la route Antibes-Nice nous permet d'optimiser chaque trajet selon l'heure, la saison et les conditions de circulation. Nous privilégions toujours la ponctualité et le confort, même en période estivale où le trafic peut être dense.",
+      "Nice est notre destination la plus fréquente depuis Antibes. Le chauffeur part de votre adresse à Antibes, Juan-les-Pins, au Cap d'Antibes ou à la gare SNCF, puis vous dépose à Nice centre, à la gare Nice-Ville, sur la Promenade des Anglais ou au port.",
+      "Notre connaissance de la route Antibes-Nice permet d'adapter l'itinéraire selon l'heure, la saison et la circulation. La durée reste indicative : une marge est recommandée, surtout en période estivale.",
     ],
     secondaryIntro: [
-      "De nombreux clients antibois nous font confiance pour leurs rendez-vous médicaux réguliers à Nice (CHU Pasteur, Lenval, cliniques privées). Nous connaissons les horaires de consultation, les meilleurs parkings et les accès rapides aux établissements de santé.",
-      "Pour les professionnels travaillant entre Antibes et Nice, nous proposons des abonnements navette avec horaires fixes. Idéal pour les trajets quotidiens ou hebdomadaires avec tarifs préférentiels.",
+      "Indiquez à la réservation le quartier ou le lieu exact à Nice (Jean Médecin, Promenade, gare Nice-Ville, port, Cimiez, Nice Est ou Nice Ouest) pour une dépose plus précise.",
+      "Pour un transfert vers les terminaux de l'aéroport Nice Côte d'Azur, utilisez la page taxi aéroport Nice. Pour un transport médical conventionné, voir la page taxi conventionné CPAM.",
     ],
     servicesTitle: "Services taxi vers Nice",
     services: [
-      "Transferts Aéroport Nice Côte d'Azur (Terminal 1 & 2)",
+      "Dépose Nice centre-ville et avenue Jean Médecin",
       "Transferts Gare de Nice-Ville",
-      "Déplacements centre-ville Nice",
-      "Transport médical vers hôpitaux et cliniques",
+      "Promenade des Anglais et hôtels du bord de mer",
+      "Port de Nice",
       "Mise à disposition pour événements",
-      "Longues distances Nice ↔ Antibes",
+      "Trajets Antibes ↔ Nice selon votre adresse",
     ],
     coverageDescription:
       "Nous desservons toute la ville de Nice et ses alentours :",
@@ -444,42 +447,42 @@ export const sectorData = {
     map: {
       description:
         "Notre service de taxi vers Nice couvre l'ensemble de la ville.",
-      info: "Depuis Antibes, nous rejoignons Nice en 20-25 minutes. Nous proposons également des trajets combinés : Antibes-Nice-Aéroport ou Antibes-Nice-Monaco selon vos besoins.",
+      info: "La durée depuis Antibes est indicative et dépend de l'heure, du trafic et du point de départ. Pour un vol, réservez plutôt via la page taxi aéroport Nice.",
       embedUrl:
         "https://maps.google.com/maps?q=Nice%20France&t=&z=13&ie=UTF8&iwloc=&output=embed",
     },
     infoCards: [
       {
-        title: "Service résidents Antibes",
+        title: "Points de départ à Antibes",
         description:
-          "Pour les habitants d'Antibes, nous proposons des tarifs préférentiels et une connaissance approfondie des besoins locaux (courses, rendez-vous médicaux, déplacements professionnels).",
+          "Prise en charge au domicile, à l'hôtel, en entreprise, à la gare SNCF d'Antibes, à Juan-les-Pins ou au Cap d'Antibes. Communiquez l'adresse exacte à la réservation.",
       },
       {
-        title: "Navette régulière Antibes-Nice",
+        title: "Dépose à Nice",
         description:
-          "Pour les professionnels travaillant entre Antibes et Nice, nous organisons des navettes quotidiennes avec horaires fixes et tarifs d'abonnement avantageux.",
+          "Centre-ville, gare Nice-Ville, Promenade des Anglais, port, ou un quartier précis (Cimiez, Nice Est, Nice Ouest). Plus le lieu est précis, plus la dépose est simple.",
       },
     ],
     sellingPoints: [
       {
         title: "✓ Destination la plus fréquente",
         description:
-          "Nice est notre destination principale depuis Antibes. Notre expérience quotidienne sur cette route nous permet d'optimiser chaque trajet selon l'heure et la saison.",
+          "Nice est notre destination principale depuis Antibes. L'itinéraire est adapté selon l'heure et la saison.",
       },
       {
-        title: "✓ Service résidents Antibes",
+        title: "✓ Service depuis Antibes",
         description:
-          "Pour les habitants d'Antibes, nous proposons des tarifs préférentiels et une connaissance approfondie des besoins locaux (rendez-vous médicaux, déplacements professionnels, courses).",
+          "Chauffeurs basés à Antibes pour les courses vers Nice centre, la gare, la Promenade ou le port, ainsi que les déplacements professionnels.",
       },
       {
-        title: "✓ Navette régulière professionnels",
+        title: "✓ Trajets réguliers",
         description:
-          "Pour les professionnels travaillant entre Antibes et Nice, nous organisons des navettes quotidiennes avec horaires fixes et tarifs d'abonnement avantageux.",
+          "Pour les allers fréquents entre Antibes et Nice, indiquez vos horaires habituels à la réservation : nous organisons le trajet au cas par cas.",
       },
       {
-        title: "✓ Connaissance établissements de santé",
+        title: "✓ Véhicules et bagages",
         description:
-          "Nous connaissons parfaitement les hôpitaux et cliniques de Nice. Nous pouvons vous conseiller sur les meilleurs parkings et les accès rapides selon votre établissement.",
+          "Berline ou van selon le nombre de passagers et les bagages. Précisez un groupe, des valises volumineuses ou un besoin d'accompagnant.",
       },
     ],
     hospitalsTitle: "Hôpitaux et cliniques desservis en taxi vers Nice",
@@ -514,13 +517,6 @@ export const sectorData = {
       "Lieux importants desservis en taxi dans Nice et alentours",
     establishments: [
       {
-        name: "Aéroport Nice Côte d'Azur (T1 & T2)",
-        city: "Nice",
-        speciality: "Aéroport international",
-        website: "https://www.nice.aeroport.fr/",
-        phone: "08 20 42 33 33",
-      },
-      {
         name: "Gare de Nice-Ville",
         city: "Nice",
         speciality: "Trains TGV, TER, Intercités",
@@ -534,18 +530,39 @@ export const sectorData = {
         website: "https://www.riviera-ports.com/",
         phone: "04 92 00 41 00",
       },
+      {
+        name: "Promenade des Anglais",
+        city: "Nice",
+        speciality: "Bord de mer et hôtels",
+        website: "https://www.nice.fr/",
+        phone: "",
+      },
     ],
     faq: [
       {
         question: "Comment réserver un taxi depuis Antibes vers Nice ?",
         answer:
-          "Contactez-nous par téléphone ou via notre formulaire en ligne en précisant votre point de départ à Antibes et votre destination à Nice. Nous vous confirmons rapidement avec l'heure exacte d'arrivée du taxi.",
+          "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez votre adresse de départ à Antibes (ou Juan-les-Pins / Cap d'Antibes) et le lieu exact à Nice.",
       },
       {
-        question:
-          "Quel est le prix d'un taxi entre Antibes et l'aéroport de Nice ?",
+        question: "Quelles informations fournir pour le trajet ?",
         answer:
-          "Le tarif dépend de l'heure, du trafic et du point de départ exact. Depuis Antibes vers l'aéroport, comptez environ 60-75€ selon l'heure. Tarif exact annoncé à la réservation.",
+          "Adresse de départ, heure souhaitée, destination précise à Nice (quartier, gare, hôtel, port) et nombre de passagers. Signalez aussi les bagages volumineux ou un aller-retour.",
+      },
+      {
+        question: "Où le chauffeur peut-il déposer à Nice ?",
+        answer:
+          "Nice centre, gare Nice-Ville, Promenade des Anglais, port, ou un quartier (Cimiez, Nice Est, Nice Ouest). Plus l'adresse est précise, plus la dépose est simple.",
+      },
+      {
+        question: "Quels véhicules sont disponibles ?",
+        answer:
+          "Berline ou van selon le nombre de passagers et les bagages. Précisez un groupe ou un besoin d'espace à la réservation.",
+      },
+      {
+        question: "Peut-on prévoir un retour le même jour ?",
+        answer:
+          "Oui. Indiquez dès la réservation si l'heure de retour est fixe ou à confirmer plus tard.",
       },
     ],
     homepageLink: {
@@ -557,62 +574,296 @@ export const sectorData = {
     },
     resource: {
       description:
-        "Pour préparer vos trajets vers Nice, consultez aussi nos guides et articles dédiés.",
+        "Pour préparer vos trajets vers Nice, consultez aussi nos pages et guides dédiés.",
       links: [
+        {
+          label: "Réservation en ligne",
+          url: "https://www.taxi-antibes.fr/reservation",
+        },
+        {
+          label: "Tarifs taxi Antibes",
+          url: "https://www.taxi-antibes.fr/tarifs",
+        },
         {
           label: "Taxi aéroport Nice",
           url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
         },
         {
-          label: "Tous nos articles",
-          url: "https://www.taxi-antibes.fr/blog",
+          label: "Taxi conventionné CPAM",
+          url: "https://www.taxi-antibes.fr/services/taxi-conventionne",
+        },
+        {
+          label: "Guide des hôpitaux de Nice",
+          url: "https://www.taxi-antibes.fr/blog/hopitaux-centres-medicaux-nice-guide-complet",
+        },
+        {
+          label: "Taxi Antibes vers Cagnes-sur-Mer",
+          url: "https://www.taxi-antibes.fr/secteurs/cagnes-sur-mer",
         },
       ],
     },
     specialties: [
       {
-        title: "Taxi aéroport & gares de Nice",
+        title: "Gare Nice-Ville et centre",
         description:
-          "Prise en charge à domicile, à l'hôtel ou en entreprise pour rejoindre l'aéroport de Nice ou les gares SNCF.",
+          "Prise en charge à domicile, à l'hôtel ou en entreprise pour rejoindre la gare Nice-Ville, le centre ou un hôtel de la Promenade.",
       },
       {
-        title: "Taxi médical & longues distances",
+        title: "Port de Nice et quartiers",
         description:
-          "Accompagnement pour vos rendez-vous médicaux à Nice et trajets longue distance vers toute la région.",
+          "Dépose au port, à Nice Est, Nice Ouest ou Cimiez selon l'adresse indiquée à la réservation.",
       },
     ],
     pricing: [
-      "Antibes ↔ Aéroport Nice : 60-75€ selon heure et trafic",
-      "Antibes ↔ Nice centre : 50-65€ selon destination",
-      "Longues distances : forfait sur demande",
-      "Trajets médicaux : conditions selon prescription",
+      "Le prix dépend de l'adresse de départ, de la destination exacte à Nice et de l'horaire.",
+      "Le tarif est annoncé à la réservation.",
+      "Consultez la page Tarifs pour les exemples de prix.",
+      "Paiement CB, virement ou espèces.",
     ],
     commitments: [
       {
         title: "Optimisation route Antibes-Nice",
         description:
-          "Notre connaissance approfondie de la route nous permet d'optimiser chaque trajet. Nous privilégions toujours la ponctualité, même en période estivale où le trafic peut être dense.",
+          "Notre connaissance de la route permet d'adapter chaque trajet. La ponctualité reste l'objectif, y compris lorsque le trafic est dense en été.",
       },
       {
         title: "Service personnalisé résidents",
         description:
-          "Pour les clients réguliers d'Antibes, nous proposons un suivi personnalisé avec mémorisation de vos préférences (hôpitaux fréquentés, horaires habituels, itinéraires préférés).",
+          "Pour les clients réguliers d'Antibes, nous pouvons mémoriser vos adresses habituelles à Nice et vos horaires de trajet.",
       },
       {
         title: "Transparence tarifaire",
         description:
-          "Tarifs annoncés à l'avance pour tous vos trajets Antibes-Nice. Pas de surprise, même en cas de trafic dense ou de modification d'itinéraire.",
+          "Le tarif est annoncé à l'avance pour votre trajet Antibes-Nice. Voir la page Tarifs pour les exemples.",
       },
     ],
     localBusiness: {
-      name: "Taxi Nice - Taxi Antibes",
+      name: "Taxi Antibes Riviera",
       image: "https://www.taxi-antibes.fr/taxi-nice-glc.jpeg",
       telephone: "+33749777621",
-      locality: "Nice",
+      locality: "Antibes",
       region: "Provence-Alpes-Côte d'Azur",
       url: "https://www.taxi-antibes.fr/secteurs/nice",
-      latitude: "43.710173",
-      longitude: "7.261953",
+      latitude: "43.5804",
+      longitude: "7.1251",
+    },
+  },
+  "cagnes-sur-mer": {
+    slug: "cagnes-sur-mer",
+    cityName: "Cagnes-sur-Mer",
+    seoTitle: "Taxi Antibes → Cagnes-sur-Mer | Courses et gare",
+    seoDescription:
+      "Réservez un taxi entre Antibes et Cagnes-sur-Mer : Cros, gare, hippodrome, bord de mer. Prise en charge depuis Antibes, 24h/24, tarif annoncé à la réservation.",
+    hero: {
+      title: "Taxi Antibes vers Cagnes-sur-Mer",
+      highlight: "Cagnes-sur-Mer depuis Antibes",
+      subtitle: "Cros-de-Cagnes, gare, hippodrome et bord de mer",
+      image: "/taxi-antibes-cagnes-sur-mer-cros.png",
+      imageAlt:
+        "Taxi Antibes sur le bord de mer à Cros-de-Cagnes, Cagnes-sur-Mer",
+    },
+    introduction: [
+      "Nous partons d'Antibes pour vos courses vers Cagnes-sur-Mer. Le chauffeur prend en charge à votre adresse (centre, Juan-les-Pins, Cap d'Antibes ou gare SNCF d'Antibes) et vous dépose au lieu indiqué : centre-ville, Cros-de-Cagnes, gare de Cagnes-sur-Mer, secteur de l'hippodrome, Haut-de-Cagnes ou une résidence proche du bord de mer.",
+      "Cagnes n'est pas un simple « arrêt » entre Antibes et Nice : les accès changent selon que vous visez le littoral, la gare ou le village. Indiquez le quartier exact à la réservation pour caler l'horaire et la dépose.",
+    ],
+    secondaryIntro: [
+      "Cette page concerne les courses et transferts Antibes ↔ Cagnes-sur-Mer. Pour un transport prescrit, voir l'article sur le taxi conventionné entre Antibes et Cagnes-sur-Mer : le cadre CPAM n'est pas traité ici.",
+      "La durée dépend de l'heure, du point de départ et de l'itinéraire (bord de mer ou A8). Aucun temps de trajet n'est garanti ; une marge est utile aux heures chargées.",
+    ],
+    servicesTitle: "Courses taxi Antibes ↔ Cagnes-sur-Mer",
+    services: [
+      "Dépose centre-ville de Cagnes-sur-Mer",
+      "Cros-de-Cagnes et hôtels / résidences du bord de mer",
+      "Gare de Cagnes-sur-Mer",
+      "Secteur de l'hippodrome",
+      "Haut-de-Cagnes",
+      "Retour vers Antibes, Juan-les-Pins ou le Cap d'Antibes",
+    ],
+    coverageDescription:
+      "Côté Cagnes-sur-Mer, les déposes les plus demandées depuis Antibes :",
+    coverageAreas: [
+      "✓ Centre-ville de Cagnes-sur-Mer",
+      "✓ Cros-de-Cagnes et bord de mer",
+      "✓ Gare de Cagnes-sur-Mer",
+      "✓ Secteur de l'hippodrome",
+      "✓ Haut-de-Cagnes",
+      "✓ Hôtels et résidences proches du littoral",
+    ],
+    map: {
+      description:
+        "Cagnes-sur-Mer se situe sur le littoral, entre Antibes et Nice.",
+      info: "Le chauffeur part d'Antibes. Précisez Cros-de-Cagnes, la gare, l'hippodrome ou Haut-de-Cagnes : les accès ne sont pas les mêmes.",
+      embedUrl:
+        "https://maps.google.com/maps?q=Cagnes-sur-Mer&t=&z=13&ie=UTF8&iwloc=&output=embed",
+    },
+    infoCards: [
+      {
+        title: "Départ depuis Antibes",
+        description:
+          "Prise en charge au domicile, à l'hôtel, à la gare SNCF d'Antibes, à Juan-les-Pins ou au Cap d'Antibes. Communiquez l'adresse exacte.",
+      },
+      {
+        title: "Dépose à Cagnes-sur-Mer",
+        description:
+          "Centre, Cros-de-Cagnes, gare, hippodrome, Haut-de-Cagnes ou une adresse de résidence. Plus le lieu est précis, plus la dépose est simple.",
+      },
+    ],
+    sellingPoints: [
+      {
+        title: "✓ Base à Antibes",
+        description:
+          "Le service part d'Antibes. Cette page n'est pas celle d'un taxi installé à Cagnes : elle organise le trajet entre les deux communes.",
+      },
+      {
+        title: "✓ Quartiers distincts",
+        description:
+          "Littoral (Cros), gare, hippodrome et Haut-de-Cagnes n'ont pas les mêmes accès. Le quartier indiqué à la réservation oriente l'itinéraire.",
+      },
+      {
+        title: "✓ Gare et correspondances",
+        description:
+          "Utile avec des bagages entre la gare d'Antibes et un quartier de Cagnes, ou jusqu'à la gare de Cagnes-sur-Mer.",
+      },
+      {
+        title: "✓ Véhicules et bagages",
+        description:
+          "Berline ou van selon le nombre de passagers et les bagages. Précisez un groupe ou un besoin d'espace.",
+      },
+    ],
+    hospitalsTitle: "",
+    hospitals: [],
+    establishmentsTitle: "Lieux souvent demandés à Cagnes-sur-Mer",
+    establishments: [
+      {
+        name: "Gare de Cagnes-sur-Mer",
+        city: "Cagnes-sur-Mer",
+        speciality: "Gare SNCF",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Cros-de-Cagnes",
+        city: "Cagnes-sur-Mer",
+        speciality: "Bord de mer, hôtels et résidences",
+        website: "",
+        phone: "",
+      },
+      {
+        name: "Hippodrome de Cagnes-sur-Mer",
+        city: "Cagnes-sur-Mer",
+        speciality: "Secteur de l'hippodrome",
+        website: "",
+        phone: "",
+      },
+    ],
+    faq: [
+      {
+        question: "Comment réserver un taxi Antibes vers Cagnes-sur-Mer ?",
+        answer:
+          "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez l'adresse de départ à Antibes (ou Juan-les-Pins / Cap d'Antibes) et le lieu exact à Cagnes-sur-Mer.",
+      },
+      {
+        question: "Que faut-il préciser à la réservation ?",
+        answer:
+          "Adresse de départ, heure souhaitée, quartier ou adresse à Cagnes (Cros, gare, hippodrome, Haut-de-Cagnes, hôtel) et nombre de passagers. Signalez les bagages ou un aller-retour.",
+      },
+      {
+        question: "Pouvez-vous déposer à la gare de Cagnes-sur-Mer ?",
+        answer:
+          "Oui. Indiquez la gare comme destination, avec l'heure de train si vous en avez une, pour caler la prise en charge depuis Antibes.",
+      },
+      {
+        question: "Peut-on faire un aller-retour le même jour ?",
+        answer:
+          "Oui. Dites dès la réservation si l'heure de retour est fixe ou à confirmer plus tard.",
+      },
+      {
+        question: "Cette page remplace-t-elle le taxi conventionné CPAM ?",
+        answer:
+          "Non. Ici, il s'agit des courses Antibes ↔ Cagnes. Pour un transport prescrit, consultez l'article taxi conventionné entre Antibes et Cagnes-sur-Mer ou la page taxi conventionné CPAM.",
+      },
+    ],
+    homepageLink: {
+      before: "Pour un départ depuis Antibes, contactez ",
+      linkText: "Taxi Antibes",
+      after:
+        " : nous organisons le trajet vers Cagnes-sur-Mer depuis notre base antiboise.",
+      href: "/",
+    },
+    resource: {
+      description:
+        "Pages utiles pour réserver ou pour un trajet médical vers Cagnes.",
+      links: [
+        {
+          label: "Réservation en ligne",
+          url: "https://www.taxi-antibes.fr/reservation",
+        },
+        {
+          label: "Tarifs taxi Antibes",
+          url: "https://www.taxi-antibes.fr/tarifs",
+        },
+        {
+          label: "Taxi Antibes vers Nice",
+          url: "https://www.taxi-antibes.fr/secteurs/nice",
+        },
+        {
+          label: "Taxi à Juan-les-Pins",
+          url: "https://www.taxi-antibes.fr/secteurs/juan-les-pins",
+        },
+        {
+          label: "Taxi conventionné Antibes – Cagnes",
+          url: "https://www.taxi-antibes.fr/blog/taxi-conventionne-antibes-cagnes-sur-mer",
+        },
+        {
+          label: "Taxi conventionné CPAM",
+          url: "https://www.taxi-antibes.fr/services/taxi-conventionne",
+        },
+      ],
+    },
+    specialties: [
+      {
+        title: "Cros-de-Cagnes et bord de mer",
+        description:
+          "Dépose aux hôtels et résidences du littoral. Précisez le nom de l'établissement ou l'adresse : le stationnement y est souvent limité.",
+      },
+      {
+        title: "Gare et hippodrome",
+        description:
+          "Trajets vers la gare de Cagnes-sur-Mer ou le secteur de l'hippodrome, avec bagages si besoin.",
+      },
+    ],
+    pricing: [
+      "Le prix dépend de l'adresse de départ à Antibes, du lieu exact à Cagnes-sur-Mer et de l'horaire.",
+      "Le tarif est annoncé à la réservation.",
+      "Consultez la page Tarifs pour les exemples de prix.",
+      "Paiement CB, virement ou espèces.",
+    ],
+    commitments: [
+      {
+        title: "Trajet Antibes ↔ Cagnes",
+        description:
+          "Nous adaptons l'itinéraire selon le quartier (littoral, gare, hippodrome, Haut-de-Cagnes) et les conditions de circulation.",
+      },
+      {
+        title: "Réservation claire",
+        description:
+          "Adresse de départ, lieu d'arrivée et horaire suffisent pour confirmer la prise en charge.",
+      },
+      {
+        title: "Tarif annoncé",
+        description:
+          "Le prix est communiqué avant le départ. Voir la page Tarifs pour les exemples.",
+      },
+    ],
+    localBusiness: {
+      name: "Taxi Antibes Riviera",
+      image: "https://www.taxi-antibes.fr/taxi-antibes-cagnes-sur-mer-cros.png",
+      telephone: "+33749777621",
+      locality: "Antibes",
+      region: "Provence-Alpes-Côte d'Azur",
+      url: "https://www.taxi-antibes.fr/secteurs/cagnes-sur-mer",
+      latitude: "43.5804",
+      longitude: "7.1251",
     },
   },
   "juan-les-pins": {

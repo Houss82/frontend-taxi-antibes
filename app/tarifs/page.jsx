@@ -515,7 +515,16 @@ export default function TarifsPage() {
                     >
                       <div>
                         <div className="font-medium text-cyan-700">
-                          {dest.name}
+                          {dest.name === "Nice Centre" ? (
+                            <Link
+                              href="/secteurs/nice"
+                              className="underline hover:text-amber-600"
+                            >
+                              {dest.name}
+                            </Link>
+                          ) : (
+                            dest.name
+                          )}
                         </div>
                         {dest.fixed && (
                           <div className="text-xs text-gray-500">

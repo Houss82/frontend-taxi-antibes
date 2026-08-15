@@ -22,8 +22,12 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const title = `${data.hero.title} | Taxi Antibes`;
+  const title = data.seoTitle
+    ? { absolute: data.seoTitle }
+    : `${data.hero.title} | Taxi Antibes`;
+  const titleString = data.seoTitle ?? `${data.hero.title} | Taxi Antibes`;
   const description =
+    data.seoDescription ??
     data.introduction[0]?.slice(0, 155) ??
     `Taxi Antibes - Chauffeur privé ${data.cityName}.`;
   const canonical = `https://www.taxi-antibes.fr/secteurs/${data.slug}`; // ✅ Version canonique avec www
@@ -38,7 +42,7 @@ export async function generateMetadata({ params }) {
       "taxi antibes",
     ],
     openGraph: {
-      title,
+      title: titleString,
       description,
       url: canonical,
       type: "website",
@@ -53,7 +57,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: titleString,
       description,
       images: [`https://www.taxi-antibes.fr${data.hero.image}`], // ✅ Version canonique avec www
     },

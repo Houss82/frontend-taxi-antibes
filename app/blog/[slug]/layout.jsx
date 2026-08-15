@@ -17,11 +17,13 @@ export async function generateMetadata({ params }) {
     ? post.image
     : `${baseUrl}${post.image}`;
   return {
-    title: `${post.title} | Taxi Antibes`,
+    title: post.seoTitle
+      ? { absolute: post.seoTitle }
+      : `${post.title} | Taxi Antibes`,
     description: post.excerpt || `Découvrez ${post.title.toLowerCase()}.`,
     authors: [{ name: post.author }],
     openGraph: {
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.excerpt,
       url: `${baseUrl}/blog/${slug}`,
       siteName: "Taxi Antibes",
@@ -41,7 +43,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.excerpt,
       images: [imageUrl],
     },
