@@ -22,7 +22,7 @@ Le **07 49 77 76 21** est le numéro unique pour joindre la répartition **24h/2
 ## Pourquoi appeler plutôt que seulement réserver en ligne ?
 
 - **Course immédiate** ou changement de dernière minute  
-- **Préciser bagages, PMR, siège enfant**  
+- **Préciser bagages, PMR, siège enfant** — pour un vol, voir [Aéroport Nice avec enfants depuis Antibes](/blog/taxi-aeroport-nice-antibes-avec-enfants)
 - **Conseil sur l’horaire** (avion, train, RDV médical)
 
 Préparez : adresse de départ et d’arrivée, date et heure, nombre de passagers et de bagages.

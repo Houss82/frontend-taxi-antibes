@@ -226,7 +226,7 @@ Nos chauffeurs connaissent parfaitement les terminaux et vous déposent directem
 ### 🎯 Destinations supplémentaires
 
 - **Monaco** : voir notre page [Taxi Antibes → Monaco](/blog/Taxi-Antibes-Monaco)
-- **Cannes** : voir notre page [Taxi Antibes → Cannes](/blog/taxi-antibes-vers-cannes)
+- **Cannes** : voir le [guide Taxi Antibes → Cannes](/blog/taxi-antibes-vers-cannes) ou la page [taxi Antibes vers Cannes](/secteurs/cannes)
 - **Sophia Antipolis** : voir le [guide taxi Antibes → Sophia Antipolis](/blog/taxi-antibes-vers-sophia-antipolis-2026) ou la page [Taxi vers Sophia Antipolis](/secteurs/sophia-antipolis)
 - **Cap d'Antibes** : voir notre page [Taxi depuis le Cap d'Antibes](/blog/taxi-cap-antibes-destinations-guide-complet)
 

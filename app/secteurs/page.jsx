@@ -40,6 +40,20 @@ const sectors = [
     image: "/confort-maximum.jpeg",
   },
   {
+    slug: "cap-d-antibes",
+    name: "Cap d'Antibes",
+    description:
+      "Taxi depuis le Cap d'Antibes : villas, hôtels, aéroport Nice, Cannes et Monaco.",
+    image: "/taxi-antibes-cap-d'antibes.jpeg",
+  },
+  {
+    slug: "gare-sncf-antibes",
+    name: "Gare SNCF d'Antibes",
+    description:
+      "Taxi à la gare SNCF d'Antibes : prise en charge, centre-ville, aéroport et destinations Côte d'Azur.",
+    image: "/taxi-gare-antibes-centre-ville.jpeg",
+  },
+  {
     slug: "sophia-antipolis",
     name: "Sophia Antipolis",
     description:
@@ -100,10 +114,11 @@ export default function SecteursPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
                 Notre équipe de chauffeurs privés opère sur toute la Côte
                 d&apos;Azur avec un service premium 24/7. Découvrez nos pages
-                dédiées pour Monaco, Cannes, Nice, Fréjus, Juan-les-Pins, Sophia
-                Antipolis et l&apos;aéroport de Nice, et accédez à des
-                informations détaillées sur les transferts, les établissements de
-                santé desservis et nos engagements qualité.
+                dédiées pour Monaco, Cannes, Nice, Fréjus, Juan-les-Pins, le Cap
+                d&apos;Antibes, la gare SNCF, Sophia Antipolis et l&apos;aéroport
+                de Nice, et accédez à des informations détaillées sur les
+                transferts, les établissements de santé desservis et nos
+                engagements qualité.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Besoin d&apos;un chauffeur pour un évènement, un transfert

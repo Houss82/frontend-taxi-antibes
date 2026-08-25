@@ -42,10 +42,10 @@ _Cannes, ville emblématique de la Côte d'Azur avec sa célèbre Croisette et s
 ## 🕒 1. Temps & distance Antibes → Cannes
 
 <div class="section-box">
-- **Durée moyenne : 15 à 20 minutes**  
+- **Durée moyenne : 15 à 20 minutes** (indicative, selon le trafic)  
 - **Distance : 10-12 km**  
 - **Itinéraire : Route côtière ou autoroute A8**  
-- **Tarif moyen : 35–50€** (selon véhicule et destination précise)
+- **Tarif :** annoncé à la réservation — voir la page [Tarifs taxi Antibes](/tarifs)
 </div>
 
 Nos chauffeurs adaptent le trajet selon :
@@ -431,20 +431,9 @@ Les tarifs varient selon plusieurs critères :
 - **La période** (tarifs majorés pendant le Festival de Cannes et événements majeurs)
 - **Une étape supplémentaire** (Monaco, Nice, etc.)
 
-👉 **Tarif fixe annoncé AVANT le départ** - Pas de surprise à l'arrivée
+👉 Le **tarif est annoncé à la réservation**, selon l’adresse de départ, le lieu exact à Cannes et l’horaire.
 
-👉 <a href="/reservation">Demandez votre devis gratuit</a>
-
-**Exemple de tarifs indicatifs :**
-
-- Transfert simple Antibes → Cannes : 35-50€
-- Aller/retour simple : 60-80€
-- Demi-journée avec attente : 100-150€
-- Journée complète : 180-250€
-- Service Festival de Cannes (journée) : 250-350€
-- Cannes + Monaco : 120-180€
-
-_Tarifs indicatifs, devis personnalisé sur demande. Tarifs majorés pendant le Festival de Cannes et événements majeurs._
+👉 Consultez la page <a href="/tarifs">Tarifs taxi Antibes</a> pour les exemples de prix, ou <a href="/reservation">demandez un devis</a>.
 
 ---
 
@@ -480,6 +469,8 @@ _Tarifs indicatifs, devis personnalisé sur demande. Tarifs majorés pendant le 
 👉 <a href="/">Accueil Taxi Antibes</a>
 
 👉 <a href="/secteurs/cannes">📍 Page secteur Cannes : services, établissements et informations locales</a>
+
+👉 <a href="/tarifs">Tarifs taxi Antibes</a>
 
 👉 <a href="/services">Nos services premium</a>
 

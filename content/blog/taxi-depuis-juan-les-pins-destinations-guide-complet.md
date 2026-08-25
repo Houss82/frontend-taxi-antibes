@@ -124,7 +124,7 @@ Nos chauffeurs connaissent parfaitement les terminaux et vous déposent directem
 - **Suquet** : Vieille ville historique avec ruelles pittoresques
 - **Hôtels de prestige** : Martinez, Carlton, Majestic Barrière
 
-👉 En savoir plus : [Taxi Antibes → Cannes](https://www.taxi-antibes.fr/blog/taxi-antibes-vers-cannes)
+👉 En savoir plus : [guide Taxi Antibes → Cannes](/blog/taxi-antibes-vers-cannes). Pour réserver : [taxi Antibes vers Cannes](/secteurs/cannes).
 
 ---
 

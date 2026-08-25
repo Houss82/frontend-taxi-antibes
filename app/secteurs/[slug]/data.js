@@ -202,78 +202,81 @@ export const sectorData = {
   cannes: {
     slug: "cannes",
     cityName: "Cannes",
+    seoTitle: "Taxi Antibes → Cannes | Croisette et Palais",
+    seoDescription:
+      "Réservez un taxi entre Antibes et Cannes : Croisette, Palais des Festivals, La Bocca. Prise en charge depuis Antibes, 24h/24, tarif annoncé à la réservation.",
     hero: {
-      title: "Taxi Antibes vers Cannes ",
-      highlight: "Cannes & Croisette",
-      subtitle: "Transferts aéroport, hôtels 5★ et Palais des Festivals",
+      title: "Taxi Antibes vers Cannes",
+      highlight: "Cannes depuis Antibes",
+      subtitle: "Croisette, Palais des Festivals, La Bocca et Palm Beach",
       image: "/taxi-antibes-Cannes.jpg",
-      imageAlt: "Taxi haut de gamme à Cannes",
+      imageAlt: "Taxi Antibes vers Cannes, Croisette et Palais des Festivals",
     },
     introduction: [
-      "Situés à seulement 15 kilomètres de Cannes, nous sommes votre partenaire idéal pour tous vos déplacements vers la Croisette. Notre positionnement géographique à Antibes nous permet d'intervenir rapidement, que vous partiez du centre-ville, de Juan-les-Pins ou du Cap d'Antibes.",
-      "Nous desservons Cannes depuis plus de 10 ans, ce qui nous a permis de développer une connaissance approfondie des événements locaux (Festival de Cannes, MIPIM, Cannes Lions) et des besoins spécifiques de nos clients antibois se rendant régulièrement sur la Croisette.",
+      "Nous partons d'Antibes pour vos courses vers Cannes. Le chauffeur prend en charge à votre adresse (centre-ville, Juan-les-Pins, Cap d'Antibes ou gare SNCF d'Antibes) et vous dépose au lieu indiqué : Croisette, Palais des Festivals, La Bocca, Palm Beach ou une adresse précise en ville.",
+      "Cette page sert à réserver un trajet Antibes ↔ Cannes. Elle ne remplace pas le guide détaillé du blog : indiquez simplement le point de départ et le lieu de dépose pour caler la prise en charge.",
     ],
     secondaryIntro: [
-      "Pendant le Festival de Cannes, nous proposons des services spéciaux pour les résidents antibois : navettes matin et soir, stationnement réservé près du Palais, et coordination avec les horaires de projection. Nous connaissons les meilleurs moments pour éviter les embouteillages sur la Croisette.",
-      "Pour les entreprises antiboises participant aux salons professionnels (MIPIM, MIPCOM), nous organisons des navettes quotidiennes avec horaires adaptés aux conférences. Nos véhicules sont équipés de prises USB et WiFi pour travailler pendant le trajet.",
+      "Précisez à la réservation le quartier ou le lieu exact à Cannes (Croisette, Palais des Festivals, La Bocca, Palm Beach, hôtel ou gare) pour une dépose plus simple.",
+      "La durée dépend de l'heure, du trafic et des événements. Aucun temps de trajet n'est garanti ; une marge est utile, surtout lorsque la Croisette est chargée. Pour un vol, voir la page taxi aéroport Nice. Pour un transport prescrit, voir la page taxi conventionné CPAM.",
     ],
-    servicesTitle: "Nos prestations Taxi Cannes",
+    servicesTitle: "Courses taxi Antibes ↔ Cannes",
     services: [
-      "Transferts Aéroport Nice ↔ Cannes / Mandelieu",
-      "Navettes congrès (MIPIM, MIPCOM, Cannes Lions, Film Festival)",
-      "Déplacements hôtels 5★ : Martinez, Majestic, Carlton",
-      "Transferts portuaires yacht & croisière",
-      "Chauffeur privé shopping & restaurants",
-      "Transport médical vers CH Cannes & cliniques privées",
+      "Dépose Croisette et centre-ville de Cannes",
+      "Palais des Festivals",
+      "Cannes-la-Bocca",
+      "Palm Beach et Pointe Croisette",
+      "Retour vers Antibes, Juan-les-Pins ou le Cap d'Antibes",
+      "Trajets selon l'adresse indiquée à la réservation",
     ],
-    coverageDescription: "Zones principales couvertes par nos chauffeurs :",
+    coverageDescription:
+      "Côté Cannes, les déposes les plus demandées depuis Antibes :",
     coverageAreas: [
-      "✓ Croisette & centre-ville",
-      "✓ Palm Beach & Pointe Croisette",
-      "✓ Quartier des congrès & Port Canto",
-      "✓ Cannes-la-Bocca & Mandelieu",
-      "✓ Mougins & Sophia Antipolis",
-      "✓ Golfe Juan & Vallauris",
+      "✓ Croisette et centre-ville",
+      "✓ Palais des Festivals",
+      "✓ Palm Beach et Pointe Croisette",
+      "✓ Cannes-la-Bocca",
+      "✓ Hôtels et adresses précises en ville",
     ],
     map: {
       description:
-        "Carte interactive de notre activité sur Cannes et ses alentours.",
-      info: "Depuis Antibes, nous rejoignons Cannes en 20-25 minutes. Nous proposons également des trajets combinés incluant plusieurs destinations : Antibes-Cannes-Monaco ou Antibes-Cannes-Aéroport Nice.",
+        "Cannes se situe sur le littoral, à proximité d'Antibes.",
+      info: "Le chauffeur part d'Antibes. La durée est indicative et dépend de l'heure, du trafic et du point de dépose (Croisette, Palais, La Bocca ou Palm Beach).",
       embedUrl:
         "https://maps.google.com/maps?q=Cannes&t=&z=13&ie=UTF8&iwloc=&output=embed",
     },
     infoCards: [
       {
-        title: "Expertise événements cannois",
+        title: "Départ depuis Antibes",
         description:
-          "Nous connaissons parfaitement les calendriers du Festival, MIPIM et autres salons. Nos clients antibois bénéficient de conseils sur les meilleurs horaires et itinéraires pour éviter les files d'attente.",
+          "Prise en charge au domicile, à l'hôtel, à la gare SNCF d'Antibes, à Juan-les-Pins ou au Cap d'Antibes. Communiquez l'adresse exacte.",
       },
       {
-        title: "Service résidents Antibes",
+        title: "Dépose à Cannes",
         description:
-          "Pour les habitants d'Antibes se rendant régulièrement à Cannes, nous proposons des tarifs préférentiels et une connaissance approfondie des besoins locaux (courses, rendez-vous, sorties).",
+          "Croisette, Palais des Festivals, La Bocca, Palm Beach, hôtel ou gare. Plus le lieu est précis, plus la dépose est simple.",
       },
     ],
     sellingPoints: [
       {
-        title: "✓ Proximité géographique",
+        title: "✓ Base à Antibes",
         description:
-          "Situés à seulement 15 km de Cannes, nous intervenons rapidement depuis Antibes. Temps de trajet optimisé grâce à notre connaissance des routes secondaires.",
+          "Le service part d'Antibes. Cette page n'est pas celle d'un taxi installé à Cannes : elle organise le trajet entre les deux communes.",
       },
       {
-        title: "✓ Expertise événements cannois",
+        title: "✓ Déposes précises",
         description:
-          "Nous connaissons parfaitement les calendriers du Festival, MIPIM et autres salons. Nos clients antibois bénéficient de conseils sur les meilleurs horaires et itinéraires.",
+          "Croisette, Palais des Festivals, La Bocca ou Palm Beach : indiquez le lieu exact pour caler l'horaire et l'accès.",
       },
       {
-        title: "✓ Service résidents Antibes",
+        title: "✓ Trajets réguliers",
         description:
-          "Pour les habitants d'Antibes se rendant régulièrement à Cannes, nous proposons des tarifs préférentiels et une connaissance approfondie des besoins locaux.",
+          "Pour les allers fréquents entre Antibes et Cannes, indiquez vos horaires habituels à la réservation : nous organisons le trajet au cas par cas.",
       },
       {
-        title: "✓ Navettes entreprises",
+        title: "✓ Véhicules et bagages",
         description:
-          "Pour les entreprises antiboises participant aux salons, nous organisons des navettes quotidiennes avec horaires adaptés et facturation détaillée.",
+          "Berline ou van selon le nombre de passagers et les bagages. Précisez un groupe, des valises volumineuses ou un besoin d'accompagnant.",
       },
     ],
     hospitalsTitle: "Établissements desservis depuis Cannes",
@@ -296,7 +299,7 @@ export const sectorData = {
       },
     ],
     establishmentsTitle:
-      "Lieux emblématiques accessibles rapidement en taxi depuis Cannes",
+      "Lieux demandés pour une dépose à Cannes",
     establishments: [
       {
         name: "Palais des Festivals",
@@ -313,94 +316,113 @@ export const sectorData = {
           "https://www.hyatt.com/unbound-collection/fr-FR/jcagh-hotel-martinez",
         phone: "04 93 90 12 34",
       },
-      {
-        name: "Aéroport Nice Côte d'Azur",
-        city: "Nice",
-        speciality: "Terminal 1 & 2",
-        website: "https://www.nice.aeroport.fr/",
-        phone: "08 20 42 33 33",
-      },
     ],
     faq: [
       {
-        question:
-          "Comment organiser des navettes pendant un congrès à Cannes ?",
+        question: "Comment réserver un taxi depuis Antibes vers Cannes ?",
         answer:
-          "Envoyez-nous votre planning et la liste des passagers. Nous vous proposons un dispositif sur mesure avec chauffeurs dédiés, prise en charge multi-horaires et coordinateur.",
+          "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez votre adresse de départ à Antibes (ou Juan-les-Pins / Cap d'Antibes) et le lieu exact à Cannes.",
+      },
+      {
+        question: "Où le chauffeur prend-il en charge à Antibes ?",
+        answer:
+          "Au domicile, à l'hôtel, en entreprise, à la gare SNCF d'Antibes, à Juan-les-Pins ou au Cap d'Antibes. Communiquez l'adresse exacte et l'heure souhaitée.",
+      },
+      {
+        question: "Où le chauffeur peut-il déposer à Cannes ?",
+        answer:
+          "Croisette, Palais des Festivals, La Bocca, Palm Beach, un hôtel ou la gare. Plus l'adresse est précise, plus la dépose est simple.",
       },
       {
         question:
-          "Proposez-vous des transferts vers Cannes Mandelieu Aerodrome ?",
+          "La circulation est-elle plus dense pendant les événements à Cannes ?",
         answer:
-          "Oui, nous sommes habilités à accéder au terminal aviation d'affaires et gérons les arrivées de jets privés.",
+          "Oui, notamment autour de la Croisette et du Palais. La durée reste indicative et dépend du trafic : prévoyez une marge. Le détail des événements est traité dans le guide blog Cannes.",
+      },
+      {
+        question: "Quels véhicules sont disponibles ?",
+        answer:
+          "Berline ou van selon le nombre de passagers et les bagages. Précisez un groupe ou un besoin d'espace à la réservation.",
+      },
+      {
+        question: "Comment est annoncé le tarif Antibes ↔ Cannes ?",
+        answer:
+          "Le tarif est annoncé à la réservation, selon l'adresse de départ, le lieu exact à Cannes et l'horaire. Consultez la page Tarifs pour les exemples de prix.",
       },
     ],
-    resource: {
-      description:
-        "Préparez votre venue à Cannes avec nos conseils transferts et nos articles dédiés aux trajets Antibes ↔ Cannes.",
-      links: [
-        {
-          label:
-            "📖 Guide complet : Taxi Antibes vers Cannes (article détaillé)",
-          url: "/blog/taxi-antibes-vers-cannes",
-        },
-        {
-          label: "Tous nos articles de blog",
-          url: "/blog",
-        },
-      ],
-    },
     homepageLink: {
       before: "Pour vos départs ou retours depuis Antibes, contactez ",
       linkText: "Taxi Antibes",
       after:
-        " : notre équipe basée à Antibes planifie vos transferts Antibes ↔ Cannes avec la même exigence que les trajets intra-Cannes.",
+        " : notre équipe basée à Antibes planifie vos transferts Antibes ↔ Cannes.",
       href: "/",
+    },
+    resource: {
+      description:
+        "Pages utiles pour réserver un trajet Antibes ↔ Cannes ou pour le guide détaillé.",
+      links: [
+        {
+          label: "Réservation en ligne",
+          url: "https://www.taxi-antibes.fr/reservation",
+        },
+        {
+          label: "Tarifs taxi Antibes",
+          url: "https://www.taxi-antibes.fr/tarifs",
+        },
+        {
+          label: "Guide Taxi Antibes vers Cannes",
+          url: "/blog/taxi-antibes-vers-cannes",
+        },
+        {
+          label: "Taxi à Juan-les-Pins",
+          url: "https://www.taxi-antibes.fr/secteurs/juan-les-pins",
+        },
+      ],
     },
     specialties: [
       {
-        title: "Gestion congrès & salons",
+        title: "Croisette et Palais des Festivals",
         description:
-          "Coordination flotte pour MIPIM, Cannes Lions, MAPIC, TFWA.",
+          "Dépose sur la Croisette ou au Palais selon l'adresse indiquée. Pendant les événements, une marge sur l'horaire est utile.",
       },
       {
-        title: "Transferts de luxe",
+        title: "La Bocca et Palm Beach",
         description:
-          "Accueil VIP avec véhicules prestige et chauffeurs multilingues.",
+          "Trajets vers Cannes-la-Bocca, Palm Beach ou Pointe Croisette, avec bagages si besoin.",
       },
     ],
     pricing: [
-      "Antibes ↔ Cannes à partir de 45€",
-      "Cannes ↔ Monaco dès 130€",
-      "Mise à disposition 80€/heure (minimum 2h)",
-      "Devis personnalisé pour groupes et événements",
+      "Le prix dépend de l'adresse de départ à Antibes, du lieu exact à Cannes et de l'horaire.",
+      "Le tarif est annoncé à la réservation.",
+      "Consultez la page Tarifs pour les exemples de prix.",
+      "Paiement CB, virement ou espèces.",
     ],
     commitments: [
       {
-        title: "Connaissance route Antibes-Cannes",
+        title: "Trajet Antibes ↔ Cannes",
         description:
-          "Plus de 10 ans d'expérience sur cette route. Nous connaissons les meilleurs itinéraires selon l'heure et la saison, notamment pendant les événements cannois.",
+          "Nous adaptons l'itinéraire selon le point de dépose (Croisette, Palais, La Bocca, Palm Beach) et les conditions de circulation. Aucune durée n'est garantie.",
       },
       {
-        title: "Service adapté résidents",
+        title: "Réservation claire",
         description:
-          "Pour les clients réguliers d'Antibes, nous proposons un suivi personnalisé avec mémorisation de vos préférences et conseils sur les meilleurs moments pour vos déplacements.",
+          "Adresse de départ, heure souhaitée et lieu exact à Cannes suffisent pour organiser la course.",
       },
       {
-        title: "Réactivité locale",
+        title: "Tarif annoncé",
         description:
-          "Base à Antibes permettant une intervention rapide. Réaction en moins de 10 minutes pour les urgences ou modifications de dernière minute.",
+          "Le tarif est annoncé à l'avance pour votre trajet Antibes-Cannes. Voir la page Tarifs pour les exemples.",
       },
     ],
     localBusiness: {
-      name: "Taxi Cannes - Taxi Antibes",
-      image: "https://www.taxi-antibes.fr/services.webp",
+      name: "Taxi Antibes Riviera",
+      image: "https://www.taxi-antibes.fr/taxi-antibes-Cannes.jpg",
       telephone: "+33749777621",
-      locality: "Cannes",
+      locality: "Antibes",
       region: "Provence-Alpes-Côte d'Azur",
       url: "https://www.taxi-antibes.fr/secteurs/cannes",
-      latitude: "43.552847",
-      longitude: "7.017369",
+      latitude: "43.5804",
+      longitude: "7.1251",
     },
   },
   nice: {

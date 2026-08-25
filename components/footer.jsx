@@ -52,6 +52,14 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link
+                  href="/services/taxi-conventionne-pasteur-nice"
+                  className="hover:text-white transition-colors"
+                >
+                  Taxi Antibes → Pasteur
+                </Link>
+              </li>
+              <li>
                 <Link href="/services" className="hover:text-white transition-colors">
                   Tous les services
                 </Link>
@@ -71,12 +79,25 @@ export function Footer() {
             <ul className="space-y-2 text-white/80 font-light">
               <li>Antibes</li>
               <li>
+                <Link href="/secteurs/juan-les-pins" className="hover:text-white transition-colors">
+                  Juan-les-Pins
+                </Link>
+              </li>
+              <li>
                 <Link href="/secteurs/nice" className="hover:text-white transition-colors">
                   Nice
                 </Link>
               </li>
-              <li>Cannes</li>
-              <li>Monaco</li>
+              <li>
+                <Link href="/secteurs/cannes" className="hover:text-white transition-colors">
+                  Cannes
+                </Link>
+              </li>
+              <li>
+                <Link href="/secteurs/monaco" className="hover:text-white transition-colors">
+                  Monaco
+                </Link>
+              </li>
             </ul>
           </div>
 

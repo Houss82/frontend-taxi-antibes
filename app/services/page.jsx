@@ -2,10 +2,10 @@ import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
-  Building,
   Clock,
   Coffee,
   Anchor,
+  Heart,
   MapPin,
   Newspaper,
   Phone,
@@ -13,7 +13,6 @@ import {
   Shield,
   Star,
   Stethoscope,
-  Users,
   Wifi,
 } from "lucide-react";
 import Link from "next/link";
@@ -62,32 +61,7 @@ const services = [
       "Tarifs transparents",
     ],
     price: "À partir de 15€",
-  },
-  {
-    icon: Building,
-    title: "Transferts d'Entreprise",
-    description:
-      "Service taxi Antibes professionnel pour vos déplacements d'affaires. Véhicules haut de gamme et chauffeurs en uniforme.",
-    features: [
-      "Véhicules premium",
-      "Chauffeurs en uniforme",
-      "Facturation simplifiée",
-      "Service 24/7",
-    ],
-    price: "Sur devis",
-  },
-  {
-    icon: Users,
-    title: "Événements & Mariages",
-    description:
-      "Transport de luxe taxi Antibes pour vos événements spéciaux. Flotte de véhicules premium pour tous vos invités.",
-    features: [
-      "Véhicules de luxe",
-      "Décoration florale",
-      "Champagne offert",
-      "Service personnalisé",
-    ],
-    price: "Sur devis",
+    link: "/",
   },
   {
     icon: Stethoscope,
@@ -102,6 +76,20 @@ const services = [
     ],
     price: "Selon prescription CPAM",
     link: "/services/taxi-conventionne",
+  },
+  {
+    icon: Heart,
+    title: "Taxi Antibes → Pasteur Nice",
+    description:
+      "Réservez un taxi conventionné entre Antibes et l'Hôpital Pasteur à Nice. Prise en charge locale, dépose au bon bâtiment et service 24h/24.",
+    features: [
+      "Hôpital Pasteur Nice",
+      "Infos à fournir",
+      "Dépose Nice Est",
+      "Service 24/7",
+    ],
+    price: "Selon prescription CPAM",
+    link: "/services/taxi-conventionne-pasteur-nice",
   },
 ];
 

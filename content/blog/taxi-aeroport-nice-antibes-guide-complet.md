@@ -162,7 +162,7 @@ Notre système de **suivi de vol en temps réel** vous garantit une ponctualité
 - **Attente gratuite** : 30 minutes d'attente gratuite en cas de retard de vol
 - **Paiement flexible** : Carte bancaire, espèces, virement ou facturation entreprise
 - **Service VIP** : Pour les transferts professionnels ou événements spéciaux
-- **Sièges enfants** : Disponibles gratuitement sur demande (précisez l'âge lors de la réservation)
+- **Sièges enfants** : Disponibles gratuitement sur demande (précisez l'âge lors de la réservation). Organisation détaillée : [Aéroport Nice avec enfants depuis Antibes](/blog/taxi-aeroport-nice-antibes-avec-enfants).
 
 👉 Besoin d'un **transfert combiné** (aéroport + hôtel + restaurant) ? Nos chauffeurs peuvent vous proposer un **forfait journée** avec véhicule dédié.
 

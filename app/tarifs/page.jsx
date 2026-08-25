@@ -454,7 +454,15 @@ export default function TarifsPage() {
 
               <ul className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-3">
                 <li className="p-4 bg-white border border-cyan-100 rounded-xl">
-                  <strong className="text-cyan-700">Antibes → Cannes</strong> : à partir de 89 €
+                  <strong className="text-cyan-700">
+                    <Link
+                      href="/secteurs/cannes"
+                      className="underline hover:text-amber-600"
+                    >
+                      Antibes → Cannes
+                    </Link>
+                  </strong>{" "}
+                  : à partir de 89 €
                 </li>
                 <li className="p-4 bg-white border border-cyan-100 rounded-xl">
                   <strong className="text-cyan-700">Antibes → Monaco</strong> : à partir de 99 €

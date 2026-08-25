@@ -237,13 +237,19 @@ export default function Home() {
                   Antibes
                 </strong>
                 ,{" "}
-                <strong className="font-bold text-cyan-600 text-lg">
+                <Link
+                  href="/secteurs/juan-les-pins"
+                  className="font-bold text-cyan-600 text-lg hover:text-amber-600 underline"
+                >
                   Juan-les-Pins
-                </strong>
+                </Link>
                 ,{" "}
-                <strong className="font-bold text-cyan-600 text-lg">
+                <Link
+                  href="/secteurs/cannes"
+                  className="font-bold text-cyan-600 text-lg hover:text-amber-600 underline"
+                >
                   Cannes
-                </strong>
+                </Link>
                 ,{" "}
                 <Link
                   href="/secteurs/nice"
@@ -252,9 +258,12 @@ export default function Home() {
                   Nice
                 </Link>{" "}
                 et{" "}
-                <strong className="font-bold text-cyan-600 text-lg">
+                <Link
+                  href="/secteurs/monaco"
+                  className="font-bold text-cyan-600 text-lg hover:text-amber-600 underline"
+                >
                   Monaco
-                </strong>
+                </Link>
                 . Spécialiste du{" "}
                 <Link
                   href="/services/taxi-aeroport-nice"
