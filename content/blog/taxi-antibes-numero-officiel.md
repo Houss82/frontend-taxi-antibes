@@ -32,7 +32,7 @@ Préparez : adresse de départ et d’arrivée, date et heure, nombre de passage
 - **Antibes**, Juan-les-Pins, Cap d’Antibes, Sophia Antipolis, communes voisines  
 - **Gare SNCF** — voir aussi le [guide taxi gare Antibes](/blog/taxi-gare-sncf-antibes-guide-complet)  
 - **Aéroport Nice** — guide pratique [blog](/blog/taxi-aeroport-nice-antibes-guide-complet) ; **réservation transfert** : [taxi aéroport depuis Antibes](/services/taxi-aeroport-nice)  
-- **Longues distances** (Monaco, Cannes, etc.) : tarifs sur la [page tarifs](/tarifs)
+- **Longues distances** ([Monaco](/secteurs/monaco), Cannes, etc.) : tarifs sur la [page tarifs](/tarifs)
 
 ## Réserver autrement
 

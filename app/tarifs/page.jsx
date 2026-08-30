@@ -465,7 +465,15 @@ export default function TarifsPage() {
                   : à partir de 89 €
                 </li>
                 <li className="p-4 bg-white border border-cyan-100 rounded-xl">
-                  <strong className="text-cyan-700">Antibes → Monaco</strong> : à partir de 99 €
+                  <strong className="text-cyan-700">
+                    <Link
+                      href="/secteurs/monaco"
+                      className="underline hover:text-amber-600"
+                    >
+                      Antibes → Monaco
+                    </Link>
+                  </strong>{" "}
+                  : à partir de 99 €
                 </li>
                 <li className="p-4 bg-white border border-cyan-100 rounded-xl">
                   <strong className="text-cyan-700">Antibes → Juan-les-Pins</strong> : 60-70 €

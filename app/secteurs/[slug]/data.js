@@ -2,80 +2,78 @@ export const sectorData = {
   monaco: {
     slug: "monaco",
     cityName: "Monaco",
+    seoTitle: "Taxi Antibes → Monaco | Port Hercule et Monte-Carlo",
+    seoDescription:
+      "Réservez un taxi entre Antibes et Monaco : Port Hercule, Monte-Carlo, hôtels. Prise en charge depuis Antibes, 24h/24, tarif annoncé à la réservation.",
     hero: {
-      title: "Taxi Antibes vers Monaco ",
-      highlight: "Monaco & Riviera",
-      subtitle: "Transferts aéroport, port Hercule et hôtels 5 étoiles 24/7",
+      title: "Taxi Antibes vers Monaco",
+      highlight: "Monaco depuis Antibes",
+      subtitle: "Port Hercule, Monte-Carlo et hôtels",
       image: "/taxi-antibes-Monaco-centre.jpeg",
-      imageAlt: "Taxi premium à Monaco",
+      imageAlt: "Taxi Antibes vers Monaco, Port Hercule et Monte-Carlo",
     },
     introduction: [
-      "Depuis notre base à Antibes, nous desservons quotidiennement Monaco pour tous vos besoins de transport. Notre proximité géographique (30 minutes de trajet) nous permet d'intervenir rapidement, que vous partiez du port Vauban, de Juan-les-Pins ou directement de votre résidence antiboise.",
-      "Spécialisés dans les trajets Antibes-Monaco, nos chauffeurs maîtrisent parfaitement les itinéraires optimaux selon l'heure et la saison. Nous évitons systématiquement les embouteillages estivaux en empruntant les routes secondaires lorsque nécessaire, garantissant ainsi des temps de trajet prévisibles même en haute saison.",
-      "Notre flotte Mercedes est régulièrement entretenue dans nos ateliers partenaires à Antibes, assurant un niveau de confort et de fiabilité constant pour vos déplacements vers la Principauté. Nous proposons également des services sur-mesure pour les résidents antibois travaillant à Monaco.",
+      "Nous partons d'Antibes pour vos courses vers Monaco. Le chauffeur prend en charge à votre adresse (centre-ville, Juan-les-Pins, Cap d'Antibes ou gare SNCF d'Antibes) et vous dépose au lieu indiqué : Port Hercule, Monte-Carlo, un hôtel ou une adresse précise.",
+      "Cette page sert à réserver un trajet Antibes ↔ Monaco. Elle ne remplace pas le guide du trajet : indiquez le point de départ et le lieu de dépose pour caler la prise en charge.",
     ],
     secondaryIntro: [
-      "De nombreux clients antibois nous font confiance pour leurs rendez-vous médicaux réguliers à Monaco. Nous connaissons les horaires de consultation, les meilleurs moments pour éviter le trafic et les parkings les plus pratiques près des établissements de santé monégasques.",
-      "Pour les événements exceptionnels (Grand Prix, Monaco Yacht Show, galas), nous proposons des forfaits journée avec véhicule et chauffeur dédié. Idéal si vous résidez à Antibes et devez vous rendre plusieurs fois à Monaco dans la même journée.",
+      "Précisez à la réservation le quartier ou le lieu exact à Monaco (Port Hercule, Monte-Carlo, hôtel) pour une dépose plus simple.",
+      "La circulation dépend de l'heure et des événements. Aucun temps de trajet n'est garanti ; une marge est utile. Pour un vol, voir la page taxi aéroport Nice. Le détail du trajet est dans le guide du trajet Antibes – Monaco.",
     ],
-    servicesTitle: "Services de transport à Monaco",
+    servicesTitle: "Courses taxi Antibes ↔ Monaco",
     services: [
-      "Transferts aéroport Nice ↔ Monaco avec suivi de vol",
-      "Accueil portuaire (ponton des yachts, SeaDream, Silversea...)",
-      "Mises à disposition business ou événements luxueux",
-      "Transferts pour galas au Sporting Monte-Carlo",
-      "Transport médical vers le CHPG et établissements privés",
-      "Excursions prestigieuses : Eze, Saint-Paul, Dolceacqua",
+      "Dépose Port Hercule",
+      "Dépose Monte-Carlo",
+      "Hôtels et adresses précises à Monaco",
+      "Retour vers Antibes, Juan-les-Pins ou le Cap d'Antibes",
+      "Trajets selon l'adresse indiquée à la réservation",
     ],
     coverageDescription:
-      "Nous couvrons Monaco et tout le littoral limitrophe :",
+      "Côté Monaco, les déposes les plus demandées depuis Antibes :",
     coverageAreas: [
-      "✓ Monte-Carlo & Carré d'Or",
-      "✓ La Condamine & Port Hercule",
-      "✓ Fontvieille & zone industrielle",
-      "✓ Jardin Exotique & Boulevard de Belgique",
-      "✓ Beausoleil & Cap-d'Ail",
-      "✓ Roquebrune-Cap-Martin & Menton",
+      "✓ Monte-Carlo",
+      "✓ Port Hercule et La Condamine",
+      "✓ Hôtels et adresses précises",
     ],
     map: {
       description:
-        "Visualisez notre zone d'intervention principale autour de Monaco.",
-      info: "Depuis Antibes, nous desservons Monaco en 40 minutes environ. Nous proposons également des trajets combinés Antibes-Monaco-Nice ou Antibes-Monaco-Cannes selon vos besoins.",
+        "Monaco se situe sur le littoral, à l'est d'Antibes.",
+      info: "Le chauffeur part d'Antibes. La durée dépend de l'heure, du trafic et du point de dépose (Port Hercule, Monte-Carlo ou hôtel). Aucune durée n'est garantie.",
       embedUrl:
         "https://maps.google.com/maps?q=Monaco&t=&z=13&ie=UTF8&iwloc=&output=embed",
     },
     infoCards: [
       {
-        title: "Connaissance locale Antibes-Monaco",
+        title: "Départ depuis Antibes",
         description:
-          "Nos chauffeurs résidant dans la région connaissent les raccourcis, les horaires de pointe et les meilleurs itinéraires selon la saison touristique.",
+          "Prise en charge au domicile, à l'hôtel, à la gare SNCF d'Antibes, à Juan-les-Pins ou au Cap d'Antibes. Communiquez l'adresse exacte.",
       },
       {
-        title: "Service navette régulière",
+        title: "Dépose à Monaco",
         description:
-          "Pour les professionnels antibois travaillant à Monaco, nous proposons des abonnements navette avec horaires fixes et tarifs préférentiels.",
+          "Port Hercule, Monte-Carlo, hôtel ou adresse précise. Plus le lieu est précis, plus la dépose est simple.",
       },
     ],
     sellingPoints: [
       {
-        title: "✓ Base locale Antibes",
+        title: "✓ Base à Antibes",
         description:
-          "Chauffeurs résidant à Antibes et connaissant parfaitement les trajets vers Monaco. Réaction rapide en cas d'urgence ou de modification de dernière minute.",
+          "Le service part d'Antibes. Cette page n'est pas celle d'un taxi installé à Monaco : elle organise le trajet entre Antibes et Monaco.",
       },
       {
-        title: "✓ Expertise route Antibes-Monaco",
+        title: "✓ Déposes précises",
         description:
-          "Plus de 10 ans d'expérience sur cette route. Nous connaissons les meilleurs itinéraires selon l'heure, la saison et les événements (Grand Prix, Monaco Yacht Show).",
+          "Port Hercule, Monte-Carlo ou un hôtel : indiquez le lieu exact pour caler l'horaire et l'accès.",
       },
       {
-        title: "✓ Service résidents antibois",
+        title: "✓ Aller et retour",
         description:
-          "Tarifs préférentiels et services adaptés pour les habitants d'Antibes se rendant régulièrement à Monaco (travail, rendez-vous médicaux, événements).",
+          "Vous pouvez réserver l'aller, le retour, ou les deux. Chaque trajet a son heure et son adresse.",
       },
       {
-        title: "✓ Flotte entretenue localement",
+        title: "✓ Tarif annoncé",
         description:
-          "Véhicules Mercedes entretenus dans nos ateliers partenaires à Antibes, garantissant un niveau de confort et de fiabilité constant.",
+          "Le tarif est annoncé à la réservation, selon le départ, le lieu exact à Monaco et l'horaire. Consultez la page Tarifs pour les exemples.",
       },
     ],
     hospitalsTitle: "Établissements desservis depuis Monaco",
@@ -98,7 +96,7 @@ export const sectorData = {
       },
     ],
     establishmentsTitle:
-      "Établissements de prestige accessibles en taxi privé depuis Monaco",
+      "Lieux demandés pour une dépose à Monaco",
     establishments: [
       {
         name: "Hôtel de Paris Monte-Carlo",
@@ -115,88 +113,113 @@ export const sectorData = {
         website: "https://www.grimaldiforum.com/",
         phone: "00 377 99 99 20 00",
       },
-      {
-        name: "Aéroport Nice Côte d'Azur",
-        city: "Nice",
-        speciality: "Terminal 1 & 2",
-        website: "https://www.nice.aeroport.fr/",
-        phone: "08 20 42 33 33",
-      },
     ],
     faq: [
       {
-        question:
-          "Comment réserver un taxi pour Monaco depuis Antibes ou l'aéroport de Nice ?",
+        question: "Comment réserver un taxi Antibes → Monaco ?",
         answer:
-          "Contactez-nous par téléphone ou via le formulaire de réservation. Nous suivons votre vol en temps réel et un chauffeur vous attend au terminal avec un panneau nominatif.",
+          "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez votre adresse de départ à Antibes (ou Juan-les-Pins / Cap d'Antibes) et le lieu exact à Monaco.",
       },
       {
-        question: "Proposez-vous un service lors du Grand Prix de Monaco ?",
+        question:
+          "Quelles informations préciser lors de la réservation ?",
         answer:
-          "Oui, nous mettons en place des équipes dédiées avec coordinateur sur site, gestion des navettes, pass d'accès et véhicules adaptés au trafic dense de l'événement.",
+          "La date, l'heure, l'adresse de prise en charge, le lieu de dépose à Monaco (Port Hercule, Monte-Carlo, hôtel ou adresse), le nombre de passagers et les bagages s'il y a lieu.",
+      },
+      {
+        question: "Où consulter les tarifs ?",
+        answer:
+          "Le tarif est annoncé à la réservation, selon le départ, le lieu exact à Monaco et l'horaire. Consultez la page Tarifs pour les exemples de prix.",
+      },
+      {
+        question: "Peut-on réserver le retour Monaco → Antibes ?",
+        answer:
+          "Oui. Indiquez l'heure et l'adresse de prise en charge à Monaco, ainsi que le lieu de dépose à Antibes. Aller et retour peuvent être demandés ensemble ou séparément.",
+      },
+      {
+        question:
+          "La circulation est-elle plus dense lors d'événements à Monaco ?",
+        answer:
+          "Oui, notamment autour du Port Hercule et de Monte-Carlo. La durée reste indicative : prévoyez une marge. Aucun dispositif particulier n'est garanti. Le contexte du trajet est détaillé dans le guide du trajet Antibes – Monaco.",
       },
     ],
+    homepageLink: {
+      before: "Pour vos départs ou retours depuis Antibes, contactez ",
+      linkText: "Taxi Antibes",
+      after:
+        " : notre équipe basée à Antibes planifie vos transferts Antibes ↔ Monaco.",
+      href: "/",
+    },
     resource: {
       description:
-        "Envie d'organiser un séjour ou un déplacement professionnel à Monaco ? Consultez notre guide complet pour optimiser votre agenda.",
+        "Pages utiles pour réserver un trajet Antibes ↔ Monaco ou pour le guide détaillé.",
       links: [
         {
-          label: "Guide transfert Monaco",
-          url: "https://www.taxi-antibes.fr/blog",
+          label: "Réservation en ligne",
+          url: "https://www.taxi-antibes.fr/reservation",
+        },
+        {
+          label: "Tarifs taxi Antibes",
+          url: "https://www.taxi-antibes.fr/tarifs",
+        },
+        {
+          label: "Guide du trajet Antibes – Monaco",
+          url: "/blog/Taxi-Antibes-Monaco",
+        },
+        {
+          label: "Taxi aéroport Nice",
+          url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+        },
+        {
+          label: "Taxi à Juan-les-Pins",
+          url: "https://www.taxi-antibes.fr/secteurs/juan-les-pins",
         },
       ],
     },
-    homepageLink: {
-      before: "Besoin d'un relais local entre Monaco et Antibes ? L'équipe de ",
-      linkText: "Taxi Antibes",
-      after:
-        " vous répond depuis Antibes 24h/24 pour orchestrer vos transferts Monaco ↔ Antibes.",
-      href: "/",
-    },
     specialties: [
       {
-        title: "Transport business",
+        title: "Port Hercule",
         description:
-          "Prise en charge des dirigeants, roadshows financiers et réunions confidentielles.",
+          "Dépose au Port Hercule selon l'adresse indiquée. Précisez le point de rendez-vous pour un arrêt plus simple.",
       },
       {
-        title: "Transferts yacht & croisière",
+        title: "Monte-Carlo et hôtels",
         description:
-          "Acheminement entre le port Hercule, les mouillages et l'aéroport avec suivi logistique.",
+          "Trajets vers Monte-Carlo ou un hôtel déjà indiqué à la réservation, avec bagages si besoin.",
       },
     ],
     pricing: [
-      "Tarifs forfaitaires Monaco ↔ Aéroport Nice dès 100€",
-      "Mise à disposition à partir de 90€/heure (minimum 2h)",
-      "Facturation personnalisée pour événements et navettes",
-      "Paiement CB, virement ou espèces acceptés",
+      "Le prix dépend de l'adresse de départ à Antibes, du lieu exact à Monaco et de l'horaire.",
+      "Le tarif est annoncé à la réservation.",
+      "Consultez la page Tarifs pour les exemples de prix.",
+      "Paiement CB, virement ou espèces.",
     ],
     commitments: [
       {
-        title: "Ponctualité garantie",
+        title: "Trajet Antibes ↔ Monaco",
         description:
-          "Arrivée systématiquement en avance pour vos trajets Antibes-Monaco, avec marge de sécurité adaptée aux contraintes du Rocher et aux événements locaux.",
+          "Nous adaptons l'itinéraire selon le point de dépose (Port Hercule, Monte-Carlo, hôtel) et les conditions de circulation. Aucune durée n'est garantie.",
       },
       {
-        title: "Connaissance locale approfondie",
+        title: "Réservation claire",
         description:
-          "Chauffeurs antibois connaissant parfaitement les raccourcis, les horaires de pointe et les meilleurs moments pour éviter les embouteillages sur la route côtière.",
+          "Adresse de départ, heure souhaitée et lieu exact à Monaco suffisent pour organiser la course.",
       },
       {
-        title: "Service personnalisé résidents",
+        title: "Tarif annoncé",
         description:
-          "Pour les clients réguliers d'Antibes, nous proposons un suivi personnalisé avec mémorisation de vos préférences (itinéraires, horaires, véhicules).",
+          "Le tarif est annoncé à l'avance pour votre trajet Antibes-Monaco. Voir la page Tarifs pour les exemples.",
       },
     ],
     localBusiness: {
-      name: "Taxi Monaco - Taxi Antibes",
+      name: "Taxi Antibes Riviera",
       image: "https://www.taxi-antibes.fr/taxi-antibes-vers-Monaco.jpeg",
       telephone: "+33749777621",
-      locality: "Monaco",
+      locality: "Antibes",
       region: "Provence-Alpes-Côte d'Azur",
       url: "https://www.taxi-antibes.fr/secteurs/monaco",
-      latitude: "43.738418",
-      longitude: "7.424616",
+      latitude: "43.5804",
+      longitude: "7.1251",
     },
   },
   cannes: {
