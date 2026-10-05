@@ -188,6 +188,74 @@ export default function TaxiConventionnePage() {
           }),
         }}
       />
+      <Script
+        id="taxi-conventionne-faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "Comment réserver un taxi conventionné à Antibes ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Appelez-nous directement au 07 49 77 76 21 ou utilisez notre formulaire de contact. Nous vous confirmerons rapidement votre réservation.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Quels documents fournir ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Préparez votre prescription médicale de transport (PMT), votre carte Vitale et votre carte de mutuelle. Ces documents sont nécessaires pour bénéficier de la prise en charge CPAM.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Quelle est la différence entre un taxi conventionné et un taxi standard à Antibes ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Un taxi conventionné CPAM comme le nôtre est spécifiquement agréé pour le transport médical. Nous pratiquons le tiers payant et assurons directement la gestion administrative avec la CPAM, contrairement aux taxis standards. Nos chauffeurs sont également formés aux spécificités du transport de patients.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Puis-je être accompagné lors de mon trajet médical ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, un accompagnant est autorisé et même recommandé pour certains patients. L'accompagnant peut voyager gratuitement dans certains cas (enfant, personne âgée dépendante). Précisez lors de la réservation si vous serez accompagné pour adapter le véhicule.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Vos véhicules sont-ils adaptés aux fauteuils roulants ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, nos Mercedes Classe V peuvent accueillir des fauteuils roulants pliants. Pour les fauteuils non pliants, nous proposons des véhicules adaptés avec rampe d'accès. Précisez vos besoins lors de la réservation pour garantir le véhicule approprié.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Comment fonctionne la prise en charge CPAM pour un transport médical conventionné à Antibes ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Pour bénéficier de la prise en charge CPAM avec notre service de transport médical conventionné à Antibes, vous devez disposer d'une prescription médicale de transport (PMT) délivrée par votre médecin traitant ou le médecin hospitalier. Notre service pratique le tiers payant selon conditions CPAM, ce qui signifie que l'avance de frais peut être limitée ou évitée selon votre prescription. La CPAM des Alpes-Maritimes prend en charge le transport selon les conditions de votre PMT. Le remboursement peut être partiel ou total selon votre situation et votre mutuelle complémentaire.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Votre service de transport médical conventionné intervient-il dans tous les quartiers d'Antibes ?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Oui, notre service de transport médical conventionné intervient dans tous les quartiers d'Antibes : centre-ville, Juan-les-Pins, Cap d'Antibes, et toutes les zones résidentielles. Nous desservons également les communes environnantes comme Biot, Vallauris, Valbonne et Sophia Antipolis. Nos chauffeurs connaissent parfaitement les accès et les meilleurs itinéraires depuis votre domicile à Antibes vers les établissements de santé de la région.",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
       <PageLayout
         title="Taxi Conventionné CPAM Antibes"
@@ -237,12 +305,34 @@ export default function TaxiConventionnePage() {
                     tout soit simple.
                   </p>
 
-                  <p className="text-gray-700 text-lg leading-relaxed">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
                     Nos chauffeurs connaissent les accès et déposes des hôpitaux
                     et cliniques (Pasteur, Archet, Lenval, Lacassagne, etc.)
                     depuis <strong>Antibes</strong>, afin de sécuriser votre
                     arrivée à l'heure. Pour une demande rapide, appelez-nous ou
                     réservez en ligne.
+                  </p>
+
+                  <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                    Lors de la réservation, indiquez l'adresse de prise en
+                    charge, l'établissement, le service si vous le connaissez,
+                    et l'heure de convocation. Les patients parlent souvent de{" "}
+                    <strong>bon de transport</strong> : il s'agit en pratique de
+                    la <strong>prescription médicale de transport (PMT)</strong>{" "}
+                    remise par le médecin. Préparez aussi votre{" "}
+                    <strong>carte Vitale</strong> et, le cas échéant, votre
+                    carte de mutuelle.
+                  </p>
+
+                  <p className="text-gray-700 text-lg leading-relaxed">
+                    Les trajets peuvent être ponctuels (consultation, examen,
+                    sortie d'hospitalisation) ou répétés :{" "}
+                    <strong>dialyse</strong>, <strong>chimiothérapie</strong>,{" "}
+                    <strong>radiothérapie</strong> ou consultations de suivi.
+                    Pour une série de soins, précisez le rythme des séances afin
+                    d'organiser les prises en charge à l'avance, selon votre
+                    prescription et les conditions de prise en charge de
+                    l'Assurance Maladie.
                   </p>
 
                   <p className="text-base text-gray-600 border-l-4 border-cyan-500 pl-4 py-3 mt-6 bg-cyan-50/60 rounded-r not-prose">
@@ -523,8 +613,9 @@ export default function TaxiConventionnePage() {
                   </h3>
                   <p className="text-gray-700 leading-relaxed">
                     Bénéficiez d'une prise en charge optimale avec notre service
-                    de taxi conventionné. Notre agrément CPAM vous garantit un
-                    transport médical sans avance de frais.
+                    de taxi conventionné. Le tiers payant peut limiter ou
+                    éviter l'avance de frais, selon votre prescription et les
+                    conditions de prise en charge de l'Assurance Maladie.
                   </p>
                 </Card>
               </div>
@@ -807,18 +898,25 @@ export default function TaxiConventionnePage() {
               <Card className="p-8 bg-white border-cyan-200">
                 <p className="text-gray-700 mb-4 text-lg leading-relaxed">
                   En tant que taxi conventionné à Antibes, nous pratiquons le
-                  tiers payant avec la CPAM. Les tarifs sont réglementés et la
-                  prise en charge est assurée à 100% avec une prescription
-                  médicale valide.
+                  tiers payant avec la CPAM lorsque les conditions le
+                  permettent. Les tarifs sont réglementés. La prise en charge
+                  dépend de votre prescription et des conditions de
+                  l'Assurance Maladie : elle peut être partielle ou totale.
                 </p>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Aucune avance de frais avec le tiers payant</span>
+                    <span>
+                      Tiers payant selon votre prescription : l'avance de
+                      frais peut être limitée ou évitée
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                    <span>Prise en charge à 100% selon conditions CPAM</span>
+                    <span>
+                      Prise en charge selon les conditions de l'Assurance
+                      Maladie
+                    </span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />

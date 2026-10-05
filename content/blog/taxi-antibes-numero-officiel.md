@@ -1,5 +1,6 @@
 ---
 title: "Numéro de taxi à Antibes : guide pratique (quand appeler, zones, FAQ)"
+seoTitle: "Quand appeler un taxi à Antibes : infos à préparer"
 date: "2026-02-08"
 excerpt: "À quoi sert le 07 49 77 76 21, quelles infos préparer avant d’appeler, délais et zones — sans refaire la page officielle. La fiche « appeler un taxi » reste sur le site dédié."
 image: "/tax-antibes-numero.jpeg"

@@ -23,7 +23,7 @@ Les déplacements professionnels passent aussi par **Sophia Antipolis**, notamme
 
 ## Taxi conventionné CPAM et trajets médicaux
 
-Pour un rendez-vous médical, il est important de distinguer un taxi classique d'un **taxi conventionné CPAM**. Lorsque le transport est prescrit par un médecin et respecte les conditions de l'Assurance Maladie, le trajet peut être pris en charge en partie ou totalement.
+Pour un rendez-vous médical, il est important de distinguer un taxi classique d'un **[transport conventionné à Antibes](/services/taxi-conventionne)**. Lorsque le transport est prescrit par un médecin et respecte les conditions de l'Assurance Maladie, le trajet peut être pris en charge en partie ou totalement.
 
 Les trajets médicaux entre Antibes, Cagnes-sur-Mer et Nice concernent souvent les consultations spécialisées, les examens, les soins réguliers ou les sorties d'hospitalisation. Les destinations fréquentes incluent les hôpitaux et cliniques de Nice : [CHU Pasteur](/services/taxi-conventionne-pasteur-nice), [Archet](/blog/taxi-conventionne-antibes-chu-archet-nice), [Lenval](/blog/taxi-conventionne-antibes-hopital-lenval-nice), [Centre Antoine Lacassagne](/blog/taxi-conventionne-antibes-centre-lacassagne-nice) ou établissements privés selon les besoins du patient.
 

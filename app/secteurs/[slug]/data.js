@@ -1045,6 +1045,10 @@ export const sectorData = {
           label: "Guide Taxi Antibes",
           url: "https://www.taxi-antibes.fr/blog",
         },
+        {
+          label: "Taxi agréé CPAM à Antibes",
+          url: "https://www.taxi-antibes.fr/services/taxi-conventionne",
+        },
       ],
     },
     homepageLink: {

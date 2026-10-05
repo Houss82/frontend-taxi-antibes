@@ -144,7 +144,7 @@ Avant le jour du rendez-vous, vérifiez :
 2. l'heure de convocation, souvent différente de l'heure de consultation ;
 3. le temps de trajet selon l'heure ;
 4. les documents médicaux nécessaires ;
-5. les modalités de transport si vous avez une prescription médicale.
+5. les modalités de transport si vous avez une prescription médicale, puis [réserver un transport conventionné](/services/taxi-conventionne).
 
 Si vous avez une prescription médicale de transport, le sujet relève de la page **[Taxi conventionné CPAM Antibes](/services/taxi-conventionne)**. Cet article-ci reste un guide des établissements et ne remplace pas les informations CPAM.
 

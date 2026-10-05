@@ -27,7 +27,7 @@ Cet article a un rôle précis : vous aider à décider rapidement entre **taxi,
 | Nice, Cannes ou Monaco sans bagages | Train | Rapide depuis la gare d'Antibes |
 | Aéroport Nice avec valises | Taxi ou transfert réservé | Trajet direct et horaire maîtrisé |
 | Sortie tardive ou restaurant | Taxi ou VTC | Plus souple que les transports en commun |
-| Rendez-vous médical avec prescription | Taxi conventionné | Prise en charge CPAM possible selon dossier |
+| Rendez-vous médical avec prescription | [Transport médical sur prescription](/services/taxi-conventionne) | Prise en charge CPAM possible selon dossier |
 | Budget prioritaire | Bus ou train | Moins cher, mais moins flexible |
 
 ## Taxi : le choix des trajets avec contrainte
