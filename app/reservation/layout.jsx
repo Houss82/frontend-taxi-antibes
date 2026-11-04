@@ -4,6 +4,9 @@ export const metadata = {
     "Réservez votre taxi à Antibes en ligne. Formulaire de réservation simple pour transferts aéroport Nice, courses locales. Réservation 24h/24.",
   keywords:
     "réservation taxi antibes, réserver taxi en ligne, formulaire réservation, transfert aéroport nice, booking taxi",
+  alternates: {
+    canonical: "/reservation",
+  },
   openGraph: {
     title: "Réservation Taxi Antibes - Réserver en Ligne",
     description:

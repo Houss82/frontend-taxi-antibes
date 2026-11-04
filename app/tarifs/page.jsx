@@ -21,6 +21,9 @@ export const metadata = {
     "Prix taxi Antibes et tarifs 2026 : courses locales, transferts aéroport Nice, Juan-les-Pins, Cannes, Monaco. Devis gratuit, prix annoncés à l'avance, service 24h/24.",
   keywords:
     "prix taxi antibes, tarif taxi antibes, tarifs taxi antibes, prix taxi antibes aéroport nice, taxi antibes tarif, taxi antibes prix",
+  alternates: {
+    canonical: "/tarifs",
+  },
   openGraph: {
     title: "Prix Taxi Antibes : Tarifs 2026 & Devis",
     description:
