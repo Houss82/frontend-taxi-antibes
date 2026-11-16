@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 export const revalidate = 3600;
 
@@ -58,31 +57,26 @@ const useCases = [
   "Transport de clients, équipages, visiteurs internationaux ou familles avec bagages",
 ];
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.taxi-antibes.fr/services/taxi-port-vauban-aeroport-nice#service",
+  name: "Taxi Port Vauban vers Aéroport Nice",
+  serviceType:
+    "Transfert privé Port Vauban – Aéroport Nice Côte d'Azur",
+  provider: {
+    "@id": "https://www.taxi-antibes.fr/#business",
+  },
+  url: "https://www.taxi-antibes.fr/services/taxi-port-vauban-aeroport-nice",
+};
+
 export default function TaxiPortVaubanAeroportNicePage() {
   return (
     <>
-      <Script
-        id="port-vauban-aeroport-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TaxiService",
-            name: "Taxi Antibes Riviera - Port Vauban vers Aéroport Nice",
-            url: "https://www.taxi-antibes.fr/services/taxi-port-vauban-aeroport-nice",
-            telephone: "+33749777621",
-            image:
-              "https://www.taxi-antibes.fr/taxi-antibes-port-vauban-van.jpeg",
-            areaServed: [
-              { "@type": "Place", name: "Port Vauban Antibes" },
-              { "@type": "Airport", name: "Aéroport Nice Côte d'Azur" },
-              { "@type": "City", name: "Antibes" },
-              { "@type": "City", name: "Juan-les-Pins" },
-            ],
-            openingHours: "Mo-Su 00:00-23:59",
-            priceRange: "€€",
-            sameAs: ["https://maps.app.goo.gl/gAA4M31jtVcsY3Km9"],
-          }),
+          __html: JSON.stringify(serviceSchema).replace(/</g, "\\u003c"),
         }}
       />
 

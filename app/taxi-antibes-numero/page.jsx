@@ -69,7 +69,11 @@ export default function TaxiAntibesNumeroPage() {
                 <a href="tel:+33749777621" className="font-bold text-cyan-600 hover:text-amber-600 underline text-2xl">
                   07 49 77 76 21
                 </a>{" "}
-                pour une réservation immédiate. Notre <strong>taxi à Antibes</strong> est disponible{" "}
+                pour une réservation immédiate. Notre{" "}
+                <Link href="/" className="font-semibold text-cyan-700 underline hover:text-amber-700">
+                  taxi à Antibes
+                </Link>{" "}
+                est disponible{" "}
                 <strong>24h/24 et 7j/7</strong>, avec réponse immédiate et prise en charge rapide dans toute la région.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">

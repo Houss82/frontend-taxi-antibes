@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 export const revalidate = 3600;
 
@@ -142,131 +141,95 @@ const faqItems = [
   },
 ];
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id":
+        "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice#service",
+      name: "Taxi conventionné Antibes vers Hôpital Pasteur Nice",
+      serviceType:
+        "Transport médical assis Antibes – Hôpital Pasteur Nice",
+      provider: { "@id": "https://www.taxi-antibes.fr/#business" },
+      areaServed: [
+        { "@type": "City", name: "Antibes" },
+        {
+          "@type": "Hospital",
+          name: "CHU Pasteur 2",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "30 Voie Romaine",
+            addressLocality: "Nice",
+            postalCode: "06000",
+            addressCountry: "FR",
+          },
+        },
+      ],
+      url: "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Accueil",
+          item: "https://www.taxi-antibes.fr/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://www.taxi-antibes.fr/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Taxi conventionné Pasteur Nice",
+          item: "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Comment réserver un taxi Antibes vers Pasteur ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez le départ, l'heure de convocation et le service Pasteur concerné.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Faut-il préciser le bâtiment à Pasteur ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui. Pasteur est un grand site hospitalier. Communiquez le service, le bâtiment ou l'entrée indiqués sur la convocation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Peut-on organiser un aller-retour le même jour ?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oui. Signalez dès la réservation si le retour est fixe ou si l'horaire de fin de rendez-vous est imprévisible.",
+          },
+        },
+      ],
+    },
+  ],
+};
+
 export default function TaxiConventionnePasteurNicePage() {
   return (
     <>
-      <Script
-        id="pasteur-service-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "TaxiService",
-                "@id": "https://www.taxi-antibes.fr/#business",
-                name: "Taxi Antibes Riviera",
-                url: "https://www.taxi-antibes.fr/",
-                telephone: "+33749777621",
-                image:
-                  "https://www.taxi-antibes.fr/taxi-conventionne-nice-pasteur.jpeg",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Antibes",
-                  postalCode: "06600",
-                  addressRegion: "Provence-Alpes-Côte d'Azur",
-                  addressCountry: "FR",
-                },
-                areaServed: [
-                  "Antibes",
-                  "Juan-les-Pins",
-                  "Cap d'Antibes",
-                  "Nice",
-                ],
-                openingHoursSpecification: {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday",
-                  ],
-                  opens: "00:00",
-                  closes: "23:59",
-                },
-                priceRange: "€€",
-              },
-              {
-                "@type": "Service",
-                "@id":
-                  "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice#service",
-                name: "Taxi conventionné Antibes vers Hôpital Pasteur Nice",
-                serviceType:
-                  "Transport médical assis Antibes – Hôpital Pasteur Nice",
-                provider: { "@id": "https://www.taxi-antibes.fr/#business" },
-                areaServed: [
-                  { "@type": "City", name: "Antibes" },
-                  {
-                    "@type": "Hospital",
-                    name: "CHU Pasteur 2",
-                    address: {
-                      "@type": "PostalAddress",
-                      streetAddress: "30 Voie Romaine",
-                      addressLocality: "Nice",
-                      postalCode: "06000",
-                      addressCountry: "FR",
-                    },
-                  },
-                ],
-                url: "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice",
-              },
-              {
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Accueil",
-                    item: "https://www.taxi-antibes.fr/",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Services",
-                    item: "https://www.taxi-antibes.fr/services",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Taxi conventionné Pasteur Nice",
-                    item: "https://www.taxi-antibes.fr/services/taxi-conventionne-pasteur-nice",
-                  },
-                ],
-              },
-              {
-                "@type": "FAQPage",
-                mainEntity: [
-                  {
-                    "@type": "Question",
-                    name: "Comment réserver un taxi Antibes vers Pasteur ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Appelez le 07 49 77 76 21 ou utilisez la réservation en ligne. Indiquez le départ, l'heure de convocation et le service Pasteur concerné.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "Faut-il préciser le bâtiment à Pasteur ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Oui. Pasteur est un grand site hospitalier. Communiquez le service, le bâtiment ou l'entrée indiqués sur la convocation.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "Peut-on organiser un aller-retour le même jour ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Oui. Signalez dès la réservation si le retour est fixe ou si l'horaire de fin de rendez-vous est imprévisible.",
-                    },
-                  },
-                ],
-              },
-            ],
-          }),
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
 

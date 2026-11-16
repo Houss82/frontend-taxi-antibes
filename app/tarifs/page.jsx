@@ -2,7 +2,6 @@ import { PageLayout } from "@/components/page-layout";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Link from "next/link";
-import Script from "next/script";
 import {
   Bus,
   Calculator,
@@ -351,39 +350,13 @@ export default function TarifsPage() {
     ]
   };
 
-  // Schema JSON-LD pour LocalBusiness/TaxiService
-  const localBusinessJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TaxiService",
-    "name": "Taxi Antibes Riviera",
-    "telephone": "+33749777621",
-    "url": "https://www.taxi-antibes.fr/tarifs",
-    "areaServed": ["Antibes", "Juan-les-Pins", "Côte d'Azur"],
-    "availableLanguage": "fr",
-    "openingHours": "Mo-Su 00:00-23:59",
-    "priceRange": "€€",
-    "image": "https://www.taxi-antibes.fr/og-image.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Antibes",
-      "postalCode": "06600",
-      "addressCountry": "FR"
-    }
-  };
-
   return (
     <>
-      <Script
-        id="faq-jsonld"
+      <script
         type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <Script
-        id="taxi-jsonld"
-        type="application/ld+json"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd).replace(/</g, "\\u003c"),
+        }}
       />
       <PageLayout
         title="Prix Taxi Antibes : Tarifs 2026, Devis & Transferts"
@@ -403,7 +376,10 @@ export default function TarifsPage() {
                 </span>
               </h2>
               <p className="text-gray-700 text-lg max-w-3xl mx-auto leading-relaxed">
-                Des tarifs transparents et compétitifs pour votre <strong>taxi à Antibes</strong>{" "}
+                Des tarifs transparents et compétitifs pour votre{" "}
+                <Link href="/" className="font-semibold text-cyan-700 underline hover:text-amber-700">
+                  taxi à Antibes
+                </Link>{" "}
                 pour tous vos déplacements depuis Antibes vers l'aéroport de Nice, Juan-les-Pins, Cannes, Monaco et toute la Côte d'Azur.
               </p>
             </div>

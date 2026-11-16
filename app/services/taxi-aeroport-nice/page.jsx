@@ -14,7 +14,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 const destinations = [
   {
@@ -124,110 +123,65 @@ const advantages = [
 // Revalidation pour le cache (1 heure)
 export const revalidate = 3600;
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id":
+        "https://www.taxi-antibes.fr/services/taxi-aeroport-nice#service",
+      name: "Taxi Antibes Aéroport Nice",
+      serviceType:
+        "Transfert en taxi entre Antibes et l'aéroport Nice Côte d'Azur",
+      provider: {
+        "@id": "https://www.taxi-antibes.fr/#business",
+      },
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Antibes",
+        },
+        {
+          "@type": "Airport",
+          name: "Aéroport Nice Côte d'Azur",
+          iataCode: "NCE",
+        },
+      ],
+      url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Accueil",
+          item: "https://www.taxi-antibes.fr/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Services",
+          item: "https://www.taxi-antibes.fr/services",
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: "Taxi Aéroport Nice",
+          item: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
+        },
+      ],
+    },
+  ],
+};
+
 export default function TaxiAeroportNicePage() {
   return (
     <>
-      {/* Schema.org : entreprise + service aéroport + fil d'Ariane */}
-      <Script
-        id="aeroport-nice-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "TaxiService",
-                "@id": "https://www.taxi-antibes.fr/#business",
-                name: "Taxi Antibes Riviera",
-                url: "https://www.taxi-antibes.fr/",
-                telephone: "+33749777621",
-                image:
-                  "https://www.taxi-antibes.fr/aeroport-nice-depart-t2-2.jpeg",
-                address: {
-                  "@type": "PostalAddress",
-                  addressLocality: "Antibes",
-                  postalCode: "06600",
-                  addressRegion: "Provence-Alpes-Côte d'Azur",
-                  addressCountry: "FR",
-                },
-                geo: {
-                  "@type": "GeoCoordinates",
-                  latitude: "43.5804",
-                  longitude: "7.1251",
-                },
-                areaServed: [
-                  "Antibes",
-                  "Juan-les-Pins",
-                  "Cap d'Antibes",
-                  "Aéroport Nice Côte d'Azur",
-                ],
-                openingHoursSpecification: {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday",
-                    "Saturday",
-                    "Sunday",
-                  ],
-                  opens: "00:00",
-                  closes: "23:59",
-                },
-                priceRange: "€€",
-                sameAs: [
-                  "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-                ],
-              },
-              {
-                "@type": "Service",
-                "@id":
-                  "https://www.taxi-antibes.fr/services/taxi-aeroport-nice#service",
-                name: "Taxi Antibes Aéroport Nice",
-                serviceType:
-                  "Transfert en taxi entre Antibes et l'aéroport Nice Côte d'Azur",
-                provider: {
-                  "@id": "https://www.taxi-antibes.fr/#business",
-                },
-                areaServed: [
-                  {
-                    "@type": "City",
-                    name: "Antibes",
-                  },
-                  {
-                    "@type": "Airport",
-                    name: "Aéroport Nice Côte d'Azur",
-                    iataCode: "NCE",
-                  },
-                ],
-                url: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
-              },
-              {
-                "@type": "BreadcrumbList",
-                itemListElement: [
-                  {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Accueil",
-                    item: "https://www.taxi-antibes.fr/",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Services",
-                    item: "https://www.taxi-antibes.fr/services",
-                  },
-                  {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Taxi Aéroport Nice",
-                    item: "https://www.taxi-antibes.fr/services/taxi-aeroport-nice",
-                  },
-                ],
-              },
-            ],
-          }),
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}
       />
 

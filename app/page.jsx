@@ -17,7 +17,6 @@ import {
 import { Oleo_Script, Outfit, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 // Import de la police Oleo Script
 const oleoScript = Oleo_Script({
@@ -56,6 +55,37 @@ export const metadata = {
   openGraph: {
     url: "https://www.taxi-antibes.fr/", // ✅ URL absolue pour OpenGraph (cohérence)
   },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Quels sont vos horaires ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Notre service de taxi Antibes est disponible 24h/24 et 7j/7, y compris jours fériés et week-ends.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quels modes de paiement ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nous acceptons les espèces, cartes bancaires et virements. Facture disponible pour les professionnels.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Comment réserver ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Réservation par téléphone, formulaire en ligne, ou sur notre page réservation.",
+      },
+    },
+  ],
 };
 
 export default function Home() {
@@ -761,67 +791,10 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ✅ Schema JSON-LD pour FAQ (Google rich snippets) - optimisé avec next/script */}
-          <Script
-            id="faq-schema"
+          <script
             type="application/ld+json"
-            strategy="afterInteractive"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                mainEntity: [
-                  {
-                    "@type": "Question",
-                    name: "Quels sont vos horaires ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Notre service de taxi à Antibes est disponible 24h/24 et 7j/7, y compris les jours fériés et les week-ends.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "Quels modes de paiement acceptez-vous ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Nous acceptons les espèces, cartes bancaires et virements. Une facture est disponible pour les professionnels.",
-                    },
-                  },
-                  {
-                    "@type": "Question",
-                    name: "Comment réserver un taxi à Antibes ?",
-                    acceptedAnswer: {
-                      "@type": "Answer",
-                      text: "Vous pouvez réserver en ligne via notre formulaire de réservation, par téléphone au 07 49 77 76 21, ou par WhatsApp, 24h/24.",
-                    },
-                  },
-                ],
-              }),
-            }}
-          />
-          {/* ✅ Schema JSON-LD TaxiService pour SEO local - optimisé avec next/script */}
-          <Script
-            id="taxi-schema"
-            type="application/ld+json"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "TaxiService",
-                name: "Taxi Antibes Riviera",
-                url: "https://www.taxi-antibes.fr/",
-                telephone: "+33749777621",
-                areaServed: [
-                  { "@type": "City", name: "Antibes" },
-                  { "@type": "City", name: "Juan-les-Pins" },
-                  { "@type": "City", name: "Cannes" },
-                  { "@type": "City", name: "Nice" },
-                  { "@type": "City", name: "Monaco" },
-                ],
-                availableLanguage: ["fr"],
-                openingHours: "Mo-Su 00:00-23:59",
-                priceRange: "€€",
-              }),
+              __html: JSON.stringify(faqSchema).replace(/</g, "\\u003c"),
             }}
           />
         </div>

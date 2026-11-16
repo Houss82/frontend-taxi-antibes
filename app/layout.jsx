@@ -97,6 +97,7 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "TaxiService",
+    "@id": "https://www.taxi-antibes.fr/#business",
     name: "Taxi Antibes Riviera",
     url: "https://www.taxi-antibes.fr", // ✅ Version canonique avec www
     telephone: "+33749777621",
@@ -152,8 +153,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.className} ${playfair.variable} ${GeistSans.variable} ${GeistMono.variable} antialiased`}
         suppressHydrationWarning
-        itemScope
-        itemType="https://schema.org/TaxiService"
       >
         {/* ✅ Le contenu SSR arrive ICI - pas enveloppé dans un composant client */}
         <main>{children}</main>

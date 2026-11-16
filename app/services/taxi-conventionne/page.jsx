@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 
 const hospitalsAntibes = [
   {
@@ -148,48 +147,28 @@ const services = [
 // Revalidation pour le cache (1 heure)
 export const revalidate = 3600;
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.taxi-antibes.fr/services/taxi-conventionne#service",
+  name: "Taxi Conventionné CPAM Antibes",
+  serviceType: "Transport médical conventionné CPAM",
+  provider: {
+    "@id": "https://www.taxi-antibes.fr/#business",
+  },
+  url: "https://www.taxi-antibes.fr/services/taxi-conventionne",
+};
+
 export default function TaxiConventionnePage() {
   return (
     <>
-      {/* ✅ JSON-LD optimisé avec type TaxiService et syntaxe correcte */}
-      <Script
-        id="taxi-conventionne-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "TaxiService",
-            name: "Taxi Antibes Riviera - Taxi Conventionné CPAM",
-            url: "https://www.taxi-antibes.fr/services/taxi-conventionne", // ✅ Version canonique avec www
-            telephone: "+33749777621",
-            image: "https://www.taxi-antibes.fr/taxi-conventionne-nice-pasteur.jpeg", // ✅ Version canonique avec www
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Antibes",
-              postalCode: "06600",
-              addressCountry: "FR",
-            },
-            geo: {
-              "@type": "GeoCoordinates",
-              latitude: "43.5804",
-              longitude: "7.1251",
-            },
-            openingHours: "Mo-Su 00:00-23:59",
-            priceRange: "€€",
-            areaServed: [
-              { "@type": "City", name: "Antibes" },
-              { "@type": "City", name: "Juan-les-Pins" },
-              { "@type": "City", name: "Nice" },
-              { "@type": "City", name: "Cannes" },
-            ],
-            sameAs: [
-              "https://maps.app.goo.gl/gAA4M31jtVcsY3Km9",
-            ],
-          }),
+          __html: JSON.stringify(serviceSchema).replace(/</g, "\\u003c"),
         }}
       />
-      <Script
-        id="taxi-conventionne-faq-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
@@ -253,7 +232,7 @@ export default function TaxiConventionnePage() {
                 },
               },
             ],
-          }),
+          }).replace(/</g, "\\u003c"),
         }}
       />
 

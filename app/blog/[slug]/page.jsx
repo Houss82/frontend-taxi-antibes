@@ -6,7 +6,6 @@ import { getAllPostSlugs, getAllPosts, getPostBySlug } from "@/lib/blog";
 import { Calendar, Clock, Phone, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -143,37 +142,6 @@ export default async function BlogPostPage({ params }) {
         }
       : null;
 
-  // Schema TaxiService spécifique pour l'article "taxi gare Antibes"
-  const taxiServiceSchema =
-    post.slug === "taxi-gare-sncf-antibes-guide-complet"
-      ? {
-          "@context": "https://schema.org",
-          "@type": "TaxiService",
-          name: "Taxi Antibes",
-          telephone: "+33749777621",
-          areaServed: [
-            "Antibes",
-            "Juan-les-Pins",
-            "Cap d'Antibes",
-            "Cannes",
-            "Nice",
-            "Monaco",
-            "Sophia Antipolis",
-          ],
-          availableChannel: {
-            "@type": "ServiceChannel",
-            serviceUrl: "https://www.taxi-antibes.fr/reservation", // ✅ Version canonique avec www
-            availableLanguage: ["fr"],
-          },
-          address: {
-            "@type": "PostalAddress",
-            addressLocality: "Antibes",
-            postalCode: "06600",
-            addressCountry: "FR",
-          },
-        }
-      : null;
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -224,17 +192,12 @@ export default async function BlogPostPage({ params }) {
             dangerouslySetInnerHTML={{ __html: post.contentHtml }}
           />
 
-          <Script
-            id="article-schema"
+          <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{
               __html: JSON.stringify(
-                [
-                  articleSchema,
-                  ...(faqSchema ? [faqSchema] : []),
-                  ...(taxiServiceSchema ? [taxiServiceSchema] : []),
-                ]
-              ),
+                [articleSchema, ...(faqSchema ? [faqSchema] : [])]
+              ).replace(/</g, "\\u003c"),
             }}
           />
 

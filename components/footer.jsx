@@ -127,7 +127,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2 text-white/80 font-light">
                 <Mail className="h-4 w-4 text-orange-300" />
-                <span>contact@taxiantibes.fr</span>
+                <span>contact@taxi-antibes.fr</span>
               </li>
               <li className="flex items-center gap-2 text-white/80 font-light">
                 <MapPin className="h-4 w-4 text-orange-300" />
